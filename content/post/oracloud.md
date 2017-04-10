@@ -1,7 +1,7 @@
 +++
 tags = ["oracle cloud"]
 categories = []
-date = "2017-04-05T10:43:37+09:00"
+date = "2017-03-01T10:43:37+09:00"
 description = ""
 thumbnailInList = "http://oracloud-kr-teamrepo.github.io/2017/03/Oracle-Cloud.jpg"
 thumbnailInPost = "http://oracloud-kr-teamrepo.github.io/2017/03/Oracle-Cloud.jpg"
