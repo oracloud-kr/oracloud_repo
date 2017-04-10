@@ -7,7 +7,8 @@ after_success:
 - cp -rf ./public/* ../blog/
 - cd ../blog
 - git config --local user.name "$GIT_USER_ID"
-- git config --local user.email "$GTI_EMAIL"
+- git config --local user.email "$GIT_EMAIL"
+- git config --list
 - pwd
 - git add *
 - git commit -m "rebuilding site `date` from CI"
