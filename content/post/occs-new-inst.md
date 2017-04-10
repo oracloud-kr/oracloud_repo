@@ -5,7 +5,7 @@ categories = ["container"]
 date = "2017-04-07T19:36:38+09:00"
 thumbnailInPost = ""
 thumbnailInList = "http://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/OracleContainerCloudService.png"
-title = "Oracle Container CS 생성 절차."
+title = "Oracle Container CS 생성 절차"
 language = ""
 author = "taewan.kim"
 +++
