@@ -1,4 +1,4 @@
-baseurl = "http://www.oracloud.kr/"
+baseurl = "/"
 title = "한국 오라클 클라우드 팀"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
