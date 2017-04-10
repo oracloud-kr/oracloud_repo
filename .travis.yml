@@ -1,7 +1,10 @@
 language: go
+
 install: go get -v github.com/spf13/hugo
+
 script:
 - hugo
+
 after_success:
 - git clone https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git ../blog
 - cp -rf ./public/* ../blog/
@@ -13,3 +16,5 @@ after_success:
 - git add *
 - git commit -m "rebuilding site `date` from CI"
 - git push https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git --all
+
+
