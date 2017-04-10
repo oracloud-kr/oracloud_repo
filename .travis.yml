@@ -6,8 +6,8 @@ after_success:
 - git clone https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git ../blog
 - cp -rf ./public/* ../blog/
 - cd ../blog
-- git config --global user.name "$GIT_USER_ID"
-- git config --global user.email "$GTI_EMAIL"
+- git config --local user.name "$GIT_USER_ID"
+- git config --local user.email "$GTI_EMAIL"
 - pwd
 - git add *
 - git commit -m "rebuilding site `date` from CI"
