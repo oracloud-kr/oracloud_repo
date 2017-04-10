@@ -1,0 +1,29 @@
+{{- if .Site.Params.widgets.categories }}
+{{- if isset .Site.Taxonomies "categories" }}
+{{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+<div class="widget-categories widget">
+	<h4 class="widget__title">오라클 클라우드 관련 사이트</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://cloud.oracle.com/">
+				Oracle Public Cloud 홈페이지</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://developer.oracle.com/">
+				Oracle Developers</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://docs.oracle.com/en/cloud/">
+				오라클 클라우드 문서</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://apexapps.oracle.com/pls/apex/f?p=44785">
+				Oracle Learning Library</a>
+			</li>
+		</ul>
+	</div>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}

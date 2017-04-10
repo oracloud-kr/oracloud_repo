@@ -1,0 +1,21 @@
+
+{{- if .Site.Params.authorbox }}
+{{- range $.Site.Data.Author }}
+{{- if eq $.Params.author .id}}
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="{{ .name }} avatar" src="{{ .avatar | absURL }}" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">작성자: {{ .name }}</span>
+	</div>
+	<div class="authorbox__description">
+		{{ .bio }}
+	</div>
+	<div class="authorbox__description">
+		E-mail: {{ .email }}
+	</div>
+</div>
+{{- end }}
+{{- end }}
+{{- end }}
