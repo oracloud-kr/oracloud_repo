@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "한국 오라클 클라우드 팀"
+title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -9,7 +9,7 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
 
 
 [Author]
-    name = "오라클 클라우드 팀"
+    name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 
