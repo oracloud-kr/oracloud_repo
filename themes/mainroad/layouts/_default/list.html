@@ -27,7 +27,11 @@
 					</div>
 				</header>
 				<div class="loop__excerpt">
-							  {{ .Summary }}
+								{{- if gt (.Summary | countrunes) 250 }}
+									  {{ slicestr .Summary 0 300 }} ......
+								{{- else }}
+										{{ .Summary }}
+								{{- end}}
 				</div>
 				<div class="loop__excerpt">
 						{{- range .Params.tags }}
