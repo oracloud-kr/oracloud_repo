@@ -4,9 +4,23 @@
 	<div class="widget__content">
 		<ul class="widget__list">
 			{{- range first 10 (where .Site.Pages "Section" "post") }}
-			<li class="widget__item"><a class="widget__link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+			<li class="widget__item">
+				<a class="widget__link" href="{{ .RelPermalink }}" title="">
+					{{- if gt (.Title | countrunes) 40 }}
+							{{ slicestr .Title 0 40 }} ......
+					{{- else }}
+							{{ .Title }}
+					{{- end}}</a>
+		  </li>
 			{{- end }}
 		</ul>
 	</div>
 </div>
 {{- end }}
+
+
+{{- if gt (.Summary | countrunes) 250 }}
+		{{ slicestr .Summary 0 300 }} ......
+{{- else }}
+		{{ .Summary }}
+{{- end}}
