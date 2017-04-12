@@ -1,4 +1,4 @@
-baseurl = "http://www.oracloud.kr"
+baseurl = "http://www.oracloud.kr/"
 title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page

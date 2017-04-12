@@ -1,6 +1,6 @@
 +++
 description = "오라클의 더커 컨테이너 클라우드 서비스를 생성 메뉴얼 입니다."
-tags = ["docker", "oracle", "cloud"]
+tags = ["docker", "oracle", "cloud", "tutorial"]
 categories = ["container"]
 date = "2017-04-05T19:36:38+09:00"
 thumbnailInPost = ""
