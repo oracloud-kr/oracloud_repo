@@ -29,5 +29,7 @@ Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모
   - 테이블 생성
   - 쿼리 수행
 
-
 {{< youtube mMLMtBiZ4-Q >}}
+
+## 참고
+-  Oracle Learning Library: [Oracle Database Cloud Service Quick Start](https://apexapps.oracle.com/pls/apex/f?p=44785:112:0::::P112_CONTENT_ID:11569)
