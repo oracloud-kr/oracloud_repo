@@ -21,6 +21,7 @@ Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모
 - [Oracle Cloud Trial 계정 생성하기](http://www.oracloud.kr/post/accont/)
 
 데모 동영상은 다음과 같은 내용으로 구성되어 있습니다.
+
 - Oracle Database CS 인스턴스 생성
 - Security Rule 수정, 1521번 포트 오픈
 - SQLDeveloper
