@@ -7,7 +7,7 @@
 			<li class="widget__item">
 				<a class="widget__link" href="{{ .RelPermalink }}" title="{{ .Title }}">
 					{{- if gt (.Title | countrunes) 35 }}
-							{{ slicestr .Title 0 40 }} ......
+							{{ slicestr .Title 0 35 }} ......
 					{{- else }}
 							{{ .Title }}
 					{{- end}}</a>
