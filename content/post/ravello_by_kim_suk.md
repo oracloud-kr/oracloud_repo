@@ -3,11 +3,11 @@ tags = ["ravello","Virtualization"]
 date = "2017-04-13T11:23:39+09:00"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/it_jaebul.png"
 description = ""
-author = ""
+author = "taewan.kim""
 categories = ["ravello"]
 title = "라벨로를 이용한 모의 해킹 환경 구성하기 (김석 한국 오라클 ACE 디렉터)"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello.png"
-language = "taewan.kim"
+language = ""
 +++
 
 노브레인 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석님께서 정리해 주신 라벨로 활용 문서입니다.
