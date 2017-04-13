@@ -17,10 +17,3 @@
 	</div>
 </div>
 {{- end }}
-
-
-{{- if gt (.Summary | countrunes) 250 }}
-		{{ slicestr .Summary 0 300 }} ......
-{{- else }}
-		{{ .Summary }}
-{{- end}}
