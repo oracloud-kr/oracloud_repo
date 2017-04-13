@@ -5,7 +5,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/it_jae
 description = ""
 author = "taewan.kim""
 categories = ["ravello"]
-title = "라벨로를 이용한 모의 해킹 환경 구성하기 (김석 한국 오라클 ACE 디렉터)"
+title = "라벨로를 이용한 모의 해킹 환경 구성하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello.png"
 language = ""
 +++
