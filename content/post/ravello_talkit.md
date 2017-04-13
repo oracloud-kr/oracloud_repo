@@ -27,16 +27,24 @@ Ravell의 개요, 동작 방식 및 현장 적용 사례를 확인 하실 수 �
 
 {{< youtube ooTlsYl-5J8 >}}
 
+***
+
 ### 2부. 라벨로, 전문가가 뜯어보기! (24:20)
 
 {{< youtube AKGFN2Vzh28 >}}
+
+***
 
 ### 3부. 라벨로, 고객이 직접 얘기하기! (15:09)
 
 {{< youtube Uhq7_Nd79n0 >}}
 
+***
+
 ### 4부. 라벨로, Q&A 파헤치기! (33:40)
 {{< youtube WhduCXz1M20 >}}
+
+***
 
 ## 출처
 - https://talkit.tv/Event/1523/
