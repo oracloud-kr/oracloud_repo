@@ -6,7 +6,7 @@
 			{{- range first 10 (where .Site.Pages "Section" "post") }}
 			<li class="widget__item">
 				<a class="widget__link" href="{{ .RelPermalink }}" title="{{ .Title }}">
-					{{- if gt (.Title | countrunes) 40 }}
+					{{- if gt (.Title | countrunes) 35 }}
 							{{ slicestr .Title 0 40 }} ......
 					{{- else }}
 							{{ .Title }}

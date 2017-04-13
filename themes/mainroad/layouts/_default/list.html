@@ -28,7 +28,7 @@
 				</header>
 				<div class="loop__excerpt">
 								{{- if gt (.Summary | countrunes) 250 }}
-									  {{ slicestr .Summary 0 300 }} ......
+									  {{ slicestr .Summary 0 250 }} ......
 								{{- else }}
 										{{ .Summary }}
 								{{- end}}
