@@ -1,6 +1,6 @@
 +++
 categories = []
-tags = ["ravello"]
+tags = ["ravello", "talkit", "Webinar"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello_ui.jpg"
 date = "2017-04-13T12:35:37+09:00"
 title = "TalkIT 세미나 동영상: 가상환경 클라우드 전환 - Ravello"

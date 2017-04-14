@@ -3,10 +3,14 @@ language: go
 install: go get -v github.com/spf13/hugo
 
 script:
+- rm config.toml
+- mv config.toml.production config.toml
+- cat config.toml
 - hugo
 
 after_success:
 - git clone https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git ../blog
+- rm -rf ../blog/*
 - cp -rf ./public/* ../blog/
 - cd ../blog
 - git config --local user.name "$GIT_USER_ID"
@@ -16,5 +20,3 @@ after_success:
 - git add *
 - git commit -m "rebuilding site `date` from CI"
 - git push https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git --all
-
-

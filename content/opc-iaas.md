@@ -26,4 +26,4 @@ categories = []
   - [라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지](http://solatech.tistory.com/394): 2017.01.18
   - [라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(3) - 커스텀 이미지 업로드](http://solatech.tistory.com/395): 2017.01.18
   - [라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(4) - 구성 디자인 및 VM 관리](http://solatech.tistory.com/396): 2017.01.22
-- [Ravello 웨비나 - TalkIT](/post/ravello_talkit/): 201.02.24
+- [Ravello 웨비나 - TalkIT: 가상환경 클라우드 전환](/post/ravello_talkit/): 201.02.24
