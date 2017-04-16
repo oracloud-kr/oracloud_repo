@@ -152,6 +152,12 @@ Oracle ACC 주요 특징
   - MySQL Cloud Service
   - 등등등...
 - Oracle Developer Cloud과 유기적 개발 환경 구성
+- 지원 언어
+  - Java SE
+  - Node.js
+  - PHP
+  - Python
+  - 자바 기반 언어: JRuby
 
 [^1]:Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: [JFR 사용법](https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9))
 
