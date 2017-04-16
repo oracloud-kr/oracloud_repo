@@ -10,7 +10,7 @@ language = ""
 author = "taewan.kim"
 +++
 
-Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. ([관련 공지](https://www.oracle.com/corporate/acquisitions/stackengine/index.html)). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈 급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 Kubenetes와 Storm과 비교되는 StackEngine이라는 Docker 클러스터 운영 및 관리 소프트웨어를 개발해 왔습니다.
+Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. ([관련 공지](https://www.oracle.com/corporate/acquisitions/stackengine/index.html)). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈 급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon 과 같은 container orchestration 툴입니다.
 
 오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합 하였습니다. 이 결과물이 [Oracle Container Cloud Serivce](https://cloud.oracle.com/ko_KR/container)입니다.
 

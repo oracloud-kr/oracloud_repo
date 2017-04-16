@@ -10,7 +10,7 @@ thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravell
 language = ""
 +++
 
-노브레인 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석님께서 정리해 주신 라벨로 활용 문서입니다.
+(주)노브레이크 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석님께서 정리해 주신 라벨로 활용 문서입니다.
 
 라벨로를 이용한 모의해킹 실습 환경 구성을 주제로 4부에 걸쳐 시리즈된 문서입니다.
 
