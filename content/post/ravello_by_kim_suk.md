@@ -1,6 +1,6 @@
 +++
 tags = ["ravello","Virtualization"]
-date = "2017-04-13T11:23:39+09:00"
+date = "2017-03-25T11:23:39+09:00"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/it_jaebul.png"
 description = ""
 author = "taewan.kim"
