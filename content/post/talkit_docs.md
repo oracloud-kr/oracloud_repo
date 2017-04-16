@@ -3,17 +3,17 @@ author = "taewan.kim"
 tags = ["dbcs", "talkit", "webinar"]
 language = ""
 categories = ["Webinar"]
-thumbnailInPost = ""
+thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/post.jpg"
 title = "TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/list.png"
-description = ""
+description = "2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웹비나 동영상입니다. 오라클 클라우드의 데이터베이스 지원 방향과 데이터베이스 클라우드 서비스의 개요 및 활용 방법에 대한 전반적인 개요를 다룹니다."
 date = "2017-04-16T20:44:25+09:00"
 
 +++
 
 2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웹비나 동영상입니다.
 
- - 주제: 가상화 환경을 손쉽게 클라우드로 전환하기
+ - 주제: 오라클 데이터베이스를 클라우드에서 사용하기
  - 진행: 고우성PD
  - 패널:
    - 장성우 전무(한국오라클)
@@ -22,7 +22,7 @@ date = "2017-04-16T20:44:25+09:00"
    - 김준 컨설턴트(한국오라클)
  - 일시: 2017-03-24 오후 2시 ~ 오후 3시 30분
 
-90분 동안 진행된 웹비나는 다음과 같은 4개의 세세션으로 진행되었습니다.
+90분 동안 진행된 웹비나는 다음과 같은 4개의 세션으로 진행되었습니다.
 
 <table>
 <tr><th>세션</th><th>제목</th><th>패널</th></tr>
@@ -35,65 +35,29 @@ date = "2017-04-16T20:44:25+09:00"
 오라클 클라우드의 데이터베이스 지원 방향과 데이터베이스 클라우드 서비스의 개요 및 활용 방법에 대한 전반적인 개요를 다룹니다.
 
 
+### 1부. 데이터 관리 클라우드에서 클라우드를 전파하는 자의 오라클 데이터베이스 클라우드! (19:39)
 
- ### 1부. 라벨로, 무엇에 쓰는 물건인고! (18:18)
+ {{< youtube 6TIvu9wRAyg >}}
 
- {{< youtube ooTlsYl-5J8 >}}
-
- ***
-
- ### 2부. 라벨로, 전문가가 뜯어보기! (24:20)
-
- {{< youtube AKGFN2Vzh28 >}}
-
- ***
-
- ### 3부. 라벨로, 고객이 직접 얘기하기! (15:09)
-
- {{< youtube Uhq7_Nd79n0 >}}
-
- ***
-
- ### 4부. 라벨로, Q&A 파헤치기! (33:40)
- {{< youtube WhduCXz1M20 >}}
-
- ***
-
- ## 출처
- - [TalkIT: 오라클 데이터베이스를 클라우드에서 사용하기](https://talkit.tv/Event/1524/)
-
-<pre class="prettyprint linenums">
-def function(a, b):
-  kkk
-  kkk
-
-</pre>
-
-~~~
-ddd
-~~~
-
-*[HTML]: HyperText Markup Language
-
-각주 [^1] 는 이렇게 만든다.
-
-[^1]: 각주다.
-
----
 ***
-___
 
-```
-morngo
-fdfd
-fdfdfsfsfdfsfdsfsfsfdfsfsfsdfsfdsfsfsfafa
+### 2부. 데이터베이스 클라우드 서비스 쉽게 이해하기 (16:25)
 
-```
+  {{< youtube TfXGB9-S5kg >}}
 
+***
 
-*기울여쓰기(italic)* _기울여쓰기(italic)_
-**굵게쓰기(bold)** __굵게쓰기(bold)__
+### 3부. 데이터베이스 클라우드, 전문가가 뜯어보기! (18:45)
 
-> 인용문.
-> * 인용 목록
-> * 인용 목록
+{{< youtube yR0U5ayHPmU >}}
+
+***
+
+### 4부. 데이터베이스 클라우드,모두 함께 Q&A로 파헤치기! (29:09)
+
+{{< youtube iS7gMTtu1i8 >}}
+
+***
+
+## 출처
+ - [TalkIT: 오라클 데이터베이스를 클라우드에서 사용하기](https://talkit.tv/Event/1524/)
