@@ -77,7 +77,7 @@ OCCS 인스턴스는 1개의 Manager 노드와 1개 이상의 Worker 노드로 �
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step080.jpg)
 
-### OCCS: Services
+### Type 2-1. OCCS: Services
 
 OCCS는 Docker 이미지를 Serivce를 형태로 관리 합니다. Service는 Docker 이미지와 OCCS의 관리 설정( YAML)으로 구성된 고수준 관리 객체입니다. OCCS는 기본적으로 apache, nginx, jenkins, logstash, mariadb, haproxy를 23개의 서비스를 제공합니다. 이 서비스를 배포하여 컨테이너를 만들 수 있고, 기본 서비스를 참조하여 새로운 서비스를 만들고 등록할 수 있습니다.
 
@@ -87,13 +87,13 @@ Service의 설정을 위해서 아래와 같이 전용 UI 빌더, Docker run 설
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/docker_in_oc/editor.jpg)
 
-### OCCS: Stack
+### Type 2-2. OCCS: Stack
 
 Stack은 위에서 설명한 Service의 조합입니다. OCCS는 스택을 정의할 때 Docker compose 설정 포멧을 사용합니다. OCCS 콘솔 UI는 다음 그림과 같이 스택 설정을 위한 GUI를 제공합니다.  
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/docker_in_oc/stack_editor.jpg)
 
-### OCCS: Deployment
+### Type 2-3. OCCS: Deployment
 
 OCCS에서는 Service혹은 Stack을 실행하여 컨테이너로 만드는 것을 배포하고 합니다. Service와 Stack을 배포할 때 아래와 같이 컨테이너 수량, 배포 정책, 배포 호스트 선정 기준을 설정 할 수 있습니다.  
 
@@ -108,7 +108,7 @@ OCCS에서는 배포 과정을 UI로 확인 할 수 있습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step140.jpg)
 
-### OCCS: Resource Pool
+### Type 2-4. OCCS: Resource Pool
 
 호스트 서버를 상호 독립적 그룹으로 구성하는 단위입니다. 각 Resource Pool은 하나 이상의 호스트로 구성되면, 더커 환경을 관리하고, 복수의 호스트에 서비스와 스택을 배포하게 됩니다. 하나의 호스트는 하나의 Resource Pool에 포함되고, 하나의 Resource Pool은 여러 호스트를 포함합니다.
 
@@ -116,13 +116,13 @@ OCCS에서는 배포 과정을 UI로 확인 할 수 있습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step220.jpg)
 
-### OCCS: Monitoring
+### Type 2-5. OCCS: Monitoring
 
 OCCS에 배포된 모든 컨테이너는 웹 UI를 통해서 로그와 상태를 확인 할 수 있습니다. 또한 주기적으로 상태가 체크되어 컨테이너 상태에 이상 증상이 대쉬보드에 출력됩니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step390.jpg)
 
-### OCCS 요약
+### Type 2-6. OCCS 요약
 
 OCCS는 오라클 클라우드의 더커 컨테이너 IaaS 서비스입니다. Docker 컨테이너 환경의 모든 것 (이미지 설정 부터 컨테이너 구성 및 모니터링, 자동화)을 지원하는 서비스입니다. OCCS과 Oracle Developer CS를 결합할 경우 완성도 높은 Docker Orchestration환경과 DepOps의 환경을 구성할 수 있습니다.
 
@@ -164,10 +164,11 @@ Oracle ACC에 애플리케이션을 클러스터로 배포할 수 있습니다. 
 - 부하분산(Load Balancing) - 부하를 로드밸런서가 여러 인스턴스에 분산. 내부 적으로 Oracle Traffic Director 사용
 - 고가용성(High Availability) - 애플리케이션 클러스터링과 부하 분산을 통해서 단일 인스턴스 장애를 클라이언트가 인식하지 못하게 함
 
-### Oracle ACC 요약
+### Type 3-1. Oracle ACC 요약
 
 Oracle ACC는 Docker의 운영 보다는 Cloud Native, Polyglot, MSA(Micro Service Architecture)과 같이 애플리케이션 배포와 부하 분산 등 애플리케이션 개발에 집중할 수 있는 환경을 제공합니다. 소스코드로 부터 직접 인스턴스를 생성하고 클러스터를 구성하는 방식으로 운영되기 때문에 효율적인 자원 활용과 저렴한 인프라 운영환경, 관리비용 최적화, 애자일 개발환경에 적합한 서비스 입니다.
 
+***
 
 ## Summary: 오라클 클라우드의 Docker 지원
 
