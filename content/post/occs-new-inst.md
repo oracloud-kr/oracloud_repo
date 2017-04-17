@@ -19,7 +19,7 @@ Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 �
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-view.jpg)
 
 
-본 문서는 Oracle Container Cloud Serive를 시작하는 방법을 Step-By-Step 형식으로 소개하겠습니다. 본 문서의 내용을 실습하기 위해서는 Oracle Cloud 계정이 필요합니다. Oracle Cloud 계정이 없으시다면 다음 문서를 참조하하여 계정을 만드시기 바라비다.
+본 문서는 Oracle Container Cloud Serive를 시작하는 방법을 Step-By-Step 형식으로 소개하겠습니다. 본 문서의 내용을 실습하기 위해서는 Oracle Cloud 계정이 필요합니다. Oracle Cloud 계정이 없으시다면 다음 문서를 참조하하여 계정을 생성하시기 바랍니다.
 
 - [Oracle Cloud 계정 생성하기](http://www.oracloud.kr/post/accont/)
 
