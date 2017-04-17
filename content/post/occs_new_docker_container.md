@@ -31,12 +31,12 @@ Oracle Container Cloud Service는 [Kubernetes](https://kubernetes.io/)(k8s), [do
 
 <table>
 <tr><th>Container CS 용어</th><th>설명</th><tr>
-<tr><td>Service</td><td>단일 이미지를 컨테이너에 구동하기 위한 템플릿과 관련 정보 - 포트, 스토리지 볼륨 등</td></tr>
-<tr><td>Stack</td><td>복수의 서비스를 컨테이너에 구동하기 위한 템플릿 및 관련 정보 Docker Compose 포멧</td></tr>
+<tr><td>Service</td><td>OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, 1개의 Docker 이미지를 OCCS에 맞도록 설정한 것</td></tr>
+<tr><td>Stack</td><td>복수의 Serivce로 구성된 이미지 관리 체계. Compose 설정 포멧을 그대로 사용하는 고수준 설정 객체</td></tr>
 <tr><td>Deployment</td><td>Service와 Stack을 배포하여 하나 이상의 컨테이너를 만드는 것</td></tr>
 <tr><td>Resource Pool</td><td>호스트 서버를 상호 독립적으로 그룹으로 구성하는 단위. 각 Resource Pool은 하나 이상의 호스트로 구성되면, 더커 환경을 관리하고, 복수의 호스트에 서비스와 스택을 배포하게 됨. 하나의 호스트는 하나의 Resource Pool에 포함되고, 하나의 Resource Pool은 여러 호스트를 호함.</td></tr>
-<tr><td>Service</td><td>OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지를 OCCS에 맞도록 설정한 것</td></tr>
-<tr><td>Stack</td><td>복수의 Serivce로 구성된 이미지 관리 체계. Compose 설정 포멧을 그대로 사용하는 고수준 설정 객체</td></tr>
+<tr><td>Container</td><td>Serivce혹은 Stack형태로 배포된 Docker 이미지</td></tr>
+<tr><td>Service Discovery</td><td>컨테이너의 네트워크 설정 정보를 관리하는 서비스. 각 컨테이어는 연동되는 컨테이너와의 통신에 이 정보를 활용</td></tr>
 </table>
 
 ## OCCS에 Docker 이미지 배포하기
