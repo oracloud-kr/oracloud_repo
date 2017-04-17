@@ -52,8 +52,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "오라클 클라우드 새소식"
-    url = "/opc-news/"
+    name = "OPC 용어 정리"
+    url = "/opc-terminology/"
     weight = -3
 [[menu.main]]
     name = "오라클 클라우드 챗팅룸"
