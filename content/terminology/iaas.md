@@ -2,7 +2,7 @@
 description = ""
 language = ""
 categories = []
-title = "Oracle Compute Cloud Service의 용어 정리"
+title = "Oracle Compute CS 용어사전"
 thumbnailInPost = ""
 thumbnailInList = ""
 date = "2017-04-17T15:36:33+09:00"
@@ -10,7 +10,7 @@ author = ""
 tags = []
 
 +++
-Oracle Compute Cloud Service의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
+Oracle Compute CS의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
 
 ### Image list
 > 정의:
@@ -36,9 +36,18 @@ Oracle Compute Cloud Service의 주요 용어를 정리합니다. Oracle Compute
   - Persistent Boot Disk는 블록 스토리지에서 영역을 할당 받는 스토리지
   - Nonpersistent Boot Disk는 Instance가 생성되는 호스트의 스토리지를 사용
 
-
 ### IP Networks
+> 정의:
+> IP Network을 사용하여 Oracle Compute CS 계정에 IP 서브넷을 정의할 수 있다.
+> IP Network의 주소 범위는 IP Network 생성 시점에 설정하는 ```address preifx```에 따라서 결정된다.
+> IP Network에 할당되는 주소는 공유 네트워크(Shared Network)에 포함되지 않는다. 가상 머신을 IP Network에 추가하면
+> 인스턴스에 해당 IP Network(subnet)의 IP 주소가 할당된다.
+> 인스턴스에 할당되는 IP 주소를 완전하게 제어할 수 있다.
+
 ### IP Network Exchange
+> 정의: IP Network Exchange는 복수의 IP Network(subnet) 사이의 통신을 가능하게 한다.
+> Network Exchage에 연결된 IP Network에 위치하는 Instance들은 상호간의 NAT없이도 패킷을 교환할 수 있다.
+
 ### IP Reservation
 ### Launch Plan
 ### Machine Image

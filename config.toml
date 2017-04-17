@@ -52,7 +52,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "OPC 용어 정리"
+    name = "OPC 용어사전"
     url = "/opc-terminology/"
     weight = -3
 [[menu.main]]

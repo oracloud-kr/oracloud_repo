@@ -52,7 +52,7 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "오라클 용어 정리"
+    name = "오라클 용어사전"
     url = "/opc-terminology/"
     weight = -3
 [[menu.main]]
