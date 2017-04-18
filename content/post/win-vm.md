@@ -21,7 +21,6 @@ description = "오라클 클라우드의 IaaS(Oracle Compute Cloud Service)를 �
 
 ### 실습 절차
 오라클 클라우드에 Window VM을 생성하는 실습은 다음과 같은 순서로 진행됩니다.
-각 단계는 "Step by Step" 형태로 설명하겠습니다.
 
 1. Oracle Cloud 로그인
 1. Window VM Instance 생성

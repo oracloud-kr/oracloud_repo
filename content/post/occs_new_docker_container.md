@@ -10,11 +10,11 @@ language = ""
 author = "taewan.kim"
 
 +++
-Oracle Container Cloud Service는 [Kubernetes](https://kubernetes.io/)(k8s), [docker-swarm](https://docs.docker.com/swarm/overview/) 그리고 [marathon](https://mesosphere.github.io/marathon/) 과 같은 container orchestration 툴을 포함하는 Docker 서비스 입니다.
+Oracle Container Cloud Service(이하 OCCS)는 Docker 서비스로 [Kubernetes](https://kubernetes.io/)(k8s), [docker-swarm](https://docs.docker.com/swarm/overview/) 그리고 [marathon](https://mesosphere.github.io/marathon/) 과 같은 container orchestration 툴을 포함합니다.
 
-이 문서에서는 [Oracle Container CS 생성 절차](/post/occs-new-inst/)에서 컨테이너 서비스 인스턴스를 생성한 다음에, 더커 컨테이너를 실행하는 방법을 설명합니다.
+이 문서는 OCCS의 인스턴스가 이미 생성된 상태를 전제로 합니다. 아직 OCCS 인스턴스를 만들지 않았다면, [Oracle Container CS 생성 절차](/post/occs-new-inst/)를 참조하여 인스턴스를 생성하시기 바랍니다.
 
-본 문서에서는 다음과 같은 내용을 다룰 것 입니다.
+본 문서에서는 다음과 같은 내용을 다룰것 입니다.
 
 - 도커 컨테이너 배포 및 접속 (Hello World 웹 페이지)
 - 도커 컨테이너 이동

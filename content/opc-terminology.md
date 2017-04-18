@@ -8,5 +8,5 @@ tags = []
 
 +++
 
-## Infrastruec Cloud Service
+## Infrastucture Cloud Service
 - [Oracle Compute Cloud Service](/terminology/iaas/)
