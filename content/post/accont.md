@@ -44,12 +44,12 @@ Oracle Cloud의 트라이얼 계정을 이용하여 무료로 오라클 클라�
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step02.jpg)
 
 오라클 클라우드 계정을 만들기 위해서는 OTN(Oracle Technology Networks) 계정이 필요합니다.
-기존에 OTN 계정이 있다면 <그림 3>의 로그인 페이지에서 로그인을하고 Oracle Cloud 계정 생성을 진행합니다.
-기존에 OTN 계정이 없다면 로그인 페이지의 오른쪽 하단에 위치한 ```Create Account``` 버튼을 클릭하여 OTN 계정 생성 작업을 진행합니다.
+기존에 OTN 계정이 있다면 <그림 3>의 로그인 페이지에서 로그인을 하고 Oracle Cloud 계정 생성을 진행합니다.
+기존에 OTN 계정이 없다면 로그인 페이지의 오른쪽 아래에 위치한 ```Create Account``` 버튼을 클릭하여 OTN 계정 생성 작업을 진행합니다.
 
 > 현재 오라클 클라우드 계정 신청의 빠른 처리를 위해서 회사 메일을 사용하는 것이 효과적입니다.
-> gamil, naver daum 메일 사용시 처리가 지연될 수 있습니다.
-> 일반적인 계정 생성 소유 시간은 1시간 내외 입니다.
+> Gmail, Naver, Daum 메일 사용 시 처리가 지연될 수 있습니다.
+> 일반적인 계정 생성 소유 시간은 1시간 내외입니다.
 
 - 그림 3. 오라클 클라우드 로그인 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step03.jpg)
@@ -65,13 +65,13 @@ Oracle Cloud의 트라이얼 계정을 이용하여 무료로 오라클 클라�
 - 그림 5. OTN 계정 생성 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step05.jpg)
 
-<그림 6>과 같이 계정 등록 시 입력한 메일 정보를 점증하기 위한 메일이 오라클로 부터 발송됩니다.
+<그림 6>과 같이 계정 등록 시 입력한 메일 정보를 점증하기 위한 메일이 오라클로부터 발송됩니다.
 메일의 "Verify Email Address"를 클립하면 <그림 7>과 같은 페이지가 되며 OTN 계정 생성 절차가 완료됩니다.
 
 - 그림 6. 등록 E-mail 검증 메일
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step06.jpg)
 
-<그림 7>은 OTN 계정 등록 완료 페이지 입니다. 이 페이지에서 "계속" 버튼을 클릭하면 Oracle Cloud 계정 생성을 위한 다음 절차로 넘어 갑니다.
+<그림 7>은 OTN 계정 등록 완료 페이지입니다. 이 페이지에서 ```계속``` 버튼을 클릭 하면 Oracle Cloud 계정 생성을 위한 다음 절차로 넘어 갑니다.
 
 - 그림 7. OTN 계정 등록 완료 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step07.jpg)
@@ -81,12 +81,12 @@ Oracle Cloud의 트라이얼 계정을 이용하여 무료로 오라클 클라�
 - 그림 8. OTN 계정 등록 완료 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step08.jpg)
 
-<그림 9>와 같은 SMS가 수신됩니다. 메세지에 포함된 6자리 숫자를 그림 10와 같이 입력합니다.
+<그림 9>와 같은 SMS가 수신됩니다. 메시지에 포함된 6자리 숫자를 <그림 10>과 같이 입력합니다.
 
 - 그림 9. 오라클 클라우드 계정에 필요한 추가 정보 입력 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step09.jpg)
 
-SMS로 전단된 인증 번호화 추가 정보를 입력하여 작업을 완료합니다.
+SMS로 전달된 인증 번호와 추가 정보를 입력하여 작업을 완료합니다.
 
 - 그림 10. 오라클 클라우드 정보입력 완료
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step10.jpg)
@@ -113,7 +113,7 @@ SMS로 전단된 인증 번호화 추가 정보를 입력하여 작업을 완료
 - 그림 14. 데이터 센터 선택
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step14.jpg)
 
-로그인 하시 위해서는 ```Identity Domain```을 입력해야 합니다.
+로그인 하기 위해서는 ```Identity Domain```을 입력해야 합니다.
 이 정보는 <그림 12>의 확인 메일에서 확인할 수 있습니다.
 
 - 그림 15. Identity Domain 입력
@@ -134,13 +134,13 @@ SMS로 전단된 인증 번호화 추가 정보를 입력하여 작업을 완료
 - 그림 18. 환영 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step18.jpg)
 
-환영 페이지를 종료하면 <그림 19>와 같이 오라클 클라우드 대쉬보드 페이지를 확인 할 수 있습니다.
+환영 페이지를 종료하면 <그림 19>와 같이 오라클 클라우드 대시보드 페이지를 확인할 수 있습니다.
 
 - 그림 19. Dashborad 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/account/step19.jpg)
 
 
-지금까지 오라클 클라우드 계정 생성 절차를 살펴 보았습니다.
+지금까지 오라클 클라우드 계정 생성 절차를 살펴보았습니다.
 계정 생성은 인증 및 점증 절차까지 포함하여 약 1시간 정도 소요됩니다.
 
 현재 트라이얼 계정으로 다음과 같은 서비스에 접근할 수 있습니다.
