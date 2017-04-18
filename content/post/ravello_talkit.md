@@ -11,7 +11,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/talkit
 
 +++
 
-2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웹비나 동영상입니다.
+2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웨비나 동영상입니다.
 
 - 주제: 가상화 환경을 손쉽게 클라우드로 전환하기
 - 진행: 고우성PD

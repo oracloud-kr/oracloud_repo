@@ -6,12 +6,12 @@ categories = ["Webinar"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/post.jpg"
 title = "TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/list.png"
-description = "2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웹비나 동영상입니다. 오라클 클라우드의 데이터베이스 지원 방향과 데이터베이스 클라우드 서비스의 개요 및 활용 방법에 대한 전반적인 개요를 다룹니다."
+description = "2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웨비나 동영상입니다. 오라클 클라우드의 데이터베이스 지원 방향과 데이터베이스 클라우드 서비스의 개요 및 활용 방법에 대한 전반적인 개요를 다룹니다."
 date = "2017-04-16T20:44:25+09:00"
 
 +++
 
-2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웹비나 동영상입니다.
+2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웨비나 동영상입니다.
 
  - 주제: 오라클 데이터베이스를 클라우드에서 사용하기
  - 진행: 고우성PD

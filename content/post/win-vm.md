@@ -11,7 +11,6 @@ description = "오라클 클라우드의 IaaS(Oracle Compute Cloud Service)를 �
 
 +++
 
-
 오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 ["오라클 클라우드 계정 생성하기"](http://taewan.kim/blog/2016/10/06/account_reg_of_oracloud/ ) 를 먼저 확인하시기 바랍니다.
 
 ## Oracle Cloud VM 인스턴스 생성 실습

@@ -9,7 +9,7 @@ title = "oracloud.kr 오픈"
 author = "jinyeun.park"
 language = ""
 +++
-
+ 
 한국오라클 클라우드 팀에서 운영하는 oracloud.kr 블로그를 오픈합니다.
 
 oracloud.kr은 오라클 클라우드에 대한 정보가 필요하신 한국 개발자 커뮤니티와 고객분에게 오라클 클라우드 관련 정보를 지속적으로 신속하게 제공하는 것을 목표로 합니다.
