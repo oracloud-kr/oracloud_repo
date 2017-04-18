@@ -1,0 +1,10 @@
+archetypes/
+config.toml
+content/
+data/
+layouts/
+LICENSE
+README.md
+static/
+test
+themes/
