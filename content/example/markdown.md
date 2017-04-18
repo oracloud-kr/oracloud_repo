@@ -161,5 +161,3 @@ Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공�
 
 
 ## gitst
-
-{{< gist taewanme gist:5aec347b6fbfdc96495d3cc522b906cd >}}
