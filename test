@@ -1,0 +1,11 @@
+archetypes/
+config.toml
+config.toml.production
+content/
+data/
+layouts/
+LICENSE
+README.md
+static/
+test
+themes/
