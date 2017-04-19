@@ -6,7 +6,7 @@ theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
    
-
+     
 
 [Author]
     name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
