@@ -25,4 +25,4 @@ oracloud.kr에서는 다음과 같은 정보를 제공할 예정입니다.
 oracloud.kr에서는 댓글을 위한 Disqus 서비스와 채팅 서비스인 gitter를 사용하고 있습니다.
 oracloud.kr에 문의 사항이 있으실 경우에는 Disqus와 gitter에 글을 남겨 주시기 바랍니다.
 
-감사합니다.
+감사합니다..
