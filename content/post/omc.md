@@ -5,8 +5,8 @@ date = "2017-04-21T15:00:47+09:00"
 description = "차세대 통합 모니터링, 관리 및 분석 클라우드 서비스 제품군인 Oracle Management Cloud(OMC)를 소개 합니다."
 language = ""
 tags = ["oracle","OMC","cloud","monitoring"]
-thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_overview/OMC01.jpg"
-thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_overview/OMC01.jpg"
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_overview/logo.jpg"
+thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_overview/list.png"
 title = "Oracle Management Cloud(OMC) 소개"
 
 +++
