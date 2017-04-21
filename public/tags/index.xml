@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 한국 오라클 클라우드 팀</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on 한국 오라클 클라우드 팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Apr 2017 19:36:38 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cloud</title>
+      <link>/tags/cloud/</link>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      
+      <guid>/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Demo</title>
+      <link>/tags/demo/</link>
+      <pubDate>Tue, 11 Apr 2017 17:05:37 +0900</pubDate>
+      
+      <guid>/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iaas</title>
+      <link>/tags/iaas/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/tags/iaas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oracle</title>
+      <link>/tags/oracle/</link>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      
+      <guid>/tags/oracle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oracle Cloud</title>
+      <link>/tags/oracle-cloud/</link>
+      <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
+      
+      <guid>/tags/oracle-cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Virtualization</title>
+      <link>/tags/virtualization/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vm</title>
+      <link>/tags/vm/</link>
+      <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
+      
+      <guid>/tags/vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Window</title>
+      <link>/tags/window/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/tags/window/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

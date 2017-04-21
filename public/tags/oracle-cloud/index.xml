@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oracle Cloud on 한국 오라클 클라우드 팀</title>
+    <link>/tags/oracle-cloud/</link>
+    <description>Recent content in Oracle Cloud on 한국 오라클 클라우드 팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 21:59:47 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/oracle-cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>오라클 클라우드 계정 생성하기</title>
+      <link>/post/accont/</link>
+      <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
+      
+      <guid>/post/accont/</guid>
+      <description>오라클 클라우드에는 무료로 오라클 클라우드를 경험할 수 할 수 있는 Free Trial Account를 제공하고 있습니다. 이 계정을 이용하여 Oracle Database Cloud Service(이하 CS), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS를 사용할 수 있습니다. 본 문에서는 Oracle Cloud의 NewBOracle Cloud의 계정을 생성하는 방법에 대하여 살펴보겠습니다. Oracle Cloud의 무료 계정은 최대 2개월까지 사용할 수 있습니다.
+Oracle Cloud 계정 등록 절차 오라클 클라우드의 계정 등록 절차는 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>oracloud.kr 오픈</title>
+      <link>/post/oracloud/</link>
+      <pubDate>Wed, 01 Mar 2017 10:43:37 +0900</pubDate>
+      
+      <guid>/post/oracloud/</guid>
+      <description>한국오라클 클라우드팀에서 운영하는 oracloud.kr 블로그를 오픈합니다.
+oracloud.kr은 오라클 클라우드에 대한 정보가 필요하신 한국 개발자 커뮤니티와 고객분에게 오라클 클라우드 관련 정보를 신속하고 지속적으로 제공하는 것을 목표로 합니다.
+oracloud.kr에서는 다음과 같은 정보를 제공할 예정입니다.
+ 오라클 클라우드 최신 변경 사항 공지 오라클 클라우드 최신 뉴스 오라클 클라우드 튜토리얼 오라클 클라우드 사용법 오라클 클라우드 발표 자료 배포  oracloud.kr에서는 댓글을 위한 Disqus 서비스와 챗팅을 서비스인 gitter를 사용하고 있습니다. oracloud.kr에 문의 사항이 있으실 경우에는 Disqus와 gitter에 글을 남겨 주시기 바랍니다.</description>
+    </item>
+    
+  </channel>
+</rss>

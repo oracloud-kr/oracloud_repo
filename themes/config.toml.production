@@ -1,0 +1,62 @@
+baseurl = "http://www.oracloud.kr/"
+title = "Oracle Public Cloud - 기술블로그"
+languageCode = "ko-kr"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
+googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
+
+
+
+[Author]
+    name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
+    bio = "오라클 클라우드 기술 지원 담당"
+    avatar = "img/avatar.png"
+
+[Params]
+    subtitle = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀" # Subtitle of your site
+    description = "오라클 클라우드 기술 블로그" # Description of your site
+    opengraph = true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = true
+    post_navigation = true
+    highlight = "github"
+    github = "https://github.com/oracloud-kr-teamblog"
+    slideshare = "https://www.slideshare.net/ssusercda07e"
+    youtube = "https://www.youtube.com/channel/UCboJr3TLlqeDqpBURRdb_lg"
+    email = "oracloud.kr@gmail.com"
+    codehighlight = true
+    codeskin = "sons-of-obsidian"
+
+[Params.widgets]
+    search = true # Enable "Search" widget
+    recent_articles = true # Enable "Recent arcticles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = -100 # menu의 sorting을 담당
+[[menu.main]]
+    name = "OPC IaaS"
+    url = "/opc-iaas/"
+    weight = -5 # menu의 sorting을 담당
+[[menu.main]]
+    name = "Oracle Cloud 소개"
+    url = "/opc/"
+    weight = -10
+[[menu.main]]
+    name = "OPC PaaS"
+    url = "/opc-paas/"
+    weight = -4
+[[menu.main]]
+    name = "오라클 용어사전"
+    url = "/opc-terminology/"
+    weight = -3
+[[menu.main]]
+    name = "오라클 클라우드 챗팅룸"
+    identifier = "블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."
+    url = "https://gitter.im/oracloud-korea-user-group/Lobby"
+    weight = 1

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Virtualization on 한국 오라클 클라우드 팀</title>
+    <link>/tags/virtualization/</link>
+    <description>Recent content in Virtualization on 한국 오라클 클라우드 팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 10 Mar 2017 22:42:46 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>오라클 클라우드에서 window VM 인스턴스 생성</title>
+      <link>/post/win-vm/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/post/win-vm/</guid>
+      <description>오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo; 를 먼저 확인하시기 바랍니다.
+Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서를 실습함에 있어서 윈도우와 &amp;ldquo;OS X&amp;rdquo;의 차이는 거의 없습니다. Window VM을 생성한 후, RDP로 Window VM에 접속한는 부분에서만 차이가 있습니다. 이 부분은 Window와 &amp;ldquo;OS X&amp;rdquo;를 구분하여 작성했습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
