@@ -5,7 +5,7 @@ date = "2017-03-15T14:35:14+09:00"
 description = ""
 language = ""
 tags = ["Ravello", "Oracle Cloud", "Nested Virtualization", "Ravello"]
-thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello_logo.jpg"
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/ravello_overview/ravello_logo.jpeg"
 thumbnailInPost = ""
 title = "Oracle Ravello Cloud Service 소개"
 +++
