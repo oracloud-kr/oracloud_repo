@@ -5,8 +5,8 @@ date = "2017-03-07T08:54:32+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
 title = "Oracle Storage Cloud Serivce 기본 정책 설정"
 author = "taewan.kim"
-categories = []
-tags = []
+categories = ["cloud"]
+tags = ["Object Storage", "Storage"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/post.png"
 
 +++
