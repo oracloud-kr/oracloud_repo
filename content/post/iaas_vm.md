@@ -4,7 +4,7 @@ thumbnailInPost = ""
 description = "오라클 클라우드의 IaaS(Oracle Compute Cloud Service)를 이용하여 인스턴스를 생성하는 방법을 살펴보겠습니다. Step-By-Step 스타일로 VM 인스턴스 절차를 정리합니다. "
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/iaas_quick/Oracle-IaaS.jpg"
 date = "2017-03-05T22:20:25+09:00"
-language = ""
+language = "bsh"
 categories = ["Oracle Cloud", "IaaS"]
 title = "오라클 IaaS를 이용한 VM 인스턴스 생성"
 author = "taewan.kim"
@@ -45,9 +45,8 @@ OPC에 인스턴스를 생성하는 과정에는 접근할 컴퓨터의 SSH 공�
 
 리눅스와 OS X에서 OPC의 인스턴스에 접속할 때 사용되는 암호화 키는 다음과 같은 명령으로 생성됩니다.
 
-```bash
-ssh-keygen -t rsa
-```
+<pre class="prettyprint">ssh-keygen -t rsa
+</pre>
 
 [그림 1]은 ssh-keygen 명령으로 암호화 키를 생성하는 스크린 샷입니다.
 ssh-keygen 명령으로 암호화 키를 생성할 때 기본 파일 생성 디렉터리와 파일명은 다음과 같습니다.
@@ -55,7 +54,8 @@ ssh-keygen 명령으로 암호화 키를 생성할 때 기본 파일 생성 디�
 - 기본 디렉터리: <USER_HOME>/.ssh/
 - 기본 파일명: id_rsa / id_rsa.pub
 
-```bash
+<pre class="prettyprint">
+
 taewan@.ssh $pwd
 /Users/taewan/.ssh
 taewan@.ssh $ls -al
@@ -64,7 +64,8 @@ drwxr-xr-x+ 147 taewan  staff  4998 10 11 15:15 ..
 -rw-------    1 taewan  staff  1675 10 11 13:58 id_rsa
 -rw-------    1 taewan  staff   415 10 11 13:58 id_rsa.pub
 taewan@.ssh $
-```
+
+</pre>
 
 - 그림 1. ssh-keygen 명령을 이용한 암호화키 생성
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/iaas_quick/step010.jpg)
