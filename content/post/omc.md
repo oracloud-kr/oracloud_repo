@@ -41,7 +41,10 @@ OMC의 Unified Platform은 고객이 IT 안정성을 향상시키고 애플리�
 - 비즈니스 분석가
     + 운영효율성을 향상시키는 동시에 자산활용도를 향상시킵니다.
 
-
-[더 많은 정보 알아보기](https://cloud.oracle.com/management)
-
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/NWaOaLe5stKM03" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">
+
+## 추가 정보
+
+- [Oracle Management Cloud 홈페이지](https://cloud.oracle.com/management)
+- [Oracle Management Cloud: A Day in the Life of a CIO ][https://www.youtube.com/watch?v=fQQ-VDa5GwE&feature=youtu.be] - Youtube 동영상
+- [OMC 문서 홈페이지][http://docs.oracle.com/en/cloud/paas/management-cloud/index.html] - docs.oracle.com
