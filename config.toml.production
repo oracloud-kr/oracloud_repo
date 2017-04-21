@@ -1,12 +1,12 @@
-baseurl = "/"
-title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
-languageCode = "en-us"
+baseurl = "http://www.oracloud.kr/"
+title = "Oracle Public Cloud - 기술블로그"
+languageCode = "ko-kr"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
-   
-     
+googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
+
+
 
 [Author]
     name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
@@ -14,7 +14,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     avatar = "img/avatar.png"
 
 [Params]
-    subtitle = "Oracle Public Cloud - 기술블로그" # Subtitle of your site
+    subtitle = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀" # Subtitle of your site
     description = "오라클 클라우드 기술 블로그" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
@@ -52,7 +52,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "OPC 용어사전"
+    name = "오라클 용어사전"
     url = "/opc-terminology/"
     weight = -3
 [[menu.main]]

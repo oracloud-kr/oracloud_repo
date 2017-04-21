@@ -663,11 +663,11 @@ select {
 
 .loop__thumbnail {
 	float: left;
-	margin-right: 20px;
+	margin-right: 0px;
 }
 
 .loop__thumbnail img {
-	width: 100%;
+	width: 80%;
 	max-width: 235px;
 }
 
