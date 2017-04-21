@@ -46,5 +46,7 @@ OMC의 Unified Platform은 고객이 IT 안정성을 향상시키고 애플리�
 ## 추가 정보
 
 - [Oracle Management Cloud 홈페이지](https://cloud.oracle.com/management)
-- [Oracle Management Cloud: A Day in the Life of a CIO ][https://www.youtube.com/watch?v=fQQ-VDa5GwE&feature=youtu.be] - Youtube 동영상
-- [OMC 문서 홈페이지][http://docs.oracle.com/en/cloud/paas/management-cloud/index.html] - docs.oracle.com
+- [Oracle Management Cloud: A Day in the Life of a CIO ](https://www.youtube.com/watch?v=fQQ-VDa5GwE&feature=youtu.be)
+  - Youtube 동영상
+  - OMC 개념 소개
+- [OMC 공식 문서 홈페이지](http://docs.oracle.com/en/cloud/paas/management-cloud/index.html) - docs.oracle.com
