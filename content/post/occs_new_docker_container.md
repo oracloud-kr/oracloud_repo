@@ -108,7 +108,9 @@ Contaienr 콘솔 로그인이 정상적으로 완료되면, Contaienr 콘솔의 
 - 그림 9. Contaienr 콘솔 대시보드
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step080.jpg)
 
-## 'Hello World' 컨테이너 배포
+## 서비스 배포 및 OCCS 기본 기능
+
+### HelloWorld 서비스 배포
 
 이제 Nginx에서 동작하는 Hello World 웹 애플리케이션 더커 이미지를 배포하여 컨테이너를 생성할 것입니다.
 Contaienr 콘솔 대시보드의 왼쪽 메뉴에서 <그림 10>와 같이 ```Services``` 메뉴를 클릭하면, OCCS에 빌트인으로 등록되어 있는 23개 서비스 목록이 출력됩니다.
@@ -241,7 +243,10 @@ OCCS의 Service를 시작하면 컨테이너 네트워크 구성 정보가 Servi
 - 그림 27. Service Discovery 컨테이너 등록 정보 조회
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step270.jpg)
 
+## Stack 배포 & Scale-out
+
 ### Stack 배포
+
 OCCS에서 Stack은 복수의 Service로 구성된 이미지 관리 체계이며, 각 서비스의 설정은 Compose 포맷을 사용합니다.
 OCCS에는 빌트인으로 3개 Stack이 포함되어 있습니다. 다음은 OCCS의 기본 Stack 목록입니다.
 
