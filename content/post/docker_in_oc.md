@@ -144,7 +144,7 @@ Oracle Application Container Cloud는 Oracle Java SE, Node.js, PHP, Python 애�
 Oracle ACC 주요 특징
 
 - 사전에 설정된 Java, Node.js, PHP, Python을 위한 환경 제공 (Docker)
-- Java SE는 Java Flight Recorder[^1], Java Mission Control[^2], 고급 메모리 관리 기능, 주지적 패치 제공
+- Java SE는 Java Flight Recorder[^2], Java Mission Control[^3], 고급 메모리 관리 기능, 주지적 패치 제공
 - 주요 프레임워크(Spring, play, jersey)과 컨테이너(Tomcat) 지원  
 - JVM 기반 언어 지원:  JRuby
 - 엔터프라이즈급 지원
@@ -162,9 +162,9 @@ Oracle ACC 주요 특징
   - Python
   - 자바 기반 언어: JRuby
 
-[^1]:Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: [JFR 사용법](https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9))
+[^2]:Java Flight Recorder(JFR): 동작하는 JVM과 애플리케이션을 상세 기록함. 이 기록 데이터는 execution profile, GC 통계, optimization decisions, 객체 할당, heap 통계, Lock과 I/O 지연 이벤트를 포함합니다. 이 정보는 Java Mission Control에서 분석 가능합니다. (상제 정보는 다음 링크를 참조: [JFR 사용법](https://blogs.oracle.com/javakr/entry/java_flight_recorder_jfr_%EC%82%AC%EC%9A%A9))
 
-[^2]:Java Mission Control: Java Mission Control 이란 오라클에서 제공되는 Java Advanced 제품의 일부로, 엔터프라이즈의 자바 애플리케이션의 상태를 실시간으로 모니터링 할 수 있는 도구다. (상제 정보는 다음 링크를 참조: [Java Mission Control 사용법](https://blogs.oracle.com/javakr/entry/java_mission_control_%EC%82%AC%EC%9A%A9%EB%B2%95))
+[^3]:Java Mission Control: Java Mission Control 이란 오라클에서 제공되는 Java Advanced 제품의 일부로, 엔터프라이즈의 자바 애플리케이션의 상태를 실시간으로 모니터링 할 수 있는 도구다. (상제 정보는 다음 링크를 참조: [Java Mission Control 사용법](https://blogs.oracle.com/javakr/entry/java_mission_control_%EC%82%AC%EC%9A%A9%EB%B2%95))
 
 Oracle ACC에 애플리케이션을 클러스터로 배포할 수 있습니다. Oracle ACC의 클러스터 고려 사항은 다음과 같습니다.
 
