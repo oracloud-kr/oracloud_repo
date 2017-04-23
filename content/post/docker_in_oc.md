@@ -62,7 +62,7 @@ Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출�
 
 OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Lifecycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS[^1]를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.
 
-[^1]Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.
+[^1]:Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.
 
 OCCS의 주요 기능은 다음과 같습니다.
 
