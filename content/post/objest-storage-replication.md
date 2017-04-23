@@ -3,7 +3,7 @@ language = ""
 description = "오라클 클라우드 계정을 생성한 후 Oracle Storage Cloud Service의 기본 복제 정책을 설정해야 합닏. "
 date = "2017-03-07T08:54:32+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
-title = "Oracle Storage Cloud Serivce 기본 정책 설정"
+title = "Oracle Storage Cloud Serivce 활성화"
 author = "taewan.kim"
 categories = ["cloud"]
 tags = ["Object Storage", "Storage"]
@@ -11,9 +11,9 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage
 
 +++
 
-Oracle Storage Cloud Serivce(이하 Storage Cloud)은 오라클 클라우드 서비스의 핵심 서비스입니다.
-오라클 클라우드의 다수 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다.
-오라클 클라우드 서비스에서 Storage Cloud를 사용하는 대표적인 서비스는 다음과 같습니다.
+Oracle Storage Cloud Serivce(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다.
+오라클 클라우드의 대부분의 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다.
+오라클 클라우드에서 Storage Cloud를 사용하는 서비스는 다음과 같습니다.
 
 | 서비스 | 설명 |
 | --- | --- |
@@ -21,8 +21,10 @@ Oracle Storage Cloud Serivce(이하 Storage Cloud)은 오라클 클라우드 서
 | Database CS (이하 DBCS) | DBCS는 데이터베이스 백업에 Storage Cloud를 사용합니다. DBCS 인스턴스 생성 시 Storage Cloud 정보를 입력합니다. 필수 사항은 아니며 선택적 입력필드입니다.|
 | Big Data - Compute Edition (이하 BDCE) | BDCE는 Spark에서 데이터를 읽어오는 스토리지로 Storage Cloud를 사용합니다. 인스턴스 생성시 Cloud Storage Container, 인증정보를 입력해야 합니다.|
 
-오라클 클라우드에서 Storage Cloud를 사용하기 때문에 오라클 클라우드 계정을 생성한 후에
-Storage Cloud의 기본 정책(데이터 복제 정책)을 설정하는 것이 좋습니다.
+오라클 클라우드의 많은 부분에서 Storage Cloud를 사용하기 때문에 오라클 클라우드 계정을 생성한 직후에
+Storage Cloud를 활성화하는 것이 좋습니다. Storage Cloud 활성화를 위해서는 Storage Cloud 서비스 콘솔에서  
+기본 정책(데이터 복제 정책)을 설정해야 합니다.
+Storage Cloud 복제 정책을 설정한다는 것은 Storage Cloud 서비스를 활성화한다는 의미입니다.
 
 Oracle Cloud 계정이 없다면 다음 문서를 참조하여 계정을 생성하시기 바랍니다.
 
@@ -100,7 +102,8 @@ Storage Cloud의 성능과 안정성 모두를 만족하는 옵션입니다.
 
 ## 요약
 
-오라클 클라우드 계정을 생성한 후 Storage Cloud의 복제 설정 절차를 확인하였습니다.
+오라클 클라우드 계정을 생성한 후 Storage Cloud 활성화 절차에 대하여 살펴보았습니다.
+Storage Cloud 복제 정책을 설정한다는 것은 Storage Cloud 서비스를 활성화한다는 의미입니다.
 
 복제 설정 옵션은 Storage Cloud의 primary DC를 선택하고 복제 여부를 선택하는 방식으로 구성됩니다.
 Primary DC는 계정이 사용하는 데이터 센터와 같은 DC를 선택하는 것이 효과적입니다.
