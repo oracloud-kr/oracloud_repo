@@ -42,7 +42,7 @@ pygmentsstyle = "monokai"
     weight = -100 # menu의 sorting을 담당
 [[menu.main]]
     name = "oracloud.kr"
-    url = "/"
+    url = "/oraclooud/"
     weight = -50 # menu의 sorting을 담당
 [[menu.main]]
     name = "OPC IaaS"
