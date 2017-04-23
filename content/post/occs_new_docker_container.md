@@ -298,7 +298,7 @@ Deployments 페이지의 YAML 탭에서 컨테이너들 사이의 설정 및 구
 - 그림 33. Deployments의 페이지의 컨테이너들 사이의 설정 - compose 포멧
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step330.jpg)
 
-### Stack 확장 - scale-out
+### Stack 확장: scale-out
 
 OCCS는 배포된 컨테이너에 부하가 증가할 경우에 컨테이너를 확장하는 ```scale-out```기능을 제공합니다.
 <그림 34>와 같이 Deployments 메뉴의 컨테이너 상세 페이지에서 ```Change Scaling```을 클릭하여 컨테이너의 배포 수량을 변경할 수 있습니다.
