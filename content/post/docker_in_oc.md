@@ -10,7 +10,7 @@ language = ""
 tags = ["docker", "occs", "acc", "container"]
 +++
 
-오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool([Kubernetes](https://kubernetes.io/), [docker-swarm](https://docs.docker.com/swarm/overview/), [marathon](https://mesosphere.github.io/marathon/))을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Serivce (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 ```Oracle Application Container Cloud(이하 Oracle ACC)```를 사용하는 것입니다.
+오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool([Kubernetes](https://kubernetes.io/), [docker-swarm](https://docs.docker.com/swarm/overview/), [marathon](https://mesosphere.github.io/marathon/))을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Service (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 ```Oracle Application Container Cloud(이하 Oracle ACC)```를 사용하는 것입니다.
 
 Oracle Cloud에서 Docker를 사용하는 방식을 다음과 같이 분류할 수 있습니다.
 
@@ -60,7 +60,7 @@ Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출�
 
 오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine의 소프트웨어를 통합하였습니다. 이 결과물이 Oracle Container Cloud Service입니다.
 
-OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Lifecycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS[^1]를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.
+OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Life-cycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS[^1]를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.
 
 [^1]:Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.
 
@@ -86,7 +86,7 @@ OCCS는 Docker 이미지를 Service를 형태로 관리 합니다. Service는 Do
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/docker_in_oc/service.jpg)
 
-Service의 설정을 위해서 아래와 같이 전용 UI 빌더, ```Docker run``` 설정, ```YAML``` 설정을 제공합니다. 이 3가지 설정 방법은 통합되어 있으므로, 빌더에서 수정하면 ```Doker run```이나 YAML에도 동일하게 적용됩니다. 실행 옵션뿐만 아니라 아래 설정 창에서는 배포 정책과 배포 서버 선정 기준도 설정 가능합니다.
+Service의 설정을 위해서 아래와 같이 전용 UI 빌더, ```Docker run``` 설정, ```YAML``` 설정을 제공합니다. 이 3가지 설정 방법은 통합되어 있으므로, 빌더에서 수정하면 ```Doker run```이나 ```YAML```에도 같이 변경됩니다. 실행 옵션뿐만 아니라 아래 설정 창에서는 배포 정책과 배포 서버 선정 기준도 설정 가능합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/docker_in_oc/editor.jpg)
 
