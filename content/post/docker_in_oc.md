@@ -10,18 +10,18 @@ language = ""
 tags = ["docker", "occs", "acc", "container"]
 +++
 
-오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle Compute에 직접 Docker와 Orchestration tool([Kubernetes](https://kubernetes.io/), [docker-swarm](https://docs.docker.com/swarm/overview/), [marathon](https://mesosphere.github.io/marathon/))을 직접 Oracle Cloud의 VM에 설치해서 사용하는 것입니다. 두 번째는 Oracle Cloud에서 IaaS 형태로 제공하는 Oracle Container Cloud Serivce (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud에서 제공하는 PaaS 서비스 ```Oracle Application Container  Cloud(이하 Oracle ACC)```를 사용하는 것입니다.
+오라클 클라우드에서 docker를 사용하는 3가지 방법이 있습니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool([Kubernetes](https://kubernetes.io/), [docker-swarm](https://docs.docker.com/swarm/overview/), [marathon](https://mesosphere.github.io/marathon/))을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Serivce (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 ```Oracle Application Container Cloud(이하 Oracle ACC)```를 사용하는 것입니다.
 
-Oracle Cloud에서 Docker를 사용하는 3가지 방식에 대하여 다음과 같이 분류하고, 유형별로 살펴보겠습니다.
+Oracle Cloud에서 Docker를 사용하는 방식을 다음과 같이 분류할 수 있습니다.
 
 - DIY 방식: Oracle Compute CS에 직접 설치
-- OCCS: 오라클이 IaaS 서비스 형태로 제공하는 Container Service
-- Oracle ACC: 오라클이 PaaS 형태로 제공하는 Container Service  
+- IAAS 방식: Oracle Container Cloud Service (OCCS)
+- PAAS 방식: Oracle Application Container Service (Oracle ACC)
 
 ## Type 1. DIY (Do It Yourself) 방식
 
-Oracle Compute CS에 VM을 생성한 후, 그 위에 Docker를 직접 설치하고 사용하는 방식입니다. 하나의 VM을 호스트로 Docker를 설치하고 사용하는 방식입니다. 테스트 및 개발 환경이라면 추가적인 고려사항 없이 Docker만 설치해도 충분합니다.
-
+Oracle Compute CS에 가상 머신을 만들고, 그 위에 Docker를 설치하고 사용하는 방식입니다. 가장 간단한 구성은 하나의 가상머신위에  Docker를 설치하고 사용하는 것입니다. 테스트 및 개발 환경이라면 추가적인 고려사항 없이 이 것만으로도 충분합니다.
+그러나 이 방식을 Production에 적용할 수는 없습니다.
 Production 환경을 DIY 방식으로 구성하려면 다음과 같은 사항을 고려해야 합니다.
 
 - 고가용성을 위하여 복수의 Host를 클러스터로 구성
@@ -29,11 +29,12 @@ Production 환경을 DIY 방식으로 구성하려면 다음과 같은 사항을
 - 컨테이너 이동에 대한 네트워크 구성 관리
 - 클러스터 자원을 고려한 배포 전략
 - 스케일 아웃 지원
-- 모니터링
+- 체계적인 모니터링
 - 효율적인 오케스트레이션
 - 애자일 툴과 효과적인 통합을 위한 Webhook 제공
 
-Container orchestration 도구를 Production 환경에 적용하면 위와 같은 이슈들을 해결할 수 있습니다. 대표적인 Container orchestration 도구는 다음과 같습니다.
+Container orchestration 도구를 Production 환경에 적용하면 위와 같은 이슈들을 해결할 수 있습니다.
+대표적인 Container orchestration 도구는 다음과 같습니다.
 
 - [Kubernetes](https://kubernetes.io/)
   - 단축 표기: K8S
@@ -49,7 +50,7 @@ Container orchestration 도구를 Production 환경에 적용하면 위와 같�
 - [marathon](https://mesosphere.github.io/marathon/)
   - 아파치 Mesos와 DC/OS(Data Center Operating System)을 위한 컨테이너 오케스트레이션 플랫폼
 
-Oracle Compute Cloud Serivce의 VM은 Docker와 Container orchestration 도구 설치에 대한 제약이 없습니다.
+Oracle Compute Cloud Serivce의 가상머신은 Docker와 Container orchestration 도구 설치에 대한 제약이 없습니다.
 
 ***
 
@@ -59,15 +60,17 @@ Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출�
 
 오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine의 소프트웨어를 통합하였습니다. 이 결과물이 Oracle Container Cloud Service입니다.
 
-OCCS를 이용하여 Docker 운영 환경 관리 효율성을 극대화하고 Automation을 강화할 수 있습니다. 추가로 오라클 클라우드가 제공하는 Developer CS를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.
+OCCS를 이용하여 효과적이고 안정적인 Docker 환경을 구성할 수 있습니다. 또한 ALM(Application Lifecycle Manatment) 툴과 연계된 시스템 자동화를 구성할 수 있습니다. 오라클 클라우드가 제공하는 Developer CS[^1]를 OCCS과 함께 사용할 경우 효율적인 DevOps 환경을 구성할 수 있습니다. Developer CS는 오라클 클라우드가 제공하는 개발 환경 서비스입니다. OCCS 사용 시 Oracle Developer CS는 무상으로 제공됩니다. Developer CS는 Git, 이슈트래커, Jenkins, Wiki가 결합된 애자일 개발 환경을 클라우드로 제공하는 서비스입니다. Developer CS는 별도의 블로그 포스트 시리즈로 다루겠습니다.
+
+[^1]Developer CS는 Oracle Developer Cloud Service의 약식 표현입니다. Oracle Developer Cloud Service는 git, genkins, wiki, issue tracker를 하나의 UI로 제공하는 통합 서비스입니다. Oracle DBCS, OCCS, Oracle ACC, Oracle JCS 등의 사용자에게는 무상으로 제공되는 서비스입니다.
 
 OCCS의 주요 기능은 다음과 같습니다.
 
-- 호스트와 클러스터링 관리
-- 복수의 호스트에 걸쳐 컨테이너 스케일링 관리 기능
+- 클러스터링 관리
+- 복수의 호스트에 걸쳐 컨테이너 스케일 관리(up/down)
 - Private Docker Registry 등록 및 연결
-- Service Registry
-- 컨테이너 환경을 관리하는 대시보드와 모니터링 기능
+- Service Registry 관리
+- 클러스터 대시보드와 모니터링 기능
 
 OCCS의 아키텍처는 다음과 같습니다.
 
