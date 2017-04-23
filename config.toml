@@ -5,7 +5,7 @@ paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
-   
+
 
 
 [Author]
@@ -40,11 +40,15 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/"
     weight = -100 # menu의 sorting을 담당
 [[menu.main]]
+    name = "oracloud.kr"
+    url = "/"
+    weight = -50 # menu의 sorting을 담당
+[[menu.main]]
     name = "OPC IaaS"
     url = "/opc-iaas/"
     weight = -5 # menu의 sorting을 담당
 [[menu.main]]
-    name = "Oracle Cloud 소개"
+    name = "Oracle Cloud"
     url = "/opc/"
     weight = -10
 [[menu.main]]
