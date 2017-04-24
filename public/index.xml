@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <link>/</link>
+    <description>Recent content on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Apr 2017 11:00:57 +0900</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>oracloud.kr: 오라클 클라우드 기술 블로그</title>
+      <link>/oraclooud/</link>
+      <pubDate>Mon, 24 Apr 2017 11:00:57 +0900</pubDate>
+      
+      <guid>/oraclooud/</guid>
+      <description>oracloud.kr은 오라클 클라우드를 핵심 주제로 하는 기술 블로그입니다.
+오라클은 막대한 자금과 노력을 투입하여 클라우드 서비스에 투자하고 있으며, 매주 새로운 서비스 출시, 신규 기능 추가, 서비스 패치가 적용되고 있어 누구보다 빠르게 변화하고 있습니다.
+oracloud.kr은 오라클 클라우드에 대한 최신 기술정보를 널리 공유하기 하고자, 한국 오라클의 DB 영업 본부 산하, 클라우드 세일즈 컨설팅 팀에서 운영하고 있는 팀 블로그입니다.
+본 블로그는 이러한 변화된 기술을 빠르게 공유하기 위해, 팀원들의 개인적인 노력과 열정으로 만들어가는 사이트입니다. 블로그 포스팅의 내용은 기술적 참조 자료로 활용하되, 오라클의 공식적인 책임 범위에는 포함되지 않습니다.</description>
+    </item>
+    
+    <item>
+      <title>Terraform에 대한 기본 소개</title>
+      <link>/post/terraform/</link>
+      <pubDate>Fri, 21 Apr 2017 17:15:48 +0900</pubDate>
+      
+      <guid>/post/terraform/</guid>
+      <description>Terraform에 대하여.. Terraform은 인프라를 만들고 바꾸고 버전 관리하는 도구입니다. Terraform은 Infrastructure as Code, Execution Plans, Resource Graph, Change Automation 와 같은 기능을 제공합니다.
+이 기능을 이용해서 Infrastructure를 관리할 수 있는데 사용할 수 있는 Infrastructure를 Terraform에서는 Provider라고 부릅니다. Terraform이 지원하는 Provider는 Oracle Baremetal, Oracle Public Cloud, AWS, BitBucket, Chef, CloudFlare, Consul, DigitalOcean, Docker, GitHub, Google Cloud, Grafana, InfluxDB, Heroku, Microsoft Azure, MySQL, PostgreSQL 등 개발에서 보통 사용하는 솔루션은 거의 모두 포함되어 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Management Cloud(OMC) 소개</title>
+      <link>/post/omc/</link>
+      <pubDate>Fri, 21 Apr 2017 15:00:47 +0900</pubDate>
+      
+      <guid>/post/omc/</guid>
+      <description>Oracle Management Cloud (OMC)는 차세대 통합 모니터링, 관리 및 분석 클라우드 서비스 제품군으로, 성능/자원 지표 데이터와 로그 데이터 전체에 대해 머신러닝 기술을 활용합니다.
+OMC의 Unified Platform은 고객이 IT 안정성을 향상시키고 애플리케이션 중단을 방지하며 문제 발생 시 근본 원인 분석, 전체 애플리케이션 및 인프라 포트폴리오에서 보안을 강화하도록 지원합니다.
+OMC의 구성요소  Application Performance Monitoring  어플리케이션단의 빠른 이슈 탐색  Infrastructure Monitoring  전체 IT 인프라에 대한 통합적인 모니터링 수행  Log Analytics  운영상의 모든 로그데이터를 모니터링, 수집, 인덱싱, 검색 및 상관분석  Orchestration  클라우드상에서의 스케쥴링, 실행, 리포트 기능 수행  IT Analytics  다양한 기준의 리소스 분석 기능 제공, 향후 사용량 예측 가능  Compliance  어플리케이션 및 인프라 구성 평가 자동화  Security Monitoring Analytics  최신 IT 환경을 위한 효과적인 보안   OMC의 제공 가치  IT 관리자  관리하는 모든 IT 인프라에 대한 Proactive한 모니터링이 가능합니다.</description>
+    </item>
+    
+    <item>
+      <title>대용량 Dump File Upload</title>
+      <link>/post/uploadcli/</link>
+      <pubDate>Wed, 19 Apr 2017 10:45:24 +0900</pubDate>
+      
+      <guid>/post/uploadcli/</guid>
+      <description>데이터베이스의 대용량 export dump file을 DBCS에 Upload하는 기본적인 방법은 sftp를 이용하여 DBCS Instance로 Upload하는 것입니다. 하지만, sftp를 이용할 경우 하나의 세션을 이용하기 때문에 Network Bandwidth를 모두 사용하지 못해 대용량 Dump file의 경우 Upload속도가 많이 느려질수 있습니다.
+데이터베이스의 대용량 export dump file을 효율적으로 DBCS에 Upload하는 방법은 다음과 같습니다.
+Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 방법은 다음과 같습니다.
+ 사전 요구사항 : JRE 7 or later OTN을 통해 uploadcli를 download합니다.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Compute CS 용어사전</title>
+      <link>/terminology/iaas/</link>
+      <pubDate>Mon, 17 Apr 2017 15:36:33 +0900</pubDate>
+      
+      <guid>/terminology/iaas/</guid>
+      <description>Oracle Compute CS의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
+Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. Image List의 각 머신 이미지는 고유 항목 번호로 식별된다.
+ Instance  정의: Instance는 Compute CS에 머신 이미지와 Shape를 지정하여 생성한 가상머신이다. Instance에 지정한 Shape는 CPU와 메모리 자원에 대한 정의이며, Shape에 정의된 자원이 Instance에 할당된다.
+ Instance Snapshot  정의: Instance Snapshot은 인스턴스의 비 지속성 부트 디스크의 상태 정보를 챕처한 후, 이 정보를 이용하여 만든 머신 이미지이다.</description>
+    </item>
+    
+    <item>
+      <title>TalkIT 세미나 동영상: 오라클 데이터베이스를 클라우드에서 사용하기</title>
+      <link>/post/talkit_dbcs/</link>
+      <pubDate>Sun, 16 Apr 2017 20:44:25 +0900</pubDate>
+      
+      <guid>/post/talkit_dbcs/</guid>
+      <description>2017년 3월 24일에 오라클 클라우드 데이터베이스를 주제로 진행한 TalkIT 웨비나 동영상입니다.
+ 주제: 오라클 데이터베이스를 클라우드에서 사용하기 진행: 고우성 PD 패널:  장성우 전무(한국오라클) 이문선 컨설턴트(한국오라클) 신광철 애널리스트(쿠팡) 김준 컨설턴트(한국오라클)  일시: 2017-03-24 오후 2시 ~ 오후 3시 30분  90분 동안 진행된 웨비나는 다음과 같은 4개의 세션으로 진행되었습니다.
+ 세션제목패널 #1데이터 관리? 클라우드에서? 클.전.자(클라우드를 전파하는 자)의 오라클 데이터베이스 클라우드! 장성우 전무(한국오라클) #2데이터베이스 클라우드 서비스 쉽게 이해하기 이문선 컨설턴트(한국오라클) #3데이터베이스 클라우드, 전문가가 뜯어보기!</description>
+    </item>
+    
+    <item>
+      <title>OCCS에 Docker 이미지 배포하기</title>
+      <link>/post/occs_new_docker_container/</link>
+      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      
+      <guid>/post/occs_new_docker_container/</guid>
+      <description>Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 Kubernetes(k8s), docker-swarm 그리고 marathon 과 유사한 container orchestration 도구가 포함되어 있습니다.
+이 문서는 이미 OCCS 인스턴스가 생성되었다는 것을 전제로 합니다. 오라클 클라우드 계정이 확보되지 않았거나 OCCS 인스턴스를 만들지 않은 상태라면, [오라클 클라우드 계정 생성하기] 문서와 [Oracle Container CS 생성 절차] 문서를 참조하여 계정과 인스턴스를 생성하시기 바랍니다.
+OCCS 용어 정리    Container CS 용어 설명     Service OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS 관련 설정을 추가한 것   Stack 복수의 Serivce로 구성된 이미지 관리 체계.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo</title>
+      <link>/post/dbcs_demo/</link>
+      <pubDate>Wed, 12 Apr 2017 13:20:12 +0900</pubDate>
+      
+      <guid>/post/dbcs_demo/</guid>
+      <description>Oracle DBMS 소개 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 PaaS 형태로 제공하는 오라클 데이터베이스 서비스입니다.
+Oracle Database Cloud Service에는 다음과 같이 4 가지 유형의 패키지로 라이센스가 구분됩니다.
+ Standard Edition Enterprise Edition  TDE (transparent Data Encryption) Data Guard  Enterprise Edition High Performance  Multitenant Partitioning Advanced Compression Advanced Security Database Vault  Enterprise Edition Extreme Performance  Oracle RAC 지원 In-memory Active Data Guard   2017년 04월 현재 Oracle Database CS의 지원 버전은 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Ravello Cloud Service 데모</title>
+      <link>/post/ravello_demo/</link>
+      <pubDate>Fri, 07 Apr 2017 16:05:59 +0900</pubDate>
+      
+      <guid>/post/ravello_demo/</guid>
+      <description>Oracle Ravello Cloud Service(이하 Oracle Ravello)는 VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다.
+Oracle Ravello 의 Trial 계정을 생성하고 VM을 upload하여 실제로 Ravello 상에서 VM을 publish 해보는 데모입니다.
+데모 슬라이드는 다음과 같은 내용으로 구성되어 있습니다.
+ Step 0: Demo 계정 신청하기 Step 1: VM 가져오기 Step 2: 어플리케이션 만들기 Step 3: 네트워크 서비스 점검 Step 4: 어플리케이션 배포    Oracle Ravello Cick Through Demo  from 오라클 클라우드</description>
+    </item>
+    
+    <item>
+      <title>Oracle Container CS 생성 절차</title>
+      <link>/post/occs-new-inst/</link>
+      <pubDate>Wed, 05 Apr 2017 19:36:38 +0900</pubDate>
+      
+      <guid>/post/occs-new-inst/</guid>
+      <description>Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에 StackEngine을 인수하였습니다. (관련 공지). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon과 같은 container orchestration 도구입니다.
+오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합하였습니다. 이 결과물이 Oracle Container Cloud Service 입니다.
+Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 구성, 인스턴스 배포 및 운영, 모니터링을 효과적으로 할 수 있습니다.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Container Cloud Service 소개와 Docker 개요</title>
+      <link>/post/occs/</link>
+      <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
+      
+      <guid>/post/occs/</guid>
+      <description>오라클은 2015년에 Stack Engine이라는 Docker 전문 업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Container Cloud Service입니다.
+OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소개하는 슬라이드를 공유합니다.
+ 작성일: 2017-02-07   </description>
+    </item>
+    
+    <item>
+      <title>OPC 용어사전</title>
+      <link>/opc-terminology/</link>
+      <pubDate>Wed, 05 Apr 2017 10:31:34 +0900</pubDate>
+      
+      <guid>/opc-terminology/</guid>
+      <description> Infrastucture Cloud Service  Oracle Compute Cloud Service  </description>
+    </item>
+    
+    <item>
+      <title>Oracle Public Cloud - PaaS</title>
+      <link>/opc-paas/</link>
+      <pubDate>Wed, 05 Apr 2017 10:31:26 +0900</pubDate>
+      
+      <guid>/opc-paas/</guid>
+      <description> Oracle Cloud - PaaS Database  Oracle Database Cloud Service: 인스턴스 생성 및 접속 Demo: 2017.04.12  </description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드 - IaaS</title>
+      <link>/opc-iaas/</link>
+      <pubDate>Wed, 05 Apr 2017 10:31:21 +0900</pubDate>
+      
+      <guid>/opc-iaas/</guid>
+      <description>Oracle Cloud - IaaS Compute  오라클 클라우드 계정 생성하기: 2017.03.02 오라클 IaaS를 이용한 VM 인스턴스 생성: 2017.03.05 오라클 클라우드에서 window VM 인스턴스 생성: 2017.03.10  Container CS  Oracle Container Cloud Service 소개와 Docker 개요: 2017.04.05 Oracle Container CS 생성 절차: 2017.04.05 OCCS에 Docker 이미지 배포하기: 2017.04.12  Ravello  김석 ACE Director의 라벨로 연재  라벨로 시스템을 이용한 클라우드 구축 1)-가입하기: 2017.01.15 라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지: 2017.</description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드 소개</title>
+      <link>/opc_news/</link>
+      <pubDate>Wed, 05 Apr 2017 10:23:40 +0900</pubDate>
+      
+      <guid>/opc_news/</guid>
+      <description> 작업중  </description>
+    </item>
+    
+    <item>
+      <title>Ravello를 이용한 모의 해킹 환경 구성하기</title>
+      <link>/post/ravello_by_kim_suk/</link>
+      <pubDate>Sat, 25 Mar 2017 11:23:39 +0900</pubDate>
+      
+      <guid>/post/ravello_by_kim_suk/</guid>
+      <description>(주)노브레이크 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석 님께서 정리해 주신 라벨로 활용 문서입니다.
+라벨로를 이용한 모의해킹 실습 환경 구성을 주제로 4부에 걸쳐 시리즈 된 문서입니다.
+라벨로의 활용 방법과 사용법에 대하여 매우 잘 정리된 문서입니다.
+ 김재벌의 IT 이야기: 라벨로 시스템을 이용한 클라우드 구축(1) - 가입하기: 2017.01.15 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지: 2017.01.18 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(3) - 커스텀 이미지 업로드: 2017.</description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드의 Docker 컨테이너 지원 유형</title>
+      <link>/post/docker_in_oc/</link>
+      <pubDate>Mon, 20 Mar 2017 19:01:16 +0900</pubDate>
+      
+      <guid>/post/docker_in_oc/</guid>
+      <description>오라클 클라우드에서 docker를 운영하는 방식은 3가지 입니다. 첫 번째는 Oracle cloud의 가상머신에 Docker와 Orchestration tool(Kubernetes, docker-swarm, marathon)을 직접 설치하고 사용하는 것입니다. 두 번째는 Oracle Cloud가 IaaS 형태로 제공하는 Oracle Container Cloud Service (이하 OCCS)를 사용하는 것입니다. 세 번째는 Oracle Cloud가 PaaS 형태로 제공하는 Oracle Application Container Cloud(이하 Oracle ACC)를 사용하는 것입니다.
+Oracle Cloud에서 Docker를 사용하는 방식을 요약하면 다음과 같습니다.
+ DIY 타입: Oracle Compute CS에 직접 설치 IAAS 타입: Oracle Container Cloud Service (OCCS) PAAS 타입: Oracle Application Container Service (Oracle ACC)  Type 1.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Ravello Cloud Service 소개</title>
+      <link>/post/ravello_overview/</link>
+      <pubDate>Wed, 15 Mar 2017 14:35:14 +0900</pubDate>
+      
+      <guid>/post/ravello_overview/</guid>
+      <description>오라클은 2016년 2월에 Ravello Systems라는 Nested Virtualization &amp;amp; Software Defined Networking 전문업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Ravello Cloud Service입니다.
+Oracle Ravello Cloud Service 는 Public Cloud Service 입니다. VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다.
+Oracle Ravello Cloud Service에 대한 개요와 설명을 담은 슬라이드를 아래 공유합니다.
+  Oracle Ravello Overview  from 오라클 클라우드</description>
+    </item>
+    
+    <item>
+      <title>TalkIT 세미나 동영상: 가상환경 클라우드 전환 - Ravello</title>
+      <link>/post/ravello_talkit/</link>
+      <pubDate>Mon, 13 Mar 2017 12:35:37 +0900</pubDate>
+      
+      <guid>/post/ravello_talkit/</guid>
+      <description>2017년 2월 24일에 라벨로를 주제로 진행한 TalkIT 웨비나 동영상입니다.
+ 주제: 가상화 환경을 손쉽게 클라우드로 전환하기 진행: 고우성 PD 패널:  강우진 전무(한국오라클) 김석 대표이사(노브레이크) 이명재 부장(㈜제이씨원)  일시: 2017-02-24 오후 2시 ~ 오후 3시 30분  Ravell의 개요, 동작 방식 및 현장 적용 사례를 확인하실 수 있습니다.
+1부. 라벨로, 무엇에 쓰는 물건인고! (18:18)   2부. 라벨로, 전문가가 뜯어보기! (24:20)   3부. 라벨로, 고객이 직접 얘기하기! (15:09)   4부.</description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드에서 window VM 인스턴스 생성</title>
+      <link>/post/win-vm/</link>
+      <pubDate>Fri, 10 Mar 2017 22:42:46 +0900</pubDate>
+      
+      <guid>/post/win-vm/</guid>
+      <description>오라클 클라우드(Oracle Public Cloud, OPC)의 Compute 서비스에서 Window VM 인스턴스를 생성하는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud 계정이 필요합니다. 현재 OPC 계정이 없다면 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo;를 먼저 확인하시기 바랍니다.
+Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서의 실습에 있어서 윈도우와 &amp;ldquo;OS X&amp;rdquo;의 차이는 거의 없습니다. Window VM을 생성한 후, RDP로 Window VM에 접속하는 부분만 차이가 있습니다. 이 부분은 Window와 &amp;ldquo;OS X&amp;rdquo;를 구분하여 작성했습니다.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Storage Cloud Serivce 활성화</title>
+      <link>/post/objest-storage-replication/</link>
+      <pubDate>Tue, 07 Mar 2017 08:54:32 +0900</pubDate>
+      
+      <guid>/post/objest-storage-replication/</guid>
+      <description>Oracle Storage Cloud Serivce(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다. 오라클 클라우드의 대부분의 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다. 오라클 클라우드에서 Storage Cloud를 사용하는 서비스는 다음과 같습니다.
+   서비스 설명     Java Cloud Service(이하 JCS) JCS는 클러스터 백업 및 메타 정보 저장을 위해서 Storage Cloud를 사용합니다. JCS 설정시 Storage Cloud 정보 입력이 필 수 사항입니다.   Database CS (이하 DBCS) DBCS는 데이터베이스 백업에 Storage Cloud를 사용합니다.</description>
+    </item>
+    
+    <item>
+      <title>ssh config 설정 방법</title>
+      <link>/post/ssh_config/</link>
+      <pubDate>Mon, 06 Mar 2017 12:07:16 +0900</pubDate>
+      
+      <guid>/post/ssh_config/</guid>
+      <description>하나의 컴퓨터에서 복수의 SSH 키를 사용할 경우 SSH 접속에 사용하는 ssh 명령이 복잡해지는 단점이 있습니다. 이러한 복잡성은 SSH config 파일을 이용하여 해결할 수 있습니다.
+이 문서는 SSH 키 파일을 이미 갖고있는 것을 전제로 합니다. 아직 SSH 키를 생성하지 않은 상태라면, 다음 문서를 참조하시기 바랍니다.
+ 윈도우, 리눅스, 맥에서 ssh 보안키 생성  ssh 명령 기본 사용법 ssh 명령의 기본 사용법은 다음과 같습니다.
+ ssh 사용자ID@서버명  다음과 같은 명령을 내릴 때 ssh 명령은 &amp;ldquo;~/.</description>
+    </item>
+    
+    <item>
+      <title>오라클 IaaS를 이용한 VM 인스턴스 생성</title>
+      <link>/post/iaas_vm/</link>
+      <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
+      
+      <guid>/post/iaas_vm/</guid>
+      <description>오라클 클라우드의 IaaS 서비스에서 Ubuntu 14.04를 VM 인스턴스로 만드는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud의 계정이 필요합니다. 계정을 생성하는 방법에 대해서는 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo; 를 참조하시기 바랍니다.
+Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서를 윈도우에서 실습하실 경우에는 PUTTY와 같은 Terminal을 사용하는 부분과 SSH-KEYGEN 을 사용하는 절차가 달라질 것입니다. 이 부분에 대해서는 별도 문서로 정리하겠습니다.
+오라클 클라우드 VM 생성 실습은 약 10~15분 정도 소요됩니다.</description>
+    </item>
+    
+    <item>
+      <title>윈도우, 리눅스, 맥에서 ssh 보안키 생성</title>
+      <link>/post/ssh_key/</link>
+      <pubDate>Sat, 04 Mar 2017 12:07:16 +0900</pubDate>
+      
+      <guid>/post/ssh_key/</guid>
+      <description>클라우드 서비스로 만든 가상 서버에 안전한 로그인을 하기 위해서 SSH(Secure Shell) 프로토콜을 사용하는 것이 일반적입니다. SSH 프로토콜은 안전하지 못한 네트워크에서 강력한 인증과 안전한 통신을 가능하게 합니다. SSH 프로토콜에서 패스워드 입력없이 로그인하기 위해서는 인증서가 필요하며, 기본 포트는 22번입니다.
+SSH 프로토콜에 대한 자세한 내용은 다음 문서를 참조하시기 바랍니다.
+ 오픈 튜토리얼: SSH 원격제어 오픈 튜토리얼: SSH 키  이 문서에서는 다음 내용을 다루겠습니다.
+ 운영체제별 SSH 키 생성 방법 (window, linux, osx) SSH 키 설치 방법 ssh config를 이용한 ssh 명령 단순하게 사용하기  인증서 생성 방법 각 운영체제(Linux, OSX, Window)의 SSH 키 생성 방법에 대하여 정리하겠습니다.</description>
+    </item>
+    
+    <item>
+      <title>markdown 예제</title>
+      <link>/example/markdown/</link>
+      <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
+      
+      <guid>/example/markdown/</guid>
+      <description>1. title # h1 ## h2 ### h3 #### h4 ##### h5  h1 h2 h3 h4 h5 2. 문단 구분 첫째 문단입니다. 문장이 두개죠. 둘째 문단입니다. 저도 문장이 두개입니다. 같은 문단이죠? 저는 세번째 무단입니다. 저도 세번째 문단 소속입니다. 저도요...  첫째 문단입니다. 문장이 두개죠.
+둘째 문단입니다. 저도 문장이 두개입니다. 같은 문단이죠?
+저는 세번째 무단입니다. 저도 세번째 문단 소속입니다. 저도요&amp;hellip;
+인용문  빛이 있으라.  하니 빛이 있었다.   빛이 있으라.</description>
+    </item>
+    
+    <item>
+      <title>오라클 클라우드 계정 생성하기</title>
+      <link>/post/accont/</link>
+      <pubDate>Thu, 02 Mar 2017 21:59:47 +0900</pubDate>
+      
+      <guid>/post/accont/</guid>
+      <description>Oracle Cloud의 트라이얼 계정을 이용하여 무료로 오라클 클라우드를 경험할 수 있습니다. 무료 트라이얼 계정에는 Oracle Database Cloud Service(이하 Cloud Service는 CS로 표기), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS 등 11개 서비스와 6개 OCPU와 500GB 스토리지 자원에 대한 사용 권한이 포함됩니다. 트라이얼 계정의 유효 기간은 계정 생성일로부터 30일입니다.
+본 문에서는 Oracle Cloud 계정을 생성하는 방법에 대하여 설명하겠습니다.
+Oracle Cloud 계정 등록 절차 오라클 클라우드의 계정 등록 절차는 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>oracloud.kr 오픈</title>
+      <link>/post/oracloud/</link>
+      <pubDate>Wed, 01 Mar 2017 10:43:37 +0900</pubDate>
+      
+      <guid>/post/oracloud/</guid>
+      <description>한국오라클 클라우드 팀에서 운영하는 oracloud.kr 블로그를 오픈합니다.
+oracloud.kr은 오라클 클라우드에 대한 정보가 필요하신 한국 개발자 커뮤니티와 고객분에게 오라클 클라우드 관련 정보를 신속하게 제공하는 것을 목표로 합니다.
+oracloud.kr에서는 다음과 같은 정보를 제공할 예정입니다.
+ 오라클 클라우드 최신 변경 사항 공지 오라클 클라우드 최신 뉴스 오라클 클라우드 튜토리얼 오라클 클라우드 사용법 오라클 클라우드 발표 자료 배포  oracloud.kr에서는 댓글을 위한 Disqus 서비스와 채팅 서비스인 gitter를 사용하고 있습니다. oracloud.kr에 문의 사항이 있으실 경우에는 Disqus와 gitter에 글을 남겨 주시기 바랍니다.</description>
+    </item>
+    
+  </channel>
+</rss>

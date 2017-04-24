@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/oraclooud/</loc>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/terraform/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/omc/</loc>
+    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/uploadcli/</loc>
+    <lastmod>2017-04-19T10:45:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/terminology/iaas/</loc>
+    <lastmod>2017-04-17T15:36:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/talkit_dbcs/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/occs_new_docker_container/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/dbcs_demo/</loc>
+    <lastmod>2017-04-12T13:20:12+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ravello_demo/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/occs-new-inst/</loc>
+    <lastmod>2017-04-05T19:36:38+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/occs/</loc>
+    <lastmod>2017-04-05T11:23:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/opc-terminology/</loc>
+    <lastmod>2017-04-05T10:31:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/opc-paas/</loc>
+    <lastmod>2017-04-05T10:31:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/opc-iaas/</loc>
+    <lastmod>2017-04-05T10:31:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/opc_news/</loc>
+    <lastmod>2017-04-05T10:23:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ravello_by_kim_suk/</loc>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/docker_in_oc/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ravello_overview/</loc>
+    <lastmod>2017-03-15T14:35:14+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ravello_talkit/</loc>
+    <lastmod>2017-03-13T12:35:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/win-vm/</loc>
+    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/objest-storage-replication/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ssh_config/</loc>
+    <lastmod>2017-03-06T12:07:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/iaas_vm/</loc>
+    <lastmod>2017-03-05T22:20:25+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/ssh_key/</loc>
+    <lastmod>2017-03-04T12:07:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/example/markdown/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/accont/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/oracloud/</loc>
+    <lastmod>2017-03-01T10:43:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/acc/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/automation/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/cloud/</loc>
+    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/cloud/</loc>
+    <lastmod>2017-04-05T11:23:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/container/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/container/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dbcs/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/devops/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/docker/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/docker/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/example/</loc>
+    <lastmod>2017-03-02T21:59:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/iaac/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/iaas/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/iaas/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/monitoring/</loc>
+    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/nested-virtualization/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/object-storage/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/occs/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/omc/</loc>
+    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle/</loc>
+    <lastmod>2017-04-21T15:00:47+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/oracle/</loc>
+    <lastmod>2017-04-05T11:23:40+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/oracle-cloud/</loc>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/oracle-cloud/</loc>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2017-04-21T17:15:48+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ravello/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/ravello/</loc>
+    <lastmod>2017-04-07T16:05:59+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2017-03-06T12:07:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/storage/</loc>
+    <lastmod>2017-03-07T08:54:32+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2017-03-20T19:01:16+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/talkit/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/terminology/</loc>
+    <lastmod>2017-04-17T15:36:33+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2017-04-12T19:34:26+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/virtualization/</loc>
+    <lastmod>2017-03-25T11:23:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vm/</loc>
+    <lastmod>2017-03-05T22:20:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/webinar/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/webinar/</loc>
+    <lastmod>2017-04-16T20:44:25+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/window/</loc>
+    <lastmod>2017-03-10T22:42:46+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-04-24T11:00:57+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

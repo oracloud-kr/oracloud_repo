@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminologies on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <link>/terminology/</link>
+    <description>Recent content in Terminologies on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Apr 2017 15:36:33 +0900</lastBuildDate>
+    
+	<atom:link href="/terminology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Oracle Compute CS 용어사전</title>
+      <link>/terminology/iaas/</link>
+      <pubDate>Mon, 17 Apr 2017 15:36:33 +0900</pubDate>
+      
+      <guid>/terminology/iaas/</guid>
+      <description>Oracle Compute CS의 주요 용어를 정리합니다. Oracle Compute Cloud Service는 Compute CS로 표기합니다.
+Image list  정의: Image List는 Compute CS의 머신 이미지 목록이다. Image List의 각 머신 이미지는 고유 항목 번호로 식별된다.
+ Instance  정의: Instance는 Compute CS에 머신 이미지와 Shape를 지정하여 생성한 가상머신이다. Instance에 지정한 Shape는 CPU와 메모리 자원에 대한 정의이며, Shape에 정의된 자원이 Instance에 할당된다.
+ Instance Snapshot  정의: Instance Snapshot은 인스턴스의 비 지속성 부트 디스크의 상태 정보를 챕처한 후, 이 정보를 이용하여 만든 머신 이미지이다.</description>
+    </item>
+    
+  </channel>
+</rss>

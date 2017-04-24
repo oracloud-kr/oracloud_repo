@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <link>/categories/docker/</link>
+    <description>Recent content in Docker on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 Apr 2017 19:34:26 +0900</lastBuildDate>
+    
+	<atom:link href="/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OCCS에 Docker 이미지 배포하기</title>
+      <link>/post/occs_new_docker_container/</link>
+      <pubDate>Wed, 12 Apr 2017 19:34:26 +0900</pubDate>
+      
+      <guid>/post/occs_new_docker_container/</guid>
+      <description>Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 Kubernetes(k8s), docker-swarm 그리고 marathon 과 유사한 container orchestration 도구가 포함되어 있습니다.
+이 문서는 이미 OCCS 인스턴스가 생성되었다는 것을 전제로 합니다. 오라클 클라우드 계정이 확보되지 않았거나 OCCS 인스턴스를 만들지 않은 상태라면, [오라클 클라우드 계정 생성하기] 문서와 [Oracle Container CS 생성 절차] 문서를 참조하여 계정과 인스턴스를 생성하시기 바랍니다.
+OCCS 용어 정리    Container CS 용어 설명     Service OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS 관련 설정을 추가한 것   Stack 복수의 Serivce로 구성된 이미지 관리 체계.</description>
+    </item>
+    
+    <item>
+      <title>Oracle Container Cloud Service 소개와 Docker 개요</title>
+      <link>/post/occs/</link>
+      <pubDate>Wed, 05 Apr 2017 11:23:40 +0900</pubDate>
+      
+      <guid>/post/occs/</guid>
+      <description>오라클은 2015년에 Stack Engine이라는 Docker 전문 업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Container Cloud Service입니다.
+OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소개하는 슬라이드를 공유합니다.
+ 작성일: 2017-02-07   </description>
+    </item>
+    
+  </channel>
+</rss>
