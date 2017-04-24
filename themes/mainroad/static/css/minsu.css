@@ -30,3 +30,38 @@ strong {
   color: #303030;
   font-weight:bold;
 }
+
+#TableOfContents {
+    font-size: 13px !important;
+    max-height: 85vh;
+    overflow: auto;
+    padding: 15px !important;
+}
+
+
+#TableOfContents > ul > li > a   {
+  font-weight: bold; padding: 0 18px; margin: 0 2px;
+}
+
+#TableOfContents > ul > li > ul > li > a {
+  font-weight: bold;
+}
+
+#TableOfContents > ul > li > ul > li > ul li {
+  margin-right: 8px;
+}
+
+#TableOfContents > ul > li > ul > li > ul > li > a {
+  margin-right: 8px;
+  text-indent: 20px;
+
+}
+
+#TableOfContents > ul > li > ul > li > ul > li > ul > li > a {
+  display: none;
+}
+
+
+#TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
+    display: none;
+}

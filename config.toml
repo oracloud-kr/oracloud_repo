@@ -1,15 +1,15 @@
 baseurl = "/"
-title = "한국 오라클 클라우드 팀"
+title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
-googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
 
 
 
 [Author]
-    name = "오라클 클라우드 팀"
+    name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 
@@ -40,11 +40,15 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
     url = "/"
     weight = -100 # menu의 sorting을 담당
 [[menu.main]]
+    name = "oracloud.kr"
+    url = "/oraclooud/"
+    weight = -50 # menu의 sorting을 담당
+[[menu.main]]
     name = "OPC IaaS"
     url = "/opc-iaas/"
     weight = -5 # menu의 sorting을 담당
 [[menu.main]]
-    name = "Oracle Cloud 소개"
+    name = "Oracle Cloud"
     url = "/opc/"
     weight = -10
 [[menu.main]]
@@ -52,8 +56,8 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "오라클 클라우드 새소식"
-    url = "/opc-news/"
+    name = "OPC 용어사전"
+    url = "/opc-terminology/"
     weight = -3
 [[menu.main]]
     name = "오라클 클라우드 챗팅룸"
