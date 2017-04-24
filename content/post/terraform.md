@@ -7,7 +7,7 @@ language = "bsh"
 tags = ["devops", "iaas", "automation", "iaac"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/terraform/logo.png"
 thumbnailInPost = ""
-title = "Provisioning 툴: Terraform"
+title = "IaaS Provisioning 툴: Terraform"
 +++
 
 ## Terraform이 란?

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="js" lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="No-Cache">
+
+<title>Ravello를 이용한 모의 해킹 환경 구축</title>
+<meta name="description" content="오라클 클라우드 기술 블로그">
+<meta name="generator" content="Hugo 0.19">
+<meta property="og:title" content="Ravello를 이용한 모의 해킹 환경 구축">
+<meta property="og:description" content="(주)노브레이크 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석 님께서 정리해 주신 라벨로 활용 문서입니다.
+라벨로를 이용한 모의해킹 실습 환경 구성을 주제로 4부에 걸쳐 시리즈 된 문서입니다.
+라벨로의 활용 방법과 사용법에 대하여 매우 잘 정리된 문서입니다.
+ 김재벌의 IT 이야기: 라벨로 시스템을 이용한 클라우드 구축(1) - 가입하기: 2017.01.15 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지: 2017.01.18 김재벌의 IT 이야기: 라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(3) - 커스텀 이미지 업로드: 2017.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="//localhost:1313/post/ravello_by_kim_suk/">
+
+
+
+<meta property="article:published_time" content="2017-03-25T11:23:39+09:00">
+<meta property="article:modified_time" content="2017-03-25T11:23:39+09:00">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+
+<link rel="stylesheet" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/minsu.css" type="text/css" media="all">
+<script type="text/javascript" src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/scripts.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:1313/img/icon/oracle.png">
+
+
+
+<script src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/embed.js" data-timestamp="1493037150385"></script><link rel="prefetch" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/a_data/lounge.css"><link rel="prefetch" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/a_data/common.js"><link rel="prefetch" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/a_data/lounge.js"><link rel="prefetch" href="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/a_data/config.js"><script src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/alfie.js" async="" charset="UTF-8"></script></head>
+<body class="body body-right-sidebar mobile" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="container container-outer">
+		<header class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div class="container container-inner clearfix">
+				<div class="logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Brand">
+					<a class="logo__link" href="http://localhost:1313/" title="한국오라클 DBU, 클라우드 세일즈 컨설팅팀" rel="home">
+						<h1 class="logo__title">한국오라클 DBU, 클라우드 세일즈 컨설팅팀</h1>
+						<h2 class="logo__tagline">Oracle Public Cloud - 기술블로그</h2>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="menu__toggle" aria-hidden="true">Menu</a><nav class="menu menu--collapse menu--collapse-0 closed" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" style="transition: max-height 284ms ease 0s; position: relative;" aria-hidden="false">
+	<ul class="menu__list">
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/" title="">HOME</a></li>
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/oraclooud/" title="">ORACLOUD.KR 소개</a></li>
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/opc/" title="">ORACLE CLOUD 새소식</a></li>
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/opc-iaas/" title="">IAAS 서비스</a></li>
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/opc-paas/" title="">PAAS 서비스</a></li>
+		<li class="menu__item "><a class="menu__link" href="http://localhost:1313/opc-terminology/" title="">OPC 용어사전</a></li>
+		<li class="menu__item "><a class="menu__link" href="https://gitter.im/oracloud-korea-user-group/Lobby" title="블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다." target="_blank">오라클 클라우드 챗팅룸</a></li>
+	</ul>
+</nav>
+
+		</header>
+		<div class="wrapper clearfix">
+
+
+<div class="main-content content" role="main" itemprop="mainContentOfPage">
+	<article class="post">
+		<header class="post__header clearfix">
+			<h1 class="post__title">Ravello를 이용한 모의 해킹 환경 구축</h1>
+			<p class="post__meta meta">
+				<svg class="icon icon-time" height="14" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"></path></svg>
+				<time class="post__meta-date" datetime="2017-03-25 11:23:39 +0900 KST">March 25, 2017</time>
+				<span class="post__meta-categories meta-categories">
+					<svg class="icon icon-category" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m7 2l1 2h8v11h-16v-13z"></path></svg>
+					<a class="meta-categories__link" href="http://localhost:1313/categories/ravello" rel="category">ravello</a></span>
+			</p>
+		</header>
+		<div class="post__content clearfix">
+			<figure class="post__thumbnail">
+				<img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/it_jaebul.png" alt="Ravello를 이용한 모의 해킹 환경 구축">
+			</figure>
+			<p>(주)노브레이크 대표이사이며 오라클 ACE 디렉터로 활동하시는 김석 님께서 정리해 주신 라벨로 활용 문서입니다.</p>
+
+<p>라벨로를 이용한 모의해킹 실습 환경 구성을 주제로 4부에 걸쳐 시리즈 된 문서입니다.</p>
+
+<p>라벨로의 활용 방법과 사용법에 대하여 매우 잘 정리된 문서입니다.</p>
+
+<ul>
+<li><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/external-link.png" alt="External Contents's Link"> <a href="http://solatech.tistory.com/393">김재벌의 IT 이야기: 라벨로 시스템을 이용한 클라우드 구축(1) - 가입하기</a>: 2017.01.15</li>
+<li><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/external-link.png" alt="External Contents's Link"> <a href="http://solatech.tistory.com/394">김재벌의 IT 이야기: 라벨로 클라우드를 이용한 실습환경 구축(2) - 기본 환경과 이미지</a>: 2017.01.18</li>
+<li><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/external-link.png" alt="External Contents's Link"> <a href="http://solatech.tistory.com/395">김재벌의 IT 이야기: 라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(3) - 커스텀 이미지 업로드</a>: 2017.01.18</li>
+<li><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/external-link.png" alt="External Contents's Link"> <a href="http://solatech.tistory.com/396">김재벌의 IT 이야기: 라벨로 클라우드를 이용한 모의해킹 실습 환경 구축(4) - 구성 디자인 및 VM 관리</a>: 2017.01.22</li>
+</ul>
+
+<blockquote>
+<p>위에 링크는 김석 님께서 작성하신 문서입니다. 김석 님의 승인을 받아 공유힙니다.
+자료 공유를 허락해 주신 김석 님께 감사드립니다.</p>
+</blockquote>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="m4.73135 3.3795002q0-.5597-.39604-.9557-.39604-.3961-.95577-.3961-.55974 0-.95578.3961-.39604.396-.39604.9557 0 .5598.39604.9558.39604.3961.95578.3961.55973 0 .95577-.3961.39604-.396.39604-.9558zm11.26865 6.0832q0 .5596998-.39076.9504998l-5.18548 5.196q-.41188.3908-.9610504.3908-.55974 0-.9505-.3908l-7.5511496-7.5616998q-.40132-.3907-.68119-1.0666-.27987-.6759-.27987-1.2357v-4.3934q0-.54920004.40132-.95050004.40132-.4013.9505-.4013h4.39339q.55974 0 1.23565.2799.67591.2798 1.07723.6812l7.55115 7.54060004q.39076.4118.39076.961z"></path></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link" href="http://localhost:1313/tags/ravello/" rel="tag">ravello</a></li>
+		<li class="tags__item"><a class="tags__link" href="http://localhost:1313/tags/virtualization/" rel="tag">Virtualization</a></li>
+	</ul>
+</div>
+
+	</article>
+	
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="김태완 avatar" src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/taewan.png" class="avatar" width="90" height="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">작성자: 김태완</span>
+	</div>
+	<div class="authorbox__description">
+		한국오라클 DBU 클라우드 서비스 팀 소속입니다. 클라우드, 가상화, 네트워크, 데이터 분석에 중심을 두고 있습니다.
+	</div>
+	<div class="authorbox__description">
+		E-mail: oracloud.kr@gmail.com
+	</div>
+</div>
+
+	
+<nav class="post-nav row clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div class="post-nav__item post-nav__item--prev col-1-2">
+		<a class="post-nav__link" href="http://localhost:1313/post/ravello_overview/" rel="prev"><span class="post-nav__caption">«Previous</span><p class="post-nav__post-title">Oracle Ravello Cloud Service 소개</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next col-1-2">
+		<a class="post-nav__link" href="http://localhost:1313/post/talkit_dbcs/" rel="next"><span class="post-nav__caption">Next»</span><p class="post-nav__post-title">TalkIT: 클라우드에서 오라클 데이터베이스</p></a>
+	</div>
+</nav>
+
+	
+<div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px ! important; min-width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 320px ! important;" src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/a.html" horizontalscrolling="no" verticalscrolling="no" width="100%" frameborder="0"></iframe></div>
+<script>
+
+
+
+
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://oracloud-kr.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+
+<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	
+<div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="//google.com/search">
+		<label>
+			<span class="screen-reader-text">Search for:</span>
+			<input class="widget-search__field" placeholder="SEARCH..." name="q" type="search">
+		</label>
+		<input class="widget-search__submit" value="Search" type="submit">
+		<input name="sitesearch" value="//localhost:1313/" type="hidden">
+	</form>
+</div>
+	
+
+	
+<div class="widget-recent widget">
+	<h4 class="widget__title">최신글</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/occs_new_docker_container/" title="OCCS에 Docker 이미지 배포">
+							OCCS에 Docker 이미지 배포</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/omc_cloud_mgt/" title="OCM: 클라우드 기반 차세대 인프라 운영관리">
+							OCM: 클라우드 기반 차세대 인프라 운영관리</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/bmcs_terraform/" title="Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축">
+							Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/omc/" title="Oracle Management Cloud(OMC) 소개">
+							Oracle Management Cloud(OMC) 소개</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/occs-new-inst/" title="Oracle Container CS 인스턴스 생성">
+							Oracle Container CS 인스턴스 생성</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/docker_in_oc/" title="오라클 클라우드의 Docker 컨테이너 지원 유형">
+							오라클 클라우드의 Docker 컨테이너 지원 유형</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/uploadcli/" title="Upload CLI을 이용한 Object Storage 데이터 이관">
+							Upload CLI을 이용한 Object Storage 데이터 이관</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/ravello_demo/" title="Oracle Ravello Cloud Service 데모">
+							Oracle Ravello Cloud Service 데모</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/occs/" title="Oracle Container Cloud Service 소개와 Docker 개요">
+							Oracle Container Cloud Service 소개와  ......</a>
+		  </li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/post/terraform/" title="IaaS Provisioning 툴: Terraform">
+							IaaS Provisioning 툴: Terraform</a>
+		  </li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">카테고리</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/cloud">Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/container">Container</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/docker">Docker</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/iaas">Iaas</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/oracle">Oracle</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/oracle-cloud">Oracle-Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/oracle-management-cloud">Oracle-Management-Cloud</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/ravello">Ravello</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/categories/webinar">Webinar</a></li>
+		</ul>
+	</div>
+</div>
+
+	
+<div class="widget-taglist widget">
+	<h4 class="widget__title">테그</h4>
+	<div class="widget__content">
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/acc" title="acc">acc (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/automation" title="automation">automation (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/bmcs" title="bmcs">bmcs (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/cloud" title="cloud">cloud (9)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/container" title="container">container (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/dbcs" title="dbcs">dbcs (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/devops" title="devops">devops (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/docker" title="docker">docker (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/iaac" title="iaac">iaac (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/iaas" title="iaas">iaas (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/management" title="management">management (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/monitoring" title="monitoring">monitoring (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/nested-virtualization" title="nested-virtualization">nested-virtualization (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/object-storage" title="object-storage">object-storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/occs" title="occs">occs (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/omc" title="omc">omc (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/oracle" title="oracle">oracle (5)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/oracle-cloud" title="oracle-cloud">oracle-cloud (5)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/ravello" title="ravello">ravello (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/ssh" title="ssh">ssh (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/storage" title="storage">storage (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/talkit" title="talkit">talkit (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/tutorial" title="tutorial">tutorial (4)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/virtualization" title="virtualization">virtualization (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/vm" title="vm">vm (1)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/webinar" title="webinar">webinar (2)</a>
+		<a class="widget__link widget__link--taglist" href="http://localhost:1313/tags/window" title="window">window (1)</a>
+	</div>
+</div>
+
+	<div class="widget-categories widget">
+	<h4 class="widget__title">SNS(Social Network Service)</h4>
+	<div class="widget__content">
+		<a href="https://github.com/oracloud-kr-team" target="_blank" title="github"><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/github.png" width="50px" height="50px"></a>
+		<a href="https://www.slideshare.net/ssusercda07e" target="_blank" title="slideshare"><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/slideshare.png" width="50px" height="50px"></a>
+		<a href="https://www.youtube.com/channel/UCboJr3TLlqeDqpBURRdb_lg" target="_blank" title="youtube"><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/youtube.png" width="50px" height="50px"></a>
+		<a href="mailto:oracloud.kr@gmail.com" title="email"><img src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/email.png" width="50px" height="50px"></a>
+	</div>
+</div>
+
+	
+<div class="widget-categories widget">
+	<h4 class="widget__title">오라클 클라우드 관련 사이트</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://cloud.oracle.com/">
+				Oracle Public Cloud 홈페이지</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://developer.oracle.com/">
+				Oracle Developers</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://docs.oracle.com/en/cloud/">
+				오라클 클라우드 문서</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://apexapps.oracle.com/pls/apex/f?p=44785">
+				Oracle Learning Library</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+	
+</aside>
+
+	</div>
+		<footer class="footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+			<div class="container container-inner">
+				<p class="footer__copyright">© 2017 한국오라클 DBU, 클라우드 세일즈 컨설팅팀. </p>
+			</div>
+		</footer>
+	</div>
+
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+	});
+</script>
+
+<script data-no-instant="">document.write('<script src="/livereload.js?port=1313&mindelay=10"></' + 'script>')</script><script src="Ravello%E1%84%85%E1%85%B3%E1%86%AF%20%E1%84%8B%E1%85%B5%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%86%E1%85%A9%E1%84%8B%E1%85%B4%20%E1%84%92%E1%85%A2%E1%84%8F%E1%85%B5%E1%86%BC%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%20%E1%84%80%E1%85%AE%E1%84%8E%E1%85%AE%E1%86%A8_files/livereload.js"></script>
+
+
+<iframe style="display: none;"></iframe></body></html>
