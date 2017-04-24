@@ -1,7 +1,7 @@
 +++
 author = "moonsun.lee"
 categories = []
-date = "2017-04-24T17:51:51+09:00"
+date = "2017-03-31T17:51:51+09:00"
 description = "Oracle Database Backup Cloud Service(이하 ODBCS)는 오라클 데이터베이스 백업을 위한 클라우드 스토리지 서비스(PaaS)입니다."
 language = ""
 tags = ["oracle", "dbcs", "database backup", "cloud"]
@@ -121,7 +121,7 @@ RMAN> list backup;
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db6.png)
 
-또한 백업된 시간을 자세히 알고 싶을 경우 아래의 OS 명령어를 입력하고 다시 RMAN에 접속하여 ‘list backup summary’ 명령어를 통해 확인합니다. 
+또한 백업된 시간을 자세히 알고 싶을 경우 아래의 OS 명령어를 입력하고 다시 RMAN에 접속하여 ‘list backup summary’ 명령어를 통해 확인합니다.
 
 <pre class="RMAN conf">
 [oracle@localhost~] export NLS_DATE_FORMAT='yyyy-mm-dd hh24:mi:ss'
@@ -172,5 +172,3 @@ https://docs.oracle.com/cloud/latest/dbbackup_gs
 
 
 ![](https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/266ac4ff-b1dc-471a-a57a-b6502403f164/Image/b135ad842cbfbb99d7b29db15e9f0fdb/dbbackup.jpg)
-
-
