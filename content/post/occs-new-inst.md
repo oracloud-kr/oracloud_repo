@@ -10,9 +10,9 @@ language = ""
 author = "taewan.kim"
 +++
 
-Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. ([관련 공지](https://www.oracle.com/corporate/acquisitions/stackengine/index.html)). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon 과 같은 container orchestration 도구입니다.
+Oracle Cloud는 Docker 기반의 컨테이너 서비스를 2016년 11월에 출시하였습니다. 오라클은 2015년 11월에  StackEngine을 인수하였습니다. ([관련 공지](https://www.oracle.com/corporate/acquisitions/stackengine/index.html)). StackEngine사는 2014년 텍사스 오스틴 주에서 설립된 업체로, 엔터프라이즈급 컨테이너 관리 및 자동화 솔루션 개발 업체입니다. StackEngine은 kubernetes(k8s), docker-swarm 그리고 marathon과 같은 container orchestration 도구입니다.
 
-오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합하였습니다. 이 결과물이 [Oracle Container Cloud Serivce](https://cloud.oracle.com/ko_KR/container) 입니다.
+오라클은 2015년 11월에 StackEngine을 인수한 후, 1년 동안 Oracle Public Cloud에 StackEngine을 통합하였습니다. 이 결과물이 [Oracle Container Cloud Service](https://cloud.oracle.com/ko_KR/container) 입니다.
 
 Oracle Container Clod Service를 통해서 Docker 컨테이너의 클러스터 구성, 인스턴스 배포 및 운영, 모니터링을 효과적으로 할 수 있습니다. 이러한 전체 과정에 대하여 웹 기반의 UI와 Rest API를 제공하기 때문에 사용의 편리성과 프로세스 자동화를 효과적으로 구성할 수 있습니다.
 
@@ -58,7 +58,7 @@ Oracle Cloud의 테스트 계정(Trail 계정)을 신청하면 다음과 같은 
 
 Trial 계정을 이용하여 최대 1개의 Manager node와 5개의 Worker node로 구성된 OCCS 인스턴스를 생성할 수 있습니다.
 
-## Oracle Container Cloud Serivce 생성하기
+## Oracle Container Cloud Service 생성하기
 
 OCCS 인스턴스를 생성하기에 앞서 cloud.oracle.com에 로그인해야 합니다. <그림 1>은 cloud.oracle.com의 초기화면입니다. 로그인하기 위해 초기 화면의 오른쪽 위에 위치하는 ```Sign In``` 메뉴를 클릭합니다.
 
@@ -76,12 +76,12 @@ OCCS 인스턴스를 생성하기에 앞서 cloud.oracle.com에 로그인해야 
 
 Trial 계정을 사용할 경우에는 "Traditional Cloud Account"를 선택해야 합니다.
 
-한국 사용자가 신청한 Trial 계정은 "Public Cloud Serives - US" 데이터 센터에 자원을 할당받습니다. 따라서 "Public Cloud Serives - US"를 선택하고 "My Services"를 클릭합니다.
+한국 사용자가 신청한 Trial 계정은 "Public Cloud Services - US" 데이터 센터에 자원을 할당받습니다. 따라서 "Public Cloud Services - US"를 선택하고 "My Services"를 클릭합니다.
 
 - 그림 2. 로그인을 위한 데이터 센터 선택
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-020.jpg)
 
-<그림 2>에서 "My Services"를 클릭하면, <그림 3>의 도메인을 입력하는 페이지로 이동합니다. 도메인은 앞으로 사용할 클라우드 서비스를 묶는 단위입니다. 시스템 그룹 단위라고 생각할 수 있습니다. 클라우드 계정 생성시에 지정된 도메인 정보를 입력하고 "실행" 버튼을 클릭합니다.
+<그림 2>에서 "My Services"를 클릭하면, <그림 3>의 도메인을 입력하는 페이지로 이동합니다. 도메인은 앞으로 사용할 클라우드 서비스를 묶는 단위입니다. 시스템 그룹 단위라고 생각할 수 있습니다. 클라우드 계정 생성 시에 지정된 도메인 정보를 입력하고 "실행" 버튼을 클릭합니다.
 
 - 그림 3. 도메인 정보 입력
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-030.jpg)
@@ -106,7 +106,7 @@ Trial 계정을 사용할 경우에는 "Traditional Cloud Account"를 선택해�
 - 그림 7. Oracle Cloud 서비스 목록
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-070.jpg)
 
-계정 생성 후 Container 서비스에 처음 접근하는 경우에는 <그림 8>과 같이 컨테이너 서비스 환영 페이지로 이동합니다. OCCS 콘솔 페이지로 이동하기 위해서 "Go to console"버튼을 클릭합니다.   
+계정 생성 후 Container 서비스에 처음 접근하는 경우에는 <그림 8>과 같이 컨테이너 서비스 환영 페이지로 이동합니다. OCCS 콘솔 페이지로 이동하기 위해서 "Go to console" 버튼을 클릭합니다.   
 
 - 그림 8. Container Cloud Service 환영 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-080.jpg)
@@ -208,18 +208,18 @@ Trial 계정을 사용할 경우에는 "Traditional Cloud Account"를 선택해�
 </tr>
 </table>
 
-모든 정보를 입력한 후 <그림 11>과 같이 "다음" 버튼 클릭합니다.
+모든 정보를 입력한 후 <그림 11>과 같이 ```다음``` 버튼 클릭합니다.
 
 - 그림 11. OCCS 인스턴스 생성 정보 입력
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-110.jpg)
 
 <그림 11>에서 "다음" 버튼을 클릭하면 <그림 12>와 같이 입력 정보 확인 페이지로 이동합니다.
-<그림 12>에서 "생성" 버튼을 클릭하면 OCCS 인스턴스 생성이 시작됩니다.
+<그림 12>에서 ```생성``` 버튼을 클릭하면 OCCS 인스턴스 생성이 시작됩니다.
 
 - 그림 12. 입력 정보 확인 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-120.jpg)
 
-<그림 12>에서 "생성" 버튼을 클릭하면 <그림 13>과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. <그림 13>에서 "Status" 속성이 "Creating service ..."인 것을 확인할 수 있습니다.
+<그림 12>에서 ```생성``` 버튼을 클릭하면 <그림 13>과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. <그림 13>에서 ```Status``` 속성이 ```Creating service ...```인 것을 확인할 수 있습니다.
 
 - 그림 13. OCCS 인스턴스 생성 후 OCCS 콘솔 페이지 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-130.jpg)
