@@ -73,7 +73,7 @@ Storage Cloud의 서비스 콘솔에 처음 접근할 경우에 데이터 복제
 Storage Cloud의 복제 정책은 두 가지로 구분됩니다.
 
 - 그림 3. Storage Cloud 서비스 콘솔의 복제 정책 설정 팝업
-![](/img/2017/04/object_storage_init/policy01.jpg)
+![](https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/policy01.jpg)
 
 Storage Cloud는 <그림 4>와 같이 7개의 설정 옵션이 제공됩니다. 현재 데모는 트라이얼 계정을 사용하고 있고
 한국에서 요청하는 트라이얼 계정은 US2 데이터센터에 위치합니다. <그림 4>의 옵션에서 데이터센터가 1개인 것은
