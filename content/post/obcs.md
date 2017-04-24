@@ -28,8 +28,6 @@ ODBCS는 설치가 간단하고 사용하기 매우 쉽습니다. Oracle Technol
 {{< youtube gbQ0i_uRGak >}}
 
 
-<br />
-<br />
 ## Demo
 ### Oracle Database Cloud Backup Module 설치하기
 --------------------------------
