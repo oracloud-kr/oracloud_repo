@@ -58,10 +58,6 @@ pygmentsstyle = "monokai"
     weight = -7
     Identifier = "PaaS 서비스 관련 문서를 정리하는 페이지입니다."
 [[menu.main]]
-    name = "Oracle Cloud 새소식"
-    url = "/opc_news/"
-    weight = -5
-[[menu.main]]
     name = "OPC 용어사전"
     url = "/opc-terminology/"
     weight = -3
