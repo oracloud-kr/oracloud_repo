@@ -40,11 +40,15 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/"
     weight = -100 # menu의 sorting을 담당
 [[menu.main]]
+    name = "oracloud.kr"
+    url = "/oraclooud/"
+    weight = -50 # menu의 sorting을 담당
+[[menu.main]]
     name = "OPC IaaS"
     url = "/opc-iaas/"
     weight = -5 # menu의 sorting을 담당
 [[menu.main]]
-    name = "Oracle Cloud 소개"
+    name = "Oracle Cloud"
     url = "/opc/"
     weight = -10
 [[menu.main]]
@@ -52,7 +56,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
     url = "/opc-paas/"
     weight = -4
 [[menu.main]]
-    name = "OPC 용어 정리"
+    name = "OPC 용어사전"
     url = "/opc-terminology/"
     weight = -3
 [[menu.main]]
