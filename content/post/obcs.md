@@ -3,15 +3,13 @@ author = "moonsun.lee"
 categories = []
 date = "2017-03-31T17:51:51+09:00"
 description = "Oracle Database Backup Cloud Service(이하 ODBCS)는 오라클 데이터베이스 백업을 위한 클라우드 스토리지 서비스(PaaS)입니다."
-language = ""
+language = "bsh"
 tags = ["oracle", "dbcs", "database backup", "cloud"]
 thumbnailInList = "https://docs.oracle.com/cloud/latest/dbbackup_gs/dcommon/img/cloudgs_dbbackup.png"
 thumbnailInPost = "https://i.ytimg.com/vi/SZQ3e6KrU8Y/maxresdefault.jpg"
 title = "Oracle Database Backup Cloud Service(ODBCS) 소개"
 
 +++
-
-
 
 ## Overview
 
@@ -52,7 +50,7 @@ http://www.oracle.com/technetwork/database/availability/oracle-cloud-backup-2162
 4. Terminal Window를 열어 opc_installer.jar 파일로 backup module을 설치합니다.
 
 5. 다운로드 받은 디렉토리로 이동하여 압축을 풀고 아래의 설치 명령어를 통하여 모듈을 설치합니다. 변수값에 오라클 퍼블릭 클라우드 계정정보를 입력하여 주면 됩니다.<br />
-<pre class="backup module">
+<pre class="prettyprint">
 *java -jar opc_install.jar -serviceName <strong>myService</strong>
 -identityDomain <strong>myDomain</strong> -opcId <strong>'myAccount@myCompany.com'</strong>
 -opcPass <strong>'myPassword'</strong> -walletDir /</strong>walletDirectory
@@ -61,18 +59,17 @@ http://www.oracle.com/technetwork/database/availability/oracle-cloud-backup-2162
 
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db1.png)
-<br />
-
 
 ### RMAN 설정하기
 --------------------------------
-Backup Module 설치가 완료되면 backup destination에 필요한 Recovery Manager(RMAN)을 설정합니다.<br />
-RMAN backup, restore, maintenance에 필요한 설정은 CONFIGURE 명령어를 사용합니다.
 
+Backup Module 설치가 완료되면 backup destination에 필요한 Recovery Manager(RMAN)을 설정합니다.
+
+RMAN backup, restore, maintenance에 필요한 설정은 CONFIGURE 명령어를 사용합니다.
 
 SBT PARMS 파라미터는 (ex. SBT_PARMS=(OPC_FILE=/u01…) 기존의 PFILE이나 SPFILE에서 설정할 수 있는 값이 아니라 backup 모듈 설치 도중 생성되는 OPC_PFILE에 저장되는 파라미터입니다. 또한 OPC_FILE은 $ORACLE_HOME/dbs 디렉토리에 저장되어 있습니다. 해당 파라미터의 경로를 모를 경우, find 명령어로 검색합니다. (ex. find / -name opcorcl.ora)
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> CONFIGURE CHANNEL DEVICE TYPE 'SBT_TAPE' PARMS  'SBT_LIBRARY=/home/oracle/OPC/lib/ libopc.so, ENV=(OPC_PFILE=/u01/products/db/12.1/dbs/opcodbs.ora)';
 </pre>
 
@@ -91,13 +88,13 @@ Recovery Manager(RMAN) encrypted backup은 보안 상의 이유로 완벽하게 
 
 이번 데모에서는 password encryption으로 암호화를 진행합니다. 백업을 수행하기 전, 아래의 명령어로 password encryption을 설정합니다.
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> set encryption on identified by 'abc123' only;
 </pre>
 
 Encryption 설정 후 아래의 명령어로 백업을 진행합니다. 정상적으로 백업이 시작되면 data file 백업 후 Control file과 SPFILE은 가장 마지막 부분에서 백업됩니다.
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 RMAN> backup device type sbt as compressed backupset database plus archivelog format '%d_%U';
 </pre>
 
@@ -113,7 +110,8 @@ RMAN> backup device type sbt as compressed backupset database plus archivelog fo
 ### Backup 정보 확인하기
 --------------------------------
 아래의 명령어로 backup file을 확인할 수 있습니다.
-<pre class="RMAN conf">
+
+<pre class="prettyprint">
 RMAN> list backup;
 </pre>
 
@@ -123,7 +121,7 @@ RMAN> list backup;
 
 또한 백업된 시간을 자세히 알고 싶을 경우 아래의 OS 명령어를 입력하고 다시 RMAN에 접속하여 ‘list backup summary’ 명령어를 통해 확인합니다.
 
-<pre class="RMAN conf">
+<pre class="prettyprint">
 [oracle@localhost~] export NLS_DATE_FORMAT='yyyy-mm-dd hh24:mi:ss'
 [oracle@localhost~] rman target /
 
@@ -154,7 +152,6 @@ ODBCS에 저장된 백업본을 통해서 복구하는 방법은 기존 On premi
 정상적으로 복구가 완료되었다면 아래와 같이 데이터베이스 파일이 정상적으로 보이며, 데이터베이스가 재기동 됩니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/odbcs/db12.png)
-<br />
 
 
 ## 마치며
