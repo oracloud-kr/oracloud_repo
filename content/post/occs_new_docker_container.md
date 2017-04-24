@@ -18,7 +18,7 @@ Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공�
 
 |Container CS 용어|설명|
 |---|---|
-|Service|OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS관련 설정을 추가한 것|
+|Service|OCCS를 사용하여 생성, 배포, 관리 가능한 고수준 설정 객체, Docker 이미지에 OCCS 관련 설정을 추가한 것|
 |Stack|복수의 Serivce로 구성된 이미지 관리 체계. Compose 설정 포멧을 사용하는 고수준 설정 객체|
 |Deployment (배포)|Service와 Stack을 배포하여 하나 이상의 컨테이너를 만드는 것|
 |Resource Pool|호스트 서버를 상호 독립적인 그룹으로 구성하는 묶음. 각 Resource Pool은 하나 이상의 호스트(가상머신)로 구성. 하나의 호스트는 하나의 Resource Pool에만 할당됨. 한 호스트가 복수의 Resource Pool에 할당될 수 없음.|
@@ -81,14 +81,14 @@ OCCS의 컨테이너 콘솔에 접근하기 위해서는 Oracle Cloud에 로그�
 - 그림 4. 인증 정보 입력 및 로그인
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step024.jpg)
 
-정상적으로 로그인되면 <그림 5>와 같이 Oracle Cloud의 대시보드가 출력됩니다.
+로그인이 완료되면 <그림 5>와 같이 Oracle Cloud 대시보드가 출력됩니다.
 
 - 그림 5. Oracle Cloud 대시보드
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step030.jpg)
 
-<그림 6>과 같이 Oracle Cloud의 대시보드에 출력된 Container 상자 오른편 위에 위치한 메뉴 아이콘을 클릭한 후 ```서비스 콘솔 열기``` 메뉴를 선택하면 OCCS 서비스 콘솔로 이동합니다.
+<그림 6>과 같이 Oracle Cloud 대시보드에 출력된 Container 상자 오른편 위에 위치한 메뉴 아이콘을 클릭한 후 ```서비스 콘솔 열기``` 메뉴를 선택하면 OCCS 서비스 콘솔로 이동합니다.
 
-- 그림 6. Oracle Cloud의 대시보드에서 OCCS 서비스 콘솔 열기
+- 그림 6. Oracle Cloud 대시보드에서 OCCS 서비스 콘솔로 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step040.jpg)
 
 ### OCCS 컨테이너 콘솔 로그인
@@ -98,22 +98,22 @@ OCCS의 컨테이너 콘솔에 접근하기 위해서는 Oracle Cloud에 로그�
 - 그림 7. OCCS 서비스 콘솔에서 Container 콘솔로 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step060.jpg)
 
-<그림 8>과 같이 Container 콘솔에 접근하기 위해서는 로그인 단계를 거쳐야 합니다. OCCS 인스턴스 생성과정에서 설정한 관리자 계정 명과 패스워드를 입력하고 로그인합니다. 기본 설정 계정명은 admin입니다.
+<그림 8>과 같이 Container 콘솔에 접근하기 위해서는 로그인 단계를 거쳐야 합니다. OCCS 인스턴스 관리자 계정 명과 패스워드를 입력하고 로그인합니다. 기본 관리자 계정은 admin입니다.
 
 - 그림 8. Contaienr 콘솔의 로그인 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step070.jpg)
 
-Contaienr 콘솔 로그인이 정상적으로 완료되면, Contaienr 콘솔의 대시보드(<그림 9> 참조)가 출력됩니다. 대시보드에서는 클러스터의 배포 상태 및 호스트, Resource Pool, 컨테이너, 이미지 정보를 확인할 수 있습니다.
+Contaienr 콘솔 로그인이 완료되면, Contaienr 콘솔(<그림 9> 참조)이 출력됩니다. Contaienr 콘솔에서는 OCCS 인수턴스의 배포 상태 및 호스트, Resource Pool, 컨테이너, 이미지 정보를 확인할 수 있습니다.
 
-- 그림 9. Contaienr 콘솔 대시보드
+- 그림 9. Contaienr 콘솔
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step080.jpg)
 
 ## 서비스 배포 및 OCCS 기본 기능
 
 ### HelloWorld 서비스 배포
 
-이제 Nginx에서 동작하는 Hello World 웹 애플리케이션 더커 이미지를 배포하여 컨테이너를 생성할 것입니다.
-Contaienr 콘솔 대시보드의 왼쪽 메뉴에서 <그림 10>와 같이 ```Services``` 메뉴를 클릭하면, OCCS에 빌트인으로 등록되어 있는 23개 서비스 목록이 출력됩니다.
+이제 Nginx에서 동작하는 HelloWorld 웹 애플리케이션 더커 이미지를 배포하여 컨테이너를 생성할 것입니다.
+Contaienr 콘솔의 왼쪽 메뉴에서 <그림 10>와 같이 ```Services``` 메뉴를 클릭하면, OCCS에 등록되어 있는 23개 서비스 목록이 출력됩니다.
 Service는 앞에서 설명한 것처럼 Docker 이미지를 OCCS에서 관리 할 수 있도록 OCCS 설정을 추가한 고수준 관리 객체입니다.
 빌트인으로 제공되는 23개의 서비스를 참조하거나 복사하여 새로운 서비스를 만들 수 있습니다.
 오른편 상단 검색 창에 "hello"를 입력하여 helloworld 서비스를 찾고, 이 서비스의 ```deploy``` 버튼을 클릭하여 서비스를 배포합니다.  
@@ -121,10 +121,10 @@ Service는 앞에서 설명한 것처럼 Docker 이미지를 OCCS에서 관리 �
 - 그림 10. helloworld 서비스 배포
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step090.jpg)
 
-<그림 10>에서 ```deploy```버튼을 클릭하면 <그림 11>과 같이 배포를 위한 추가 설정 팝업창이 출력됩니다. <그림 11>의 설정 창에서는 다음과 같은 값을 설정할 수 있습니다.
+<그림 10>에서 ```deploy```버튼을 클릭하면 <그림 11>과 같이 배포를 위한 설정 창이 출력됩니다. <그림 11>의 설정 창에서는 다음과 같은 값을 설정할 수 있습니다.
 
 - Display name: 컨테이너 명
-- Resource pool: 컨테이너를 배포할 Resource Pool
+- Resource pool: 컨테이너를 배포 할 Resource Pool
 - Quality: 컨테이너 수량
 - Scheduling policy: 컨테이너 배포 시 Resource pool에서 호스트 선정 기준
   - Random: 임의 선정
@@ -135,27 +135,27 @@ Service는 앞에서 설명한 것처럼 Docker 이미지를 OCCS에서 관리 �
   - Per Host: Resource Pool의 모든 호스트에 컨테이너 배포
   - Per Tag: tag가 할당된 호스트에 배포, per tag 출력시 tag 입력 필드 UI에 추가됨.
 
-데모에서는 기본 설정을 그대로 유지한 상태로 ```deploy```버튼을 클릭하여 서비스를 배포합니다.
+데모에서는 기본 설정을 유지한 상태로 ```deploy```버튼을 클릭합니다.
 
-- 그림 11. 서비스 배포 설정 팝업
+- 그림 11. 서비스 배포 설정 창
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step100.jpg)
 
-서비스 배포가 시작되면, UI에서 더커 이미지를 내려받는 것을 확인할 수 있습니다<그림 12 참조>. 이때 컨테이너의 상태는 'Pending'으로 출력됩니다. 기본 설정 상태에서 Docker 이미지는 index.docker.io에서 내려받습니다. 현재 설정된 Registry는 왼편 ```Registries``` 메뉴에서 확인할 수 있습니다.
+서비스 배포가 시작되면, UI에서 더커 이미지를 내려받는 것을 확인할 수 있습니다<그림 12 참조>. 이때 컨테이너의 상태는 'Pending'으로 출력됩니다. 기본 설정 상태에서 Docker 이미지는 index.docker.io에서 내려받습니다. 설정된 Registry는 왼편 ```Registries``` 메뉴에서 확인할 수 있습니다.
 
 - 그림 12. Docker 이미지 다운로드 상태 - Pending  
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step110.jpg)
 
-<그림 12>에서 docker 이미지 내려받기가 완료되면, <그림 13>와 같이 컨테이너가 실행됩니다. 상태는 'RUNNING' 상태로 표시됩니다.
+<그림 12>에서 docker 이미지 내려받기가 완료되면, <그림 13>와 같이 컨테이너가 실행됩니다. 이제 컨테이너 상태는 'RUNNING' 상태로 표시됩니다.
 
 - 그림 13. 서비스 배포 완료 상태 - Running
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step120.jpg)
 
-컨테이너 상세 정보 페이지에서의 ```containers``` 탭에서는 <그림 13>과 같이 컨테이너 상태, 컨테이너 명, 호스트 명, 업타임, 건강상태 정보를 출력합니다. ```stack YAML``` 탭에서는 <그림 14>와 같이 컨테이너의 실행 YAML 설정을 확인할 수 있습니다. 이 탭에서 컨테이너의 이미지 정보, 포트 정보 및 환경 정보를 확인할 수 있습니다. <그림 14>에서 현재 컨테이너가 동작하는 가상머신(호스트)의 3000 포트가 컨테이너의 80 포트에 바인딩 되어있음을 확인할 수 있습니다.
+컨테이너 상세 정보 페이지의 ```containers``` 탭에서는 <그림 13>과 같이 컨테이너 상태, 컨테이너 명, 호스트 명, 업 타임, 건강상태 정보를 출력합니다. ```stack YAML``` 탭에서는 <그림 14>와 같이 컨테이너의 실행 YAML 설정을 확인할 수 있습니다. 이 탭에서 컨테이너의 이미지 정보, 포트 정보 및 환경 정보를 확인할 수 있습니다. <그림 14>에서 현재 컨테이너가 동작하는 가상머신(호스트)의 3000 포트가 컨테이너의 80 포트에 바인딩 되어있음을 확인할 수 있습니다.
 
 - 그림 14. 배포 완료된 컨테이너의 실행 정보 - YAML
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step130.jpg)
 
-<그림 15>와 같이 'Containers' 탭에서 Hostname 컬럼의 링크를 클릭하여, helloworld 컨테이너가 동작하는 호스트의 상세 정보가 출력됩니다.
+<그림 15>와 같이 'Containers' 탭에서 Hostname 컬럼의 링크를 클릭하면, helloworld 컨테이너가 동작하는 호스트의 상세 정보가 출력됩니다.
 
 - 그림 15. 컨테이너가 구동하는 호스트 서버의 정보 출력 페이지 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step140.jpg)
@@ -165,7 +165,7 @@ Service는 앞에서 설명한 것처럼 Docker 이미지를 OCCS에서 관리 �
 - 그림 16. 호스트 IP 확인
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step150.jpg)
 
-<그림 14>와 <그림 16>에서 확인한 IP와 포트 정보로부터 helloworld 컨테이너 웹서버 URL은 ```http://129.144.12.26:3000```라는 것을 확인할 수 있습니다. 이 URL에 접근하면 <그림 17>과 같은 결과가 출력됩니다. <그림 17>은 브라우저로 호스트 IP(129.144.12.26)와 포트(3000)에 접근한 결고입니다. 즉 호스트(129.144.12.26)에 동작 중인 helloworld 컨테이너 80 포트에 접근한 결과물 입니다.
+<그림 14>와 <그림 16>에서 확인한 IP와 포트 정보로부터 helloworld 컨테이너의 웹 URL은 ```http://129.144.12.26:3000```이라는 것을 확인할 수 있습니다. 이 URL에 접근하면 <그림 17>과 같은 결과가 출력됩니다. <그림 17>은 브라우저로 호스트 IP(129.144.12.26)와 포트(3000)에 접근한 결과입니다. 즉 호스트(129.144.12.26)에 동작 중인 helloworld 컨테이너의 80 포트에 접근한 결과물 입니다.
 
 - 그림 17. ```http://129.144.12.26:3000``` 접근
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step160.jpg)
@@ -237,10 +237,10 @@ Docker를 운영하는 과정에서 가장 관리하기 어려운 부분은 네�
 컨테이너 간의 네트워크 구성이 강 결합 방식으로 구성될 경우[^3], 특정 컨테이너의 호스트 변경, 재시작은 다른 컨테이너의 설정 변경을 유발하는 문제가 발생합니다.
 이 문제를 OCCS는 Service Discovery로 해결합니다.
 OCCS의 Service를 시작하면 컨테이너 네트워크 구성 정보가 Service Discovery에 등록됩니다.
-컨테이너 간의 네트워크 연결은 ```Service Discovery```의 정보를 참조하여 동작합니다.
-<그림 27>에서 helloworld 컨테이너가 시작할 때, 해당 컨테이너가 동작하는 host와 컨테이너와 host의 바인딩 포트를 조회할 수 있습니다.   
+컨테이너 간의 네트워크를 연결할 때 ```Service Discovery```의 정보를 참조합니다.
+<그림 27>에서 helloworld 컨테이너가 동작하는 host 주소와 컨테이너와 host 사이의 바인딩 포트를 조회할 수 있습니다.   
 
-[^3]: 컨테이너 간의 네트워크 구성이 강 결합 방식으로 구성된다는 것은 컨테이너 실행에서 -p 옵션을 사용하여 호스트와 컨테이너 포트를 바인딩 하거나 --link 옵션을 사용하여 컨테이너 간에 네트워크를 연동하는 방식을 의미합니다.
+[^3]: 컨테이너 간의 네트워크 구성이 강 결합 방식으로 구성된다는 것은 컨테이너 실행 시 -p 옵션을 사용하여 설정한 호스트와 컨테이너 포트를 바인딩 정보를 애플리케이션 에서 직접 참조하거나, --link 옵션을 사용하여 컨테이너 간에 네트워크를 연동하는 방식을 의미합니다.
 
 - 그림 27. Service Discovery 컨테이너 등록 정보 조회
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step270.jpg)
@@ -262,16 +262,16 @@ OCCS에는 빌트인으로 3개 Stack이 포함되어 있습니다. 다음은 OC
 Stack 설정은 더커 커뮤니티에서 범용적으로 사용하는 compose 포멧을 사용하기 때문에,
 기존 docker에 익숙한 사용자라면 OCCS의 stack 개념을 바로 이해할 수 있습니다.
 
-<그림 27>에서 Stack 신규 등록, 설정 변경, Stack 배포, 제거 작업을 수행할 수 있습니다.
+<그림 27>에서 Stack의 신규 등록, 설정 변경, Stack 배포, 제거를 할 수 있습니다.
 
 - 그림 28. Stack 관리 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step280.jpg)
 
-<그림 29>는 Stack을 실행할 때 배포 설정을 위해서 나타나는 팝업입니다.
-앞에서 살펴본 Service 실행과 다른점은 팝업창에 레이어가 존재하는 것입니다.
-각 레이어별로 배포 수량, 배포 전략, 호스트 선정 기준을 할 수 있습니다. 설정이 완료되면 ```deploy```버튼을 클릭합니다.
+<그림 29>는 Stack을 실행할 때 배포 설정을 위해서 나타나는 설정 창입니다.
+앞에서 살펴본 Service 실행과 다른점은 설정 창이 레이어로 구분된다는 것입니다.
+각 레이어별로 배포 수량, 배포 전략, 호스트 선정 기준을 설정 할 수 있습니다. 설정이 완료되면 ```deploy```버튼을 클릭합니다.
 
-- 그림 29. Stack 배포 설정 팝업
+- 그림 29. Stack 배포 설정 창
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step290.jpg)
 
 <그림 30>에서 배포가 시작되면 DB 레이어 부터 컨테이너 배포가 시작되는 것을 확인할 수 있습니다.
@@ -287,13 +287,13 @@ DB 레이어는 초록색으로 WordPress 레이어는 주황색으로 출력합
 - 그림 31. DB 레이어 종료 후, Wordpress레이어 배포 시작
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step310.jpg)
 
-두 레이어의 컨테이너 2개가 모두 시작되면, <그림 32>와 같이 초록색으로 상태가 출력되는 것을 확인할 수 있습니다.
+두 레이어의 컨테이너가 모두 시작되면, <그림 32>와 같이 상태가 초록색으로 출력되는 것을 확인할 수 있습니다.
 <그림 32>의 Deployments 페이지에서는 Stack에 대한 전반적인 실행 정보 확인이 가능합니다.
 
 - 그림 32. Deployments 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step320.jpg)
 
-Deployments 페이지의 YAML 탭에서 컨테이너들 사이의 설정 및 구성 정보를 확인할 수 있습니다. <그림 33 참조>
+Deployments 페이지의 YAML 탭에서 Stack을 구성하는 컨테이너들의 설정 및 구성 정보를 확인할 수 있습니다. <그림 33 참조>
 
 - 그림 33. Deployments의 페이지의 컨테이너들 사이의 설정 - compose 포멧
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step330.jpg)
@@ -311,7 +311,7 @@ OCCS는 배포된 컨테이너에 부하가 증가할 경우에 컨테이너를 
 - 그림 35. Wordpress 레이어의 컨테이너를 4개로 변경
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step350.jpg)
 
-<그림 36>의 'Containers' 메뉴에서 현재 6개의 컨테이너가 동작 중인 것을 확인할 수 있습니다.
+<그림 36>의 'Containers' 메뉴에서 현재 6개 컨테이너가 동작 중인 것을 확인할 수 있습니다.
 <그림 34>까지 동작 중인 컨테이너는 3개(helloworld 컨테이너, db 컨테이너, wordpress 컨테이너)였습니다.  
 <그림 35>에서 wordpress 컨테이너 수량을 변경하여 3개의 컨테이너가 추가된 상태입니다.
 
