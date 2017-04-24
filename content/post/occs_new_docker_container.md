@@ -43,10 +43,10 @@ Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공�
 - 컨테이너 로그 조회
 - Stack 편집
 
-본 문서의 내용에는 3개의 웹 페이지가 등장합니다. 각 웹 페이지는 다음 이름으로 통일합니다.
+본 문서에는 3개의 웹 페이지를 사용합니다. 각 웹 페이지는 다음 이름으로 통일합니다.
 
-- Oracle Cloud 대시보드: Oracle Cloud 계정으로 로그인이 완료되면 접근하는 페이지
-- OCCS 서비스 콘솔: OCCS 인스턴스를 생성하는 OCCS 메인 페이지
+- Oracle Cloud 대시보드: Oracle Cloud 계정으로 로그인하면 접근하는 페이지
+- OCCS 서비스 콘솔: OCCS 인스턴스를 생성하는 OCCS 서비스 메인 페이지
 - Container 콘솔: OCCS 인스턴스의 관리 페이지. OCCS 인스턴스 생성시 설정한 관리자 계정으로 로그인.
 
 ### Oracle Cloud 로그인 및 OCCS 서비스 콘솔
@@ -57,7 +57,7 @@ OCCS의 컨테이너 콘솔에 접근하기 위해서는 Oracle Cloud에 로그�
 - 그림 1. cloud.oracle.com에서 로그인 페이지로 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step010.jpg)
 
-<그림 1>에서 ```Sign In```을 클릭하면 <그림 2>의 로그인 페이지로 이동합니다. 로그인 페이지에서 사용자 계정 유형과 데이터 센터를 선택합니다. 현재 Trail 계정을 사용로 작업하고 있다면 다음과 같이 설정합니다[^1].
+<그림 1>에서 ```Sign In```을 클릭하면 <그림 2>의 로그인 페이지로 이동합니다. 로그인 페이지에서 사용자 계정 유형과 데이터 센터를 선택합니다. 현재 Trail 계정을 사용하고 있다면 다음과 같이 설정합니다[^1].
 
 - 계정 유형: Traditional Cloud Account
 - 데이터 센터: Public Cloud Services - US
