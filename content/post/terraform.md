@@ -3,12 +3,13 @@ author = "jisun.kang"
 categories = ["iaas"]
 date = "2017-04-21T17:15:48+09:00"
 description = "자동화 구축시 사용하는 devops 툴인 terraform에 대해서 소개하는 문서입니다"
+tags = ["devops", "IAAC", "Automation"]
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/terraform/terraform.jpg"
 language = "bsh"
 tags = ["devops", "iaas", "automation"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/terraform/logo.png"
 thumbnailInPost = ""
 title = "Terraform에 대한 기본 소개"
-
 +++
 
 ## Terraform에 대하여..
@@ -29,6 +30,7 @@ Terraform의 설정 파일은 HashiCorp가 만든 설정 언어인 HCL을 사용
 
 ### 시작하면서
 
+
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/terraform/HCL1.jpg)
 
 주석은 #, // 또는 /* */를 사용합니다. 3번 라인은 opc라는 변수를 선언한 것으로 값 할당은 key = value형식을 사용하는데 여기서 value는 문자열, 숫자, Boolean, 리스트, 맵의 형식을 사용할 수 있습니다. 문자열은 쌍따옴표를 사용하고 String Interpolation에는 ${}문법을 사용합니다. 멀티라인 문자열은 heredoc 스타일로 <<EOF, EOF를 사용하여 코드 안에 파일안에 바로 문자열의 내용을 집어넣습니다.
@@ -41,7 +43,6 @@ resource TYPE NAME {
 	[count = COUNT]
 	[depends_on = [RESOURCE NAME, ...]]
 	[provider = PROVIDER]
-
 	[LIFECYCLE]
 
 	[CONNECTION]
@@ -52,6 +53,7 @@ resource TYPE NAME {
 resource가 키워드이고 TYPE는 프로바이더에 맞게 Terraform에서 정의한 리소스의 타입 이름입니다. NAME은 개발자가 임의로 주면 되는 이름입니다. 2번 라인의 CONFIG는 KEY = VALUE형식이나 KEY { CONFIG }형식이 됩니다. 그래서 OPC 인스턴스를 정의하는 리소스 설정의 예시를 보면 다음과 같습니다.
 
 아래의 예제는 Microsoft_Windows_Server_2012_R2 이미지를 이용하여 OC3 Shape로 OPC Instance를 정의한 것입니다.
+
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/terraform/HCL2.jpg)
 
@@ -102,6 +104,7 @@ CLI를 통하여 변수값을 할당하고자 할때는
 $ terraform plan \
 	-var 'access_key=foo' \
 	- var 'secre_key=bar'
+
 ...
 </pre>
 
