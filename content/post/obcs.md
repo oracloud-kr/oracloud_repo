@@ -25,7 +25,7 @@ title = "Oracle Database Backup Cloud Service(ODBCS) 소개"
 
 ODBCS는 설치가 간단하고 사용하기 매우 쉽습니다. Oracle Technology Netwirk(OTN)을 통해서 Oracle Database Cloud Backup Module을 다운로드 받고 설치합니다. 백업 모듈을 설치한 후 몇 가지 RMAN 설정을 하면, 익숙한 RMAN명령어를 사용하여 Cloud 환경으로 백업할 준비가 됩니다. 클라우드 상에서 제공되는 온라인 대쉬보드를 통해서 백업을 위한 스토리지 사용량과 서비스 현황을 모니터링 할 수 있으며, 필요에 따라 쉽고 빠르게 용량을 추가할 수 있습니다. 아래 데모를 통해 자세히 알아 보도록 하겠습니다.
 
-{{< youtube gbQ0i_uRGak >}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gbQ0i_uRGak?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 
 ## Demo
