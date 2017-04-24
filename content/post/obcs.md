@@ -14,7 +14,6 @@ title = "Oracle Database Backup Cloud Service(ODBCS) 소개"
 
 
 ## Overview
---------------------------------
 
 전통적으로 데이터베이스의 오프사이트 백업은 테이프로 백업 후 리모트 위치로 복제하여 보관해왔습니다. 그러나 이와 같은 방법은 가격적으로나 운영적인 측면에서 많은 노력을 기울어야 합니다. ODBCS는 이와 같은 니즈에 대한 매우 훌륭한 선택적인 방안을 제공합니다.
 
@@ -26,10 +25,14 @@ title = "Oracle Database Backup Cloud Service(ODBCS) 소개"
 
 ODBCS는 설치가 간단하고 사용하기 매우 쉽습니다. Oracle Technology Netwirk(OTN)을 통해서 Oracle Database Cloud Backup Module을 다운로드 받고 설치합니다. 백업 모듈을 설치한 후 몇 가지 RMAN 설정을 하면, 익숙한 RMAN명령어를 사용하여 Cloud 환경으로 백업할 준비가 됩니다. 클라우드 상에서 제공되는 온라인 대쉬보드를 통해서 백업을 위한 스토리지 사용량과 서비스 현황을 모니터링 할 수 있으며, 필요에 따라 쉽고 빠르게 용량을 추가할 수 있습니다. 아래 데모를 통해 자세히 알아 보도록 하겠습니다.
 
-## Demo
---------------------------------
-### Oracle Database Cloud Backup Module 설치하기
+{{< youtube gbQ0i_uRGak >}}
 
+
+<br />
+<br />
+## Demo
+### Oracle Database Cloud Backup Module 설치하기
+--------------------------------
 오라클 데이터베이스 백업 서비스를 이용하려면, 먼저 Oracle Database Cloud Backup Module을 설치해야 합니다. 설치 전에 다음과 같은 사항들을 확인하시기 바랍니다.
 
 | 분류 | 내용  |
@@ -160,6 +163,15 @@ ODBCS에 저장된 백업본을 통해서 복구하는 방법은 기존 On premi
 Oracle Database Backup Cloud Service는 Oracle Database를 이용하는 사용자들에게 매우 환영받을 만한 솔루션임에 틀림없는 것 같습니다. 기존 Backup 방식인 RMAN을 사용자 Infra와 클라우드 Infra 사이의 이질감 없이 기존 기술, 기존 명령어를 그대로 이용한다는 점은 매우 흥미롭습니다. 따라서 offsite 백업을 고려하는 사용자 입장에서는 비용적인 측면이나, 운영비용에서 효과를 거둘 수 있을 것입니다.
 
 위 데모에서도 살펴봤듯이 사용자는 별도의 추가 장비나 별도의 솔루션 없이 ODBCS를 통해 직접 온프레미즈 또는 클라우드상의 오라클 데이터베이스를 실시간으로 백업시킴으로써 중요한 데이터의 유실이나 다운타임을 효과적으로 예방할 수 있을 것입니다.
+
+
+더 자세한 정보는 아래의 사이트를 확인바랍니다.
+
+
+https://cloud.oracle.com/en_US/database-backup <br />
+https://docs.oracle.com/cloud/latest/dbbackup_gs
+
+
 
 ![](https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/266ac4ff-b1dc-471a-a57a-b6502403f164/Image/b135ad842cbfbb99d7b29db15e9f0fdb/dbbackup.jpg)
 
