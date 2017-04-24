@@ -7,7 +7,7 @@ author = "taewan.kim"
 categories = ["cloud"]
 title = "ssh config 설정 방법"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/ssh_config/hellodotsshconfig.png"
-date = "2017-03-06T12:07:16+09:00"
+date = "2017-03-05T12:07:16+09:00"
 +++
 
 하나의 컴퓨터에서 복수의 SSH 키를 사용할 경우 SSH 접속에 사용하는 ssh 명령이 복잡해지는 단점이 있습니다.

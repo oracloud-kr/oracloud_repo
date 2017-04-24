@@ -1,7 +1,7 @@
 +++
 author = "won.keun.choi"
 categories = ["IaaS", "Ravello"]
-date = "2017-04-07T16:05:59+09:00"
+date = "2017-04-15T16:05:59+09:00"
 description = "Oracle Ravello Cloud Service(이하 Oracle Ravello)는 VMware (또는 KVM) 기반의 VM 애플리케이션 환경을, 기존 환경 그대로 변경 없이 손쉽게 클라우드 환경으로 옮겨서 사용한만큼만 지불하는 서비스입니다. Oracle Ravello Cloud Service 데모를 소개합니다. "
 language = ""
 tags = ["Ravello", "Oracle Cloud", "Nested Virtualization"]

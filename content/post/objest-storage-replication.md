@@ -1,7 +1,7 @@
 +++
 language = ""
 description = "오라클 클라우드 계정을 생성한 후 Oracle Storage Cloud Service의 기본 복제 정책을 설정해야 합닏. "
-date = "2017-03-07T08:54:32+09:00"
+date = "2017-03-06T08:54:32+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
 title = "Oracle Storage Cloud Serivce 활성화"
 author = "taewan.kim"

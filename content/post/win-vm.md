@@ -5,7 +5,7 @@ title = "오라클 클라우드에서 window VM 인스턴스 생성"
 language = ""
 categories = ["IaaS"]
 tags = ["IaaS", "Virtualization","Tutorial", "window"]
-date = "2017-03-10T22:42:46+09:00"
+date = "2017-03-31T22:42:46+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/win-vm/window.png"
 description = "오라클 클라우드의 IaaS(Oracle Compute Cloud Service)를 이용하여 Window 인스턴스를 생성하는 방법을 살펴보겠습니다. Step-By-Step 스타일로 Window VM 인스턴스 절차를 정리합니다."
 

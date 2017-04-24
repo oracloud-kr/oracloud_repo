@@ -1,13 +1,13 @@
 +++
 author = "jisun.kang"
 categories = ["iaas"]
-date = "2017-04-17T17:15:48+09:00"
+date = "2017-04-21T17:15:48+09:00"
 description = "BMCS 환경에서 Terraform을 사용하는 방법에 대한 문서입니다"
 language = "bsh"
 tags = ["devops", "BMCS", "IaaS"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/terraform/logo.png"
 thumbnailInPost = ""
-title = "Oracle IaaS BMCS 환경에서 자동화 구축"
+title = "Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축"
 
 +++
 

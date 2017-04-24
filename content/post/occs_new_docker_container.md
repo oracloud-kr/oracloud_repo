@@ -1,11 +1,11 @@
 +++
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/docker_container/docker.jpg"
-date = "2017-04-12T19:34:26+09:00"
+date = "2017-04-24T19:34:26+09:00"
 tags = ["docker", "container", "tutorial", "cloud"]
 description = "Oracle Container Cloud Service는 kubernetes(k8s), docker-swarm 그리고 marathon 과 같은 container orchestration 툴입니다. Oracle Container Cloud Service를 사용하여 서비스와 스택을 배포하고 관리하는 과정을 설명합니다."
 categories = ["docker", "container"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step000.jpg"
-title = "OCCS에 Docker 이미지 배포하기"
+title = "OCCS에 Docker 이미지 배포"
 language = ""
 author = "taewan.kim"
 

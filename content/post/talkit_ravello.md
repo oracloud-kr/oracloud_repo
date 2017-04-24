@@ -2,8 +2,8 @@
 categories = []
 tags = ["ravello", "talkit", "Webinar"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello_ui.jpg"
-date = "2017-03-13T12:35:37+09:00"
-title = "TalkIT 세미나 동영상: 가상환경 클라우드 전환 - Ravello"
+date = "2017-03-09T12:35:37+09:00"
+title = "TalkIT: 가상환경 클라우드 전환 - Ravello"
 description = "2017년 2월 24일 TalkIT에서 진행한 라벨로 세미나의 영상입니다. 오라클 클라우드에서 라벨로의 특징을 살펴보고, 기술적 관점에서 살펴본 라벨로 및 현장 적용 사례에 대하여 온라인 스트리밍 서비스 형태로 진행한 세미나 입니다."
 language = ""
 author = "taewan.kim"

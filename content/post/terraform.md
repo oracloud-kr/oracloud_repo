@@ -1,16 +1,16 @@
 +++
 author = "jisun.kang"
 categories = ["iaas"]
-date = "2017-04-21T17:15:48+09:00"
+date = "2017-04-01T17:15:48+09:00"
 description = "자동화 구축시 사용하는 devops 툴인 terraform에 대해서 소개하는 문서입니다"
 language = "bsh"
 tags = ["devops", "iaas", "automation", "iaac"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/terraform/logo.png"
 thumbnailInPost = ""
-title = "Terraform에 대한 기본 소개"
+title = "Provisioning 툴: Terraform"
 +++
 
-## Terraform에 대하여..
+## Terraform이 란?
 
 Terraform은 인프라를 만들고 바꾸고 버전 관리하는 도구입니다. Terraform은 Infrastructure as Code, Execution Plans, Resource Graph, Change Automation 와 같은 기능을 제공합니다.
 

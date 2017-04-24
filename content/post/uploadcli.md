@@ -7,8 +7,7 @@ language = "bsh"
 tags = []
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/opcStorageBannerIcon.jpg"
 thumbnailInPost = ""
-title = "대용량 Dump File Upload"
-
+title = "Upload CLI을 이용한 Object Storage 데이터 이관"
 +++
 
 데이터베이스의 대용량 export dump file을 DBCS에 Upload하는 기본적인 방법은 sftp를 이용하여 DBCS Instance로 Upload하는 것입니다. 하지만, sftp를 이용할 경우 하나의 세션을 이용하기 때문에 Network Bandwidth를 모두 사용하지 못해 대용량 Dump file의 경우 Upload속도가 많이 느려질수 있습니다.
@@ -171,5 +170,3 @@ curl -v -X GET -H "X-Auth-Token:AUTH_tkf0e7a4ca4a704013a47b70a385373bfa" \
 
 - 그림 2. DBCS 인스턴스에서 Object Storage에 파일 내려받기.
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-03.jpg)
-
-
