@@ -1,7 +1,7 @@
 +++
 author = ""
 description = "oracloud.kr의 소개 페이지 입니다. "
-title = "oracle.kr: 오라클 클라우드 기술 블로그"
+title = "oracloud.kr: 오라클 클라우드 기술 블로그"
 date = "2017-04-24T11:00:57+09:00"
 categories = []
 tags = []
