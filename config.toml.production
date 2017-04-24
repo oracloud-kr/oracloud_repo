@@ -41,10 +41,12 @@ pygmentsstyle = "monokai"
     name = "Home"
     url = "/"
     weight = -100 # menu의 sorting을 담당
+    Identifier = "블로그 메인 페이지 "
 [[menu.main]]
     name = "oracloud.kr 소개"
     url = "/oraclooud/"
     weight = -50 # menu의 sorting을 담당
+    Identifier = "oracloud.kr을 소개합니다. "
 [[menu.main]]
     name = "IaaS 서비스"
     url = "/opc-iaas/"
