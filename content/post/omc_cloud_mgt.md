@@ -1,12 +1,13 @@
 +++
 author = "jc.hong"
-categories = []
+categories = [Oracle-Management-Cloud]
 date = "2017-04-21T10:31:26+09:00"
 description = ""
 title = "클라우드를 이용한 차세대 인프라 운영관리 방안"
 thumbnail = ""
 tags = ["CLOUD","OMC","Management"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMCLogo.png"
+thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OmcDataFlow.jpg"
 
 +++
 
@@ -23,4 +24,15 @@ thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/
 클라우드 컴퓨팅은 오늘 세션의 주제인 인프라 운영관리 뿐만 아니라, 여러 면에서 우리의 삶을 변화시키고 있습니다.  많은 사람들이 에어비엔비를 이용하고, 우버를 이용하고 드랍박스에 파일을 저장하여 사용합니다.
 그리고, 회사에서 필요한 인재를 찾거나 마케팅 활동에 클라우드 기반 솔루션을 활용합니다. 그리고, 기업 내에서는 개발과 테스팅에 이러한 클라우드 인프라를 사용하기도 하죠.
 이렇게 운영되는 모든 IT 환경은 신속하게 전환되어 운영되고 문제 발생이 최소화되어야 합니다.
+
+- 그림 1. Oracle Management Cloud의 Data Flow Architecture
+![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OmcArchitecture.jpg)
+
+- 그림 2. Oracle Management Cloud etryertertertertertwertwert
+
+![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMCtextlogo.png)
+
+
+
+
 
