@@ -219,7 +219,7 @@ Trial 계정을 사용할 경우에는 "Traditional Cloud Account"를 선택해�
 - 그림 12. 입력 정보 확인 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-120.jpg)
 
-<그림 12>에서 ```생성``` 버튼을 클릭하면 <그림 13>과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. <그림 13>에서 ```Status``` 속성이 ```Creating service ...```인 것을 확인할 수 있습니다.
+<그림 12>에서 ```생성``` 버튼을 클릭하면 <그림 13>과 같이 Oracle Container Cloud Service 콘솔 페이지로 이동합니다. <그림 13>에서 ```Status``` 속성이 ```Creating service ...``` 인 것을 확인할 수 있습니다.
 
 - 그림 13. OCCS 인스턴스 생성 후 OCCS 콘솔 페이지 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/occs-130.jpg)

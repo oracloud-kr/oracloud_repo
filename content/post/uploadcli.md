@@ -3,7 +3,7 @@ author = "jaeyeop.lee"
 categories = ["IaaS"]
 date = "2017-04-19T10:45:24+09:00"
 description = ""
-language = ""
+language = "bsh"
 tags = []
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/opcStorageBannerIcon.jpg"
 thumbnailInPost = ""
@@ -24,14 +24,14 @@ Oracle Storage Cloud에 Upload하기 위한 Tool인 uploadcli에 대한 설치 �
 - 사전 요구사항 : JRE 7 or later
 - OTN을 통해 uploadcli를 [download](http://www.oracle.com/technetwork/topics/cloud/downloads/index.html#cli)합니다.
 
-# uploadcli
-## 기본 명령어
+## uploadcli
+### 기본 명령어
 
 - java -jar uploadcli.jar -url ***REST_Endpoint_URL*** -user ***userName*** -container ***containerName file-or-files-or-directory***
 - Proxy Server를 사용해야 하는 경우
   - java -Dhttps.proxyHost=*host* -Dhttps.proxyPort=*port* -jar uploadcli.jar .....
 
-## uploadcli에서 제공되는 parameter
+### uploadcli에서 제공되는 parameter
 <table>
 <caption><b>uploadcli parameter</b></caption>
 <tr style="backgroud-color: rgb(192,192,192)">
@@ -135,24 +135,39 @@ This MUST be the last parameter that you specify.</td>
 </table>
 
 ## uploadcli 테스트
-### DBCS Instance에서 Storage Cloud의 upload file download
+
+### DBCS Instance에서 Storage Cloud의 파일 내려받기
 DBCS Instance에서 "curl"을 이용하여 Storage Cloud에 upload된 dump file을 download합니다.
 
-- Storage Cloud Authentication얻어오기<br>
+- Storage Cloud Authentication얻어오기
+
+<pre class="prettyprint linenums">
 curl -v -X GET -H "X-Storage-User: Storage-a425375:jaeyeop.lee@oracle.com" -H "X-Storage-Pass: H******@" \
      https://a425375.storage.oraclecloud.com/auth/v1.0
 
-< HTTP/1.1 200 OK<br>
-< date: 1481594593964<br>
-<b style="color: rgb(255,0,0)">< X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa</b><br>
-< X-Storage-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa<br>
-…..
+HTTP/1.1 200 OK
+date: 1481594593964
+X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa
+X-Storage-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa
+....
 
-- Response 중 “X-Auth-Token”을 이용하여 Storage Cloud에 upload된 dump file을 download<br>
-curl -v -X GET -H <b style="color: rgb(255,0,0)">"X-Auth-Token: AUTH_tkf0e7a4ca4a704013a47b70a385373bfa"</b>  -o oscsa-OnPrem-16.3.1.0.13.tar.gz \
+</pre>
+
+
+- Response 중 6라인의 ***X-Auth-Token*** 키를 인증키로하여 다음 REST API를 호출하여 Storage Cloud에 upload된 dump file 내려받습니다.
+
+<pre class="prettyprint linenums">
+curl -v -X GET -H "X-Auth-Token:AUTH_tkf0e7a4ca4a704013a47b70a385373bfa" \
+     -o oscsa-OnPrem-16.3.1.0.13.tar.gz \
      https://a425375.storage.oraclecloud.com/v1/Storage-a425375/myContainer/oscsa-OnPrem-16.3.1.0.13.tar.gz
+</pre>
 
+위 curl 명령을 보면 1라인에 X-Auth-Token에 위에서 확보한 인증 키를 추가한 것을 확인할 수 있습니다.
+
+- 그림 1. DBCS 인스턴스에서 Object Storage에 파일 내려받기.
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-03.jpg)
-### 최종 테스트 결과
+
 uploadcli를 통해 571MB의 File을 upload한 테스트 결과입니다. 기존 53분이 걸리던 작업을 4분 41초에 처리할 수 있습니다.
+
+- 그림 2. uploadcli에서 segmentation을 변경한 테스트 결과
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-04.jpg)
