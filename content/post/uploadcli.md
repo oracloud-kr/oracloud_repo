@@ -135,6 +135,11 @@ This MUST be the last parameter that you specify.</td>
 </table>
 
 ## uploadcli 테스트
+### Storage Cloud에 파일 Upload
+uploadcli를 통해 571MB의 File을 upload한 테스트 결과입니다. 기존 53분이 걸리던 작업을 4분 41초에 처리할 수 있습니다.
+
+- 그림 1. uploadcli에서 segmentation을 변경한 테스트 결과
+![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-04.jpg)
 
 ### DBCS Instance에서 Storage Cloud의 파일 내려받기
 DBCS Instance에서 "curl"을 이용하여 Storage Cloud에 upload된 dump file을 download합니다.
@@ -164,10 +169,7 @@ curl -v -X GET -H "X-Auth-Token:AUTH_tkf0e7a4ca4a704013a47b70a385373bfa" \
 
 위 curl 명령을 보면 1라인에 X-Auth-Token에 위에서 확보한 인증 키를 추가한 것을 확인할 수 있습니다.
 
-- 그림 1. DBCS 인스턴스에서 Object Storage에 파일 내려받기.
+- 그림 2. DBCS 인스턴스에서 Object Storage에 파일 내려받기.
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-03.jpg)
 
-uploadcli를 통해 571MB의 File을 upload한 테스트 결과입니다. 기존 53분이 걸리던 작업을 4분 41초에 처리할 수 있습니다.
 
-- 그림 2. uploadcli에서 segmentation을 변경한 테스트 결과
-![](https://oracloud-kr-teamrepo.github.io/2017/04/uploadcli/uploadcli-04.jpg)
