@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vm on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</title>
+    <link>/tags/vm/</link>
+    <description>Recent content in Vm on 한국오라클 DBU, 클라우드 세일즈 컨설팅팀</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 05 Mar 2017 22:20:25 +0900</lastBuildDate>
+    
+	<atom:link href="/tags/vm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>오라클 IaaS를 이용한 VM 인스턴스 생성</title>
+      <link>/post/iaas_vm/</link>
+      <pubDate>Sun, 05 Mar 2017 22:20:25 +0900</pubDate>
+      
+      <guid>/post/iaas_vm/</guid>
+      <description>오라클 클라우드의 IaaS 서비스에서 Ubuntu 14.04를 VM 인스턴스로 만드는 절차를 정리합니다. 오라클 클라우드에서 가상머신을 생성하기 위해서는 Oracle Cloud의 계정이 필요합니다. 계정을 생성하는 방법에 대해서는 &amp;ldquo;오라클 클라우드 계정 생성하기&amp;rdquo; 를 참조하시기 바랍니다.
+Oracle Cloud VM 인스턴스 생성 실습 본 문서는 OS X(Mac) 환경에서 작성되었습니다. 이 문서를 윈도우에서 실습하실 경우에는 PUTTY와 같은 Terminal을 사용하는 부분과 SSH-KEYGEN 을 사용하는 절차가 달라질 것입니다. 이 부분에 대해서는 별도 문서로 정리하겠습니다.
+오라클 클라우드 VM 생성 실습은 약 10~15분 정도 소요됩니다.</description>
+    </item>
+    
+  </channel>
+</rss>
