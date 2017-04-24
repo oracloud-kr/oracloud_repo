@@ -1,5 +1,5 @@
 +++
-author = "jchong19"
+author = "jc.hong"
 categories = []
 date = "2017-04-21T10:31:26+09:00"
 description = ""
