@@ -10,6 +10,8 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/03/dbcs_demo/dash
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/dbcs_demo/oracle_cloud.png"
 
 +++
+
+## Oracle DBMS 소개
  
 Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 제공하는 데이터베이스 PaaS입니다.
 Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모입니다.
