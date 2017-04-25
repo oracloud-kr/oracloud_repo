@@ -15,7 +15,7 @@ PygmentsStyle = "monokai"
     avatar = "img/avatar.png"
 
 [Params]
-    subtitle = "Oracle Public Cloud - 기술블로그" # Subtitle of your site
+    subtitle = "Oracle Cloud 블로그" # Subtitle of your site
     description = "오라클 클라우드 기술 블로그" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
