@@ -12,7 +12,7 @@ title = "Oracle Management Cloud(OMC) 소개"
 +++
 
 Oracle Management Cloud (OMC)는 차세대 통합 모니터링, 관리 및 분석 클라우드 서비스 제품군으로, 성능/자원 지표 데이터와 로그 데이터 전체에 대해 머신러닝 기술을 활용합니다.
-
+ 
 OMC의 Unified Platform은 고객이 IT 안정성을 향상시키고 애플리케이션 중단을 방지하며 문제 발생 시 근본 원인 분석, 전체 애플리케이션 및 인프라 포트폴리오에서 보안을 강화하도록 지원합니다.
 
 ## OMC의 구성요소
