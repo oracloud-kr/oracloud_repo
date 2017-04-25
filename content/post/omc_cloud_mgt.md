@@ -1,6 +1,6 @@
 +++
 author = "jc.hong"
-categories = [Oracle Management Cloud]
+categories = ["Oracle Management Cloud"]
 date = "2017-04-21T10:31:26+09:00"
 description = ""
 title = "OMC: 클라우드 기반 차세대 인프라 운영관리"
