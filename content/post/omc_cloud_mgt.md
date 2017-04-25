@@ -3,8 +3,8 @@ author = "jc.hong"
 categories = [Oracle Management Cloud]
 date = "2017-04-21T10:31:26+09:00"
 description = ""
-title = "클라우드를 이용한 차세대 인프라 운영관리 방안"
-thumbnail = ""
+title = "OMC: 클라우드 기반 차세대 인프라 운영관리"
+thumbnail = ""  
 tags = ["CLOUD","OMC","Management"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMCLogo.png"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OmcDataFlow.jpg"
@@ -13,19 +13,16 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/
 
 ## OMC : 클라우드를 이용한 차세대 인프라 운영관리 방안
 
-Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개
- 
-
 - 클라우드 시대 머신러닝을 포함한 IT Trend에 발맞추어 IT 운영 관리는 어떻게 발전되어야 할까요?
 - 고객들은 어떤 어려움을 해결하고 싶어할까요?
-- 데모를 통해 비즈니스 어플리케이션 장애를 신속하게 해결하는 방법은? 
-- 오라클의 클라우드 관리 서비스를 이용한 차세대 IT 운영 관리방법은?
+- 데모를 통해 비즈니스 어플리케이션 장애를 신속하게 해결하는 방법은?
+- 오라클의 클라우드 관리 서비스를 이용한 차세대 IT 운영 관리방법은?  
 
 OMC는 기존 개별화된 IT 조직 업무의 단위 모니터링 솔루션에 대한 비 효율성을 극복하기 위해 다양한 인프라의 많은 분석 대이터를 효율적으로 분석하며, 인프라 전반의 통합 모니터링 및 시스템의 성능 예측, 장애분석, 비정상적 행위를 탐지하는 기능을 제공합니다.   
 
 ### OMC의 log 및 IT성능 Data 수집 및 전송 방법
 
-- 그림 1. Oracle Management Cloud의 Data Flow 
+- 그림 1. Oracle Management Cloud의 Data Flow.  
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OmcArchitecture.jpg)
 
 
@@ -43,7 +40,7 @@ OMC는 기존 개별화된 IT 조직 업무의 단위 모니터링 솔루션에 
 
  - 그림 3. Host Resource Analytics
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC2.jpg)
- 
+
 ### 3. Database 리소스 통합 분석
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC3.jpg)
@@ -65,8 +62,3 @@ OMC는 기존 개별화된 IT 조직 업무의 단위 모니터링 솔루션에 
 ### 6. OMC 구성 예시
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC6.jpg)
-
-
-
-
-

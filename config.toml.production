@@ -1,11 +1,12 @@
 baseurl = "http://www.oracloud.kr/"
-title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
-languageCode = "en-us"
+title = "Oracle Public Cloud - 기술블로그"
+languageCode = "ko-kr"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
 googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
-
+pygmentsuseclasses = true
+pygmentsstyle = "monokai"
 
 
 [Author]
@@ -14,7 +15,7 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
     avatar = "img/avatar.png"
 
 [Params]
-    subtitle = "Oracle Public Cloud - 기술블로그" # Subtitle of your site
+    subtitle = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀" # Subtitle of your site
     description = "오라클 클라우드 기술 블로그" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
@@ -35,28 +36,35 @@ googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tra
     tags = true # Enable "Tags" widget
     tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
 
+
 [[menu.main]]
     name = "Home"
     url = "/"
     weight = -100 # menu의 sorting을 담당
+    Identifier = "블로그 메인 페이지 "
 [[menu.main]]
-    name = "OPC IaaS"
+    name = "oracloud.kr 소개"
+    url = "/oraclooud/"
+    weight = -50 # menu의 sorting을 담당
+    Identifier = "oracloud.kr을 소개합니다. "
+[[menu.main]]
+    name = "IaaS 서비스"
     url = "/opc-iaas/"
-    weight = -5 # menu의 sorting을 담당
+    weight = -10 # menu의 sorting을 담당
+    Identifier = "IaaS 서비스 관련 문서를 정리하는 페이지입니다."
 [[menu.main]]
-    name = "Oracle Cloud 소개"
-    url = "/opc/"
-    weight = -10
-[[menu.main]]
-    name = "OPC PaaS"
+    name = "PaaS 서비스"
     url = "/opc-paas/"
-    weight = -4
+    weight = -7
+    Identifier = "PaaS 서비스 관련 문서를 정리하는 페이지입니다."
 [[menu.main]]
-    name = "오라클 용어 정리"
+    name = "OPC 용어사전"
     url = "/opc-terminology/"
     weight = -3
+    Identifier = "오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다."
 [[menu.main]]
-    name = "오라클 클라우드 챗팅룸"
+    name = "오라클 클라우드 채팅룸"
     identifier = "블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."
     url = "https://gitter.im/oracloud-korea-user-group/Lobby"
     weight = 1
+    Identifier = "채팅룸으로 이동합니다."
