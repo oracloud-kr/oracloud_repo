@@ -3,17 +3,17 @@ author = "jc.hong"
 categories = ["oracle management cloud"]
 date = "2017-04-23T10:31:26+09:00"
 description = ""
-title = "OCM: 클라우드 기반 차세대 인프라 운영관리"
-thumbnail = ""
+title = "OMC: 클라우드 기반 차세대 인프라 운영관리"
+thumbnail = ""  
 tags = ["CLOUD","OMC","Management"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMCLogo.png"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OmcDataFlow.jpg"
 
 +++
- 
+
 ## 클라우드를 이용한 차세대 인프라 운영관리 방안
 
-Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개
+Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개.
 
 
 - 클라우드 시대 머신러닝을 포함한 IT Trend에 발맞추어 IT 운영 관리는 어떻게 발전되어야 할까요?
