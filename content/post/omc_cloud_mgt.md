@@ -1,6 +1,6 @@
 +++
 author = "jc.hong"
-categories = [Oracle-Management-Cloud]
+categories = [Oracle Management Cloud]
 date = "2017-04-21T10:31:26+09:00"
 description = ""
 title = "클라우드를 이용한 차세대 인프라 운영관리 방안"
@@ -11,7 +11,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/
 
 +++
 
-## 클라우드를 이용한 차세대 인프라 운영관리 방안
+## OMC : 클라우드를 이용한 차세대 인프라 운영관리 방안
 
 Oracle Management Cloud Service (이하 OMC)를 통한 기존 On-Premise의 인프라 운영 문제점의 해결 방법과 차세대 인프라 관리 방법에 대한 방안 소개
  
@@ -36,12 +36,20 @@ OMC는 기존 개별화된 IT 조직 업무의 단위 모니터링 솔루션에 
 
 ### 2. 병목 현상 예측
 
+- 특정 기간의 Exadata 전체 DB의 스토리지 용량 및 메모리 사용량 모니터링
+- Exadata Rack 전체 범위
+- DB 노드 메모리 바인딩 현상 => 병목
+- 개별 메모리 사용량 분석을 통한 향후 사용량 예측
+
+ - 그림 3. Host Resource Analytics
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC2.jpg)
  
 ### 3. Database 리소스 통합 분석
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC3.jpg)
+
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/omc_cloud_mgt/OMC31.jpg)
+
 
 ### 4. 다양한 기본 데쉬보드 및 사용자 데쉬보드 제공
 
