@@ -62,12 +62,6 @@ date = "2017-03-29T20:44:25+09:00"
 {{< youtube iS7gMTtu1i8 >}}
 
 ***
-
+  
 ## 출처
  - [TalkIT: 오라클 데이터베이스를 클라우드에서 사용하기](https://talkit.tv/Event/1524/)
-
-{{ < highlight java > }}
-public static void main(String args[]){
-
-}
-{{ < /highlight > }}
