@@ -1,5 +1,5 @@
 baseurl = "http://www.oracloud.kr/"
-title = "Oracle Public Cloud - 기술블로그"
+title = "Oracle Cloud 블로그"
 languageCode = "ko-kr"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
