@@ -10,7 +10,7 @@ language = ""
 author = "taewan.kim"
 
 +++
-Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 [Kubernetes](https://kubernetes.io/)(k8s), [docker-swarm](https://docs.docker.com/swarm/overview/) 그리고 [marathon](https://mesosphere.github.io/marathon/) 과 유사한 container orchestration 도구가 포함되어 있습니다.
+Oracle Container Cloud Service(이하 OCCS)는 오라클 클라우드가 제공하는 Docker 서비스입니다. OCCS에는 [Kubernetes](https://kubernetes.io/)(k8s), [docker-swarm](https://docs.docker.com/swarm/overview/) 그리고 [marathon](https://mesosphere.github.io/marathon/) 과 유사한 container orchestration 도구가 포함되어 있습니다. Docker를 운영환경에서 적용하기 위해서는 Container orchestration 도구를 반드시 사용해야 합니다. Kubernetes나 docker-swarm 등을 직접 설치하고 운영할 경우에 관리 부담이 증가하고, Container orchestration을 운영하기 위한 노하우와 연구가 필요합니다. OCCS를 통해서 이러한 Container orchestration의 어려움을 해결할 수 있습니다. 또한 Docker 인프라 운영의 기술적 & 관리적 문제를 상당부분 해결할 수 있습니다.
 
 이 문서는 이미 OCCS 인스턴스가 생성되었다는 것을 전제로 합니다. 오라클 클라우드 계정이 확보되지 않았거나 OCCS 인스턴스를 만들지 않은 상태라면, [[오라클 클라우드 계정 생성하기](/post/accont/)] 문서와  [[Oracle Container CS 생성 절차](/post/occs-new-inst/)] 문서를 참조하여 계정과 인스턴스를 생성하시기 바랍니다.
 
