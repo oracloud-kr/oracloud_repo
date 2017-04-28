@@ -7,7 +7,7 @@ language = ""
 tags = ["BDPCS","cloud","Big Data", "Analytics"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/bdpcs_intro/BDPCS_Initial.JPG"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/bdpcs_intro/main image.JPG"
-title = "Big Data Preparation Cloud Service(BDPCS)소개"
+title = "Big Data Preparation Cloud Service소개"
 
 +++
 데이터 수집 기술의 발전으로 기업의 데이터는 빠르게 늘고 있으며, 특히 데이터 저장 비용의 감소로 기업의 비정형데이터의 양은 급격히 증가하고 있습니다.
@@ -20,7 +20,7 @@ Oracle Big Data Preparation Cloud Service는 기업 내·외부의 다양한 비
 
 
 
-## Big Data Preparation Cloud Service 주요 기능
+## Big Data Preparation CS 주요 기능
 - Ingest & Profile
     + 비정형데이터 자동 프로파일링
 	+ 데이터 형태 자동 분석 
@@ -36,7 +36,7 @@ Oracle Big Data Preparation Cloud Service는 기업 내·외부의 다양한 비
 	
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/bdpcs_intro/bdpcd_function.JPG)	
 
-## Big Data Preparation Cloud Service의 제공 가치
+## Big Data Preparation CS의 제공 가치
 - Big Data처리에 대한 기본 지식이 없이도 Big Data 분석을 가능케 합니다.
 - Self-Service 방식으로 비정형데이터를 정형화하게 됩니다.
 - 이미 정제된 비정형데이터의 변경을 즉시 찾아내에 새로운 변환 규칙을 생성합니다.
