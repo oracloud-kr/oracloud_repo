@@ -7,7 +7,7 @@ thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage
 title = "Oracle Storage Cloud Service"
 description = "오라클 클라우드의 Oracle Storage Cloud Serivce를 소개합니다."
 language = "bsh"
-categories = ["Storage CS"]
+categories = ["Storage"]
 
 +++
 
