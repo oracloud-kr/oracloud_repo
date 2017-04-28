@@ -24,7 +24,7 @@ Oracle Storage Cloud Serivce(이하 Storage Cloud)는 오라클 클라우드의 
 오라클 클라우드의 많은 부분에서 Storage Cloud를 사용하기 때문에 오라클 클라우드 계정을 생성한 직후에
 Storage Cloud를 활성화하는 것이 좋습니다. Storage Cloud 활성화를 위해서는 Storage Cloud 서비스 콘솔에서  
 기본 정책(데이터 복제 정책)을 설정해야 합니다.
-Storage Cloud 복제 정책을 설정한다는 것은 Storage Cloud 서비스를 활성화한다는 의미입니다.
+Storage Cloud 복제 정책을 설정한다는 것은 Storage Cloud 서비스를 활성화한다는 의미가 있습니다.
 
 Oracle Cloud 계정이 없다면 다음 문서를 참조하여 계정을 생성하시기 바랍니다.
 
