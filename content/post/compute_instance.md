@@ -10,26 +10,31 @@ tags = ["Cloud", "Compute CS"]
 author = "taewan.kim"
 +++
 
-2017년 04월 오라클 클라우드의 Compute Service에는 17.1.2 버전이 적용되었습니다.
+2017년 04월 오라클 클라우드 Compute Service에는 17.1.2 버전[^1]이 적용되었습니다.
 17.1.2 버전에는 네트워크 구성에 대한 새로운 기능이 추가되었습니다.
 기존의 Shared Network와 별개로 IPNetwork를 이용하여 서브넷을 구성할 수 있습니다.
-새로운 기능 추가와 함께, 가상머신을 만드는 UI와 가상머신을 생성하는 오케스트레이션에 변화가 발생하였습니다.
+새로운 기능 추가와 함께, 가상머신을 만드는 UI와 가상머신을 생성하는 오케스트레이션에 변경된 부분이 있습니다.
 
-매년 4월에는 Ubuntu의 메인 새 버전이 출시되는 시점입니다. 올해에서 Ubuntu 17.04 버전이 출시되었습니다.
-새로 출시된 Ubuntu 17.04는 현재 오라클 클라우드 마켓플레이스에 추가된 상태입니다.
+[^1]: 오라클 클라우드 인프라스트럭처 버전.
 
-새로 변경된 Compute Cloud Service(이하 Compute CS)에서 Ubuntu 17.04를 이용하여 가상머신을 만들어 보고
-SSH 접근을 위한 네트워크 보안 룰 설정 및 블록 스토리지 마운트를 진행해 보겠습니다.
+매년 4월은 Ubuntu 새 버전이 출시되는 시점입니다. 올해에도 Ubuntu 17.04 버전이 새롭게 출시되었습니다.
+새로 출시된 Ubuntu 17.04의 설치 이미지는 현재 오라클 클라우드 마켓 플레이스에 등록된 상태이며,
+이 이미지를 이용하여 가상머신을 만들수 있습니다.
+
+본 문서에서는 Compute Cloud Service(이하 Compute CS)가 제공하는 웹 콘솔을 이용하여,
+Ubuntu 17.04 가상머신을 만들어 보고,
+SSH 접근을 위한 네트워크 보안 룰 설정 및 블록 스토리지의 마운트를 실습 형태로 진행해 보겠습니다.
 
 ## 선행 작업
 
-본 문서는 다음과 같은 절차가 완료되었음을 전제로 합니다.
+본 문서는 다음과 같은 절차가 완료되었다는 것을 전제로 합니다.
 
 - 오라클 클라우드 계정 생성 완료
 - 가상머신 생성에 필요한 인증서를 생성
 - 오라클 클라우드 웹 사이트에 로그인이 완료
 
-오라클 클라우드 계정 생성을 확보하지 못했거나 보안 키 생성을 못 한 상태라면 다음 문서를 참조하여 준비하시기 바랍니다.  
+오라클 클라우드 계정을 확보하지 못했거나, 가상머신에 등록 할 보안 키를 만들지 못한 상태라면,
+다음 문서를 참조하여 먼저 준비하시고 다음으로 넘어가시기 바랍니다.  
 
 - [오라클 클라우드 계정](/post/accont/)
 - [윈도우, 리눅스, 맥에서 SSH 보안키 생성](/post/ssh_key/)
@@ -39,15 +44,15 @@ SSH 접근을 위한 네트워크 보안 룰 설정 및 블록 스토리지 마�
 ### Ubuntu 17.04 인스턴스 만들기
 Compute CS에 Ubuntu 17.04 이미지로 가상머신을 생성하겠습니다.
 
-오라클 클라우드에 로그인하면 <그림 1>의 오라클 클라우드 대시보드가 출력됩니다.
-오라클 클라우드 대시보드 왼쪽 위의 메뉴 아이콘을 클릭하면 현재 로그인한 계정이 접근 가능한 오라클 클라우드 서비스가 출력됩니다.
+오라클 클라우드에 로그인하면 <그림 1>과 같이 오라클 클라우드 대시보드가 출력됩니다.
+오라클 클라우드 대시보드 왼쪽 위의 메뉴 아이콘을 클릭하면 현재 로그인한 계정이 접근 가능한 오라클 클라우드 서비스 목록이 출력됩니다.
 
 - 그림 1. 오라클 클라우드 대시보드
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img010.jpg)
 
 2017년 04월에 생성한 오라클 클라우드 Trial 계정의 경우 <그림 2>와 같이 12개의 서비스를 사용할 수 있습니다.
-12개의 서비스 중에서 현재 Compute CS에 가상머신을 생성할 계획이기 때문에 ```Compute```를 클릭하여
-Compute CS의 서비스 콘솔에 접근합니다.
+12개의 서비스 중에서 현재 Compute CS에 가상머신을 생성할 계획이기 때문에 ```Compute```를 클릭하여,
+Compute CS 서비스 콘솔에 접근합니다.
 
 - 그림 2. 오라클 클라우드 대시보드에서 ```Compute``` 메뉴 선택
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img020.jpg)
@@ -58,19 +63,20 @@ Compute CS의 서비스 콘솔에 접근합니다.
 - 그림 3. Compute CS 서비스 콘솔에서 ```Create Instance``` 클릭하여 가상머신 생성 시작
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img030.jpg)
 
-가상머신 생성은 6단계로 구성됩니다. 이 중에서 첫 번째 단계는 이미지 선택 단계입니다. Compute CS는
+가상머신 생성은 6단계로 구성되며, 이 중에서 첫 번째 단계는 이미지 선택 단계입니다. Compute CS는
 세 가지 유형으로 이미지를 관리합니다. 첫 번째는 ```Oracle Images```입니다.
-오라클은 공식 이미지로 21개를 제공하고 있고, 이 이미지는 ```Oracle Images```에 포함됩니다.
+오라클은 공식 이미지로 21개를 제공하고 있고, 이 오라클 공식 이미지는 ```Oracle Images```에 포함됩니다.
 오라클 공식 이미지 21개에는 Oracle Enterprise Linux와 Solaris가 포함되어 있습니다.
 
-두번째는 "Private Images"입니다.
+두번째는 ```Private Images```입니다.
 이 카테고리에는 사용자가 직접 올린 이미지 혹은 Market Place에서 다운로드 받은 이미지가 포함됩니다.
 
 세번째는 "Market Place"입니다.
-오라클 클라우드는 Bitnami와 협력하여 현재 오라클 클라우드에서 이용 가능한 349개 (2017년 5월 2일 기준) 이미지를 제공합니다.
+오라클 클라우드는 [Bitnami](https://bitnami.com/oracle)와 협력하여 오라클 클라우드에서 이용 가능한 349개 (2017년 5월 2일 기준) 이미지를 제공합니다.
 
-우리는 Ubuntu 17.04를 설치할 예정입니다. 이 리눅스 이미지는 Market Place에 포함되어 있습니다.
-따라서 <그림 4>와 같이 Market Place를 선택합니다.
+우리는 Ubuntu 17.04 이용하여 가상머신을 만들 예정입니다.
+Ubuntu 17.04 이미지는 Market Place에 포함되어 있습니다.
+따라서 이미지 선택 페이지에서 <그림 4>와 같이 Market Place를 선택합니다.
 
 - 그림 4. Market Place 오픈
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img040.jpg)
@@ -82,7 +88,7 @@ Compute CS의 서비스 콘솔에 접근합니다.
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img050.jpg)
 
 Market place에서 이미지를 선택하면, 해당 이미지는 Private Images에 복사하는 작업이 선행됩니다.
-<그림 6>은 Private Images에 이미지 복사에 대한 동의를 한 후 ```install```버튼을 클릭합니다.
+<그림 6>에서 Private Images에 이미지를 복사하는 것에 대한 동의를 한 후 ```install```버튼을 클릭합니다.
 이렇게 ```install``` 버튼을 클릭하면 이미지 복사가 진행됩니다.
 
 - 그림 6. 가상머신 이미지 다운로드 동의 및 설치  
@@ -141,11 +147,13 @@ Public IP Address 컬럼은 다음과 같은 3개의 옵션 중에 한개를 선
 
 <그림 13>은 스토리지 설정 단계입니다.
 오른쪽 위의 ```Add New Volumes```를 클릭하여 새로운 블록 스토리지를 등록합니다.
+블록 스토리지 추가 단계는 선택 사항입니다.
+추가적인 블록 스토리지가 필요 없다면 이 단계를 생략해도 무방합니다.
 
 - 그림 13. 스토리지 설정 단계
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img130.jpg)
 
-<그림 14>에서는 새로운 블록 스토리지를 등록하는
+<그림 14>와 다음 목록은 새로운 블록 스토리지 등록에 필요한 설정 값을 보여줍니다.
 
 | 구분 | 설정값 | 설명 |
 |---|---|---|
@@ -156,7 +164,7 @@ Public IP Address 컬럼은 다음과 같은 3개의 옵션 중에 한개를 선
 | Attach at Disk # | 2 | 디스크 순서 2번은 /dev/xvdc로 표시 <br/> 디스크 순서 3번은 /dev/xvdd로 표시|
 | Boot Drives | "" | 체크 박스를 체크하면 디스크 1번으로 설정됨. 디스크 1번은 운영체제가 설치되는 디스크 |
 
-<그림 14>에서 모든 속성에 대한 설정 완료되면, ```add``` 버튼을 클릭합니다.
+<그림 14>에서 모든 속성 설정이 완료되면, ```add``` 버튼을 클릭합니다.
 
 - 그림 14. 블록 스토리스 추가
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img140.jpg)
@@ -166,20 +174,20 @@ Public IP Address 컬럼은 다음과 같은 3개의 옵션 중에 한개를 선
 - 그림 15. 블록 스토리지 등록 확인
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img150.jpg)
 
-<그림 16>에서 가상머신 설정 정보를 확인하고, 입력 정보가 정확하다면, ```create```
+<그림 16>에서 가상머신 설정 정보가 출력됩니다. 앞에서 설정한 내용이 모두 맞다면, ```create```
 버튼을 클릭하여 가상머신 생성을 시작합니다.
 
 - 그림 16. 가상머신 등록 정보 리뷰
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img160.jpg)
 
-가상 머신 생성 절차가 시작한 후, 웹 페이지는 Compute CS 서비스 콘솔 메인 페이지로 이동합니다.
+가상 머신 생성 절차가 시작되면, 웹 페이지는 Compute CS 서비스 콘솔 메인 페이지로 이동합니다.
 가상머신 생성 시간은 약 5 분 정도가 입니다. 가상머신 배포 상태는 Orchestration 탭에서 확인 가능합니다.
 <그림 17>에서는 Orchestration 탭을 클릭합니다.
 
 - 그림 17. Compute CS 서비스 콘솔 메인 페이지에서 Orchestration 탭 선택
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img170.jpg)
 
-<그림 18>에서 총 6개의 Orchestration을 볼 수 있습니다. 하나의 가상 머신은 3개의 Orchestration으로 구성됩니다.
+<그림 18>에서 총 6개의 Orchestration을 확인 할 수 있습니다. Compute CS의 웹 UI에서 만들어진 가상 머신은 3개의 Orchestration으로 구성됩니다.
 
 - Ubuntu_17_04_amd64_instance: 가상머신 생성 orchestration
 - Ubuntu_17_04_amd64_master: instance와 storage를 관리하는 orchestration
@@ -207,6 +215,8 @@ Ubuntu_17_04_amd64에 설정된 공개 IP는 129.144.12.116입니다.
 Ubuntu_17_04_amd64 가상머신이 생성된 후에, <그림 21>과 같이 129.144.12.116에 SSH 키로 접근하면
 , ```Time out```되어 실패합니다.
 
+오라클 클라우드가 제공하는 OL(Oracle Linux) 리눅스 이미지의 기본 ssh 접근 user는 OPC입니다. Ubuntu의 경우의 기본 계정명은 ubuntu입니다. <그림 21>에서는 ubuntu를 사용하여 ssh 접속을 하고 있습니다. 
+
 가상머신은 처음 생성될 때 모든 네트워크 접근이 막혀 있습니다. 이와 관련하여 네트워크 접근을 허용하는 설정을 추가해야 합니다.
 
 - 그림 21. SSH 접근 실패
@@ -215,9 +225,9 @@ Ubuntu_17_04_amd64 가상머신이 생성된 후에, <그림 21>과 같이 129.1
 본 문서에서는 SSH 보안 접근을 처리하는 부분만을 설명하겠습니다. 보안 설정에 대한 정의와 의미는 별도 문서로 다루겠습니다.
 
 Compute CS의 서비스 콘솔 메인 페이지에서 ```Network``` 탭을 클릭하고 왼쪽 메뉴 중에 ```Security Rule```을 클릭한 후,
-Security Rule 페이지에서 ```Create Security Rule```[^1]을 클릭하여 보안 룰을 생성합니다.  
+Security Rule 페이지에서 ```Create Security Rule```[^2]을 클릭하여 보안 룰을 생성합니다.  
 
-[^1]: Security Rule은 네트워크 접속에 대한 룰을 설정하는 오라클 클라우드의 개념입니다. Security Rule은  소스, 목적지 그룹 간에 어떤 포트와 프로토콜(TCP/UDP)에 대한 연결 설정입니다. <그림 23>은 일반 인터넷(public internet)에서 default 그룹에 SSH 통신을 수행하는 것을 허용하는 보안 룰입니다.
+[^2]: Security Rule은 네트워크 접속에 대한 룰을 설정하는 오라클 클라우드의 개념입니다. Security Rule은  소스, 목적지 그룹 간에 어떤 포트와 프로토콜(TCP/UDP)에 대한 연결 설정입니다. <그림 23>은 일반 인터넷(public internet)에서 default 그룹에 SSH 통신을 수행하는 것을 허용하는 보안 룰입니다.
 
 - 그림 22. Security Rule 생성 시작
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img217.jpg)
@@ -300,7 +310,7 @@ Orchestration에서 가상머신을 종료하는 것은 모든 자원을 반환�
 - 그림 28. Orchestration에서 가상머신 종료하기
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img280.jpg)
 
-종료된 가상머신의 Orchestration은 ```stopped```으로 표혀됩니다.
+종료된 가상머신의 Orchestration은 ```stopped```으로 표현됩니다.
 
 - 그림 29. Orchestration 종료 상태
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img290.jpg)
@@ -321,5 +331,5 @@ Orchestration 실행이 완료되면 상태는 ```ready``` 상태로 표현됩�
 
 지금까지 Compute CS에서 Ubuntu 17.04 가상머신을 생성하고,
 외부에서 가상머신에 네트워크 접근이 가능하도록 Security Rule 추가하였습니다. 그리고
-SSH 원격 접속 후, 사전에 정의한 블록스토리를 마운투하였으며, 마지막으로 인스턴스 재시작 및
-Orchestration 종료 방법을 살펴 보았습니다.
+SSH 원격 접속 후, 사전에 정의한 블록스토리를 마운트하였으며, 마지막으로 인스턴스 재시작 및
+Orchestration 종료 방법을 살펴보았습니다.
