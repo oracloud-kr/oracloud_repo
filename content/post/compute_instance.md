@@ -1,6 +1,6 @@
 +++
 description = "오라클 클라우드의 Compute 서비스는 최근에 업그레이드가 적용되었고, 가상 머신 인스턴스를 UI가 일정부분 변경되었습니다. 변경된 UI상에서 가상머신을 생성하는 방법에 대하여 알아보겠습니다."
-title = "우분투 17.04 가상머신 생성"
+title = "우분투 17.04 가상머신 만들기"
 categories = ["Cloud"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/thumnail_logo.jpg"
@@ -34,8 +34,9 @@ SSH 접근을 위한 네트워크 보안 룰 설정 및 블록 스토리지 마�
 - [오라클 클라우드 계정](/post/accont/)
 - [윈도우, 리눅스, 맥에서 SSH 보안키 생성](/post/ssh_key/)
 
-## Compute CS 가상머신 생성
+## Compute CS 가상머신 만들기
 
+### Ubuntu 17.04 인스턴스 만들기
 Compute CS에 Ubuntu 17.04 이미지로 가상머신을 생성하겠습니다.
 
 오라클 클라우드에 로그인하면 <그림 1>의 오라클 클라우드 대시보드가 출력됩니다.
@@ -201,7 +202,7 @@ Ubuntu_17_04_amd64에 설정된 공개 IP는 129.144.12.116입니다.
 - 그림 20. Ubuntu_17_04_amd64 가상머신 생성 결과
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img200.jpg)
 
-## 가상머신 접근을 위한 SSH 보안 설정
+###  가상머신 접근을 위한 SSH 보안 설정
 
 Ubuntu_17_04_amd64 가상머신이 생성된 후에, <그림 21>과 같이 129.144.12.116에 SSH 키로 접근하면
 , ```Time out```되어 실패합니다.
@@ -239,7 +240,7 @@ Ubuntu_17_04_amd64 가상 머신은 ```deault``` Secutiry List에 포함되기 �
 - 그림 25. Ubuntu_17_04_amd64에 SSH 접근  
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/img230.jpg)
 
-## 블록 스토리지 마운트
+###  블록 스토리지 마운트
 <그림 15>에서 data_vol 블록 스토리지를 Ubuntu_17_04_amd64에 추가 했습니다. data_vol은 index가 2입니다.
 이 블록 스토리지는 /dev/xvdc로 표현됩니다.
 
