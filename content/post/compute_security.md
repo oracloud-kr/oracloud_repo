@@ -2,7 +2,7 @@
 language = ""
 categories = ["compute"]
 author = "taewan.kim"
-tags = ["security", ]
+tags = ["security", "compute" ]
 description = "오라클 클라우드의 보안 설정 방법에 대하여 정리합니다."
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/05/cloud_security/post_logo.jpg"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/05/cloud_security/list_logo.jpg"
