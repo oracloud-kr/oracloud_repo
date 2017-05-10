@@ -94,7 +94,7 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 [oracle@localhost ~]$ scp jpetstore-hsqldb-dataload.sql opc@129.144.150.22:/home/opc
 </pre>
 
-- SSH 명령어를 통해 MySQL Cloud server에 접속하여, 스크립트의오너쉽 권한 변경후, sudo 명령어를 사용하여 oracle 계정으로 로그인 합니다. 
+- SSH 명령어를 통해 MySQL Cloud server에 접속하여, 스크립트의 오너쉽 권한을 변경한 후, sudo 명령어를 사용하여 oracle 계정으로 로그인 합니다. 
 
 <pre class="prettyprint">
 [oracle@ localhost ~]$ ssh opc@129.144.150.22
@@ -109,6 +109,8 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 [oracle@mysql1-mysql-1 ~]$ mysql -u root -p petstore < jpetstore-hsqldb-schema.sql
 Enter password: <>
 </pre>
+
+
 
 
 
