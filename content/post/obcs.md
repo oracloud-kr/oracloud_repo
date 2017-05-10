@@ -5,7 +5,7 @@ date = "2017-03-31T17:51:51+09:00"
 description = "Oracle Database Backup Cloud Service(이하 ODBCS)는 오라클 데이터베이스 백업을 위한 클라우드 스토리지 서비스(PaaS)입니다."
 language = "bsh"
 tags = ["oracle", "dbcs", "database backup", "cloud"]
-thumbnailInList = "https://docs.oracle.com/cloud/latest/dbbackup_gs/dcommon/img/cloudgs_dbbackup.png"
+thumbnailInList = "https://docs.oracle.com/en/cloud/paas/db-backup-cloud/sp_common/shared-images/cloudgs_dbbackup.png"
 thumbnailInPost = "https://i.ytimg.com/vi/SZQ3e6KrU8Y/maxresdefault.jpg"
 title = "Oracle Database Backup Cloud Service(ODBCS) 소개"
 
