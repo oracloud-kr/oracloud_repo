@@ -12,17 +12,18 @@ date = "2017-05-10T15:48:24+09:00"
 
 ## Oracle MySQL Cloud Service 개요
 
-오라클 클라우드는 관계형 데이터베이스 PaaS[^1]로 Oracle과 MySQL을 제공합니다.
-MySQL은 오라클이 개발하는 오픈소스 데이터베이스이며, 전 세계에서 가장 많이 사용되는 오픈소스 데이터베이스입니다.
-
+오라클이 오픈소스 형태로 개발하는 MySQL은 전 세계에서 가장 많이 사용되는 오픈소스 데이터베이스 입니다.
 오라클 클라우드는 Oracle MySQL Cloud Service(이하 Oracle MySQL CS)를 2016년 11월에 출시하였습니다.
+2017년 5월 현재 오라클 클라우드는 관계형 데이터베이스 서비스[^1]로 Oracle과 MySQL을 제공합니다.
 
-Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에 MySQL Enterprise Edition을 최적화하여 높은 성능과 안정성을 제공하며, MySQL CS 인스턴스의 자동화 라이프사이클 관리 방법도 제공합니다.
-Oracle MySQL CS는 엔터프라이즈의 요건을 충족하는 MySQL 서비스를 고객에게 제공하는 것을 목표로 합니다.
+Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에 MySQL Enterprise Edition을 최적화하여
+높은 성능과 안정성 사용자에게 제공합니다.
+또한, Oracle MySQL CS 인스턴스의 라이프사이클을 효과적으로 관리하는 방법도 제공합니다.
+Oracle MySQL CS는 높은 수준의 엔터프라이즈 요건을 충족하는 MySQL 서비스를 고객에게 제공하는 것을 목표로 합니다.
 
 Oracle MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 같습니다.
 
-- 데이터베이스 관리 비용 최소화
+- 효율적인 데이터베이스 관리 체계
 - MySQL 전문 관리 도구
   - MySQL Query Analyzer
   - MySQL Enterprise Monitor
@@ -32,17 +33,17 @@ Oracle MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 �
 
 [^1]: 오라클 클라우드는 PaaS 형태로 제공하는 데이터베이스를 Database as a Service[DBaaS]로 명명하고 있습니다.
 
-Oracle MySQL CS 사용자는 기업에서 요구하는 안정성, 성능 및 가용성을 확보할 수 있으며,
+Oracle MySQL CS 사용자는 기업에서 요구하는 안정성, 성능 및 가용성을 확보하면서,
 인프라와 데이터베이스 관리 비용 및 부담을 최소화할 수 있습니다.
 
 ## MySQL CS의 특징
 
-MySQL CS가 라이센스, 보안, 성능, 안전성, 관리 효율성, 백업과 복구 측면에서 다음과 같은 특징을 제공합니다.
+Oracle MySQL CS가 라이센스, 보안, 성능, 안전성, 관리 효율성, 백업과 복구 측면에서 다음과 같은 특징을 제공합니다.
 
 ### MySQL 버전과 라이센스
 
-Oracle MySQL CS가 경쟁사의 서비스와 구별되는 가장 큰 차별성[^2]은 MySQL Enterprise Edition을 사용한다는 것입니다.
-Enterprise Edition을 사용함으로써 성능, 보안 및 가용성 측면에서 강점을 갖습니다.
+Oracle MySQL CS가 경쟁사의 서비스와 구분되는 차별점[^2]은 MySQL Enterprise Edition을 사용한다는 것입니다.
+Enterprise Edition을 사용함으로써 성능, 보안 및 가용성 측면에서 강점을 갖습니다. 기존에 on-premise에서 사용하는 MySQL의 기능을 제약없이 클라우드에서 사용할 수 있습니다.
 
 [^2]: 클라우드 경쟁사들은 대부분 MySQL 서비스를 제공합니다. [AWS RDS](https://aws.amazon.com/ko/rds/mysql/), [GCP Cloud SQL](https://cloud.google.com/sql/) 그리고 [Azure MySQL App Service](https://docs.microsoft.com/ko-kr/azure/store-php-create-mysql-database)와 같은 MySQL 서비스는 모두 MySQL Community Edition으로 만들었습니다. MySQL이 성능, 보안 및 가용성을 위해서 제공하는 고급 기능을 사용할 수 없습니다.
 
