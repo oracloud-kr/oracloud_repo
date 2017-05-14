@@ -110,7 +110,9 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 Enter password: <>
 </pre>
 
+## 마치며
 
+이제까지 MySQL Cloud Service의 기본 인스턴스를 생성하고 샘플 스키마를 업로드하는 방법에 대해서 살펴보았습니다. 다음 문서에서는 MySQL 환경에서 많이 사용되고 있는 replication 기능을 구성하는 방법에 대해서 살펴보도록 하겠습니다. 
 
 
 
