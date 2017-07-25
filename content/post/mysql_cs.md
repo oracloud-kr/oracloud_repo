@@ -16,7 +16,7 @@ date = "2017-05-10T15:48:24+09:00"
 오라클 클라우드는 Oracle MySQL Cloud Service(이하 Oracle MySQL CS)를 2016년 11월에 출시하였습니다.
 2017년 5월 현재 오라클 클라우드는 관계형 데이터베이스 서비스[^1]로 Oracle과 MySQL을 제공합니다.
 
-Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에 MySQL Enterprise Edition을 최적화하여 높은 성능 및 안정성 제공하며, 관리 효율성을 높이는 데이터베이스 관리 툴이 포함되어 있습니다.
+Oracle MySQL CS는 Oracle Cloud(Compute CS와 Storage CS)에서 MySQL Enterprise Edition을 PaaS 형태로 제공하는 클라우드 서비스 입니다.
 
 Oracle MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 같습니다.
 
@@ -29,9 +29,6 @@ Oracle MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 �
 - 다중계층 보안(Multi-layer security)
 
 [^1]: 오라클은 PaaS 형태로 제공하는 데이터베이스를 Database as a Service[DBaaS]로 명명하고 있습니다.
-
-Oracle MySQL CS 사용자는 기업에서 요구하는 안정성, 성능 및 가용성을 확보하면서,
-인프라와 데이터베이스 관리 비용 및 부담을 최소화할 수 있습니다.
 
 ## MySQL CS의 특징
 
