@@ -39,7 +39,7 @@ Oracle MySQL CS는 라이센스, 보안, 성능, 안전성, 관리 효율성, �
 Oracle MySQL CS의 차별점[^2]은 MySQL Enterprise Edition을 사용한다는 것입니다.
 Enterprise Edition을 사용함으로써 성능, 보안 및 가용성 측면에서 강점을 갖습니다. 기존에 on-premise에서 사용하는 MySQL의 기능을 제약없이 클라우드에서 사용할 수 있습니다.
 
-[^2]: 클라우드 경쟁사들은 모두 MySQL 서비스를 제공합니다. [AWS RDS](https://aws.amazon.com/ko/rds/mysql/), [GCP Cloud SQL](https://cloud.google.com/sql/) 그리고 [Azure MySQL App Service](https://docs.microsoft.com/ko-kr/azure/store-php-create-mysql-database)와 같은 MySQL 서비스는 모두 MySQL Community Edition을 사용합니다. 오라클을 제외한 다른 클라우드에서는 MySQL Enterprise Edition에서 제공하는 고급 기능(성능, 보안, 가용성 관련)을 사용할 수 없습니다.
+[^2]: 클라우드 업체는 대부분 MySQL 서비스를 제공합니다. [AWS RDS](https://aws.amazon.com/ko/rds/mysql/), [GCP Cloud SQL](https://cloud.google.com/sql/) 그리고 [Azure MySQL App Service](https://docs.microsoft.com/ko-kr/azure/store-php-create-mysql-database)와 같은 MySQL 서비스는 모두 MySQL Community Edition을 사용합니다. 오라클을 제외한 다른 클라우드에서는 MySQL Enterprise Edition에서 제공하는 고급 기능(성능, 보안, 가용성 관련)을 사용할 수 없습니다.
 
 MySQL Enterprise Edition은 다음과 같은 기능을 포함합니다.
 
