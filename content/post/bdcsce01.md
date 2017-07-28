@@ -10,7 +10,7 @@ author = "taewan.kim"
 language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++
 
-오라클 클라우드는 Hadoop PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
+오라클 클라우드는 빅데이터 PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
 
 앞에서 설명한 것처럼, Oracle BDCSCE는 Apache Spark과 Apache Hadoop을 필요한 시점에 즉시 사용할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 Oracle Compute Cloud Service의 VM을 이용합니다.
 
@@ -18,19 +18,19 @@ Oracle BDCSCE은 다음과 같은 특징을 갖습니다.
 
 1. 약 15분 안에 신규 Apache Hadoop/Spark 클러스터 생성
 1. Scale-up/down 지원
-1. 하나의 Data Lake에 저장된 데이터 분석 용도로 복수의 클러스터 구성 지원
-1. Oracle Identity Cloud Service와 통합되어 단일한 계정 및 접근 관리
-1. HDP(Hortonworks Data Platform)에 근간을 둔 검증된 소프트웨어 패키지
+1. 하나의 Data Lake에 저장된 데이터 분석 용도로 복수의 하둡 클러스터 구성 가능
+1. Oracle Identity Cloud Service와 통합되어 계정 및 접근 관리 단일화
+1. HDP(Hortonworks Data Platform)에 근간을 둔 검증된 소프트웨어 패키지 제공
 1. 업그레이드 및 패치 자동화
 1. 클러스터 관리 비용 최소화
 
-Oracle BDCSCE의 최소 구성은 1개 노드입니다. 고가용성을 제공하기 위해서는 3노드 이상으로 구성할 것을 권장합니다. Oracle BDCSCE의 최대 규모는 100노드입니다. Oracle BDCSCE 클러스터에 HDFS 노드 외에 별도로 Compute 노드[^1]를 추가할 수 있습니다. Compute 노드와 스토리지 클라우드 서비스는 Oracle BDCSCE 클러스터와 독립적으로 운영됩니다.
+Oracle BDCSCE의 최소 구성은 1개 노드입니다. 고가용성을 보장하기 위해서는 3개 노드 이상으로 클러스터를 구성해야 합니다. Oracle BDCSCE의 클러스터 최대 규모는 100개 노드입니다. Oracle BDCSCE 클러스터에 HDFS 노드 외에 별도로 Compute 노드[^1]를 추가할 수 있습니다. 앞에서 설명한 Compute 노드와 Oracle Storage Cloud Service는 Oracle BDCSCE 클러스터와 독립적으로 운영됩니다.
 
 [^1]: Compute 노드는 Spark 등 연산 프로세스가 동작하는 VM입니다. Comute 노드는 언제든지 Shape 변경이 가능합니다.
 
-Oracle BDCSCE는 인스턴스 생성 시점에 Full Profile과 Basic Profile로 인스턴스 구성을 선택할 수 있습니다. Full Profile은 Hortonworks Data Platform을 근간으로 전체 Hadoop Ecosystem이 설치됩니다. Basic Profile을 선택하면 Spark 클러스터 환경만 설치됩니다. Oracle BDCSCE는 인스턴스 생성 시점에 spark 버전을 선택할 수 있습니다. 2017년 7월 현재 Oracle BDCSCE는 Spark 1.6과 2.1버전을 지원합니다.
+Oracle BDCSCE는 클러스터 생성 시점에 Full Profile과 Basic Profile로 인스턴스 구성을 선택할 수 있습니다. Full Profile은 Hortonworks Data Platform을 근간으로 전체 Hadoop Ecosystem을 설치합니다. Basic Profile을 선택하면 Spark 클러스터 환경만 설치됩니다. Oracle BDCSCE는 인스턴스 생성 시점에 Apache Spark 버전을 선택할 수 있습니다. 2017년 7월 현재 Oracle BDCSCE는 Spark 1.6과 2.1버전을 지원합니다.
 
-Oracle BDCSCE가 사용하는 HDP는 오라클과 Hortonworks가 협력하여 오라클 클라우드에 최적화 구성으로 수정된 버전입니다. 2017년 7월 현재 HDP 버전은 2.4.2입니다.
+Oracle BDCSCE가 사용하는 HDP는 오라클과 Hortonworks가 협력하여 오라클 클라우드에 최적화 구성이 적용된 버전입니다. 2017년 7월 현재 Oracle BDCSCE의 HDP 버전은 2.4.2입니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/bdcsce.jpg)
 
@@ -61,7 +61,7 @@ Oracle BDCSCE는 다른 클라우드 빅데이터 서비스와 다음과 같은 
 ### 차별성>1. Public & Private
 
 Oracle BDCSCE는 Oracle Public Cloud와 Cloud@Customer에서 모두 제공하는 서비스입니다.
-여기서 Oracle Cloud@Customer란 고객사의 데이터센터에 Oracle Public Cloud와 같은 클라우드 환경을 구성하고, 오라클이 관리하는 클라우드 서비스입니다. Oracle BDCSCE는 Public Cloud와 Private cloud(Cloud@Customer)에 같은 형태로 제공됩니다. Oracle BDCSCE 사용자는 Public cloud와 Private Cloud에서 동일한 빅데이터 경험을 유지할 수 있습니다.
+여기서 Oracle Cloud@Customer란 고객사의 데이터센터에 Oracle Public Cloud와 같은 클라우드 환경을 구성하고, 오라클이 관리하는 클라우드 서비스입니다. Oracle BDCSCE는 Public Cloud와 Private cloud(Cloud@Customer)에 같은 형태로 서비스됩니다. Oracle BDCSCE 사용자는 Public cloud와 Private Cloud에서 동일한 빅데이터 경험을 유지할 수 있습니다.
 
 ### 차별성>2. 스트리밍 데이터 처리 환경
 
@@ -90,7 +90,7 @@ Oracle BDCSCE는 3가지 측면(Cluster, Storage, Computer)의 확장성을 지�
   - HDFS 노드와 Compute 노드에 대한 다양한 Shape을 지원합니다.
   - 최소 2 OCPU[^2], 최대 16 OCPU
 
-[^2]: 하이퍼 스레딩이 활성화된 Intel Xeon 프로세서의 물리적 코어 한 개 또는 Oracle SPARC 프로세서의 물리적 코어 한 개의 CPU 용량으로 정의됩니다. Intel Xeon 프로세서의 경우 각 OCPU는 vCPU 2개와 같습니다.
+[^2]: 하이퍼스레딩이 활성화된 Intel Xeon 프로세서의 물리적 코어 한 개 또는 Oracle SPARC 프로세서의 물리적 코어 한 개의 CPU 용량으로 정의됩니다. Intel Xeon 프로세서의 경우 각 OCPU는 vCPU 2개와 같습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/scaleout.jpg)
 
@@ -101,7 +101,7 @@ Oracle BDCSCE는 Hortonworks의 HDP 2.4.2 버전을 근간으로 합니다. HDP�
 
 ### 3. 관리 서비스 (Managed Service)
 
-Oracle BDCSCE는 클러스터 관리 부하를 줄일 수 있습니다. 하둡 기술을 사용할 때 가장 어려운 부분은 패치와 업그레이드입니다. Oracle BDCSCE는 검증된 방식으로 패치와 업그레이드를 지원합니다.
+Oracle BDCSCE는 클러스터 관리 부하를 줄일 수 있습니다. 하둡 기술을 사용할 때 가장 어려운 부분은 패치와 업그레이드입니다. Oracle BDCSCE는 검증된 방식의 패치와 업그레이드 기능를 지원합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/patch.jpg)
 
@@ -128,7 +128,7 @@ Oracle BDCSCE는 접근 제어, 데이터 보호, 네트워크 측면에서 대�
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/network.jpg)
 
-## Trial Account를 이용한 테스트
+## 트라이얼 계정을 이용한 Oracle BDCSCE 테스트
 
 오라클 클라우드가 제공하는 Trial Account로 Oracle BDCSCE를 테스트할 수 있습니다. 오라클 클라우드 Trial Account를 신청하면 1개월간 6 OCPU, 500GB를 제약 없이 사용할 수 있습니다. Trial Account로 Oracle BDCSCE 인스턴스를 생성하여 테스트할 수 있습니다.
 
