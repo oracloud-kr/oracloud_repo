@@ -10,14 +10,16 @@ author = "taewan.kim"
 language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++
 
-오라클 클라우드는 Hadoop PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 EMR은 데이터 저장 인프라고 S3만을 지원하는 반면 Oracle BDCSCE 인스턴스는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
+오라클 클라우드는 Hadoop PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
 
-앞에서 설명한 것처럼, Oracle BDCSCE는 아파치 Spark과 아파치 Hadoop을 필요한 시점에 즉시 사용할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 인프라스트럭처로 Oracle Compute Cloud Service를 이용합니다. Oracle BDCSCE는 다음과 같은 특징을 갖습니다.
+앞에서 설명한 것처럼, Oracle BDCSCE는 Apache Spark과 Apache Hadoop을 필요한 시점에 즉시 사용할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 Oracle Compute Cloud Service의 VM을 이용합니다.
 
-1. 약 15분 안에 신규 아파치 하둡 클러스터나 아파치 스파크 클러스트 생성
+Oracle BDCSCE은 다음과 같은 특징을 갖습니다.
+
+1. 약 15분 안에 신규 Apache Hadoop/Spark 클러스터 생성
 1. Scale-up/down 지원
 1. 하나의 Data Lake에 저장된 데이터 분석 용도로 복수의 클러스터 구성 지원
-1. Identity Cloud Service와 통합되어 단일한 계정 및 접근 관리
+1. Oracle Identity Cloud Service와 통합되어 단일한 계정 및 접근 관리
 1. HDP(Hortonworks Data Platform)에 근간을 둔 검증된 소프트웨어 패키지
 1. 업그레이드 및 패치 자동화
 1. 클러스터 관리 비용 최소화
@@ -136,7 +138,7 @@ Oracle BDCSCE는 접근 제어, 데이터 보호, 네트워크 측면에서 대�
 
 ## 요약
 
-오라클 클라우드(OPC)는 아파치 하둡 기술을 서비스하는 PaaS로 Oracle Big Data Cloud Service Compute-Edition을 출시하였습니다. Oracle BDCSCE는 Hortonworks의 HDP 2.4.2 버전을 오라클 클라우드에 최적화한 설정과 구성으로 디자인 되었습니다. 최소 구성은 1노드이고 최대 100노드까지 클러스터를 구성할 수 있습니다.
+오라클 클라우드(OPC)는 Apache Hadoop 기술을 서비스하는 PaaS로 Oracle Big Data Cloud Service Compute-Edition을 출시하였습니다. Oracle BDCSCE는 Hortonworks의 HDP 2.4.2 버전을 오라클 클라우드에 최적화한 설정과 구성으로 디자인 되었습니다. 최소 구성은 1노드이고 최대 100노드까지 클러스터를 구성할 수 있습니다.
 
 Full Profile로 인스턴스를 생성할 경우에 HDFS, MapReduce, Hive, Pig, Tez, Spark 등을 사용할 수 있습니다. 관리 도구로 Ambari가 설치됩니다, 개발 및 운영 편리성을 위하여 Apache Zeppelin이 포함됩니다.
 
