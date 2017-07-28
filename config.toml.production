@@ -10,7 +10,7 @@ pygmentsstyle = "monokai"
 
 
 [Author]
-    name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
+    name = "한국오라클"
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 

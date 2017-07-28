@@ -1,13 +1,13 @@
 +++
 date = "2017-07-27T11:59:47+09:00"
 description = "오라클 클라우드는 Hadoop PaaS 서비스로 Oracle Big Data Cloud Service Compute-Edition을 지난 2017년 03월에 출시하였습니다. Oracle Big Data Cloud Service Compute-Edition은 Hortonworks의 HDP를 기반으로 합니다. Oracle Big Data Cloud Service Compute-Edition 서비스에 대한 주요 특징을 소개합니다."
-title = "Oracle Big Data – Compute Edition"
+title = "Oracle Big Data Cloud Service Compute-Edition"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.png"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.jpg"
 tags = ['big data', 'hadoop', 'spark']
-categories = ['big data compute-edition']
+categories = ['big data']
 author = "taewan.kim"
-language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
+language = "" 
 +++
 
 오라클 클라우드는 빅데이터 PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
