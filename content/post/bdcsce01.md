@@ -67,14 +67,16 @@ Oracle BDCSCE는 Oracle Public Cloud와 Cloud@Customer에서 모두 제공하는
 
 ### 차별성>2. 스트리밍 데이터 처리 환경
 
-오라클은 스트리밍 데이터를 수집하는 서비스로 Oracle Event Hub CS를 제공합니다. Oracle Event Hub CS의 실체는 Apache Kafka입니다. Oracle BDCSCS는 Oracle Event Hub CS에 빠른 접근이 가능한 인프라 환경(네트워크 구성)을 제공합니다. Oracle Event Hub CS와 Oracle BDCSCE를 사용하여 고성능 스트리밍 데이터 분석환경을 구성할 수 있습니다. Oracle Event Hub CS와 Oracle BDCSCE의 Spark Streaming을 사용하여 실시간 이벤트 처리 시스템으로 CEP(Context Event Processing)를 구성할 수 있습니다.
+오라클은 스트리밍 데이터를 수집하는 서비스로 Oracle Event Hub CS를 제공합니다. Oracle Event Hub CS의 실체는 Apache Kafka입니다. Oracle BDCSCE는 Oracle Event Hub CS에 빠른 접근이 가능한 인프라 환경(네트워크 구성)을 제공합니다. Oracle Event Hub CS와 Oracle BDCSCE를 사용하여 고성능 스트리밍 데이터 분석환경을 구성할 수 있습니다. Oracle Event Hub CS와 Oracle BDCSCE의 Spark Streaming을 사용하여 실시간 이벤트 처리 시스템으로 CEP(Context Event Processing)를 구성할 수 있습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/eventhubbdcsce.jpg)
 
 
-### 차별성>3. 관계형 데이터베이스 통합 기능
+### 차별성>3. 관계형 데이터베이스 및 클라우드 스토리지 통합
 
-Oracle BDCSCE는 Oracle Big Data SQL과 Big Data Connector 기술과 함께 사용할 수 있습니다. Oracle Big Data SQL은 오라클 데이터베이스이 하둡 데이터를 External Table로 인식시킵니다. 이 기술을 사용하면 오라클 데이터베이스는 하둡 데이터(Hive, 파일, HBase)를 오라클 테이블로 인식하고 Oracle SQL로 다른 테이블과 함께 Join 쿼리를 수행할 수 있습니다.   
+Oracle BDCSCE는 Oracle DBCS(Oracle Database Cloud Service), Oracle MySQL CS, OEHCS(Oracle EventHub Cloud Service) 및 Oracle Storage Cloud Service와 통합되어 있습니다.
+
+![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/dbcsintegration.jpg)
 
 ## Oracle BDCSCE 주요 특징
 

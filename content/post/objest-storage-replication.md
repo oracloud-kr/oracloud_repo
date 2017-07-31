@@ -3,7 +3,7 @@ language = ""
 description = "오라클 클라우드 계정을 생성한 후 Oracle Storage Cloud Service의 기본 복제 정책을 설정해야 합닏. "
 date = "2017-03-06T08:54:32+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
-title = "Oracle Storage Cloud Serivce 활성화"
+title = "Oracle Storage Cloud Service 활성화"
 author = "taewan.kim"
 categories = ["cloud"]
 tags = ["Object Storage", "Storage"]
@@ -11,7 +11,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage
 
 +++
 
-Oracle Storage Cloud Serivce(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다.
+Oracle Storage Cloud Service(이하 Storage Cloud)는 오라클 클라우드의 핵심 서비스입니다.
 오라클 클라우드의 대부분의 서비스는 데이터 저장 목적으로 Storage Cloud를 사용합니다.
 오라클 클라우드에서 Storage Cloud를 사용하는 서비스는 다음과 같습니다.
 
