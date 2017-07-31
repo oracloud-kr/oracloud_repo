@@ -7,10 +7,12 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisi
 tags = ['big data', 'hadoop', 'spark']
 categories = ['big data']
 author = "taewan.kim"
-language = "" 
+language = ""
 +++
 
-오라클 클라우드는 빅데이터 PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
+빅데이테 기술을 사용하면서 가장 어려운 부분은 오픈소스로 구성된 빅데이터 에코 기술을 설치하고 관리하는 것입니다. 빅데이터 에코 기술들이 오픈소스 프로젝트로 구성되어 있고, 각 오픈소스 프로젝트들은 특정 오픈소스 프로젝트에 대한 버전 의존성을 갖고 있습니다. 또한, 각 오픈소스는 개별적인 버전 업그레이드 주기를 갖습니다. 여러 오픈소스 프로젝트 사이에 버전 의존성을 갖고 제각각인 업그레이드 주기를 갖는 기술로 빅데이터 환경을 구성하고 유지하기 위해서는 많은 노력이 필요합니다. 이 문제를 해결하기 위해서 Cloudera와 Hotonworks는 빅데이터 오픈소스 프로젝트의 검증된 버전을 모아 패키지로 관리합니다. 이러한 이유로 업계에서는 Cloudera의 CDH(Cloudera Distribution Including Apache Hadoop)와 Hotonworks의 HDP(Hotonworks Data Platform)를 대부분 사용합니다. CDH와 HDP 같은 패키지로 오픈소스 프로젝트 간의 버전 충돌을 해결할 수는 있지만, 각 오픈소스를 구성하고 관리하기 위해서는 여전히 상당한 노력이 필요합니다.
+
+앞에서 설명한 빅데이터 패키지는 클라우드 기술과 결합할 때, 기술적인 어려움를 크게 낮출 수 있습니다. 검증된 빅데이터 기술을 클라우드 인프라에 검증된 형태로 구성하고 소프트웨어 업그레이드 프로세스를 제공한다면 빅데이터의 기술적 난이도를 크게 낮출 수 있을 것입니다. 결과적으로 클라우드 빅데이터 서비스 사용자는 데이터 분석에 역량을 더 집중할 수 있을 것입니다. 오라클 클라우드는 이러한 빅데이터 PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
 
 앞에서 설명한 것처럼, Oracle BDCSCE는 Apache Spark과 Apache Hadoop을 필요한 시점에 즉시 사용할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 Oracle Compute Cloud Service의 VM을 이용합니다.
 

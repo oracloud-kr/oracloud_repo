@@ -10,17 +10,10 @@ author = "taewan.kim"
 language = ""
 +++
 
-오라클 클라우드는 Hadoop PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 BDCSCE)을 지난 2017년 03월에 출시하였습니다. BDCSCE는 Hortonworks의 HDP를 기반으로 합니다. BCCSCE를 인스턴스를 생성하는 절차를 소개합니다.
-
-
-## ddd
-### kkk
-### kkk
-### kkk
-### kkk
-### kkk
-## test
-![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_01.jpg)
+```
+def test():
+  return 1
+```
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_02.jpg)
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_03.jpg)
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_04.jpg)
