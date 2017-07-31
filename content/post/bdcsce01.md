@@ -10,11 +10,11 @@ author = "taewan.kim"
 language = ""
 +++
 
-빅데이테 기술을 사용하면서 가장 어려운 부분은 오픈소스로 구성된 빅데이터 에코 기술을 설치하고 관리하는 것입니다. 빅데이터 에코 기술들이 오픈소스 프로젝트로 구성되어 있고, 각 오픈소스 프로젝트들은 특정 오픈소스 프로젝트에 대한 버전 의존성을 갖고 있습니다. 또한, 각 오픈소스는 개별적인 버전 업그레이드 주기를 갖습니다. 여러 오픈소스 프로젝트 사이에 버전 의존성을 갖고 제각각인 업그레이드 주기를 갖는 기술로 빅데이터 환경을 구성하고 유지하기 위해서는 많은 노력이 필요합니다. 이 문제를 해결하기 위해서 Cloudera와 Hotonworks는 빅데이터 오픈소스 프로젝트의 검증된 버전을 모아 패키지로 관리합니다. 이러한 이유로 업계에서는 Cloudera의 CDH(Cloudera Distribution Including Apache Hadoop)와 Hotonworks의 HDP(Hotonworks Data Platform)를 대부분 사용합니다. CDH와 HDP 같은 패키지로 오픈소스 프로젝트 간의 버전 충돌을 해결할 수는 있지만, 각 오픈소스를 구성하고 관리하기 위해서는 여전히 상당한 노력이 필요합니다.
+빅데이터 기술을 사용하면서 가장 어려운 부분은 오픈소스로 구성된 빅데이터 에코 기술을 설치하고 관리하는 부분입니다. 빅데이터 에코 기술들은 여러 오픈소스 프로젝트로 구성되어 있고, 각 오픈소스 프로젝트는 특정 오픈소스 프로젝트의 버전에 의존성을 갖고 있습니다. 또한, 각 오픈소스는 개별적인 업그레이드 주기를 갖습니다. 여러 오픈소스 프로젝트가 상호 버전 의존성을 갖고 있고, 개별적인 업그레이드 주기를 갖는 기술들로 빅데이터 환경을 구성하고 관리하기 위해서는 많은 노력이 필요합니다. 이 문제를 해결하기 위해서 Cloudera와 Hotonworks는 빅데이터 오픈소스 프로젝트들의 검증된 버전을 모아 패키지로 관리합니다. 이러한 이유로 업계에서는 Cloudera의 CDH(Cloudera Distribution Including Apache Hadoop)와 Hotonworks의 HDP(Hotonworks Data Platform)를 대부분 사용합니다. CDH와 HDP 같은 빅데이터 패키지로 오픈소스 프로젝트 간의 버전 충돌은 해결할 수는 있지만, 빅데이터 에코 기술의 구성을 최적화하고 안정성을 확보하는 관리 체계를 확보하기 위해서는 여전히 상당한 노력이 필요합니다.
 
-앞에서 설명한 빅데이터 패키지는 클라우드 기술과 결합할 때, 기술적인 어려움를 크게 낮출 수 있습니다. 검증된 빅데이터 기술을 클라우드 인프라에 검증된 형태로 구성하고 소프트웨어 업그레이드 프로세스를 제공한다면 빅데이터의 기술적 난이도를 크게 낮출 수 있을 것입니다. 결과적으로 클라우드 빅데이터 서비스 사용자는 데이터 분석에 역량을 더 집중할 수 있을 것입니다. 오라클 클라우드는 이러한 빅데이터 PaaS 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 HDFS를 제공하지 않고 데이터 저장소로 S3만을 지원하는 반면, Oracle BDCSCE는 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
+앞에서 설명한 빅데이터 패키지는 클라우드 기술과 결합할 때, 기술적인 어려움를 크게 낮출 수 있습니다. 검증된 빅데이터 기술을 클라우드 인프라에 검증된 형태로 구성하고 소프트웨어 업그레이드 프로세스를 제공한다면 빅데이터의 기술적 난이도를 크게 낮출 수 있을 것입니다. 결과적으로 클라우드 빅데이터 서비스 사용자는 데이터 분석에 역량을 더 집중할 수 있을 것입니다. 오라클 클라우드는 PaaS 형태의 빅데이터 서비스로 __Oracle Big Data Cloud Service Compute-Edition__(이하 Oracle BDCSCE)을 지난 2017년 03월에 출시하였습니다. Oracle BDCSCE는 AWS EMR과 같은 하둡 서비스입니다. AWS EMR과 다른 점은 AWS EMR은 자체 HDFS를 제공하지 않고 데이터 저장소로 S3를 지원하는 반면, Oracle BDCSCE는 자체 HDFS를 제공합니다. 또한, Object Storage로 Oracle Cloud Storage Service를 사용할 수 있습니다. Oracle BDCSCE는 하둡 패키지로 Hortonworks의 HDP를 사용합니다.
 
-앞에서 설명한 것처럼, Oracle BDCSCE는 Apache Spark과 Apache Hadoop을 필요한 시점에 즉시 사용할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 Oracle Compute Cloud Service의 VM을 이용합니다.
+앞에서 설명한 것처럼, Oracle BDCSCE는 Apache Spark/Apache Hadoop 클러스터를 필요한 시점에 즉시 생성할 수 있는 클라우드 서비스 입니다. Oracle BDCSCE는 Oracle Compute Cloud Service의 VM을 인프라스트럭처로 사용합니다.
 
 Oracle BDCSCE은 다음과 같은 특징을 갖습니다.
 
@@ -26,9 +26,10 @@ Oracle BDCSCE은 다음과 같은 특징을 갖습니다.
 1. 업그레이드 및 패치 자동화
 1. 클러스터 관리 비용 최소화
 
-Oracle BDCSCE의 최소 구성은 1개 노드입니다. 고가용성을 보장하기 위해서는 3개 노드 이상으로 클러스터를 구성해야 합니다. Oracle BDCSCE의 클러스터 최대 규모는 100개 노드입니다. Oracle BDCSCE 클러스터에 HDFS 노드 외에 별도로 Compute 노드[^1]를 추가할 수 있습니다. 앞에서 설명한 Compute 노드와 Oracle Storage Cloud Service는 Oracle BDCSCE 클러스터와 독립적으로 운영됩니다.
+Oracle BDCSCE의 최소 구성은 1개 노드[^1]입니다. 고가용성을 보장하기 위해서는 3개 노드 이상으로 클러스터를 구성해야 합니다. Oracle BDCSCE 클러스터에 HDFS 노드 외에 별도로 Compute 노드[^2]를 추가할 수 있습니다. 앞에서 설명한 Compute 노드와 Oracle Storage Cloud Service는 Oracle BDCSCE 클러스터와 독립적으로 운영됩니다.
 
-[^1]: Compute 노드는 Spark 등 연산 프로세스가 동작하는 VM입니다. Comute 노드는 언제든지 Shape 변경이 가능합니다.
+[^1]: 본문에서 노드는 가상머신(VM, Virtual Machine)을 의미합니다. 1개 노드란 가상머신 서버 1대를 의미합니다.
+[^2]: Compute 노드는 Spark 등 연산 프로세스가 동작하는 VM입니다. Comute 노드는 언제든지 Shape 변경이 가능합니다.
 
 Oracle BDCSCE는 클러스터 생성 시점에 Full Profile과 Basic Profile로 인스턴스 구성을 선택할 수 있습니다. Full Profile은 Hortonworks Data Platform을 근간으로 전체 Hadoop Ecosystem을 설치합니다. Basic Profile을 선택하면 Spark 클러스터 환경만 설치됩니다. Oracle BDCSCE는 인스턴스 생성 시점에 Apache Spark 버전을 선택할 수 있습니다. 2017년 7월 현재 Oracle BDCSCE는 Spark 1.6과 2.1버전을 지원합니다.
 
@@ -92,9 +93,9 @@ Oracle BDCSCE는 3가지 측면(Cluster, Storage, Computer)의 확장성을 지�
   - Oracle BDCSCE는 클러스터의 HDFS와 Oracle Storage Cloud Service에 분석 데이터를 관리합니다. Oracle Storage Cloud Service는 제약 없는 데이터 확장을 지원합니다. Metered 방식을 사용할 경우 사용한 데이터 용량과 Operation 수 만큼 요금이 부과됩니다.
 - Compute 확장성
   - HDFS 노드와 Compute 노드에 대한 다양한 Shape을 지원합니다.
-  - 최소 2 OCPU[^2], 최대 16 OCPU
+  - 최소 2 OCPU[^3], 최대 16 OCPU
 
-[^2]: 하이퍼스레딩이 활성화된 Intel Xeon 프로세서의 물리적 코어 한 개 또는 Oracle SPARC 프로세서의 물리적 코어 한 개의 CPU 용량으로 정의됩니다. Intel Xeon 프로세서의 경우 각 OCPU는 vCPU 2개와 같습니다.
+[^3]: 하이퍼스레딩이 활성화된 Intel Xeon 프로세서의 물리적 코어 한 개 또는 Oracle SPARC 프로세서의 물리적 코어 한 개의 CPU 용량으로 정의됩니다. Intel Xeon 프로세서의 경우 각 OCPU는 vCPU 2개와 같습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/scaleout.jpg)
 
@@ -125,9 +126,9 @@ Oracle BDCSCE는 접근 제어, 데이터 보호, 네트워크 측면에서 대�
 - 네트워크 보안
   - SDN(Software-Defined Network)을 이용하여 세밀한 네트워크 보안 강화
   - VPN 지원
-  - White-list IP[^3] 관리 지원
+  - White-list IP[^4] 관리 지원
 
-[^3]: Black-list IP의 반대 개념으로, 접근을 허용하는 특별한 IP를 지정하는 기능입니다.
+[^4]: Black-list IP의 반대 개념으로, 접근을 허용하는 특별한 IP를 지정하는 기능입니다.
 
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_intro/network.jpg)
@@ -142,11 +143,16 @@ Oracle BDCSCE는 접근 제어, 데이터 보호, 네트워크 측면에서 대�
 
 ## 요약
 
-오라클 클라우드(OPC)는 Apache Hadoop 기술을 서비스하는 PaaS로 Oracle Big Data Cloud Service Compute-Edition을 출시하였습니다. Oracle BDCSCE는 Hortonworks의 HDP 2.4.2 버전을 오라클 클라우드에 최적화한 설정과 구성으로 디자인 되었습니다. 최소 구성은 1노드이고 최대 100노드까지 클러스터를 구성할 수 있습니다.
+오라클 클라우드(OPC)는 Apache Hadoop 기술을 서비스하는 PaaS로 Oracle Big Data Cloud Service Compute-Edition을 출시하였습니다. Oracle BDCSCE는 Hortonworks의 HDP 2.4.2 버전을 오라클 클라우드에 최적화한 설정과 구성으로 디자인 되었습니다. 최소 구성은 1 노드이고 고가용성(HA, High Availability)를 확보하기 위해서는 클러스터를 3 노드 이상으로 구성해야 합니다.
 
-Full Profile로 인스턴스를 생성할 경우에 HDFS, MapReduce, Hive, Pig, Tez, Spark 등을 사용할 수 있습니다. 관리 도구로 Ambari가 설치됩니다, 개발 및 운영 편리성을 위하여 Apache Zeppelin이 포함됩니다.
+Full Profile로 인스턴스를 생성할 경우에 HDFS, MapReduce, Hive, Pig, Tez, Spark 등을 사용할 수 있습니다. 관리 도구로 Ambari가 설치되고, 개발 및 운영 편리성을 위하여 Apache Zeppelin이 포함됩니다.
 
-Oracle BDCSCE는 성능, 보안 및 관리 편리성이 고려된 PaaS 서비스 입니다. 데이터 확장, 실시간 데이터 처리, 컴퓨팅 노드 확장, 오픈소스 패치에 대한 고려사항이 적용되어 있습니다.
+Oracle BDCSCE는 성능, 보안 및 관리 편리성이 고려된 PaaS 입니다. 데이터 확장, 실시간 데이터 처리, 컴퓨팅 노드 확장, 오픈소스 패치에 대한 고려사항이 적용되어 있습니다.
+
+## 관련 문서
+
+1. Oracle Big Data Cloud Service Compute-Edition 소개
+1. [Oracle BDCSCE: 클러스터 생성](../stpe_by_step_new_cluster_bdcsce/)
 
 ## Reference
 
