@@ -10,4 +10,4 @@ author = "taewan.kim"
 language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++
 
-Oracle Container Cloud Service에 대한 소개가 잘 녹아있는 Infographics입니다.
+Oracle Container Cloud Service에 대한 개요와 특징이 잘 정리된 Infographics입니다.
