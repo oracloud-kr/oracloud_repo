@@ -4,8 +4,8 @@ description = "Oracle Big Data Cloud Service Compute-Edition은 오라클 클라
 title = "Oracle BDCSCE: 클러스터 생성 "
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsceInList.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.jpg"
-tags = ['big data', 'hadoop', 'spark']
-categories = ['big data']
+tags = ['big data', 'hadoop', 'spark', 'bdcsce']
+categories = ['big data','bdcsce']
 author = "taewan.kim"
 language = ""
 +++
@@ -16,9 +16,10 @@ Oracle Big Data Cloud Service Compute-Edition(이하 Oracle BDCSCE)은 PaaS 형�
 
 - [오라클 클라우드 트라이얼 계정 생성 - http://www.oracloud.kr/post/accont/](http://www.oracloud.kr/post/accont/)
 
-Oracle BDCSCE 서비스에서 클러스터를 생성하기 위해서는 Oracle Storage CS 정보를 입력해야 합니다. 클러스터 생성에 앞서 Oracle Storage CS가 아직 활성화되지 않았다면 다음 문서를 참조하여 활성화하시기 바랍니다.
+Oracle BDCSCE 서비스에서 클러스터를 생성하기 위해서는 Oracle Storage CS 정보를 입력해야 합니다. 따라서, 클러스터 생성에 앞서 Oracle Storage CS가 활성화되어 있어야 합니다. Oracle Storage CS 활성화란 Oracle Storage CS의 복제 정책을 설정한 상태를 의미합니다. Oracle Cloud 계정을 생성한 후, Oracle Storage Service Console에 접근하여 복제 정책을 설정할 수 있습니다. 현재 Trial 계정을 사용중이라면 "Chicago(us2)"를 지정하면 됩니다. Oracle Storage CS 활성화에 대한 자세한 소개와 설정 방법은 다음 문서를 참조하시기 바랍니다.
 
 - [Oracle Storage Cloud Service 활성화 - http://www.oracloud.kr/post/objest-storage-replication/](http://www.oracloud.kr/post/objest-storage-replication/)
+
 
 ## 용어 정리(Glossary of terms)
 
