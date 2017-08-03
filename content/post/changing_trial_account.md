@@ -30,7 +30,7 @@ language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py
 - 그림 2. 신용카드 등록 화면
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/trial_account/trial02.jpg)
 
-글로벌 정책은 300 크래딧을 제공하는 것이 원칙이지만, 2017년 08월 1일 기준으로 한국에서 신청되는 트라이얼 계정에 대해서는 394불 Credit이 지급됩니다.
+글로벌 정책은 300 크래딧을 제공하는 것이 원칙이지만, 2017년 08월 1일 기준으로 한국에서 신청되는 트라이얼 계정에 대해서는 394불 Credit이 지급되고 있습니다.
 
 - 그림 3. 계정 등록 확인 메일
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/trial_account/trial04.jpg)
