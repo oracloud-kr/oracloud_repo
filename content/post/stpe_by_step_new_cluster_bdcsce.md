@@ -25,18 +25,18 @@ Oracle BDCSCE 서비스에서 클러스터를 생성하기 위해서는 Oracle S
 
 현재 문서에서 사용할 오라클 클라우드의 용어는 다음과 같이 통일하겠습니다.
 
-1. My Services dashboard
+1. My Services Dashboard
   - 오라클 클라우드에 로그인하면 출력되는 메인 페이지
   - 현재 사용 중인 서비스 사용현황 출력
   - 서비스별 서비스 콘솔 접근 메뉴 제공
 1. Oracle BDCSCE Service Console
-  - My Services dashboard의 메뉴에서 Oracle BDCSCE를 지정하여 이동
+  - My Services Dashboard의 메뉴에서 Oracle BDCSCE를 지정하여 이동
   - Oracle BDCSCE에 생성된 클러스터 정보를 출력하는 페이지
   - 클러스터(인스턴스) 생성 메뉴 제공
   - 클러스터별 콘솔 접근 메뉴 제공
 1. Big Data Cluster Console
   - 클러스터별로 제공되는 콘솔
-  - Job 관리 UI, Zeppline 노트북 UI, 데이터 저장소 UI 연결
+  - Job 관리 UI, Zeppelin 노트북 UI, 데이터 저장소 UI 연결
 1. Oracle Storage Cloud Service
   - 오라클 클라우드의 스토리지 서비스
   - 이하 Oracle Storage CS로 표시
@@ -51,14 +51,14 @@ Oracle BDCSCE 클러스터 생성 절차를 단계별로 이미지 중심으로 
 - Oracle Storage CS 활성화
 - Oracle Cloud 로그인
 
-Oracle Cloud에 로그인이 완료되면 <그림 1>과 같이 "My Services dashboard"가 출력됩니다. "My Services dashboard"에서 왼쪽 위에 위치하는 메뉴 아이콘을 클릭합니다.
+Oracle Cloud에 로그인이 완료되면 <그림 1>과 같이 "My Services Dashboard"가 출력됩니다. "My Services Dashboard"에서 왼쪽 위에 위치하는 메뉴 아이콘을 클릭합니다.
 
-- 그림 1. My Services dashboard
+- 그림 1. My Services Dashboard
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_01.jpg)
 
-<그림 2>와 같이 "My Services dashboard"의 메뉴에서 "Big Data Compute-Edition"을 선택하여 "Oracle BDCSCE Service Console"로 이동합니다.
+<그림 2>와 같이 "My Services Dashboard"의 메뉴에서 "Big Data Compute-Edition"을 선택하여 "Oracle BDCSCE Service Console"로 이동합니다.
 
-- 그림 2. My Services dashboard 메뉴에서 "Big Data Compute-Edition" 선택
+- 그림 2. My Services Dashboard 메뉴에서 "Big Data Compute-Edition" 선택
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_02.jpg)
 
 "Oracle BDCSCE Service Console" 페이지에서 클러스터 생성을 시작하기 위해서 <그림 3>과 같이 "인스턴스 생성" 버튼을 클릭합니다.
@@ -82,7 +82,7 @@ Oracle Cloud에 로그인이 완료되면 <그림 1>과 같이 "My Services dash
 
 |입력항목|입력 데이터|비고|실습 입력 값|
 |---|---|---|---|
-|Deployment Profile|Full, Basic 중 선택|클러스터 설치 유형을 선택합니다. <br/> __Full__을 선택하면 Spark, MapReduce, Zeppelin, Hive, Spark Thrift, Big Data File System이 설치됩니다.<br/> __Basic__을 선택하면 Spark, MapReduce 그리고 Zeppline만 설치됩니다.|Full|
+|Deployment Profile|Full, Basic 중 선택|클러스터 설치 유형을 선택합니다. <br/> __Full__을 선택하면 Spark, MapReduce, Zeppelin, Hive, Spark Thrift, Big Data File System이 설치됩니다.<br/> __Basic__을 선택하면 Spark, MapReduce 그리고 Zeppelin만 설치됩니다.|Full|
 |Number of Nodes| 클러스터 노드 수 |클러스터 구성 노드 수의 설정입니다. 최소 구성은 1개 노드입니다. <br />  HA 구성을 위해서는 최소 3개 노드 이상으로 설정해야 합니다. 기본 설정값은 "__3__"입니다.|3|
 |Nodes designated as Compute Only Slaves|컴퓨트 노드 수| 클러스터 노드를 5개 이상 설정할 경우에 출력되는 항목입니다. 이 항목은 클러스터 노드 중 HDFS를 설치하지 않는 순수 연산 컴퓨터 노드 수를 입력하는 항목입니다. 기본값은 "0"입니다.|해당사항 없음|
 |Compute Shape|VM의 Shape 선택|클러스터 각 노드의 VM 자원 할당 유형을 지정합니다. 2017년 7월 현재 다음과 같은 shape이 제공됩니다. <br/> - OC2m - 2.0 OCPU, 30GB RAM<br/> - OC3m - 4.0 OCPU, 60GB RAM<br/> - OC4m - 8.0 OCPU, 120GB RAM<br/> - OC5m - 16.0 OCPU, 240GB RAM<br/> 기본 설정값은 OC2m 입니다.|OC2m|
@@ -206,14 +206,14 @@ Jobs에서는 기존에 실행된 Job들 정보가 출력되고 기존에 실행
 
 ### Notebook
 
-Oracle BDCSCE에는 데이터 분석의 효율성을 높이는 방식으로 Apache Zeppline을 포함합니다. Apache Zeppline의 문서를 Notebook이라고 합니다. Oracle BDCSCE 클러스터를 생성하면, 기본적으로 4개의 Notebook이 저장되어 있습니다.<그림 17 참조>  
+Oracle BDCSCE에는 데이터 분석의 효율성을 높이는 방식으로 Apache Zeppelin을 포함합니다. Apache Zeppelin의 문서를 Notebook이라고 합니다. Oracle BDCSCE 클러스터를 생성하면, 기본적으로 4개의 Notebook이 저장되어 있습니다.<그림 17 참조>  
 
 - 그림 17. Notebook 탭
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_17.jpg)
 
-<그림 17>에서 "Australian Dataset (SparkSQL example)"을 클릭하면 <그림 18>과 같이 Notebook이 오픈됩니다. "Australian Dataset (SparkSQL example)" Notebook의 항목별로 오른편의 삼각형 아이콘을 클릭하면 각 항목이 실행되는 것을 확인할 수 있습니다. Apache Zeppline Notebook에 대해서는 별도 문서로 다루겠습니다.
+<그림 17>에서 "Australian Dataset (SparkSQL example)"을 클릭하면 <그림 18>과 같이 Notebook이 오픈됩니다. "Australian Dataset (SparkSQL example)" Notebook의 항목별로 오른편의 삼각형 아이콘을 클릭하면 각 항목이 실행되는 것을 확인할 수 있습니다. Apache Zeppelin Notebook에 대해서는 별도 문서로 다루겠습니다.
 
-- 그림 18. Apache Zeppline Notebook 실행
+- 그림 18. Apache Zeppelin Notebook 실행
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_18.jpg)
 
 ### Data Stores
@@ -226,7 +226,7 @@ Data Stores 탭에서는 HDFS 디렉터리와 Oracle Store CS의 데이터를 �
 
 ### Settings
 
-Setting 탭에서는 클러스터의 Queue 설정(<그림 20> 참조), 보안 설정(<그림 21> 참조), Zeppline 관련 노트북 설정(<그림 22> 참조)을 할 수 있습니다.
+Setting 탭에서는 클러스터의 Queue 설정(<그림 20> 참조), 보안 설정(<그림 21> 참조), Zeppelin 관련 노트북 설정(<그림 22> 참조)을 할 수 있습니다.
 
 - 그림 20. Queue 설정
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_20.jpg)
@@ -234,7 +234,7 @@ Setting 탭에서는 클러스터의 Queue 설정(<그림 20> 참조), 보안 �
 - 그림 21. 보안 정보 수정
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_21.jpg)
 
-- 그림 22. Apache Zeppline 관련 설정
+- 그림 22. Apache Zeppelin 관련 설정
 ![](https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsce_22.jpg)
 
 ## 요약
