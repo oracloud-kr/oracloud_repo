@@ -7,7 +7,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/trial_account/
 tags = ["trial account"]
 categories = ["account"]
 author = "taewan.kim"
-language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
+language = "bsh"  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++
 
 오라클 클라우드는 트라이얼 계정[^1]을 두 가지 방식으로 지원합니다.

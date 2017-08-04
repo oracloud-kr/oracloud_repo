@@ -228,34 +228,35 @@ small {
 	font-size: 0.75rem;
 }
 
-pre {
-	font-family: "Consolas", Courier New, Courier, monospace;
-	color: #000;
-	margin-bottom: 20px;
-	margin-bottom: 1.25rem;
-	background: #f5f5f5;
-	border: 1px solid #ebebeb;
-	padding: 20px;
-	padding: 1.25rem;
-	white-space: pre-wrap;
-	white-space: -o-pre-wrap;
-	white-space: -moz-pre-wrap;
-	white-space: -webkit-pre-wrap;
+#pre {
+#	font-family: "Consolas", Courier New, Courier, monospace;
+#	color: #000;
+	#margin-bottom: 20px;
+	#margin-bottom: 1.25rem;
+	#background: #f5f5f5;
+	#border: 1px solid #ebebeb;
+	#padding: 20px;
+	#padding: 1.25rem;
+	#white-space: pre-wrap;
+	#white-space: -o-pre-wrap;
+	#white-space: -moz-pre-wrap;
+	#white-space: -webkit-pre-wrap;
+#}
+pre{
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #1d1f21;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.15;
 }
 
-kbd {
-	padding: 0 6px;
-	padding: 0 0.375rem;
-	background: #f5f5f5;
-	border: 1px solid #aaa;
-	border-radius: 0.1875em;
-	-moz-border-radius: 0.1875em;
-	-moz-box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
-	-webkit-border-radius: 0.1875em;
-	-webkit-box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
-	box-shadow: 0 0.0625em 0 rgba(0, 0, 0, 0.2), 0 0 0 0.125em white inset;
-	text-shadow: 0 0.0625em 0 #fff;
+code, kbd, pre, samp {
+    font-family: "Consolas", menlo, monospace;
+    font-size: 100%;
 }
+
+
 
 blockquote {
 	display: block;
