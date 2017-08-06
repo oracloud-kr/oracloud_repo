@@ -1,5 +1,5 @@
 +++
-date = "2017-08-04T22:20:25+09:00"
+date = "2017-08-06T22:20:25+09:00"
 description = "Oracle PaaS Service Manager(이하 PSM)는 오라클 클라우드의 PaaS 서비스 관리에 사용되는 CLI(Command Line Interface)입니다. Oracle PSM을 설치하는 절차를 소개합니다."
 title = "Oracle PaaS Service Manager 설치"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm.jpg"
@@ -29,11 +29,11 @@ PSM를 이용하여 클라우드 환경 프로비저닝과 삭제 자동화를 �
 |Oracle Event Hub Cloud Service| Managend Kafka 클러스터|
 
 
-## Oracle PSM 설치 사전 요구사항
+## Oracle PSM 설치 요구사항
 
 Oracle PSM의 실체는 앞에서 설명한 것과 같이 Python으로 만든 오라클 클라우드 PaaS REST API의 클라이언트 구현체 입니다.
 Oracle PSM을 설치하기 위해서는 파이썬이 설치되어 있어야 합니다. Oracle PSM은 파이썬 3.3 버전 이상을 지원합니다.
-파이썬 3.3설치된 모든 OS에서 Oracle PSM을 설치할 수 있습니다.
+파이썬 3.3설치된 모든 OS에 Oracle PSM을 설치할 수 있습니다.
 
 파이썬 버전 확인 방법은 다음과 같습니다.
 
@@ -242,3 +242,60 @@ Oracle PSM의 PaaS 지원 목록은 지속적으로 추가되고 있습니다.
 
 - 그림 7. psm setup 실행 예제
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm07.jpg)
+
+### Oracle PSM 업데이트
+
+Oracle PSM의 PaaS 지원 목록이 주기적으로 추가되기 때문에, Oracle PSM은 주기적으로 업데이트 됩니다.
+다음 명령으로 Oracle PSM 버전 확인 및 업그레이드를 할 수 있습니다.
+
+```
+[opc@e25327 ~]$ psm --version
+PSM CLI Client - version 1.1.15
+[opc@e25327 ~]$ psm update
+INFO: You already have the most up-to-date version of psm client installed on the system
+[opc@e25327 ~]$
+```
+
+## Oracle PSM 데모
+기본적인 명령 구문은 다음과 같습니다.
+
+```
+psm [ 클라우드 서비스 이름 ]  [ 명령 ]  ( help )
+```
+
+Oracle PSM을 사용하는 간단한 방법을 소개합니다. Oracle BDCSCE 서비스를 Oracle PSM으로 조작하는 데모를 다음과 같은 순서로 진행하겠습니다.
+
+- BDCSCE 서비스 목록 조회: ```psm bdcsce services```
+- BDCSCE sparkdemo 인스턴스 상세 정보 조회: ```psm bdcsce service -s sparkdemo```
+- BDCSCE 서비스 제거: ```psm bdcsce delete-service -s sparkdemo```
+- BDCSCE 서비스 목록 조회: ```psm bdcsce services```
+
+```
+[opc@e25327 ~]$ psm bdcsce services
+ Service    Status
+ ---------- --------
+ sparkdemo  Ready
+[opc@e25327 ~]$ psm bdcsce service -s sparkdemo
+ Service:                    sparkdemo
+ Status:                     Ready
+ Version:                    17.3.1-20
+ Edition:                    Compute Edition
+ Compute Site:               US006_Z49
+ Cloud Storage Container:    Storage-krplustvio/bdcscontainer
+ Created On:                 2017-08-06T02:59:04.153+0000
+[opc@e25327 ~]$ psm bdcsce delete-service -s sparkdemo
+ Message:    Submitted job to delete service [sparkdemo] in domain [krplustvio].
+ Job ID:     14151120
+[opc@e25327 ~]$ psm bdcsce services
+ Service    Status
+ ---------- -------------------------
+ sparkdemo  Terminating Service ...
+ [opc@e25327 ~]$ psm bdcsce services
+ No data found
+ [opc@e25327 ~]$
+```
+
+## 참고자료
+- [Oracle PSM 공식 레퍼런스 문서](https://docs.oracle.com/en/cloud/paas/java-cloud/pscli/toc.htm)
+- [Getting started with Oracle PaaS Service Manager Command Line Interface (PSM)](https://technology.amis.nl/2017/03/07/getting-started-with-oracle-paas-service-manager-command-line-interface-psm/)
+- [Oracle Cloud의 명령 줄 인터페이스 (CLI)](http://qiita.com/shinyay/items/a3773b37fdbb677e52b1)
