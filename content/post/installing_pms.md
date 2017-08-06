@@ -13,8 +13,8 @@ language = "bash"
 Oracle PaaS Service Manager(이하 PSM)는 오라클 클라우드의 PaaS 서비스 관리에 사용되는 CLI(Command Line Interface)입니다.
 Oracle 클라우드는 PaaS 서비스를 관리하는 REST API를 제공합니다.
 이 REST API를 이용하여 PaaS 서비스를 인스턴스 생성, 중지 그리고 삭제를 할 수 있습니다.
-PSM은 PaaS REST API에 대한 CLI 유형의 클라이언트 구현체입니다.
-PSM를 이용하여 클라우드 환경 프로비저닝과 삭제 자동화를 구축할 수 있습니다.
+Oracle PSM은 PaaS REST API에 대한 CLI 유형의 클라이언트 구현체입니다.
+Oracle PSM를 이용하여 오라클 클라우드 PaaS 서비스의 프로비저닝, 모니터링, 관리(생성, 중지, 삭제) 자동화 환경을 구축할 수 있습니다.
 
 ## Oracle PSM 지원 PaaS 서비스
 
@@ -31,11 +31,11 @@ PSM를 이용하여 클라우드 환경 프로비저닝과 삭제 자동화를 �
 
 ## Oracle PSM 설치 요구사항
 
-Oracle PSM의 실체는 앞에서 설명한 것과 같이 Python으로 만든 오라클 클라우드 PaaS REST API의 클라이언트 구현체 입니다.
+Oracle PSM의 실체는 앞에서 설명한 것과 같이 Python으로 만든 오라클 클라우드 PaaS REST API의 클라이언트 구현체입니다.
 Oracle PSM을 설치하기 위해서는 파이썬이 설치되어 있어야 합니다. Oracle PSM은 파이썬 3.3 버전 이상을 지원합니다.
-파이썬 3.3설치된 모든 OS에 Oracle PSM을 설치할 수 있습니다.
+파이썬 3.3이 설치 가능한 모든 OS에 Oracle PSM을 설치할 수 있습니다.
 
-파이썬 버전 확인 방법은 다음과 같습니다.
+파이썬이 설치된 운영체제에서 파이썬 버전을 확인하는 방법은 다음과 같습니다.
 
 <pre class=prettyprint>
 vagrant@vagrant-ubuntu-trusty-64:~$ python3 --version
@@ -43,30 +43,30 @@ Python 3.4.3
 vagrant@vagrant-ubuntu-trusty-64:~$
 </pre>
 
-추가적으로 pip3가 설치되어 있어야 합니다.
+추가로 pip3도 이용 가능해야 합니다. 만약에 pip3가 없다면 설치해야 합니다.
 
-REST API를 호출하는 툴로 본 문서에서는 curl을 사용합니다. curl이 설치 되어 있어야 합니다.
-curl가 아직 설치 되어 있지 않다면 다음 문서를 참고하시기 바랍니다.
+REST API를 호출하는 툴로 본 문서에서는 curl을 사용합니다. 따라서 curl이 설치 되어 있어야 합니다.
+curl가 아직 설치되어 있지 않다면 다음 문서를 참고하시기 바랍니다.
 
 - [리눅스에서 curl 설치하기](https://www.lesstif.com/pages/viewpage.action?pageId=6979777)
 - [Windowd에서 curl 설치하기](https://m.blog.naver.com/PostView.nhn?blogId=javaking75&logNo=220776461230&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F)
 
 ## Oracle PSM 다운로드
 
-Oracle PSM 설치 파일은 오라클 클라우드 서비스 콘솔에서 웹사이드를 통해서 다운로드 받거나
-REST API로 직접 다운로드 받을 수 있습니다.
+Oracle PSM 설치 파일은 오라클 클라우드 서비스 콘솔의 웹사이트를 통해서 내려받거나,
+REST API로 직접 내려받을 수 있습니다.
 
 ### 오라클 클라우드 웹 사이트 다운로드
 
-오라클 클라우드의 PaaS 서비스 콘솔에서 Oracle PSM 설치 파일을 다운로드 받을 수 있습니다.
+오라클 클라우드의 PaaS 서비스 콘솔에서 Oracle PSM 설치 파일을 내려받을 수 있습니다.
 
 - 그림 1. Oracle Cloud Dashboard: 오라클 클라우드 로그인 결과
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm01.jpg)
 
-Oracle Cloud 웹사이드에 로그인을 하면 "__Oracle Cloud Dashboard__"가 오픈됩니다. <그림 1 참조>
+Oracle Cloud 웹사이트에 로그인을 하면 "__Oracle Cloud Dashboard__"가 오픈됩니다. <그림 1 참조>
 "__Oracle Cloud Dashboard__"의 왼쪽 위의 메뉴 아이콘을 클릭하고 PaaS 서비명을 클릭하여 PaaS 서비스 콘솔로 이동합니다.
 
-여기서 PaaS 서비스 명이란 다음 중 하나를 의미합니다.
+여기서 PaaS 서비스명이란 다음 중 하나를 의미합니다.
 
 - Java
 - Database
@@ -82,19 +82,19 @@ Oracle Cloud 웹사이드에 로그인을 하면 "__Oracle Cloud Dashboard__"가
 - 그림 2. PaaS 서비스 콘솔로 이동: Big Data - Compute Edition
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm02.jpg)
 
-<그림 3>와 같이 "Oracle Big Data Cloud Service - Compute Edition"의
-서비스 콘솔의 오른쪽 상단에 출력된 계정명을 클릭하여 "도움말"->"Download Center"를 선택합니다.
+<그림 3>과 같이 "Oracle Big Data Cloud Service - Compute Edition"의
+서비스 콘솔의 오른쪽 위에 출력된 계정명을 클릭하여 "도움말"->"Download Center"를 선택합니다.
 
 - 그림 3. 계정명을 클릭하고 컨텍스트 메뉴에서 "Download Center" 클릭
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm03.jpg)
 
-"Download Center" 메뉴를 선택하면 <그림 4>와 같은 팝업 왼도우가 출력됩니다.
+"Download Center" 메뉴를 선택하면 <그림 4>와 같은 팝업 윈도우가 출력됩니다.
 
 - 그림 4. Download Center 팝업 윈도우에서 PMS 다운로드 아이콘 클릭
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm04.jpg)
 
 
-<그림 4>와 같이 첫번째 PSM설명의 오른쪽 다운로드 아이콘을 클릭하면 PSM 설치 파일이 다운로드 됩니다.
+<그림 4>와 같이 첫 번째 PSM설명의 오른쪽 다운로드 아이콘을 클릭하면 PSM 설치 파일이 다운로드 됩니다.
 설치파일 사이즈는 46Kbyte 입니다. <그림 5 참조>
 
 - 그림 5. PMS 다운로드 결과
@@ -140,7 +140,7 @@ https://<URL>/paas/core/api/v1.1/cli/<IDENTITY_DOMAIN>/client \
 |```<URL>```|psm.us.oraclecloud.com|
 
 위 명령에서 각 행 마지막에 ```\```은 콘솔에서 명령이 끝나지 않고 다음 행으로 연속된다는 의미입니다.
-위 명령은 한줄로 처리됩니다.
+위 명령은 한 줄로 처리됩니다.
 
 - 그림 6. PSM 다운로드 REST API 호출 및 다운로드 결과 확인
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm06.jpg)
@@ -152,7 +152,7 @@ Oracle PSM은 파이썬3가 설치된 모든 운영체제에 설치 가능합니
 ### 환경변수 설정
 
 현재 프록시 서버를 사용하고 있는 경우에는 Oracle PSM 설치에 앞서 환경변수를 설정해야 합니다.
-각 운영체제별 환경 설정 방법은 다음과 같습니다.
+운영체제별 환경 설정 방법은 다음과 같습니다.
 
 프록시 서버 주소는 http://myproxy.server.com:80 / https://myproxy.server.com:80 로 가정합니다.
 
@@ -172,14 +172,14 @@ export https_proxy=https://myproxy.server.com:80
 
 ### Oracle PSM 설치
 
-Oracle PSM 설치 명령은 운영체제 별로 다음과 같습니다. 다음 명령은 psmcli.zip파일이 위치한 디렉터리에서 실행해야 합니다.
+Oracle PSM 설치 명령은 운영체제별로 다음과 같습니다. 다음 명령은 psmcli.zip파일이 위치한 디렉터리에서 실행해야 합니다.
 
 - Window
   - ```pip3 install -U psmcli.zip```
 - Linux, Mac OS
   - ```sudo pip3 -H install -U psmcli.zip```
 
-다음은 Ubuntu에서 위 명령을 수행한 결과 입니다.
+다음은 Ubuntu에서 위 명령을 수행한 결과입니다.
 ```
 [opc@e25327 ~]$ ls -al *.zip
 -rw-rw-r-- 1 opc opc 69104 Aug  5 13:08 psmcli.zip
@@ -209,7 +209,7 @@ You should consider upgrading via the 'pip install --upgrade pip' command.
 
 ### Oracle PSM 설치 확인
 
-다음 명령으로 PSM 설치 상태를 확인할 수 있습니다. 다음과 같은 메세지가 출력된다면 설치가 완료된 상태입니다.
+다음 명령으로 PSM 설치 상태를 확인할 수 있습니다. 다음과 같은 메시지가 출력된다면 설치가 완료된 상태입니다.
 
 ```
 [opc@e25327 ~]$ psm
@@ -220,10 +220,10 @@ psm: error: the following arguments are required: service
 
 ### Oracle PSM 설정
 
-Oracle PSM을 사용하기 전에, Oracle PSM이 Oracle Cloud에 접속하기 위해서 필요한 정보를 설정하는 절차를 수행해야 합니다.
+Oracle PSM을 사용하기 전에, Oracle PSM이 Oracle Cloud에 접속하는 데 필요한 정보를 설정하는 절차를 수행해야 합니다.
 
-다음과 같이 ```psm setup```을 실행하면 사용자명, 패스워드, Identity Domain, 데이터 센터 지역, 출력 형식을 선택 항목을 입력해야 합니다. ```[value]```는 기본값입니다. 기본값이 맞다면 추가입력없이 "__Enter__"를 치시면 됩니다.
-출력 형태는 json, html을 입력할 수 있습니다.
+다음과 같이 ```psm setup```을 실행하면 사용자명, 패스워드, Identity Domain, 데이터 센터 지역, 출력 형식을 선택 항목을 입력해야 합니다. ```[value]```는 기본값입니다. 기본값이 맞다면 추가입력 없이 "__Enter__"를 치시면 됩니다.
+출력 형태는 json, html을 선택할 수 있습니다.
 
 ```
 [opc@e25327 ~]$ psm setup
@@ -238,7 +238,7 @@ Output format [short]:
 <그림 7>은 ```psm setup```의 실행 예입니다. 입력이 완료되면
 <그림 7>과 같이 지원 클라우드 서비스 목록이 출력됩니다.
 2017년 8월 5일 현재 21개 서비스를 지원합니다.
-Oracle PSM의 PaaS 지원 목록은 지속적으로 추가되고 있습니다.
+Oracle PSM의 PaaS 지원 목록은 지속해서 추가되고 있습니다.
 
 - 그림 7. psm setup 실행 예제
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm07.jpg)
