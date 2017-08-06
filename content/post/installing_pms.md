@@ -294,6 +294,15 @@ Oracle PSM을 사용하는 간단한 방법을 소개합니다. Oracle BDCSCE �
  No data found
  [opc@e25327 ~]$
 ```
+## 요약
+
+Oracle PSM(PaaS Service Manager)는 Python으로 만든 오라클 클라우드 PaaS REST API의 클라이언트 구현체입니다. Oracle Cloud는 PaaS 서비스를 관리하는 REST API를 제공하며, Oracle PSM을 사용하면 별도의 REST API 구현의 부담 없이 CLI(Command Line Interface) 형태로 Oracle PaaS 서비스를 제어하는 도구를 확보할 수 있습니다.
+
+Oracle PSM은 파이썬으로 만들었고, 파이썬 3.3 이상이 설치 가능한 모든 OS에 Oracle PSM을 설치할 수 있습니다.
+Oracle PSM을 설치하기 위해서는, 파이썬 3.3 이상 버전이 미리 설치되어 있어야 합니다.
+Oracle PSM을 이용하여 Oracle Cloud의 PaaS 서비스를 효과적으로 관리하는 자동화 환경을 만들 수 있습니다.
+
+Oracle Cloud의 PaaS 생명주기 전체는 Oracle PSM으로 관리할 수 있습니다.  
 
 ## 참고자료
 - [Oracle PSM 공식 레퍼런스 문서](https://docs.oracle.com/en/cloud/paas/java-cloud/pscli/toc.htm)
