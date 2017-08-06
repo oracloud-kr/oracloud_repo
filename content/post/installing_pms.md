@@ -1,7 +1,7 @@
 +++
 date = "2017-08-06T22:20:25+09:00"
 description = "Oracle PaaS Service Manager(이하 PSM)는 오라클 클라우드의 PaaS 서비스 관리에 사용되는 CLI(Command Line Interface)입니다. Oracle PSM을 설치하는 절차를 소개합니다."
-title = "Oracle PaaS Service Manager 설치"
+title = "Oracle PaaS Service Manager 소개 및 설치"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm_dbcs_stop.gif"
 tags = ["PSM", "Oracle Cloud"]
