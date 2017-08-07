@@ -170,8 +170,7 @@ MySQL 관리자는 <그림 10>에서 Security Rule을 추가할 수 있습니다
 <그림 10>의 5개 Security Rule은 데이터베이스 접속(3306 포트), Enterprise Monitor 접속(18443 포트)과 SSH 접속(22번 포트) 관련 규칙입니다.
 
 - 그림 10. Oracle MySQL CS 인스턴스의 기본 Security Rule
-
-![](https://oracloud-kr-teamrepo.github.io/2017/04/mysqlcs_01/access_rule02.jpeg)
+![](https://oracloud-kr-teamrepo.github.io/2017/04/mysqlcs_01/access_rule02.jpg)
 
 
 ### 효과적인 패치 관리 환경
