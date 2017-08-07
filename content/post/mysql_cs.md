@@ -102,6 +102,7 @@ MySQL CS의 웹 콘솔에서는 스케줄 백업을 구성하는 웹 UI를 제�
 백업 유형은 다음과 같습니다.
 
 |실행 유형|백업 유형|실행 주기|
+|---|---|---|
 |스케줄 백업| full backup | 주 1회(Weekly)|
 |스케줄 백업| incremental backup| 매일 1회 (Daily) |
 |On-demand 백업| full backup | 사용자 요청 시 백업 수행 |
