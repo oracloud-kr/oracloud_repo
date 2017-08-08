@@ -20,13 +20,14 @@ MySQL CS는 MySQL Enterprise Edition 라이센스를 기반으로하는 PaaS 서
 
 MySQL CS가 제공하는 엔터프라이즈 지원 기능은 다음과 같습니다.
 
-- 데이터베이스 관리 체계(백업, 패치, 모니터링)
+- 데이터베이스 관리 체계(자동 프로비저닝, 패치, 인스턴스 관리, 모니터링)
 - MySQL 전문 관리 도구
-  - MySQL Query Analyzer
+  - MySQL Workbench
   - MySQL Enterprise Monitor
-- 셀프 프로비저닝
+  - Oracle Enterprise Manager for MySQL
 - 탄력적인 확장성(Elastic scalability)
-- 다중계층 보안(Multi-layer security)
+- 고가용성(High Availability)
+- 다계층 보안(Multi-layer security)
 
 [^1]: 오라클은 PaaS 형태로 제공하는 데이터베이스를 Database as a Service[DBaaS]로 명명하고 있습니다.
 
@@ -63,7 +64,7 @@ MySQL CS는 Enterprise Edition 라이센스를 포함하기 때문에, 위 모�
 
 ### Oracle Cloud 최적화
 
-Oracle MySQL CS의 my.conf와 운영체제에는 안정성, 성능 측면에서 검증된 설정이 적용되어 있습니다. IO Thread 수, Redo log 사이즈와 버퍼 사이즈, Buffer pool 등은 Oracle MySQL CS의 Shape[^3]에 최적화된 값이 설정됩니다.
+Oracle MySQL CS의 my.cnf와 운영체제에는 안정성, 성능 측면에서 검증된 설정이 적용되어 있습니다. IO Thread 수, Redo log 사이즈와 버퍼 사이즈, Buffer pool 등은 Oracle MySQL CS의 Shape[^3]에 최적화된 값이 설정됩니다.
 
 [^3]: Shape은 Oracle Compute Cloud Service에서 인스턴스에 할당할 OCPU 수와 메모리 크기를 정의하는 자원 프로파일입니다. Shape은 인스턴스가 사용하는 디스크 유형을 결정합니다. 범용(General Purpose) 또는 높은 메모리(High Memory) Shape을 선택하면 하드 디스크가 사용하고, High I/O Shape을 선택하면 NVM Express SSD를 사용합니다.
 
@@ -96,7 +97,7 @@ MySQL CS는 Enterprise Edition 라이센스를 포함하기 때문에, 어떠한
 
 ### 백업 & 복구
 
-MySQL CS의 백업 기능은 MySQL Enterprise Edition에 포함된 MySQL Enterprise Backup을 이용하여 구현되었습니다. 관리자는 주기적인 핫 온라인 백업을 구성할 수 있고, 필요한 시점에 언제든지 온라인 스냅샷을 만들 수 있습니다.
+MySQL CS의 백업 기능은 MySQL Enterprise Edition에 포함된 MySQL Enterprise Backup을 이용하여 구현되었습니다. 관리자는 주기적인 온라인 핫 백업을 구성할 수 있고, 필요한 시점에 언제든지 온라인 스냅샷을 만들 수 있습니다.
 MySQL CS의 웹 콘솔에서는 스케줄 백업을 구성하는 웹 UI를 제공합니다.
 모든 백업은 데이터베이스 온라인 상태로 진행됩니다.
 백업 유형은 다음과 같습니다.
@@ -106,6 +107,8 @@ MySQL CS의 웹 콘솔에서는 스케줄 백업을 구성하는 웹 UI를 제�
 |스케줄 백업| full backup | 주 1회(Weekly)|
 |스케줄 백업| incremental backup| 매일 1회 (Daily) |
 |On-demand 백업| full backup | 사용자 요청 시 백업 수행 |
+
+실행주기는 기본값은 주단위 full backup, 일단위 incremental backup이지만, 사용자가 변경할 수 있습니다.
 
 백업 데이터는 Oracle MySQL CS 인스턴스의 가상머신과 Object Storage에 저장됩니다.
 MySQL CS 가상머신에 저장되는 백업 데이터는 최대 7일간 유지되고, Storage CS에
@@ -121,11 +124,11 @@ MySQL Enterprise Backup은 압축과 데이터 검증 기능을 제공합니다.
 백업 데이터는 압축되어 저장되고, 복사 시점에 데이터 검증이 수행됩니다.
 데이터 검증 기능을 통해서 MySQL CS는 백업 데이터의 오류를 사전에 확인할 수 있습니다.
 
-증강분 백업(Incremental Backup) 이후 데이터베이스 변경 정보는 binary log 파일[^5]에 저장됩니다.
+증분 백업(Incremental Backup) 이후 데이터베이스 변경 정보는 binary log 파일[^5]에 저장됩니다.
 Oracle MySQL CS 인스턴스는 Binary log가 기본 활성화되어 있으며, 유지 기간은 90일입니다.
 
 [^5]: MySQL 변경 데이터 로그를 저장하는 파일입니다. 트랜잭션 시점 복구 및 데이터베이스 복제의 근간이 됩니다. 주기적으로 지우지 않으면 파일 용량이 엄청나게 늘어날 수 있습니다.
-Oracle MySQL CS는 Binary log 파일의 기본 보관 주기 설정은 90일 입니다. 이 파일 저장기간 설정은 my.conf 파일과 ```Oracle Enterprise Manager for MySQL```에서 변경 가능합니다.
+Oracle MySQL CS는 Binary log 파일의 기본 보관 주기 설정은 90일 입니다. 이 파일 저장기간 설정은 my.cnf 파일과 ```Oracle Enterprise Manager for MySQL```에서 변경 가능합니다.
 
 Oracle MySQL CS 서비스 콘솔에서 백업 데이터로부터 데이터베이스를 복구할 수 있습니다. 복구 유형은 두 가지 입니다.
 백업 데이터를 지정하여 해당 백업 데이터까지 복구하는 방식(<그림 6>)과 시간을 지정하여 백업데이터와 binary log 파일로부터 복구하는 point-in-time 복구 방식(<그림 7>)을 제공합니다.
@@ -147,9 +150,9 @@ MySQL Replication Monitor로 마스터와 슬레이브의 상태를 모니터링
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/mysqlcs_01/replication.jpeg)
 
 
-### 다계층 보안 기능
+### 멀티레이어 보안 기능
 
-MySQL CS은 Oracle Compute Cloud Service(이하 Compute CS)의 네트워크 접근 제어 기능과 MySQL Enterprise Edition의 보안 기능을 결합하여 다계층 보안 기능을 제공합니다.
+MySQL CS은 Oracle Compute Cloud Service(이하 Compute CS)의 네트워크 접근 제어 기능과 MySQL Enterprise Edition의 보안 기능을 결합하여 멀티레이어 보안 기능을 제공합니다.
 
 |구분|컴포넌트|설명|
 |---|---|---|
@@ -229,7 +232,7 @@ MySQL Enterprise Edition을 사용하기에 기능의 제약이 없고, 성능, 
 백업, 복구, 패치 및 모니터링에 대한 편리한 웹 기반 UI와 REST API 및 CLI 인터페이스를 제공하여 관리자의 편의성을 높이고 있습니다.
 Oracle MySQL Cloud Service는 Oracle Cloud(Storage CS와 Compute CS)에 최적화 구성이 적용되어 있습니다.
 
-Oracle MySQL Cloud Service는 가상머신에 대한 SSH 접속을 허용합니다. MySQL DBA는 가상머신에 접근하여 고급 튜닝 및 관리 작업을 수행할 수 있습니다. 마지막으로 Oracle MySQL Cloud Serivce의 비용에는 오라클 프리미엄 서포트 비용이 포함되어 있습니다. Oracle Compute CS와 MySQL에 관한 24X7 기술 지원을 받을 수 있습니다.
+Oracle MySQL Cloud Service는 가상머신에 대한 SSH 접속을 허용합니다. MySQL DBA는 가상머신에 접근하여 고급 튜닝 및 관리 작업을 수행할 수 있습니다. 마지막으로 Oracle MySQL Cloud Serivce의 비용에는 오라클 프리미엄 서포트 비용이 포함되어 있습니다. Oracle Compute CS와 MySQL CS은 오라클의 전문 기술지원 엔지니어를 통해서 24X7 기술 지원을 받을 수 있습니다.
 
 ## 참고자료
 - [Oracle MySQL 클라우드 서비스 홈페이지](https://cloud.oracle.com/ko_KR/mysql)
