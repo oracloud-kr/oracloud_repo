@@ -5,7 +5,7 @@ tags = ["docker", "container", "tutorial", "cloud"]
 description = "Oracle Container Cloud Service는 kubernetes(k8s), docker-swarm 그리고 marathon 과 같은 container orchestration 툴입니다. Oracle Container Cloud Service를 사용하여 서비스와 스택을 배포하고 관리하는 과정을 설명합니다."
 categories = ["docker", "container"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/docker_deploy/step000.jpg"
-title = "OCCS에 Docker 이미지 배포"
+title = "Oracle Container CS에 Docker 이미지 배포"
 language = ""
 author = "taewan.kim"
 
@@ -373,4 +373,3 @@ OCCS를 사용하면 Docker의 기술적인 문제를 최소화하고 운영 안
 - [Oracle Container CS 생성 절차](/post/occs-new-inst/)
 - [오라클 클라우드의 Docker 컨테이너 지원 유형](/post/docker_in_oc/)
 - [Oracle Container Cloud Service 소개와 Docker 개요](/post/occs/)
-- [Oracle Container CS 생성 절차](/post/occs-new-inst/)
