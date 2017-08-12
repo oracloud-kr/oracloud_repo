@@ -139,9 +139,10 @@ Identity Domain은 오라클 클라우드 시스템에서 컴퓨팅 자원을 �
 
 Oracle Cloud의 Cloud User는 동시에 여러 Identity Domain에 할당 될 수 있습니다. Identity Doman 관리자 계정인 "__Oracle Cloud service account__"는 Identity Domain에서 관리자 권한을 갖는 계정입니다. 모든 클라우드 서비스를 활성화 및 제거 등 라이프사이클 전체를 관장할 수 있습니다. 또한, Identity Domain에 Cloud User를 등록하고 권한을 관리 할 수 있습니다.
 
-Identity Domain에는 복수의 여러 서비스가 활성화 될 수 있고, IP Network을 이용하여 서브넷을 구성할 수 있습니다.  서브넷에 지정되는 IP는 자체적으로 관리합니다. IP Network으로 구성된 서브넷들은 IP Exchange[^4]로 통신이 가능합니다. 필요한 경우 Identity Domain간의 통신도 가능합니다. 이때 Identity Domain 사이의 통신은 외부 네트워크 통신으로 간주됩니다. Identity Domain 사이의 통신은 외부 네트워크 통신으로 분류되지만, 여전히 오라클 클라우드 내부 트래픽이기 때문에 별도의 과금은 발생하지 않습니다.
+Identity Domain에는 복수의 여러 서비스가 활성화 될 수 있고, IP Network을 이용하여 서브넷을 구성할 수 있습니다.  서브넷에 지정되는 IP는 자체적으로 관리합니다. IP Network으로 구성된 서브넷들은 IP Exchange[^5]로 통신이 가능합니다. 필요한 경우 Identity Domain간의 통신도 가능합니다. 이때 Identity Domain 사이의 통신은 외부 네트워크 통신으로 간주됩니다. Identity Domain 사이의 통신은 외부 네트워크 통신으로 분류되지만, 여전히 오라클 클라우드 내부 트래픽이기 때문에 별도의 과금은 발생하지 않습니다.
 
-[^4]: IP Exchange는 Oracle Cloud의 Route입니다.
+[^5]: IP Exchange는 Oracle Cloud의 Route입니다.
+
 ## 참고자료
 - [Getting Started with Oracle Cloud: Oracle Cloud Terminology](https://docs.oracle.com/en/cloud/get-started/subscriptions-cloud/csgsg/oracle-cloud-terminology.html)
 - [Oracle Cloud Terminology ](https://docs.oracle.com/en/cloud/get-started/subscriptions-cloud/csgsg/oracle-cloud-terminology.html)
