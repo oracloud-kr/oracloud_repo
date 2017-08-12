@@ -10,9 +10,9 @@ author = "taewan.kim"
 language = ""
 +++
 
-Oracle Cloud 계정 생성, Oracle Cloud 로그인, 클라우드 서비스 활성화 과정에는 "__Identity Domain__"을 직접 설정하거나,  "__Identity Domain__"을 포함하는 정보를 입력해야만 합니다.
+Oracle Cloud 계정 생성, Oracle Cloud 로그인, 클라우드 서비스 활성화 과정에는 "__Identity Domain__"을 직접 설정하거나,  Identity Domain을 포함하는 정보를 입력해야만 합니다.
 Identity Domain은 기존에 일반적인 IT 용어로 생각하기 쉽지만, 오라클 클라우드의 고유명사입니다.
-Oracle Cloud에서 "__Identity Domain__"의 정의가 무엇이고, 어떤 의미가 있는지 알아보겠습니다.
+Oracle Cloud에서 Identity Domain의 정의가 무엇이고, 어떤 의미가 있는지 알아보겠습니다.
 추가로, Identity Domain에는 Cloud User 관리 기능이 포함됩니다.
 이와 관련하여 Oracle Cloud에서 Identity Domain과 Cloud User의 관계를 알아보겠습니다.
 
