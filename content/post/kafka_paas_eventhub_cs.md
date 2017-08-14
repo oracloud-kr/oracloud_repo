@@ -10,7 +10,7 @@ author = "taewan.kim"
 language = ""
 +++
 
-Oracle Public Cloud에서 Apache Kafka를 클라우드 관리 서비스(PaaS)로 제공합니다. Oracle Cloud는 2018년 3월에 Apache Kafka 서비스를 Oracle Event Hub Cloud Service(이하 Oracle Event Hub CS)라는 이름으로 출시하였습니다. 본 문서에서는 Oracle Event Hub Cloud Service를 소개하고, 이 서비스를 생성하고 클러스터를 테스트하는 방법을 소개합니다.
+Oracle Public Cloud에서 Apache Kafka를 클라우드 관리 서비스(PaaS)로 제공합니다. Oracle Cloud는 2017년 1월에 Apache Kafka 서비스를 Oracle Event Hub Cloud Service(이하 Oracle Event Hub CS)라는 이름으로 출시하였습니다. 본 문서에서는 Oracle Event Hub Cloud Service를 소개하고, 이 서비스를 생성하고 클러스터를 테스트하는 방법을 소개합니다.
 
 ## Oracle Event Hub Cloud Service
 
@@ -195,11 +195,11 @@ Scala code runner version 2.12.2 -- Copyright 2002-2017, LAMP/EPFL and Lightbend
 ~ >
 ```
 
-위 예제에서 테스트용 컴퓨터의 scala 버전은 2.12.2입니다. 다운로드 받을 Apache kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다.
+위 예제에서 테스트용 컴퓨터의 scala 버전은 2.12.2입니다. 데모에서 설치할 Apache kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Apache Kafka 버전이 맞는 파일을 내려받야야 합니다.
 
 - https://kafka.apache.org/downloads
 
-scala 버전에 맞는 kafka를 내려받습니다. 현재 예제(Scala 버전:2.12.2, Kafka 버전: 0.10.2.1)에서는 kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다.
+현재 예제에서 Scala 버전 2.12.2과 Apache Kafka 버전 0.10.2.1에 맞는 파일은  kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다.
 
 ```
 ~/demo > curl http://www-us.apache.org/dist/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz -o kafka_2.12-0.10.2.1.tgz
@@ -223,7 +223,7 @@ drwxr-xr-x   3 taewan  staff    102  4 22 01:27 site-docs
 
 ### Oracle Event Hub CS 클러스터 테스트
 
-현재 Kafka 블로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper가 사용하는 포트 번호는 2181입니다. Apache ZooKeeper에 포함된 topic 목록을 확인하는 명령을 이용하여 다음과 같이 토픽 목록을 확인 할 수 있습니다.
+현재 Kafka 브로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper 포트 번호는 2181, Kafka 브로커 포트 번호는 6667입니다. Kafka 클러스터에 생성된 topic 목록은 다음 명령을 이용하여 확인 할 수 있습니다.
 
 - 현재 Kafka가 설치된 위치: ~/demo/kafka_2.12-0.10.2.1
 
