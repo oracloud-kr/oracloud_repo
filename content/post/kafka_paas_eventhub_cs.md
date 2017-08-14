@@ -240,6 +240,14 @@ Apache Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh
 - <그림 18> kafka-console-producer.sh와 kafka-console-consumer.sh 테스트
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub18.jpg)
 
+<그림 18>에서 사용한 명령은 다음과 같습니다.
+
+|Type|Command|
+|---|---|
+|Producer|bin/kafka-console-producer.sh --broker-list 129.157.161.106:6667 --topic krplustvio-twTopic|
+|Consumer| bin/kafka-console-consumer.sh --bootstrap-server 129.157.161.102:6667 --topic krplustvio-twTopic --from-beginning|
+
+
 ## 요약
 
 Oracle Cloud는 Apache Kafka 관리 서비스로 Oracle Event Hub Cloud Service를 제공합니다. 이 서비스를 이용하여 비동기 스트리밍 처리 인프라를 빠르고 쉽게 만들 수 있습니다. Oracle Event Hub Cloud Service는 소프트웨어 패치, 설치, 관리 및 확장을 효과적으로 처리하는 방법을 제공합니다. Oracle Event Hub Cloud Service 클러스터는 생성 시간은 15분입니다.
