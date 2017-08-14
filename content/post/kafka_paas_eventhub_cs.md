@@ -10,13 +10,13 @@ author = "taewan.kim"
 language = ""
 +++
 
-Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공합니다. Oracle Cloud가 2017년 1월에 출시한 Apache Kafka 관리 서비스의 이름은 Oracle Event Hub Cloud Service(이하 Oracle Event Hub CS)입니다. 본 문서에서는 Oracle Event Hub CS를 소개하고, 이 서비스로 클러스터를 생성하고 테스트하는 방법을 소개합니다.
+Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공합니다. Oracle Cloud가 2017년 1월에 출시한 Kafka 관리 서비스의 이름은 Oracle Event Hub Cloud Service(이하 Oracle Event Hub CS)입니다. 본 문서에서는 Oracle Event Hub CS를 소개하고, 이 서비스로 클러스터를 생성하고 테스트하는 방법을 소개합니다.
 
 ## Oracle Event Hub CS
 
-Event Hub CS는 Kafaka의 클라우드 관리 서비스(managed service)입니다. Kafka와 Apache Zookeeper(이하 ZooKeeper)를 포함한 관련 소프트웨어의 설치, 관리, 업그레이드, 모니터링 전체 라이프사이클을 관리합니다.
+Oracle Event Hub CS는 Kafaka의 클라우드 관리 서비스(managed service)입니다. Kafka와 Zookeeper(이하 ZooKeeper)를 포함한 관련 소프트웨어의 설치, 관리, 업그레이드, 모니터링 전체 라이프사이클을 관리합니다.
 
-2017년 1월에 출시한 Event Hub CS의 Apache Kafka 버전은 0.9이었습ㄴ다. 2017년 8월 현재 서비스되고 있는 Apache Kafka 버전은 0.10.2 입니다.
+2017년 1월에 출시한 Oracle Event Hub CS의 Kafka 버전은 0.9이었습ㄴ다. 2017년 8월 현재 서비스되고 있는 Kafka 버전은 0.10.2 입니다.
 
 Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구성할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 함께 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
 
@@ -57,9 +57,9 @@ Oracle Event Hub CS에는 다음과 같은 소프트웨어가 설치됩니다.
 
 ### Oracle Event Hub CS 클러스터 규모
 
-Oracle Event Hub CS 클러스터의 최소 구성은 1개 노드 입니다. 1 ~ 3개 노드로 클러스터를 구성할 경우 Apache Kafka와 Apache ZooKeeper가 같은 노드에 설치됩니다. 이러한 클러스터에 REST Proxy 서버 설치는 선택 사항입니다.
+Oracle Event Hub CS 클러스터의 최소 구성은 1개 노드 입니다. 1 ~ 3개 노드로 클러스터를 구성할 경우 Kafka와 Zookeeper가 같은 노드에 설치됩니다. 이러한 클러스터에 REST Proxy 서버 설치는 선택 사항입니다.
 
-Oracle Event Hub CS는 두 가지 설치 방식을 지원합니다. 두 가지 설치 방식은 Basic 모드와  Recommended 모드입니다. Recommended 설치 모드는 Apache Kafka와 Apache Zookeeper를 분리하여 설치하는 고가용성 설치 방식입니다.
+Oracle Event Hub CS는 두 가지 설치 방식을 지원합니다. 두 가지 설치 방식은 Basic 모드와  Recommended 모드입니다. Recommended 설치 모드는 Kafka와 Zookeeper를 분리하여 설치하는 고가용성 설치 방식입니다.
 
 Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, 다음과 같은 구성을 권장합니다.
 
@@ -81,7 +81,7 @@ Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, 다�
 - <그림 3>. Oracle Cloud 대시보드
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub01.jpg)
 
-<그림 4>에서 "Event Hub - Dedicated"를 선택하여 Event Hub 서비스 콘솔로 이동합니다.
+<그림 4>에서 "Event Hub - Dedicated"를 선택하여 Oracle Event Hub CS 서비스 콘솔로 이동합니다.
 
 - <그림 4>. Oracle Cloud 대시보드에서 Oracle Event Hub CS 서비스 콘솔 이동 메뉴
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub02.jpg)
@@ -98,7 +98,7 @@ Oracle Cloud 계정으로 처음 Oracle Event Hub CS 서비스 콘솔에 접근�
 
 Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <그림 7>은 클러스터 생성의 1단계입니다. 클러스터 생성 1단계에서는 클러스터 명 및 관리자 메일 등 기본 정보를 입력합니다. 입력이 완료되면 클러스터 생성 2단계로 넘어갑니다. <그림 8 참조>
 
-- <그림 7>. Event Hub 클러스터 생성 1단계
+- <그림 7>. Oracle Event Hub CS 클러스터 생성 1단계
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub05.jpg)
 
 클러스터 2단계에서는 설치 방식, kafka 노드 수 등 클러스터 설치에 필요한 주요 정보를 입력합니다.
@@ -119,27 +119,27 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 
 설정은 <그림 8>을 참조하시기 바랍니다. <그림 8>에서 Recommended 설치 모드를 선택할 경우 ZooKeeper 설치 항목이 추가됩니다.
 
-- <그림 8> Event Hub 클러스터 생성 2단계: 세부 정보 입력
+- <그림 8> Oracle Event Hub CS 클러스터 생성 2단계: 세부 정보 입력
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub06.jpg)
 
-<그림 8>에서 "다음" 메뉴를 선택하면 Event Hub 클러스터 생성 3단계 "클러스터 정보 확인"으로 넘어갑니다.
+<그림 8>에서 "다음" 메뉴를 선택하면 Oracle Event Hub CS 클러스터 생성 3단계 "클러스터 정보 확인"으로 넘어갑니다.
 
 - <그림 9> 클러스터 생성 정보 확인
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub07.jpg)
 
-<그림 9>에서 "생성" 버튼을 클릭하여 Event Hub 클러스터 생성을 시작합니다. 클러스터 생성에는 약 15분 정도가 걸립니다. <그림 10>은 클러스터 생성이 완료된 결과입니다.
+<그림 9>에서 "생성" 버튼을 클릭하여 Oracle Event Hub CS 클러스터 생성을 시작합니다. 클러스터 생성에는 약 15분 정도가 걸립니다. <그림 10>은 클러스터 생성이 완료된 결과입니다.
 
-- <그림 10> Event Hub 클러스터 생성 결과, 클러스터 목록 출력
+- <그림 10> Oracle Event Hub CS 클러스터 생성 결과, 클러스터 목록 출력
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub08.jpg)
 
 <그림 10>의 클러스터 명을 클릭하면 <그림 11>과 같이 클러스터 상세 정보 페이지로 이동합니다. 클러스터에 외부 네트워크 접근을 허용하기 위해서, 페이지 상단 메뉴 아이콘을 클릭한 후 "Access Rules" 메뉴를 선합니다.
 
-- <그림 11> Event Hub 클러스터 상세 페이지에서 "Access Rules" 이동
+- <그림 11> Oracle Event Hub CS 클러스터 상세 페이지에서 "Access Rules" 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub09.jpg)
 
 "Access Rules" 관리페이지로 이동한 후, "Create Rule" 버튼을 클릭하여 클러스터에 적용할 Security Rule을 생성합니다.
 
-- <그림 12> Event Hub 클러스터 Security Rule 생성
+- <그림 12> Oracle Event Hub CS 클러스터 Security Rule 생성
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub10.jpg)
 
 Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zookeeper 접근 규칙을 정의 합니다.
@@ -164,9 +164,9 @@ Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zooke
 
 지금까지 Oracle Event Hub CS 클러스터를 생성하는 절차를 확인해 보았습니다. 이제는 데이터를 저장할 Topic을 만들 차례입니다. Oracle Event Hub CS 클러스터를 생성한 후에, Oracle Event Hub CS 서비스 콘솔의 메뉴에는 "Oracle Event Hub Cloud Services - Topics" 메뉴가 추가된 것을 확인 할 수 있습니다. <그림 15>참조
 
-Oracle Event Hub 클러스터에서는 Kafka 토픽을 서비스 형태로 생성합니다.      
+Oracle Event Hub CS 클러스터에서는 Kafka 토픽을 서비스 형태로 생성합니다.      
 
-- <그림 15> Oracle Event Hub 서비스 콘솔의 메뉴
+- <그림 15> Oracle Event Hub CS 서비스 콘솔의 메뉴
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub14.jpg)
 
 <그림 15>에서 "Oracle Event Hub Cloud Services - Topics" 메뉴를 선택하먄 Kafka 토픽 생성 페이지로 이동합니다. <그림 16>과 같이 토픽 생성 페이지에서 토픽 명, 파티션 수, 데이터 유지 기간을 입력하고 "다음" 버튼을 클릭합니다.
@@ -187,7 +187,7 @@ topic 생성 시간은 약 5초 입니다. 토픽이 정상적으로 생성되�
 
 ### 테스트용 Apache Kafka 설치
 
-Kafka 클러스터 접속 테스트를 위하여 Apache Kafka를 현재 사용중인 컴퓨터에 설치해야 합니다. Apache Kafka를 설치하기 위해서는 테스트용 컴퓨터에 설치된 Scala 버전을 확인해야 합니다. 다음과 같은 명령으로 Scala 버전을 확인합니다. 아직 Scala가 설치되어 있지 않은 상태라면, Kafka 설치에 앞서 Scala를 먼저 설치해야 합니다.
+Kafka 클러스터 접속 테스트를 위하여 Kafka를 현재 사용중인 컴퓨터에 설치해야 합니다. Kafka를 설치하기 위해서는 테스트용 컴퓨터에 설치된 Scala 버전을 확인해야 합니다. 다음과 같은 명령으로 Scala 버전을 확인합니다. 아직 Scala가 설치되어 있지 않은 상태라면, Kafka 설치에 앞서 Scala를 먼저 설치해야 합니다.
 
 ```
 ~ > scala -version
@@ -195,11 +195,11 @@ Scala code runner version 2.12.2 -- Copyright 2002-2017, LAMP/EPFL and Lightbend
 ~ >
 ```
 
-위 예제에서 테스트용 컴퓨터의 scala 버전은 2.12.2입니다. 데모에서 설치할 Apache kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Apache Kafka 버전이 맞는 파일을 내려받야야 합니다.
+위 예제에서 테스트용 컴퓨터의 scala 버전은 2.12.2입니다. 데모에서 설치할 Kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Kafka 버전이 맞는 파일을 내려받야야 합니다.
 
 - https://kafka.apache.org/downloads
 
-현재 예제에서 Scala 버전 2.12.2과 Apache Kafka 버전 0.10.2.1에 맞는 파일은  kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다.
+현재 예제에서 Scala 버전 2.12.2과 Kafka 버전 0.10.2.1에 맞는 파일은  kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다.
 
 ```
 ~/demo > curl http://www-us.apache.org/dist/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz -o kafka_2.12-0.10.2.1.tgz
@@ -235,7 +235,7 @@ krplustvio-twTopic
 >
 ```
 
-Apache Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령으로 topic에 데이터를 비동기 처리하는 테스트를 수행할 수 있습니다. <그림 18 참조>
+Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령으로 topic에 데이터를 비동기 처리하는 테스트를 수행할 수 있습니다. <그림 18 참조>
 
 - <그림 18> kafka-console-producer.sh와 kafka-console-consumer.sh 테스트
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub18.jpg)
@@ -250,9 +250,9 @@ Apache Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh
 
 ## 요약
 
-Oracle Cloud는 Apache Kafka 관리 서비스로 Oracle Event Hub Cloud Service를 제공합니다. 이 서비스를 이용하여 비동기 스트리밍 처리 인프라를 빠르고 쉽게 만들 수 있습니다. Oracle Event Hub Cloud Service는 소프트웨어 패치, 설치, 관리 및 확장을 효과적으로 처리하는 방법을 제공합니다. Oracle Event Hub CS 클러스터 생성 시간은 15분입니다.
+Oracle Cloud는 Kafka 관리 서비스로 Oracle Event Hub CS를 제공합니다. 이 서비스를 이용하여 비동기 스트리밍 처리 인프라를 빠르고 쉽게 만들 수 있습니다. Oracle Event Hub CS는 소프트웨어 패치, 설치, 관리 및 확장을 효과적으로 처리하는 방법을 제공합니다. Oracle Event Hub CS 클러스터 생성 시간은 15분입니다.
 
-Oracle Event Hub Cloud Service와 Oracle Big Data Cloud Service - Compute Edition을 이용하여 확장성과 대용량 처리가 가능한 스트리밍 처리 환경을 필요한 시점에 바로 구축할 수 있습니다.
+Oracle Event Hub CS와 Oracle Big Data Cloud Service - Compute Edition을 이용하여 확장성과 대용량 처리가 가능한 스트리밍 및 비동기 메시지 처리 환경을 필요한 시점에 바로 구축할 수 있습니다.
 
 ## 참고자료
 - [Oracle Public Cloud and Kafka – Events powering the cloud – The Oracle PaaS Cloud Event BusHub](https://technology.amis.nl/2016/09/28/oracle-public-cloud-and-kafka-events-powering-the-cloud-the-oracle-paas-cloud-event-bushub/)
