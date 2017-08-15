@@ -13,7 +13,7 @@ language = ""
 Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공하고 있습니다. Oracle Cloud가 2017년 1월에 출시한 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)가 바로 Kafka 관리 서비스입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
 
 - Oracle Event Hub CS 소개
-- Oracle Event Hub CS 클러스터를 생성
+- Oracle Event Hub CS 클러스터 생성
 - Kafak 클러스터에 Topic 생성
 - Topic에 데이터 저장(Producing) & 가져오기(Consuming) 테스트
 
@@ -23,7 +23,7 @@ Oracle Event Hub CS는 Kafaka 클라우드 관리형 서비스(managed service)�
 
 2017년 1월 Oracle Event Hub CS 출시 당시 Kafka 버전 v0.9를 지원하였습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 v0.10.2를 지원합니다.
 
-Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구축하고 필요한 시점에 Scale-out 방식으로 확장 할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 연동하여 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
+Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구축할 수 있습니다. 또한 서비스 이용중에 언제던지 Scale-out 방식으로 확장 할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 연동하여 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
 
 - [Oracle Big Data Cloud Service - Compute Edition](https://cloud.oracle.com/en_US/big-data-compute-edition) (이하: Oracle Big Data CS-CE)
 - [Oracle IoT Analytics Cloud Service](https://cloud.oracle.com/en_US/iot)
@@ -71,16 +71,16 @@ Oracle Event Hub CS는 다음과 같은 두 가지 설치 방식을 지원합니
 
 |설치 방식|설명|비고|
 |---|---|---|
-|Basic|ZooKeeper와 Kafka가 함께 함께 설치 되는 방식입니다. 클러스터 사이즈는 1개 VM과 3개 VM 2가지 중에 하나를 선택해야 합니다. |컴포넌트 구성에 따른 고가성 지원 불가하며[^3]  테스트 용도에 적합|
-|Recommended|Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. 고가용성 디자인이 적용된 설치 방식입니다. |고가용성을 지원|
+|Basic|ZooKeeper와 Kafka가 함께 설치 되는 방식입니다. 클러스터 사이즈는 VM 1개와 3개 중 하나를 선택해야 합니다. |- 고가성 지원 불가[^3]<br />- 테스트 용도에 적합|
+|Recommended|Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. 고가용성 디자인이 적용된 설치 방식입니다. |- 고가용성 지원|
 
-[^3]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수 지원을 위해 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다.
+[^3]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수를 고려하여 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다. Kafka 서버는 일반적으로 3set 이상으로 구성하고 ZooKeeper는 3set 혹은 5set으로 구성합니다.
 
 Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Recommended 설치 모드에서 다음과 같은 구성을 권장합니다.
 
 |컴포넌트|VM 규모|비고|
 |---|---|---|
-|Apache Kafka 브로커| 5+ VM|- 최소 5 VM 이상 <br />- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 클러스터 생성 후 VM 추가 가능 < 그림 1 참조>|
+|Apache Kafka 브로커| 5+ VM|- 최소 5 VM 이상 <br />- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 클러스터 생성 후 VM 추가 가능 < 그림 1 참조><br />- VM 추가에 제약 없음|
 |Apache Zookeeper|3 VM|- Zookeeper 운영 정책에 따라 변경 가능<br/>- 1VM, 3VM, 5VM 중 하나를 선택<br/>- 일반적으로 3VM으로 구성|
 |REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 1 ~ 4 VM 중 하나를 선택<br/>- 일반적을 2VM을 권장|
 
@@ -110,16 +110,16 @@ Oracle Cloud 계정으로 처음 Oracle Event Hub CS 서비스 콘솔에 접근�
 - <그림 6>. Oracle Event Hub CS 서비스 콘솔: 클러스터 생성 시작
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub04.jpg)
 
-Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <그림 7>은 클러스터 생성의 1단계입니다. 클러스터 생성 1단계에서는 클러스터 명 및 관리자 메일 등 기본 정보를 입력합니다. 입력이 완료되면 클러스터 생성 2단계로 넘어갑니다. <그림 8 참조>
+Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <그림 7>은 클러스터 생성의 1단계입니다. 클러스터 생성 1단계에서는 클러스터 명 및 관리자 메일 등 기본 정보를 입력합니다. 입력이 완료되면, "다음" 버튼을 클릭하여 클러스터 생성 2단계로 넘어갑니다. <그림 8 참조>
 
 - <그림 7>. Oracle Event Hub CS 클러스터 생성 1단계
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub05.jpg)
 
-클러스터 2단계에서는 설치 방식, kafka 노드 수 등 클러스터 설치에 필요한 주요 정보를 입력합니다.
+클러스터 2단계에서는 설치 방식, kafka 노드 수 등 클러스터 설치에 필요한 상세 정보를 다음과 같이 입력합니다.
 
-|구분|설정 항목|설명|설정값|
+|구분|설정 항목|설명|데모 사용 값|
 |---|---|---|---|
-|기본정보|배치 모드|Basic과 Recommended 중 선택입니다. Recommended는 고가용성 모드입니다.|Basic 선택|
+|기본정보|배치 유형|Basic과 Recommended 중 선택입니다. Recommended는 고가용성 모드입니다.|Basic 선택|
 ||SSH Public Key|SSH 공개키를 등록합니다.|SSH 공개키 등록|
 |Kafka|Number of Brokers|Kafka 브로커 노드 수|3|
 ||컴퓨터 구성|Kafka 브로커 VM의 Shape|OC1m 선택|
@@ -128,8 +128,8 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 ||노드수|프락시 서버 노드 수|2|
 ||컴퓨터 구성|Proxy 서버 VM의 Shape|OC1m 선택|
 ||사용자 이름|Proxy 서버 사용자 ID|admin|
-||Password|Proxy 서버 사용자 ID 인증 패스워드|Welcome1|
-||Confirmed Password|Proxy 서버 사용자 ID 인증 패스워드 확인|Welcome1|
+||Password|Proxy 서버 사용자 ID 인증 패스워드|Welcome1@|
+||Confirmed Password|Proxy 서버 사용자 ID 인증 패스워드 확인|Welcome1@|
 
 설정은 <그림 8>을 참조하시기 바랍니다. <그림 8>에서 Recommended 설치 모드를 선택할 경우 ZooKeeper 설치 항목이 추가됩니다.
 
@@ -146,12 +146,12 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 - <그림 10> Oracle Event Hub CS 클러스터 생성 결과, 클러스터 목록 출력
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub08.jpg)
 
-<그림 10>의 클러스터 명을 클릭하면 <그림 11>과 같이 클러스터 상세 정보 페이지로 이동합니다. 클러스터에 외부 네트워크 접근을 허용하기 위해서, 페이지 상단 메뉴 아이콘을 클릭한 후 "Access Rules" 메뉴를 선합니다.
+<그림 10>의 클러스터 명을 클릭하면 <그림 11>과 같이 클러스터 상세 정보 페이지로 이동합니다. 외부 네트워크에서 클러스터에 접근을 허용하기 위해서, 페이지 상단 메뉴 아이콘을 클릭한 후 "Access Rules" 메뉴를 선택합니다.
 
 - <그림 11> Oracle Event Hub CS 클러스터 상세 페이지에서 "Access Rules" 이동
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub09.jpg)
 
-"Access Rules" 관리페이지로 이동한 후, "Create Rule" 버튼을 클릭하여 클러스터에 적용할 Security Rule을 생성합니다.
+"Access Rules" 관리페이지로 이동한 후, "Create Rule" 버튼을 클릭하여 클러스터에 적용할 "__Security Rule__"을 생성합니다.
 
 - <그림 12> Oracle Event Hub CS 클러스터 Security Rule 생성
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub10.jpg)
@@ -163,7 +163,7 @@ Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zooke
 |kafkaserver_publicaccess|PUBLIC-INTERNET|kafka_KAFKA_SERVER|6667|
 |Zookeeper_publicaccess|PUBLIC-INTERNET|kafka_KAFKA_ZK_SERVER|2181|
 
-외부 인터넷에서 Oracle Event Hub CS 클러스터에 접근을 허용하는 규칙을 생성하고 활성화합니다.
+외부 인터넷에서 Oracle Event Hub CS 클러스터에 접근을 허용하는 규칙을 생성합니다.
 
 - <그림 13> Security Rule 생성
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub11.jpg)
@@ -176,9 +176,9 @@ Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zooke
 
 ### Oracle Event Hub CS 토픽 생성
 
-지금까지 Oracle Event Hub CS 클러스터를 생성하는 절차를 확인해 보았습니다. 이제는 데이터를 저장할 Topic을 만들 차례입니다. Oracle Event Hub CS 클러스터를 생성한 후에, Oracle Event Hub CS 서비스 콘솔의 메뉴에는 "Oracle Event Hub Cloud Services - Topics" 메뉴가 추가된 것을 확인 할 수 있습니다. <그림 15>참조
+지금까지 Oracle Event Hub CS 클러스터를 생성하는 절차를 확인해 보았습니다. 이제는 데이터를 저장할 Topic을 만들 차례입니다. Oracle Event Hub CS 클러스터를 생성한 후에, Oracle Event Hub CS 서비스 콘솔의 메뉴를 살펴보면, "Oracle Event Hub Cloud Services - Topics" 메뉴가 추가된 것을 확인 할 수 있습니다. <그림 15>참조
 
-Oracle Event Hub CS 클러스터에서는 Kafka 토픽을 서비스 형태로 생성합니다.      
+"Oracle Event Hub Cloud Services - Topics" 메뉴를 사용하여 Oracle Event Hub CS 클러스터에  Kafka 토픽을 서비스 형태로 생성할 수 있습니다.      
 
 - <그림 15> Oracle Event Hub CS 서비스 콘솔의 메뉴
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub14.jpg)
@@ -194,14 +194,18 @@ Oracle Event Hub CS 클러스터에서는 Kafka 토픽을 서비스 형태로 �
 - <그림 17> Kafka 토픽 생성 정보 확인 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub16.jpg)
 
-topic 생성 시간은 약 5초 입니다. 토픽이 정상적으로 생성되면 <그림 18>과 같이 토픽 목록이 출력됩니다.
+topic 생성 시간은 약 5초 입니다. 토픽이 정상적으로 생성되면 <그림 18>과 같이 토픽 목록이 출력됩니다. 지금 만든 것은 Topic 서비스 입니다. Topic 서비스에서 만들어지는 실제 토픽의 이름은 다음과 같은 패턴으로 만들어 집니다.
+
+```
+실제 Topic 명: <Identity_doman_name>-<Topic_service_name>
+```
 
 - <그림 18>. 토픽 목록 페이지
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub17.jpg)
 
 ### 테스트용 Apache Kafka 설치
 
-Kafka 클러스터 접속 테스트를 위하여 Kafka를 현재 사용중인 컴퓨터에 설치해야 합니다. Kafka를 설치하기 위해서는 테스트용 컴퓨터에 설치된 Scala 버전을 확인해야 합니다. 다음과 같은 명령으로 Scala 버전을 확인합니다. 아직 Scala가 설치되어 있지 않은 상태라면, Kafka 설치에 앞서 Scala를 먼저 설치해야 합니다.
+Kafka 클러스터 접속 테스트를 위하여 Kafka를 현재 사용중인 컴퓨터에 설치해야 합니다. 여기에서 "사용중인 컴퓨터"란 여러분들이 작업하는(오라클 클라우드에 접속 중인) 컴퓨터(노트북)을 의미합니다. Kafka를 설치하기 위해서는 설치 대상 컴퓨터에 Scala 버전을 확인해야 합니다. 다음과 같은 명령으로 Scala 버전을 확인할 수 있습니다. 아직 Scala가 설치되지 않은 상태라면, Kafka 설치에 앞서 Scala를 먼저 설치해야 합니다.
 
 ```
 ~ > scala -version
@@ -209,11 +213,11 @@ Scala code runner version 2.12.2 -- Copyright 2002-2017, LAMP/EPFL and Lightbend
 ~ >
 ```
 
-위 예제에서 테스트용 컴퓨터의 scala 버전은 2.12.2입니다. 데모에서 설치할 Kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Kafka 버전이 맞는 파일을 내려받야야 합니다.
+위 예제에서 Kafka를 설치할 컴퓨터에 설치된 scala 버전은 2.12.2입니다. 데모에서 설치할 Kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Kafka 버전이 맞는 파일을 내려받야야 합니다.
 
 - https://kafka.apache.org/downloads
 
-현재 예제에서 Scala 버전 2.12.2과 Kafka 버전 0.10.2.1에 맞는 파일은  kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다.
+현재 예제에서 Scala 버전 2.12.2과 Kafka 버전 0.10.2.1에 맞는 파일은  kafka_2.12-0.10.2.1.tgz 입니다. 다음과 같이 대상 파일을 내려받고 압축을 해제합니다. 아래에서 파일 다운로드 툴로 "__curl__"을 사용하였습니다.
 
 ```
 ~/demo > curl http://www-us.apache.org/dist/kafka/0.10.2.1/kafka_2.12-0.10.2.1.tgz -o kafka_2.12-0.10.2.1.tgz
