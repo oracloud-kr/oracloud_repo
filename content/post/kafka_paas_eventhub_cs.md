@@ -117,7 +117,7 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 - <그림 7>. Oracle Event Hub CS 클러스터 생성 1단계
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub05.jpg)
 
-클러스터 2단계에서는 설치 방식, kafka 노드 수 등 클러스터 설치에 필요한 상세 정보를 다음과 같이 입력합니다.
+클러스터 2단계에서는 설치 방식, Kafka 노드 수 등 클러스터 설치에 필요한 상세 정보를 다음과 같이 입력합니다.
 
 |구분|설정 항목|설명|데모 사용 값|
 |---|---|---|---|
@@ -158,7 +158,7 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 - <그림 12> Oracle Event Hub CS 클러스터 Security Rule 생성
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub10.jpg)
 
-Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zookeeper 접근 규칙을 정의 합니다.
+Security Rule에서 <그림 13>과 같이 Kafka 브로커 접근 규칙과 Zookeeper 접근 규칙을 정의 합니다.
 
 |Security Rule 명|소스|목적지|포트|
 |---|---|---|---|
@@ -178,7 +178,7 @@ Security Rule에서 <그림 13>과 같이 kafka 브로커 접근 규칙과 Zooke
 
 ### Oracle Event Hub CS 토픽 생성
 
-지금까지 Oracle Event Hub CS 클러스터를 생성하는 절차를 확인해 보았습니다. 이제는 데이터를 저장할 Topic을 만들 차례입니다. Oracle Event Hub CS 클러스터를 생성한 후에, Oracle Event Hub CS 서비스 콘솔의 메뉴를 살펴보면, "Oracle Event Hub Cloud Services - Topics" 메뉴가 추가된 것을 확인 할 수 있습니다. <그림 15>참조
+지금까지 Oracle Event Hub CS 클러스터를 생성하는 절차를 확인해 보았습니다. 이제는 데이터를 저장할 Topic을 만들 차례입니다. Oracle Event Hub CS 클러스터를 생성한 후에, Oracle Event Hub CS 서비스 콘솔의 메뉴를 살펴보면, "Oracle Event Hub Cloud Services - Topics" 메뉴가 추가된 것을 확인 할 수 있습니다. <그림 15 참조>
 
 "Oracle Event Hub Cloud Services - Topics" 메뉴를 사용하여 Oracle Event Hub CS 클러스터에  Kafka 토픽을 서비스 형태로 생성할 수 있습니다.      
 
@@ -243,7 +243,9 @@ drwxr-xr-x   3 taewan  staff    102  4 22 01:27 site-docs
 
 ### Oracle Event Hub CS 클러스터 테스트
 
-현재 Kafka 브로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper 포트 번호는 2181, Kafka 브로커 포트 번호는 6667입니다. Kafka 클러스터에 생성된 topic 목록은 다음 명령을 이용하여 확인 할 수 있습니다.
+현재 Kafka 브로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper 포트 번호는 2181, Kafka 브로커 포트 번호는 6667입니다.[^4] Kafka 클러스터에 생성된 topic 목록은 다음 명령을 이용하여 확인 할 수 있습니다.
+
+[^4]: 이 정보는 <그림 11>과 같은 Oracle Event Hub CS 서비스 콘솔의 클러스터 상세 정보 페이지에서 확인 할 수 있습니다. 포트 정보는 <그림 14>와 같이 "Security Rule" 페이지에서 확인 할 수 있습니다.
 
 - 현재 Kafka가 설치된 위치: ~/demo/kafka_2.12-0.10.2.1
 
@@ -262,11 +264,15 @@ Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령
 
 <그림 18>에서 사용한 명령은 다음과 같습니다.
 
-|Type|Command|
-|---|---|
-|Producer|bin/kafka-console-producer.sh --broker-list 129.157.161.106:6667 --topic krplustvio-twTopic|
-|Consumer| bin/kafka-console-consumer.sh --bootstrap-server 129.157.161.102:6667 --topic krplustvio-twTopic --from-beginning|
+- Producer 명령
+```
+bin/kafka-console-producer.sh --broker-list 129.157.161.106:6667 --topic krplustvio-twTopic
+```
 
+- Consumer 명령
+```
+bin/kafka-console-consumer.sh --bootstrap-server 129.157.161.102:6667 --topic krplustvio-twTopic --from-beginning
+```
 
 ## 요약
 
