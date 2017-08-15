@@ -43,10 +43,11 @@ Oracle Event Hub CS는 다음과 같은 특징을 갖습니다.
   - 소프트웨어 패치 관리 지원 <그림 2 참조>
   - Oracle Event Hub CS의 VM 접근 허용 (ssh)
   - Oracle Big Data CS-CE 클라우드 서비스에 최적화 구성
-  - Oracle Event Hub CS 클러스터 라이프사이클 관리 CLI(Command Line Interface) 지원: PaaS Service Manager(PSM)
-  - Oracle Cloud의 보안체계에 따른 접근 보안 설정[^1]
+  - Oracle Event Hub CS 클러스터 라이프사이클 관리 CLI[^1]지원: PaaS Service Manager(PSM)
+  - Oracle Cloud의 보안체계에 따른 접근 보안 설정[^2]
 
-[^1]: [오라클 클라우드 Compute CS 보안 적용](../compute_security/) 문서 참조: http://www.oracloud.kr/post/compute_security/
+[^1]: CLI는 Command Line Interface의 약자입니다. 터너멀에서 실행되는 명령어로 구성된 툴을 의미합니다.
+[^2]: 오라클 보안 체계는 다음 문서를 참조 하시기 바랍니다. - [오라클 클라우드 Compute CS 보안 적용](../compute_security/)
 
 - <그림 1>. Oracle Event Hub CS 클러스터의 Scale-out
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub20.jpg)
@@ -69,9 +70,9 @@ Oracle Event Hub CS에는 다음과 같은 소프트웨어가 설치됩니다.
 
 Oracle Event Hub CS는 두 가지 설치 방식을 지원합니다. 두 가지 설치 방식은 Basic 모드와  Recommended 모드입니다.
 
-Oracle Event Hub CS를 Basic 모드로 설치할 경우 클러스터는 사이즈는 1개 VM과 3개 VM 중 하나를 선택해야 합니다. Basic 모드에서는 하나의 VM(Virtual Machine)에 ZooKeeper와 Kafka가 함께 설치됩니다. 따라서 고가용성 문제가 있습니다.[^2] 이 설치 방식으로 만들어진 클러스터는 테스트 용도에 적합하며, 고가용성 문제 때문에 운영 클러스터로 사용하기에는 부적합 합니다.
+Oracle Event Hub CS를 Basic 모드로 설치할 경우 클러스터는 사이즈는 1개 VM과 3개 VM 중 하나를 선택해야 합니다. Basic 모드에서는 하나의 VM(Virtual Machine)에 ZooKeeper와 Kafka가 함께 설치됩니다. 따라서 고가용성 문제가 있습니다.[^3] 이 설치 방식으로 만들어진 클러스터는 테스트 용도에 적합하며, 고가용성 문제 때문에 운영 클러스터로 사용하기에는 부적합 합니다.
 
-[^2]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수 지원을 위해 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다.
+[^3]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수 지원을 위해 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다.
 
 Recommended 설치 모드는 Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. 고가용성 디자인이 적용된 설치 방식입니다. Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Recommended 설치 모드에서 다음과 같은 구성을 권장합니다.
 
