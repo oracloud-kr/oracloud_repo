@@ -262,7 +262,7 @@ __consumer_offsets
 krplustvio-twTopic
 >
 ```
-위 명령에서 "__\__"는 콘솔에서 명령이 끊어지지 않고 연결된 라인임을 의미합니다. 위 명령은 1줄로 처리됩니다.
+위 명령에서 "__\__"는 콘솔에서 명령이 끊어지지 않고 연결된 라인임을 의미합니다. 위 명령은 한 줄로 처리됩니다.
 
 Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령으로 topic에 데이터를 비동기 처리하는 테스트를 수행할 수 있습니다.
 - <그림 18> kafka-console-producer.sh와 kafka-console-consumer.sh 테스트
