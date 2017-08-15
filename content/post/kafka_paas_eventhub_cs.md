@@ -43,7 +43,7 @@ Oracle Event Hub CS는 다음과 같은 특징을 갖습니다.
 - Oracle Event Hub CS의 클러스터 VM 접근 허용 (ssh)
 - Oracle Big Data CS-CE 클라우드 서비스에 최적화 구성
 - Oracle Event Hub CS 클러스터의 라이프사이클 관리 CLI[^1] 제공: PaaS Service Manager(PSM)
-- Oracle Cloud의 보안체계에 따른 보안 설정[^2]
+- Oracle Cloud의 보안체계에 따른 세밀한 보안 설정[^2]
 
 [^1]: CLI는 Command Line Interface의 약자입니다. 터너멀에서 실행되는 명령어로 구성된 툴을 의미합니다.
 [^2]: 오라클 보안 체계는 다음 문서를 참조 하시기 바랍니다. - [오라클 클라우드 Compute CS 보안 적용](../compute_security/)
@@ -80,9 +80,9 @@ Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Reco
 
 |컴포넌트|VM 규모|비고|
 |---|---|---|
-|Apache Kafka 브로커| 5 VM|- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 지속적으로 VM 추가 가능 < 그림 1 참조>|
-|Apache Zookeeper|3 VM|- Zookeeper 운영 정책에 따라 변경 가능<br/>- 일반적으로 3VM으로 구성|
-|REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 2 VM이상 노드 추가 필요 없음|
+|Apache Kafka 브로커| 5+ VM|- 최소 5 VM 이상 <br />- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 클러스터 생성 후 VM 추가 가능 < 그림 1 참조>|
+|Apache Zookeeper|3 VM|- Zookeeper 운영 정책에 따라 변경 가능<br/>- 1VM, 3VM, 5VM 중 하나를 선택<br/>- 일반적으로 3VM으로 구성|
+|REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 1 ~ 4 VM 중 하나를 선택<br/>- 일반적을 2VM을 권장|
 
 ## Oracle Event Hub CS 데모
 
