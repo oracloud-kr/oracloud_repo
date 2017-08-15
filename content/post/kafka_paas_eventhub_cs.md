@@ -12,39 +12,38 @@ language = ""
 
 Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공하고 있습니다. Oracle Cloud가 2017년 1월에 출시한 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)가 바로 Kafka 관리 서비스입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
 
-- Oracle Event Hub CS를 소개
-- Oracle Event Hub CS로 클러스터를 생성
+- Oracle Event Hub CS 소개
+- Oracle Event Hub CS 클러스터를 생성
 - Kafak 클러스터에 Topic 생성
-- Topic에 데이터 저장(Producing)하고 가져오기(Consuming) 테스트
+- Topic에 데이터 저장(Producing) & 가져오기(Consuming) 테스트
 
 ## Oracle Event Hub CS
 
 Oracle Event Hub CS는 Kafaka 클라우드 관리형 서비스(managed service)입니다. Kafka와 Apache Zookeeper(이하 ZooKeeper)를 포함한 관련 소프트웨어의 설치, 관리, 업그레이드, 모니터링 등 전체 라이프사이클을 관리합니다.
 
-2017년 1월 Oracle Event Hub CS 출시 당시 Kafka 버전 v0.9를 지원하였습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 0.10.2를 지원합니다.
+2017년 1월 Oracle Event Hub CS 출시 당시 Kafka 버전 v0.9를 지원하였습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 v0.10.2를 지원합니다.
 
-Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구성하고 언제든지 Scale-out 형태로 확장 할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 함께 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
+Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구축하고 필요한 시점에 Scale-out 방식으로 확장 할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 연동하여 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
 
 - [Oracle Big Data Cloud Service - Compute Edition](https://cloud.oracle.com/en_US/big-data-compute-edition) (이하: Oracle Big Data CS-CE)
 - [Oracle IoT Analytics Cloud Service](https://cloud.oracle.com/en_US/iot)
 - [Oracle Big Data Preparation Clood Serivce](https://cloud.oracle.com/en_US/big-data-preparation)
 - [Oracle Mabile Analytics cloud Service](https://cloud.oracle.com/en_US/log-analytics)
 
-Oracle Event Hub CS는 Oracle Cloud의 Trial 계정으로 이용가능합니다. 본 문서는 Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS 인스턴스 생성 및 데모를 진행하겠습니다.
+Oracle Event Hub CS는 Oracle Cloud의 Trial 계정으로 이용 가능합니다. 본 문서는 Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS 인스턴스 생성 및 데모를 진행하겠습니다.
 
 ### Oracle Event Hub CS 특징
 Oracle Event Hub CS는 다음과 같은 특징을 갖습니다.
 
-- Oracle Event Hub CS 주요 특징
-  - Kafka 관리형 서비스(Managed Service, PaaS)
-  - Kafka Native API 접근 허용
-  - Kafka 클러스터 REST API 지원 (Proxy 서버를 포함)
-  - Scale-out 클러스터 확장 기능 제공. <그림 1 참조>
-  - 소프트웨어 패치 관리 지원 <그림 2 참조>
-  - Oracle Event Hub CS의 VM 접근 허용 (ssh)
-  - Oracle Big Data CS-CE 클라우드 서비스에 최적화 구성
-  - Oracle Event Hub CS 클러스터 라이프사이클 관리 CLI[^1]지원: PaaS Service Manager(PSM)
-  - Oracle Cloud의 보안체계에 따른 접근 보안 설정[^2]
+- Kafka 관리형 서비스(Managed Service, PaaS)
+- Kafka Native API 접근 허용
+- Kafka 클러스터 REST API 지원 (Proxy 서버 포함)
+- Scale-out 클러스터 확장 기능 <그림 1 참조>
+- 소프트웨어 패치 관리 <그림 2 참조>
+- Oracle Event Hub CS의 클러스터 VM 접근 허용 (ssh)
+- Oracle Big Data CS-CE 클라우드 서비스에 최적화 구성
+- Oracle Event Hub CS 클러스터의 라이프사이클 관리 CLI[^1] 제공: PaaS Service Manager(PSM)
+- Oracle Cloud의 보안체계에 따른 보안 설정[^2]
 
 [^1]: CLI는 Command Line Interface의 약자입니다. 터너멀에서 실행되는 명령어로 구성된 툴을 의미합니다.
 [^2]: 오라클 보안 체계는 다음 문서를 참조 하시기 바랍니다. - [오라클 클라우드 Compute CS 보안 적용](../compute_security/)
@@ -68,24 +67,26 @@ Oracle Event Hub CS에는 다음과 같은 소프트웨어가 설치됩니다.
 
 ### Oracle Event Hub CS 클러스터 설치 방식
 
-Oracle Event Hub CS는 두 가지 설치 방식을 지원합니다. 두 가지 설치 방식은 Basic 모드와  Recommended 모드입니다.
+Oracle Event Hub CS는 다음과 같은 두 가지 설치 방식을 지원합니다.
 
-Oracle Event Hub CS를 Basic 모드로 설치할 경우 클러스터는 사이즈는 1개 VM과 3개 VM 중 하나를 선택해야 합니다. Basic 모드에서는 하나의 VM(Virtual Machine)에 ZooKeeper와 Kafka가 함께 설치됩니다. 따라서 고가용성 문제가 있습니다.[^3] 이 설치 방식으로 만들어진 클러스터는 테스트 용도에 적합하며, 고가용성 문제 때문에 운영 클러스터로 사용하기에는 부적합 합니다.
+|설치 방식|설명|비고|
+|---|---|---|
+|Basic|ZooKeeper와 Kafka가 함께 함께 설치 되는 방식입니다. 클러스터 사이즈는 1개 VM과 3개 VM 2가지 중에 하나를 선택해야 합니다. |컴포넌트 구성에 따른 고가성 지원 불가하며[^3]  테스트 용도에 적합|
+|Recommended|Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. 고가용성 디자인이 적용된 설치 방식입니다. |고가용성을 지원|
 
 [^3]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수 지원을 위해 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다.
 
-Recommended 설치 모드는 Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. 고가용성 디자인이 적용된 설치 방식입니다. Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Recommended 설치 모드에서 다음과 같은 구성을 권장합니다.
+Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Recommended 설치 모드에서 다음과 같은 구성을 권장합니다.
 
-- Apache Kafka 브로커 노드: 5 VM
-- Apache Zookeeper 노드: 3 VM
-- REST Proxy 노드: 2 VM (선택사항)
-
-이 구성은 고가용성을 제공하는 최소 규모의 클러스터 구성입니다.
+|컴포넌트|VM 규모|비고|
+|---|---|---|
+|Apache Kafka 브로커| 5 VM|- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 지속적으로 VM 추가 가능 < 그림 1 참조>|
+|Apache Zookeeper|3 VM|- Zookeeper 운영 정책에 따라 변경 가능<br/>- 일반적으로 3VM으로 구성|
+|REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 2 VM이상 노드 추가 필요 없음|
 
 ## Oracle Event Hub CS 데모
 
 이 절에서는 오라클 클라우드 Trial 계정을 이용하여 Oracle Event Hub CS 클러스터를 생성하는 절차를 소개합니다.
-
 
 ### Oracle Event Hub CS 클러스커 생성
 
