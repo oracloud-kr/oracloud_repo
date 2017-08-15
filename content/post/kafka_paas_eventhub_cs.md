@@ -257,8 +257,7 @@ krplustvio-twTopic
 >
 ```
 
-Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령으로 topic에 데이터를 비동기 처리하는 테스트를 수행할 수 있습니다. <그림 18 참조>
-
+Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령으로 topic에 데이터를 비동기 처리하는 테스트를 수행할 수 있습니다.
 - <그림 18> kafka-console-producer.sh와 kafka-console-consumer.sh 테스트
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub18.jpg)
 
@@ -273,6 +272,8 @@ bin/kafka-console-producer.sh --broker-list 129.157.161.106:6667 --topic krplust
 ```
 bin/kafka-console-consumer.sh --bootstrap-server 129.157.161.102:6667 --topic krplustvio-twTopic --from-beginning
 ```
+
+<그림 18>에서 왼쪽 콘솔에는 Kafka에서 제공하는 kafka-console-producer.sh가 앞에서 생성한 twTopic에 메시지를 producing하고, 오른쪽 콘솔에는 kafka-console-consumer.sh가 twTopic으로 부터 메시지를 가져옵니다. 왼쪽 콘솔에서 메시지를 입력하면 바로 오른쪽 콘솔에 출력되는 것을 확인할 수 있습니다. 
 
 ## 요약
 
