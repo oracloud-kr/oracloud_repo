@@ -30,7 +30,7 @@ Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요�
 - [Oracle Big Data Preparation Clood Serivce](https://cloud.oracle.com/en_US/big-data-preparation)
 - [Oracle Mabile Analytics cloud Service](https://cloud.oracle.com/en_US/log-analytics)
 
-Oracle Event Hub CS는 Oracle Cloud의 Trial 계정으로 이용 가능합니다. 본 문서는 Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS 인스턴스 생성 및 데모를 진행하겠습니다.
+Oracle Event Hub CS는 Oracle Cloud의 Trial 계정으로 이용 가능합니다. 본 문서는 Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS의 클러스터 생성 및 "Quick Start" 데모를 진행하겠습니다.
 
 ### Oracle Event Hub CS 특징
 Oracle Event Hub CS는 다음과 같은 특징을 갖습니다.
