@@ -73,8 +73,8 @@ Oracle Event Hub CS는 다음과 같은 두 가지 설치 방식을 지원합니
 
 |설치 방식|설명|비고|
 |---|---|---|
-|Basic|ZooKeeper와 Kafka가 함께 설치 되는 방식입니다. <br /> 클러스터 사이즈로 VM 1개와 3개 중 하나를 선택할 수 합니다. |- 고가성 지원 불가[^3]<br />- 테스트 용도에 적합|
-|Recommended|Kafka와 Zookeeper를 별도의 VM에 분리하여 설치합니다. <br />고가용성 디자인이 적용된 설치 방식입니다. |- 고가용성 지원|
+|Basic|ZooKeeper와 Kafka가 같은 VM에 설치 되는 방식입니다. <br /> 클러스터 사이즈로 VM 1개와 3개 중 하나를 선택할 수 합니다. |- 고가성 지원 불가[^3]<br />- 테스트 용도에 적합|
+|Recommended|Kafka와 Zookeeper가 별도의 VM에 설치됩니다. <br />고가용성 디자인이 적용된 설치 방식입니다. |- 고가용성 지원|
 
 [^3]: Kafka 클러스터가 고가용성을 지원하기 위해서는  Kakfa와 ZooKeeper가 분리되어 개별적인 서버에 설치되어야 합니다. 또한 Kafka와 ZooKeeper의 장애 대응과 복제계수를 고려하여 각각 3개 서버 이상으로 클러스터를 디자인 해야 합니다. Kafka 서버는 일반적으로 3set 이상으로 구성하고 ZooKeeper는 3set 혹은 5set으로 구성합니다.
 
@@ -92,7 +92,7 @@ Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Reco
 
 ### Oracle Event Hub CS 클러스커 생성
 
-오라클 클라우드 Trial 계정으로 Oracle Cloud에 로그인하면 <그림 3>과 같이 Oracle Cloud 대시보드가 출력됩니다. 왼쪽 위 메뉴 아이콘을 이용하여 각 클라우드 서비스 콘솔로 이동할 수 있습니다.
+오라클 클라우드 Trial 계정으로 Oracle Cloud에 로그인하면, <그림 3>과 같이 Oracle Cloud 대시보드가 출력됩니다. 왼쪽 위 메뉴 아이콘을 이용하여 각 클라우드 서비스 콘솔로 이동할 수 있습니다.
 
 - <그림 3>. Oracle Cloud 대시보드
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub01.jpg)
@@ -148,6 +148,10 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 - <그림 10> Oracle Event Hub CS 클러스터 생성 결과, 클러스터 목록 출력
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub08.jpg)
 
+앞에서 생성한 KafkaDemo 클러스터는 5개 VM으로 구성됩니다. 전체 CPU는 5 OCPU[^4]이며 75GB 메모리, 435GB 블록스토리지, 6000개 파티션 용량으로 만들어 졌습니다. <그림 10 참조>
+
+[^4]: OCPU는 Oracle Compute Unit의 줄임말입니다. 1 OCPU는 하이퍼 쓰레딩이 활성화된 Intel Xeon 프로세스 입니다. 따라서 1개의 OCPU는 vCPU 2개에 해당합니다.
+
 <그림 10>의 클러스터 명을 클릭하면 <그림 11>과 같이 클러스터 상세 정보 페이지로 이동합니다. 외부 네트워크에서 클러스터에 접근을 허용하기 위해서, 페이지 상단 메뉴 아이콘을 클릭한 후 "Access Rules" 메뉴를 선택합니다.
 
 - <그림 11> Oracle Event Hub CS 클러스터 상세 페이지에서 "Access Rules" 이동
@@ -171,7 +175,7 @@ Security Rule에서 <그림 13>과 같이 Kafka 브로커 접근 규칙과 Zooke
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub11.jpg)
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub12.jpg)
 
-두 Security Rule이 생성되면 <그림 14>와 같이 Security rule에서 결과를 확인 가능합니다.
+두 Security Rule이 생성되면 <그림 14>와 같이 Security rule에서 새로 정의한 Security Rule을 확인할 수 있습니다.
 
 - <그림 14> Security Rule 목록
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/eventhub13.jpg)
@@ -215,7 +219,7 @@ Scala code runner version 2.12.2 -- Copyright 2002-2017, LAMP/EPFL and Lightbend
 ~ >
 ```
 
-위 예제에서 Kafka를 설치할 컴퓨터에 설치된 scala 버전은 2.12.2입니다. 데모에서 설치할 Kafka 버전은 0.10.2.1입니다. Apache 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala버전과 Kafka 버전이 맞는 파일을 내려받야야 합니다.
+위 예제에서 Kafka를 설치할 컴퓨터에 설치된 scala 버전은 2.12.2입니다. 데모에서 설치할 Kafka 버전은 0.10.2.1입니다. Kafka 다운로드 페이지는 다음 URL 입니다. 다음 페이지에서 scala 버전과 Kafka 버전이 맞는 파일을 내려받야야 합니다.
 
 - https://kafka.apache.org/downloads
 
@@ -243,9 +247,9 @@ drwxr-xr-x   3 taewan  staff    102  4 22 01:27 site-docs
 
 ### Oracle Event Hub CS 클러스터 테스트
 
-현재 Kafka 브로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper 포트 번호는 2181, Kafka 브로커 포트 번호는 6667입니다.[^4] Kafka 클러스터에 생성된 topic 목록은 다음 명령을 이용하여 확인 할 수 있습니다.
+현재 Kafka 브로커 서버 및 ZooKeeper가 설치된 서버의 Public IP는 129.157.161.106이고 Zookeeper 포트 번호는 2181, Kafka 브로커 포트 번호는 6667입니다.[^5] Kafka 클러스터에 생성된 topic 목록은 다음 명령을 이용하여 확인 할 수 있습니다.
 
-[^4]: 이 정보는 <그림 11>과 같은 Oracle Event Hub CS 서비스 콘솔의 클러스터 상세 정보 페이지에서 확인 할 수 있습니다. 포트 정보는 <그림 14>와 같이 "Security Rule" 페이지에서 확인 할 수 있습니다.
+[^5]: 이 정보는 <그림 11>과 같은 Oracle Event Hub CS 서비스 콘솔의 클러스터 상세 정보 페이지에서 확인 할 수 있습니다. 포트 정보는 <그림 14>와 같이 "Security Rule" 페이지에서 확인 할 수 있습니다.
 
 - 현재 Kafka가 설치된 위치: ~/demo/kafka_2.12-0.10.2.1
 
