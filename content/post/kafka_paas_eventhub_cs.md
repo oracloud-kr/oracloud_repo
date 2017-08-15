@@ -84,7 +84,7 @@ Oracle Event Hub CS 클러스터가 고가용성을 제공해야 한다면, Reco
 |---|---|---|
 |Apache Kafka 브로커| 5+ VM|- 최소 5 VM 이상 <br />- Topic 및 Partition 증가에 따라서 확장 가능<br/> - 클러스터 생성 후 VM 추가 가능 < 그림 1 참조><br />- VM 추가에 제약 없음|
 |Apache Zookeeper|3 VM|- Zookeeper 운영 정책에 따라 변경 가능<br/>- 1VM, 3VM, 5VM 중 하나를 선택<br/>- 일반적으로 3VM으로 구성|
-|REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 1 ~ 4 VM 중 하나를 선택<br/>- 일반적을 2VM을 권장|
+|REST Proxy 노드| 2 VM |- 설치 시 선택 가능한 컴포넌트<br/>- 1 ~ 4 VM 중 하나를 선택<br/>- 일반적을 2VM으로 구성|
 
 ## Oracle Event Hub CS 데모
 
