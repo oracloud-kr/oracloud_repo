@@ -120,7 +120,7 @@ Oracle Event Hub CS 클러스터 생성 과정은 3단계로 구성됩니다. <�
 |---|---|---|---|
 |기본정보|배치 모드|Basic과 Recommended 중 선택입니다. Recommended는 고가용성 모드입니다.|Basic 선택|
 ||SSH Public Key|SSH 공개키를 등록합니다.|SSH 공개키 등록|
-|Kafka|노드 수|Kafka 브로커 노드 수|3|
+|Kafka|Number of Brokers|Kafka 브로커 노드 수|3|
 ||컴퓨터 구성|Kafka 브로커 VM의 Shape|OC1m 선택|
 ||Usable Topic Storage|Topic 용 사이즈 지정, GB 단위|50|
 |Enable REST Proxy|Enable REST Access|프락시 설치 여부 선택|체크|
