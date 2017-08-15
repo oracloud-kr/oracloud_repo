@@ -10,7 +10,7 @@ author = "taewan.kim"
 language = ""
 +++
 
-Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공하고 있습니다. Oracle Cloud는 2017년 1월에 출시한 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)가 바로 Kafka 관리 서비스입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
+Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공하고 있습니다. Oracle Cloud가 2017년 1월에 출시한 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)가 바로 Kafka 관리 서비스입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
 
 - Oracle Event Hub CS를 소개
 - Oracle Event Hub CS로 클러스터를 생성
