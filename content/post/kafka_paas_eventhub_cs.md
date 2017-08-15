@@ -10,7 +10,7 @@ author = "taewan.kim"
 language = ""
 +++
 
-Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공합니다. Oracle Cloud가 2017년 1월에 출시한 Kafka 관리 서비스가 바로 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
+Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS) 형태로 제공합니다. Oracle Cloud가 2017년 1월에 출시한 Kafka 관리 서비스는 "__Oracle Event Hub Cloud Service__"(이하 Oracle Event Hub CS)입니다. Oracle Event Hub CS는 오라클이 기술지원하고 관리하는 클라우드 서비스로 Kafka 클러스터의 효율적인 관리 방법과 지속적인 확장성을 제공합니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
 
 - Oracle Event Hub CS를 소개
 - Oracle Event Hub CS로 클러스터를 생성
@@ -21,16 +21,16 @@ Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS
 
 Oracle Event Hub CS는 Kafaka 클라우드 관리형 서비스(managed service)입니다. Kafka와 Apache Zookeeper(이하 ZooKeeper)를 포함한 관련 소프트웨어의 설치, 관리, 업그레이드, 모니터링 등 전체 라이프사이클을 관리합니다.
 
-2017년 1월 출시 당시 Oracle Event Hub CS는 Kafka 버전은 0.9를 지원하였습니다. 2017년 8월 현재 서비스가 지원하는 Kafka 버전은 0.10.2 입니다.
+2017년 1월 Oracle Event Hub CS 출시 당시 Kafka 버전 v0.9를 지원하였습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 0.10.2를 지원합니다.
 
-Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구성하고 필요한 시점에 언제든지 Scale-out 형태로 확장이 가능합니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 함께 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
+Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구성하고 언제든지 Scale-out 형태로 확장 할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 함께 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
 
-- Oracle Big Data Cloud Service - Compute Edition (이하: Oracle Big Data CS-CE)
-- Oracle IoT Analytics Cloud Service
-- Oracle Big Data Preparation Clood Serivce
-- Oracle Mabile Analytics cloud Service
+- [Oracle Big Data Cloud Service - Compute Edition](https://cloud.oracle.com/en_US/big-data-compute-edition) (이하: Oracle Big Data CS-CE)
+- [Oracle IoT Analytics Cloud Service](https://cloud.oracle.com/en_US/iot)
+- [Oracle Big Data Preparation Clood Serivce](https://cloud.oracle.com/en_US/big-data-preparation)
+- [Oracle Mabile Analytics cloud Service](https://cloud.oracle.com/en_US/log-analytics)
 
-Oracle Event Hub CS는 Oracle Cloud의 Trial 계정에서 이용가능합니다. 본 문서는  Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS 인스턴스 생성 및 데모를 진행하겠습니다.
+Oracle Event Hub CS는 Oracle Cloud의 Trial 계정으로 이용가능합니다. 본 문서는 Oracle Cloud Trial 계정을 이용하여 Oracle Event Hub CS 인스턴스 생성 및 데모를 진행하겠습니다.
 
 ### Oracle Event Hub CS 특징
 Oracle Event Hub CS는 다음과 같은 특징을 갖습니다.
