@@ -21,7 +21,7 @@ Oracle Cloud는 Apache Kafka(이하 Kafka)를 클라우드 관리 서비스(PaaS
 
 Oracle Event Hub CS는 Kafaka 클라우드 관리형 서비스(managed service)입니다. Kafka와 Apache Zookeeper(이하 ZooKeeper)를 포함한 관련 소프트웨어의 설치, 관리, 업그레이드, 모니터링 등 전체 라이프사이클을 관리합니다.
 
-2017년 1월 Oracle Event Hub CS는 Kafka 버전 v0.9를 지원했습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 v0.10.2를 지원합니다.
+Oracle Event Hub CS는 2017년 1월 출시 당시 Kafka 버전 v0.9를 지원했습니다. 2017년 8월 현재 Oracle Event Hub CS는 Kafka 버전 v0.10.2를 지원합니다.
 
 Oracle Event Hub CS를 이용하면 비동기 메시지 처리 환경을 필요한 시점에 효과적으로 구축할 수 있습니다. 또한 서비스 이용 중에 언제든지 Scale-out 방식으로 확장할 수 있습니다. 특히 Oracle Big Data Cloud Service - Compute Edition과 연동하여 고성능 스트리밍 데이터 처리 환경 혹은 빅데이터 Ingestion 인프라를 구축할 수 있습니다. Oracle Event Hub CS는 다음과 같은 Oracle Cloud 서비스와 연동될 수 있습니다.
 
