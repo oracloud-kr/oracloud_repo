@@ -270,14 +270,14 @@ Kafka에 포함된 kafka-console-producer.sh와 kafka-console-consumer.sh 명령
 
 <그림 18>에서 사용한 명령은 다음과 같습니다.
 
-- Producer 명령
+- Producer 명령 (아래 명령은 한 줄로 처리됩니다.)
 ```
 bin/kafka-console-producer.sh \
 --broker-list 129.157.161.106:6667 \
 --topic krplustvio-twTopic
 ```
 
-- Consumer 명령
+- Consumer 명령 (아래 명령은 한 줄로 처리됩니다.)
 ```
 bin/kafka-console-consumer.sh \
 --bootstrap-server 129.157.161.102:6667 \
