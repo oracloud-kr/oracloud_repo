@@ -1,4 +1,4 @@
-﻿/*** CSS Reset based on http://meyerweb.com/eric/tools/css/reset/ v2.0 ***/
+/*** CSS Reset based on http://meyerweb.com/eric/tools/css/reset/ v2.0 ***/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -311,9 +311,8 @@ a:hover {
 }
 
 /*** Lists ***/
-/* TheKoguryo */
 .post__content ul {
-	list-style: disc;
+	list-style: square;
 }
 
 .post__content ol {
@@ -558,41 +557,6 @@ select {
 .post__content blockquote, .post__content .row {
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
-}
-
-/* TheKoguryo */
-.post__content h1 {
-    margin: 70px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content h2 {
-    margin: 50px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content h3 {
-    margin: 40px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content h4 {
-    margin: 36px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content h5 {
-    margin: 34px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content h6 {
-    margin: 32px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content p {
-    margin: 0 0 0 0;
 }
 
 .post__content blockquote p:last-child {
