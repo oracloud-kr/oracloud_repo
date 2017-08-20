@@ -13,7 +13,7 @@ language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py
 Oracle Cloud는 매달 새로운 기능을 클라우드 서비스에 추가하고 있습니다.
 기능 개선을 위해서는 소프트웨어 변경이 필요합니다.
 이미 클라우드 서비스 인스턴스를 생성하고 사용 중인 고객을 위해서 오라클은 패치를 만들고 적용하는 프로세스를 제공합니다.
-Oracle Cloud의 패치 및 업그레이드 프로세스는 패치 목록 관리, 사전 패치 테스트, 패치 테스트 리포트 검토, 패치 적용 및 패치 이전 버전으로 원복(Rollback) 기능으로 구성됩니다. 클라우드 사용자는 현재 사용 중인 서비스를 대상으로 패치를 적용과 시점을 결정할 수 있습니다. 본 문서는 "__Oracle Big Data Cloud Service - Compute Edition__"(이하 Oracle BDCSCE)에 패치 적용 방법을 살펴보겠습니다. Oracle BDCSCE 패치 적용 절차는 다른 Oracle PaaS에도 적용할 수 있습니다.
+클라우드 사용자는 현재 사용 중인 서비스에 패치를 적용 여부와 시점을 직접 결정할 수 있습니다. 본 문서에서는 "__Oracle Big Data Cloud Service - Compute Edition__"(이하 Oracle BDCSCE)의 인스턴스에 패치를 적용하는 방법을 살펴보겠습니다. 여기에서 다루는 Oracle BDCSCE 인스턴스에 패치를 적용하는 절차는 다른 Oracle PaaS에도 적용할 수 있습니다.
 
 ## Oracle Cloud 서비스 패치
 
