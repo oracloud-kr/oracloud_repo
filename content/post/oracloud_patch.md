@@ -1,5 +1,5 @@
 +++
-date = "2017-08-18T23:20:25+09:00"
+date = "2017-08-20T23:20:25+09:00"
 description = "Oracle Cloud의 PaaS 서비스 패치 절차를 소개합니다. Oracle Big Data Cloud Service - Compute Edition의 패치 절차를 대상으로 합니다."
 title = "Oracle Cloud의 PaaS 서비스 패치: Orace BDCSCE"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/patch/patch00.jpg"
