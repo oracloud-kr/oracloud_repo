@@ -25,17 +25,17 @@ Oracle Cloud PaaS의 특징은 클라우드 사용자가 OS 영역에 접근이 
 
 - 클라우드 서비스별 대상 패티 공지
 - 대상 패치 변경사항 리뷰
-- 패치 적용 테스트
+- 사전 패치 테스트
 - 패치 테스트 결과 리뷰
 - 패치 적용
-- 적용 패치 목록 관리
-- 패치 적용 이전으로 Rollback
+- 패치 적용 목록 관리
+- 패치 이전 버전으로 원복(Rollback)
 
 다음 절에서 "Oracle Big Data Cloud Service - Compute Edtion"에 패치를 적용하는 절차를 소개하겠습니다.
 
 ## Oracle BDCSCE 패치
 
-Oracle BDCSCE는 2017년 03월에 출시된 서비스 빅데이터 클라우드 서비스입니다. Oracle BDCSCE는 현재 매월 신규 기능[^2]이 적용되고 있습니다. 현재 버전은 Oracle BDCSCE 서비스 버전은 17.3.3입니다. 17.3.3 버전에서 다음과 같은 기능이 추가되었습니다.
+Oracle BDCSCE는 2017년 03월에 출시된 빅데이터 클라우드 서비스입니다. Oracle BDCSCE는 현재 매월 신규 기능[^2]이 추가되고 있습니다. 현재 Oracle BDCSCE 서비스 버전은 17.3.3입니다. 17.3.3 버전에는 다음과 같은 기능이 추가되었습니다.
 
 [^2]: Oracle BDCSCE 기능 변경 내용은 다음 링크에서 확인 가능합니다. https://goo.gl/ty14Pu
 
@@ -53,7 +53,7 @@ Oracle BDCSCE는 2017년 03월에 출시된 서비스 빅데이터 클라우드 
 - <그림 1>  Oracle BDCSC - 17.3.3의 UI 기능 개선
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/patch/satus.jpg)
 
-최근에 17.3.3 버전이 Oracle BDCSCE에 적용되었고, 2017년 7월 초에 생성한 Oracle BDCSCE에 패치를 적용하였습니다. 이 패치 적용 과정을 이미지 중심으로 소개하겠습니다. 이 패치 적용 과정에서 Oracle BDCSCE의 특화된 부분은 없으며, 이 과정은 Oracle Cloud의 다른 PaaS에도 동일하게 적용됩니다.
+최근에 17.3.3 버전이 Oracle BDCSCE에 적용되었고, 2017년 7월 초에 생성한 Oracle BDCSCE 인스턴스에 패치를 적용하였습니다. 이 패치 적용과정을 이미지 중심으로 소개하겠습니다. 이 패치 적용 과정에서 Oracle Cloud의 다른 PaaS에도 동일하게 적용될 수 있습니다.
 
 아래에서 사용한 이미지는 패치 환경은 다음과 같습니다.
 
