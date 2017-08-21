@@ -1,7 +1,7 @@
 +++
 date = "2017-08-18T23:20:25+09:00"
 description = "한국 오라클 마케팅 페이지"
-title = "한국 오라클 마케팅: 한국 오라클 팩츠 체크"
+title = "한국 오라클 마케팅: 한국 오라클 팩트 체크"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/oracle_fact/logoinlist.jpg"
 thumbnailInPost = ""
 tags = []
