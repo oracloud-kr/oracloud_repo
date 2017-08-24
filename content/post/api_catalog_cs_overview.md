@@ -5,11 +5,12 @@ title = "Oracle API Catalog Cloud Service 소개"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/api_catalog/apicatalog_logoinlist.png"
 tags = ["API", "API Catalog", "integration"]
 categories = ["API Developerment"]
-author = "donghee.lee"
 language = ""
+author = "donghee.lee"
 +++
 
 Oracle Public Cloud상에서 제공하는 클라우드 서비스들은 각 서비스에 대한 REST API를 제공하며, 기본적으로 각 클라우드 서비스의 문서에 하나의 항목으로 제공하고 있습니다. Oracle API Catalog Cloud Service는 Oracle Public Cloud에서 제공하는 Public API를 한 곳에서 통합하여 검색하고, 테스트할 수 있는 기능을 제공하는 서비스입니다. 또한 REST API에서 가장 많이 사용되는 Swagger 2.0으로 알려져 있는 OpenAPI 2.0 기반의 API 문서 형식을 지원하고 있습니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
+
 
   - Oracle API Catalog Cloud Service 소개
   - API 테스트
@@ -82,7 +83,7 @@ API Catalog에 내 API를 등록하기 위해서는 유저에게 APICATALOG_READ
 
 
 ### Step #5. 내 API 추가하기
-로그인 후 우측 Publish > APIs를 클릭합니다. **Choose File**을 클릭하여 API 정의 파일을 업로드 한 후, 카테고리를 지정하고, 이름 및 제목을 수정하시면 됩니다. 
+로그인 후 우측 Publish > APIs를 클릭합니다. **Choose File**을 클릭하여 API 정의 파일을 업로드 한 후, 카테고리를 지정하고, 이름 및 제목을 수정하시면 됩니다.
 
 아래 정보는 Swagger 샘플인 PetStore API를 다운받아 등록한 예제입니다. 제목, 버전, 태그 등의 정보는 Swagger.json 파일에서 읽어오게 됩니다.
 
@@ -110,4 +111,3 @@ Oracle API Catalog Service는 Oracle Public Cloud에서 제공하는 Public API�
 ## 참고자료
 
 - [Using Oracle API Catalog Cloud Service](http://docs.oracle.com/en/cloud/paas/apicatalog-cloud/apiug/index.html)
-
