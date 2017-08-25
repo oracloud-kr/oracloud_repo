@@ -9,13 +9,12 @@ language = ""
 author = "donghee.lee"
 +++
 
-Oracle Public Cloud상에서 제공하는 클라우드 서비스들은 각 서비스에 대한 REST API를 제공하며, 기본적으로 각 클라우드 서비스의 문서에 하나의 항목으로 제공하고 있습니다. Oracle API Catalog Cloud Service는 Oracle Public Cloud에서 제공하는 Public API를 한 곳에서 통합하여 검색하고, 테스트할 수 있는 기능을 제공하는 서비스입니다. 또한 REST API에서 가장 많이 사용되는 Swagger 2.0으로 알려져 있는 OpenAPI 2.0 기반의 API 문서 형식을 지원하고 있습니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
+Oracle Public Cloud상에서 제공하는 클라우드 서비스들은 각 서비스에 대한 REST API를 제공하며, 기본적으로 각 클라우드 서비스의 문서에 하나의 항목으로 제공하고 있습니다. Oracle API Catalog Cloud Service는 Oracle Public Cloud에서 제공하는 Public API를 한 곳에서 통합하여 검색하고, 테스트할 수 있는 기능을 제공하는 서비스입니다. 또한 REST API에서 가장 많이 사용되는 Swagger 2.0으로 알려져 있는 OpenAPI 2.0 기반의 API 문서 형식을 지원하고 있습니다. 그리고 **무료**로 사용할 수 있습니다. 본 문서는 다음과 같은 내용으로 구성됩니다.
 
 
   - Oracle API Catalog Cloud Service 소개
   - API 테스트
   - 내 API를 API Catalog에 등록하기
-  - Topic에 데이터 저장(Producing) & 가져오기(Consuming) 테스트
 
 
 ## Oracle API Catalog Cloud Service 소개
@@ -26,7 +25,9 @@ API Catalog 클라우드 서비스(https://apicatalog.oraclecloud.com/ui/)를 �
 
 
 ## API 테스트
-API 모음을 선택하면, API 모음에서 제공하는 API 목록 정보를 확인할 수 있습니다. 사용중인 Oracle Cloud 서비스가 있는 경우에는 로그인하여 해당 API를 직접 테스트 해 볼 수도 있습니다. "Try-It Endpoint"에서 서비스의 주소를 입력하고, 테스트할 API의 'Try it out' 버튼을 클릭하여 테스트합니다. 그림은 Integration Cloud Service의 현재 상태를 조회해 보는 API를 테스트 해 본 예제입니다.
+API 모음을 선택하면, API 모음에서 제공하는 API 목록 정보를 확인할 수 있습니다. 사용중인 Oracle Cloud 서비스가 있는 경우에는 로그인하여 해당 API를 직접 테스트 해 볼 수도 있습니다. "Try-It Endpoint"에서 서비스의 주소를 입력하고, 테스트할 API의 'Try it out' 버튼을 클릭하여 테스트합니다.
+
+그림은 Integration Cloud Service의 현재 상태를 조회해 보는 API를 테스트 해 본 예제입니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/api_catalog/apicatalog02.png)
 
@@ -56,7 +57,7 @@ API Catalog에 내 API를 등록하기 위해서는 유저에게 APICATALOG_READ
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/api_catalog/apicatalog04.png)
 
 
-### Step #2. 사용자여 APICATALOG_READWRITE_ROLE 역할 할당하기
+### Step #2. 사용자에 관련 역할 할당하기
 내 API를 등록해서 사용할 사용자에서 앞서 만든 APICATALOG_READWRITE_ROLE 역할을 부여합니다.
 
   1. My Services 로그인
