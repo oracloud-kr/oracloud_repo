@@ -8,6 +8,11 @@ categories = []
 
 +++
 
+## IaaS 공통
+- [오라클 클라우드 계정 생성](/post/accont/): 2017.03.02
+- [윈도우, 리눅스, 맥에서 ssh 보안키 생성](/post/ssh_key/): 2017.03.04
+- [ssh config 설정 방법](/post/ssh_config/): 2017.03.05
+
 ## Oracle Container CS
 - [Oracle Container Cloud Service 소개와 Docker 개요](/post/occs/): 2017.04.05
 - [오라클 클라우드의 Docker 컨테이너 지원 유형](/post/docker_in_oc/): 2017.04.19
@@ -26,15 +31,8 @@ categories = []
 - [Oracle Storage Cloud Serivce 활성화](/post/objest-storage-replication/): 2017.03.07
 - [Upload CLI을 이용한 Object Storage 데이터 이관](/post/uploadcli/): 2017.04.19
 
-
 ## Oracle Compute CS
 - [오라클 IaaS를 이용한 VM 인스턴스 생성](/post/iaas_vm/): 2017.03.05
 - [오라클 클라우드에서 window VM 인스턴스 생성](/post/win-vm/): 2017.03.10
 - [IaaS Provisioning 툴: Terraform](/post/terraform/): 2017.04.01
 - [Oracle BMCS에서 Terraform을 이용한 관리 자동화 구축](/post/bmcs_terraform/): 2017.03.21
-
-
-## IaaS 공통
-- [윈도우, 리눅스, 맥에서 ssh 보안키 생성](/post/ssh_key/): 2017.03.04
-- [ssh config 설정 방법](/post/ssh_config/): 2017.03.05
-- [오라클 클라우드 계정 생성](/post/accont/): 2017.03.02
