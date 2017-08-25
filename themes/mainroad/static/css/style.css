@@ -590,11 +590,6 @@ select {
     margin: 32px 0 20px 0;
 }
 
-/* TheKoguryo */
-.post__content p {
-    margin: 0 0 0 0;
-}
-
 .post__content blockquote p:last-child {
 	margin: 0;
 }
