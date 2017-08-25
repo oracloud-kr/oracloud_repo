@@ -5,7 +5,7 @@ title = "한국 오라클 마케팅: 한국 오라클 팩트 체크"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/oracle_fact/logoinlist.jpg"
 thumbnailInPost = ""
 tags = []
-categories = ["oracle Cloud"]
+categories = ["Oracle Cloud"]
 author = ""
 language = ""  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++

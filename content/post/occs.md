@@ -5,10 +5,10 @@ title = "Oracle Container Cloud Service 소개와 Docker 개요"
 thumbnailInList = "http://oracloud-kr-teamrepo.github.io/2017/03/occs/occs.jpg"
 thumbnailInPost = ""
 tags = ["oracle", "cloud", "docker"]
-categories = ["oracle", "cloud", "docker"]
+categories = ["Oracle", "Cloud", "Docker"]
 author = 'taewan.kim'
 +++
- 
+
 오라클은 2015년에 Stack Engine이라는 Docker 전문 업체를 인수하였고, 이 업체의 솔루션을 클라우드 서비스 형태로 제공하고 있습니다. 이 서비스가 Oracle Container Cloud Service입니다.
 
 OCCS(Oracle Container Cloud Service)에 대한 개요와 Docker의 개념을 소개하는 슬라이드를 공유합니다.

@@ -1,7 +1,7 @@
 +++
 description = "오라클의 더커 컨테이너 클라우드 서비스를 생성 메뉴얼 입니다."
 tags = ["docker", "oracle", "cloud", "tutorial"]
-categories = ["container"]
+categories = ["Container"]
 date = "2017-04-20T19:36:38+09:00"
 thumbnailInPost = ""
 thumbnailInList = "http://oracloud-kr-teamrepo.github.io/2017/03/occs_new_inst/OracleContainerCloudService.png"

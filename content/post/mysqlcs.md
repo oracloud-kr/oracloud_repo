@@ -1,6 +1,6 @@
 +++
 author = "jisun.kang"
-categories = ["database cloud"]
+categories = ["Database Cloud"]
 date = "2017-05-04T17:17:35+09:00"
 description = "MySQL을 Oracle Cloud에서 사용하는 방법에 대해서 알아보도록 하겠습니다."
 language = "bsh"
@@ -10,7 +10,7 @@ thumbnailInPost = ""
 title = "MySQL Cloud를 시작하고 샘플 스키마 생성하기"
 +++
 
-본 문서는 Oracle SCC Center에서 고객 전달용으로 작성한 워드 문서를 블로그 포맷으로 변경하여 작성한 문서입니다. 해당 문서에는 MySQL을 Oracle Cloud에서 어떻게 시작하고 사용할 수 있는지를 보여주는 문서로 인스턴스를 생성하고 생성된 MySQL 인스턴스에 Sample 스키마를 업로드하는 과정까지 보여주고 있습니다. 
+본 문서는 Oracle SCC Center에서 고객 전달용으로 작성한 워드 문서를 블로그 포맷으로 변경하여 작성한 문서입니다. 해당 문서에는 MySQL을 Oracle Cloud에서 어떻게 시작하고 사용할 수 있는지를 보여주는 문서로 인스턴스를 생성하고 생성된 MySQL 인스턴스에 Sample 스키마를 업로드하는 과정까지 보여주고 있습니다.
 
 ## 선행 작업
 
@@ -28,14 +28,14 @@ title = "MySQL Cloud를 시작하고 샘플 스키마 생성하기"
 
 ## MySQL 클라우드 서비스 인스턴스 생성
 
-- MySQL 서비스 콘솔로 이동하기 위하여 대시보드 상의 __MySQL Cloud Service__ 오른쪽에 있는 리스트 아이콘을 클릭하고, __서비스 콘솔 열기__ 메뉴를 선택합니다. MySQL이 대시보드에서 보이지 않는 경우 __Customize Dashboard__를 클릭하여 MySQL Cloud Service에 대해서 __표시__를 클릭하시면 됩니다. 
+- MySQL 서비스 콘솔로 이동하기 위하여 대시보드 상의 __MySQL Cloud Service__ 오른쪽에 있는 리스트 아이콘을 클릭하고, __서비스 콘솔 열기__ 메뉴를 선택합니다. MySQL이 대시보드에서 보이지 않는 경우 __Customize Dashboard__를 클릭하여 MySQL Cloud Service에 대해서 __표시__를 클릭하시면 됩니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/dashboard1.png)
 
 __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 ![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/CustomizeDashboard.png)
 
--   __Service__ 링크를 클릭하고, 
+-   __Service__ 링크를 클릭하고,
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/creation1.png)
 
@@ -47,7 +47,7 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/creation3.png)
 
-- __SSH 공용 키__ 부분에 위에서 생성한 보안키를 복사하고, 데이타베이스의 용량, root 암호 및 데이타베이스 스키마 이름과 서버 문자 집합을 입력합니다. __백업 및 복구 구성__ 의 경우 클라우드 영역에 대해서는 아래와 같은 정보를 입력합니다. 
+- __SSH 공용 키__ 부분에 위에서 생성한 보안키를 복사하고, 데이타베이스의 용량, root 암호 및 데이타베이스 스키마 이름과 서버 문자 집합을 입력합니다. __백업 및 복구 구성__ 의 경우 클라우드 영역에 대해서는 아래와 같은 정보를 입력합니다.
 
 | 항목 | 입력값 |
 | ------ | ------ |
@@ -71,15 +71,15 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 
 - 생성된 인스턴스를 선택하고 들어간 후 상단 리스트 아이콘을 클릭하고 __Access Rules__를 선택합니다.
 
-![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access1.png) 
+![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access1.png)
 
 - __ora_p2admin_mysql__ 항목 오른쪽의 리스트 아이콘을 클릭하고, __Enable__을 선택합니다.
 
-![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access2.png) 
+![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access2.png)
 
 - 3306포트가 정상적으로 외부에서 접근될 수 있도록 Open되었음을 확인합니다.
 
-![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access3.png) 
+![](https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/access3.png)
 
 ## PetStore 스키마를 MySQL 인스턴스에 추가
 
@@ -94,16 +94,16 @@ __Customize Dashboard__ 를 클릭했을때의 화면 중 일부입니다.
 [oracle@localhost ~]$ scp jpetstore-hsqldb-dataload.sql opc@129.144.150.22:/home/opc
 </pre>
 
-- SSH 명령어를 통해 MySQL Cloud server에 접속하여, 스크립트의 오너쉽 권한을 변경한 후, sudo 명령어를 사용하여 oracle 계정으로 로그인 합니다. 
+- SSH 명령어를 통해 MySQL Cloud server에 접속하여, 스크립트의 오너쉽 권한을 변경한 후, sudo 명령어를 사용하여 oracle 계정으로 로그인 합니다.
 
 <pre class="prettyprint">
 [oracle@ localhost ~]$ ssh opc@129.144.150.22
-[opc@jcs4mysql-mysql-1 ~]$ sudo chown oracle:oracle *.sql 
+[opc@jcs4mysql-mysql-1 ~]$ sudo chown oracle:oracle *.sql
 [opc@jcs4mysql-mysql-1 ~]$ sudo cp –Rp *.sql ~oracle
 [opc@jcs4mysql-mysql-1 ~]$ sudo su – oracle
 </pre>
 
-- 다음과 같이 mysql 명령어를 실행하여 petstore 스키마를 생성합니다. 암호 부분에는 MySQL Cloud service 생성시 사용한 암호를 입력하시면 됩니다. 
+- 다음과 같이 mysql 명령어를 실행하여 petstore 스키마를 생성합니다. 암호 부분에는 MySQL Cloud service 생성시 사용한 암호를 입력하시면 됩니다.
 
 <pre class="prettyprint">
 [oracle@mysql1-mysql-1 ~]$ mysql -u root -p petstore < jpetstore-hsqldb-schema.sql
@@ -112,19 +112,4 @@ Enter password: <>
 
 ## 마치며
 
-이제까지 MySQL Cloud Service의 기본 인스턴스를 생성하고 샘플 스키마를 업로드하는 방법에 대해서 살펴보았습니다. 다음 문서에서는 MySQL 환경에서 많이 사용되고 있는 replication 기능을 구성하는 방법에 대해서 살펴보도록 하겠습니다. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+이제까지 MySQL Cloud Service의 기본 인스턴스를 생성하고 샘플 스키마를 업로드하는 방법에 대해서 살펴보았습니다. 다음 문서에서는 MySQL 환경에서 많이 사용되고 있는 replication 기능을 구성하는 방법에 대해서 살펴보도록 하겠습니다.

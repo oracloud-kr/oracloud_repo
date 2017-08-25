@@ -1,7 +1,7 @@
 +++
 description = "오라클 클라우드에는 무료로 오라클 클라우드를 경험할 수 할 수 있는 Free Trial Account를 제공하고 있습니다. 이 계정을 이용하여 Oracle Database Cloud Service(이하 CS), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS를 사용할 수 있습니다. 본 문에서는 Oracle Cloud의 NewBOracle Cloud의 계정을 생성하는 방법에 대하여 살펴보겠습니다."
 title = "오라클 클라우드 계정"
-categories = ["oracle cloud"]
+categories = ["Oracle Cloud"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/account/oracle_account.jpg"
 date = "2017-03-02T21:59:47+09:00"

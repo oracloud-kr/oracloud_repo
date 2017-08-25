@@ -1,6 +1,6 @@
 +++
 author = "jisun.kang"
-categories = ["iaas"]
+categories = ["IaaS"]
 date = "2017-04-21T17:15:48+09:00"
 description = "BMCS 환경에서 Terraform을 사용하는 방법에 대한 문서입니다"
 language = "bsh"

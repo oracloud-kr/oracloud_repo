@@ -5,7 +5,7 @@ title = "Oracle Big Data Cloud Service Compute-Edition"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.png"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.jpg"
 tags = ['big data', 'hadoop', 'spark','bdcsce']
-categories = ['big data','bdcsce']
+categories = ['Big Data','BDCSCE']
 author = "taewan.kim"
 language = ""
 +++

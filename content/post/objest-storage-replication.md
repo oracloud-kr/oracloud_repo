@@ -5,7 +5,7 @@ date = "2017-03-06T08:54:32+09:00"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
 title = "Oracle Storage Cloud Service 활성화"
 author = "taewan.kim"
-categories = ["cloud"]
+categories = ["Cloud"]
 tags = ["Object Storage", "Storage"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/post.png"
 
