@@ -4,7 +4,7 @@ description = "Oracle Public Cloud에서는 Oracle API Catalog Cloud Service를 
 title = "Oracle API Catalog Cloud Service 소개"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/api_catalog/apicatalog_logoinlist.png"
 tags = ["API", "API Catalog", "integration"]
-categories = ["API Developerment"]
+categories = ["API Catalog"]
 language = ""
 author = "donghee.lee"
 +++
