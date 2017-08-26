@@ -28,14 +28,13 @@ Terraform의 설정 파일은 HashiCorp가 만든 설정 언어인 HCL을 사용
 
 ### 시작하면서
 
-
 ![](https://oracloud-kr-teamrepo.github.io/2017/04/terraform/HCL1.jpg)
 
 주석은 #, // 또는 /* */를 사용합니다. 3번 라인은 opc라는 변수를 선언한 것으로 값 할당은 key = value형식을 사용하는데 여기서 value는 문자열, 숫자, Boolean, 리스트, 맵의 형식을 사용할 수 있습니다. 문자열은 쌍따옴표를 사용하고 String Interpolation에는 ${}문법을 사용합니다. 멀티라인 문자열은 heredoc 스타일로 <<EOF, EOF를 사용하여 코드 안에 파일안에 바로 문자열의 내용을 집어넣습니다.
 
 ###  리소스 설정시
 
-<pre class="prettyprint">
+```
 resource TYPE NAME {
 	CONFIG ...
 	[count = COUNT]
@@ -46,7 +45,7 @@ resource TYPE NAME {
 	[CONNECTION]
 	[PROVISIONER ...]
 }
-</pre>
+```
 
 resource가 키워드이고 TYPE는 프로바이더에 맞게 Terraform에서 정의한 리소스의 타입 이름입니다. NAME은 개발자가 임의로 주면 되는 이름입니다. 2번 라인의 CONFIG는 KEY = VALUE형식이나 KEY { CONFIG }형식이 됩니다. 그래서 OPC 인스턴스를 정의하는 리소스 설정의 예시를 보면 다음과 같습니다.
 
@@ -57,12 +56,12 @@ resource가 키워드이고 TYPE는 프로바이더에 맞게 Terraform에서 �
 
 ### Provider 설정시
 
-<pre class="prettyprint">
+```
 provider NAME {
 	CONFIG ...
 	[alias = ALIAS]
 }
-</pre>
+```
 
 Provider의 정의형식은 다음과 같고 OPC Provider를 설정하면 다음과 같이 설정합니다.
 
@@ -76,45 +75,45 @@ Provider의 정의형식은 다음과 같고 OPC Provider를 설정하면 다음
 
 ### Terraform 변수 선언시
 
-<pre class="prettyprint">
+```
 variable NAME {
 	[type = TYPE]
 	[default = DEFAULT]
 	[description = DESCRIPTION]
 }
-</pre>
+```
 
 변수 선언 문법은 위와 같습니다. 이렇게 설정한 변수를 다른 설정에서 사용할 수 있고 CLI에서 변수를 덮어 쓸 수도 있습니다. Type은 변수의 타입인데 type = “string”과 같이 정의해줘도 되지만 정의하지 않으면 Terraform에서 알아서 추론합니다. default가 변수 생성시의 기본으로 주어지는 값입니다.
 
 .tf 파일에 공통변수(access key, secret key, region..)를 설정하는 예제입니다.
 
-<pre class="prettyprint">
+```
 variable NAME {
 	[type = TYPE]
 	[default = DEFAULT]
 	[description = DESCRIPTION]
 }
-</pre>
+```
 
 CLI를 통하여 변수값을 할당하고자 할때는
 
-<pre class="prettyprint" language="sh">
+```
 $ terraform plan \
 	-var 'access_key=foo' \
 	- var 'secre_key=bar'
 
 ...
-</pre>
+```
 
 .tf 파일을 이용하여 변수값을 할당하고자 할때는 파일 안에 다음과 같이 입력하면 됩니다.
 
-<pre class="prettyprint">
+```
 user = "john.dow@oracle.com"
 password = "xxx"
 domain = "a332567"
 endpoint - "..."
 administrator_password = "xxx"
-</pre>
+```
 
 ## Terraform 설치
 
