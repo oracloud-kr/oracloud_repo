@@ -292,8 +292,10 @@ Oracle Cloud에 로그인하기 위해서는 Identity Domain을 입력해야 합
 Oracle Cloud Trial 프로그램을 등록하고 Oracle Cloud에 로그인하는 전체 과정을 살펴보았습니다.
 Oracle Cloud Trial 등록에 필요한 전체 시간은 약 30분 정도입니다. 회사 메일이나 Naver/Daum 메일로 오라클 계정을 만들고 Oracle Cloud Trial을 신청할 경우 대부분 30분 정도면 처리가 완료됩니다.
 
+
 Oracle Cloud의 Compute CS(IaaS)의 1 OCPU/hr 비용은 $0.1입니다.
 Oracle Cloud Trial의 $300 credit로 완전한 형태의 멀티 티어 시스템을 구성하고 테스트/검증이 가능합니다.
+
 
 Oracle Cloud Trial로 Oracle Cloud의 17가지 PaaS 서비스를 사용하실 수 있습니다.
 Oracle Cloud Trial의 $300 credit은 서비스 사용 시 분 단위로 차감됩니다.
