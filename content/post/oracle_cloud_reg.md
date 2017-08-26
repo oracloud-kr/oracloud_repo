@@ -75,20 +75,24 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 오라클 클라우드의 홈페이지는 http://cloud.oracle.com 입니다. <그림 1 참조>
 <그림 1>에서 오른쪽 위의 국가명을 클릭하여 출력 언어를 변경할 수 있습니다.
 
+
 - <그림 1>. 오라클 클라우드의 홈페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img010.jpg)
 
 <그림 2>와 같이 "한국어"를 선택하면 한국어로 출력됩니다.
+
 
 - <그림 2>. 오라클 클라우드의 홈페이지 언어 변경
 ![](https://taewanmerepo.github.io/oracloudreg/img020.jpg)
 
 "__세부 정보 보기 및 지금 등록__" 버튼을 클릭하면 Oracle Cloud Trial 페이지로 이동합니다.
 
+
 - <그림 3>. Oracle Cloud Trial 페이지로 이동
 ![](https://taewanmerepo.github.io/oracloudreg/img030.jpg)
 
 <그림 4>와 같이 Oracle Cloud Trial 페이지에서 "__Get started for free__" 버튼을 클릭하여 Oracle Cloud Trial 신청 페이지로 이동합니다.
+
 
 - <그림 4>. Oracle Cloud Trial 신청 페이지 이동
 ![](https://taewanmerepo.github.io/oracloudreg/img040.jpg)
@@ -101,6 +105,7 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 
 계정 신청을 위해서는 한글 사용자 이름, 영문 사용자 이름, 이메일 주소, 비밀번호, 국가를 등록합니다.
 
+
 - <그림 5>. 오라클 계정 등록
 ![](https://taewanmerepo.github.io/oracloudreg/img050.jpg)
 ![](https://taewanmerepo.github.io/oracloudreg/img060.jpg)
@@ -108,16 +113,19 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 오라클 계정 생성이 정상적으로 진행되면, <그림 7>과 같은 메시지가 출력됩니다.
 오라클 계정 활성화를 위해서는 등록한 이메일로 발송된 메일을 확인해야 합니다.
 
+
 - <그림 7>. 오라클 계정이 등록 완료 페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img070.jpg)
 
 <그림 8>과 계정이 등록되면 바로 등록된 이메일로 "확인 메일"이 발송됩니다.
 "확인 메일"에서 "__이메일 주소__" 버튼을 클릭하면 오라클 로그인 페이지로 이동합니다.
 
+
 - <그림 8>. 이메일 확인
 ![](https://taewanmerepo.github.io/oracloudreg/img080.jpg)
 
 <그림 5>에서 입력한 이메일과 패스워드를 입력하고 로그인 합니다.
+
 
 - <그림 9>. 오라클 클라우드 로그인
 ![](https://taewanmerepo.github.io/oracloudreg/img090.jpg)
@@ -125,6 +133,7 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 #### 오라클 계정이 있는 경우
 
 기존에 오라클 계정을 갖고 있고, Oracle Cloud Trial 신청에 이 계정을 사용할 것 이라면 오라클 계정 등록 페이지에서  "__로그인__" 링크를 클릭하여 오라클 로그인 페이지로 이동합니다. <그림 10 참조>
+
 
 - <그림 10>. 오라클 계정 등록 페이지에서 로그인 페이지로 이동
 ![](https://taewanmerepo.github.io/oracloudreg/img092.jpg)
@@ -136,6 +145,7 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 로그인이 성공하면 Oracle Cloud Trial 등록이 진행됩니다. <그림 11> ~ <그림 15>는 한 페이지로 구성된 등록 페이지입니다. <그림 11>에서는 핸드폰 인증을 위한 핸드폰을 등록하는 부분입니다.
 핸드폰 번호를 입력하고 "__코드 요청__"을 클릭하면, 등록한 핸드폰에 <그림 11>과 같은 SMS가 발송됩니다.
 SMS의 인증번호를 입력하고 "__확인__"을 클릭하면 인증이 완료됩니다.
+
 
 - <그림 11> Oracle Cloud Trial 등록 페이지-Part 1: 핸드폰 인증
 ![](https://taewanmerepo.github.io/oracloudreg/img100.jpg)
@@ -153,6 +163,7 @@ SMS의 인증번호를 입력하고 "__확인__"을 클릭하면 인증이 완�
 
 마지막으로 "__결제 방식 추가__"을 클릭하여 신용카드를 등록합니다.
 
+
 - <그림 12> Oracle Cloud Trial 등록 페이지-Part 2
 ![](https://taewanmerepo.github.io/oracloudreg/img110.jpg)![](https://taewanmerepo.github.io/oracloudreg/img120.jpg)![](https://taewanmerepo.github.io/oracloudreg/img130.jpg)
 
@@ -161,15 +172,18 @@ SMS의 인증번호를 입력하고 "__확인__"을 클릭하면 인증이 완�
 
 [^1]: 이 부분은 일종의 버그입니다. 사용자가 입력한 주소와 우편번호를 검증하는 과정에서 이전 주소 체계인 "지번 주소" 체계를 사용하고 있습니다. 이 부분은 현재 수정 중에 있습니다.
 
+
 - <그림 13> Oracle Cloud Trial 등록 페이지-Part 1
 ![](https://taewanmerepo.github.io/oracloudreg/img140.jpg)
 
 <그림 14>와 같이 입력한 주소가 출력됩니다. 아래로 스크롤 하면 신용카드 입력 폼이 나타납니다. Visa와 Master 카드를 정보를 입력하고 "__마침__" 버튼을 클릭하여 신용카드를 추가합니다. 현재 등록한 신용카드에는 사용자 검증 용도이며 별도의 과금이 발생하지 않습니다. Oracle Cloud Trial 등록 시 $1이 사용자 확인 용도로 $1이 가결제 됩니다. 사용자 확인 즉시 가결제는 취소되며, 실제 카드 청구서에 출력되지 않습니다.
 
+
 - <그림 14> Oracle Cloud Trial 등록 페이지-Part 1
 ![](https://taewanmerepo.github.io/oracloudreg/img150.jpg)![](https://taewanmerepo.github.io/oracloudreg/img160.jpg)
 
 <그림 15>와 같이 "__약관__"항목을 체크하고  "__완료__" 버튼을 클릭하면 등록이 완료됩니다.
+
 
 - <그림 15> Oracle Cloud Trial 등록 페이지-Part 1
 ![](https://taewanmerepo.github.io/oracloudreg/img170.jpg)
@@ -182,6 +196,7 @@ SMS의 인증번호를 입력하고 "__확인__"을 클릭하면 인증이 완�
 <그림 16>의 안내와 같이 앞으로 2건의 메일이 발송될 예정이며, 약 30분에서 수 시간 소요될 수 있습니다.
 네이버 / 다음 메일을 사용할 경우 약 30분 정도 소요됩니다.
 
+
 - <그림 16> Oracle Cloud Trial 등록 안내페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img190.jpg)
 
@@ -189,16 +204,19 @@ SMS의 인증번호를 입력하고 "__확인__"을 클릭하면 인증이 완�
 
 Oracle Cloud Trial 등록이 완료되면 바로 <그림 17>과 같은 메일을 확인할 수 있습니다.
 
+
 - <그림 16> Oracle Cloud Trial 등록 안내 메일
 ![](https://taewanmerepo.github.io/oracloudreg/img200.jpg)
 ![](https://taewanmerepo.github.io/oracloudreg/img210.jpg)
 
 Oracle Cloud Trial 등록 완료되고 자원이 활성화되면 <그림 17>과 같이 "Oracle Cloud"로 부터 발송된 메일을 받게 됩니다. 네이버 메일의 경우 "Oracle Cloud"로 부터 발송된 최종 메일이 "스팸"으로 분류되는 경우가 있습니다. 네이버 메일을 사용하실 경우 스팸 메일을 확인하시기 바랍니다.
 
+
 - <그림 17> Oracle Cloud Trial 등록 메일 목록
 ![](https://taewanmerepo.github.io/oracloudreg/img220.jpg)
 
 Oracle Cloud Trial이 생성되고 활성화되면 <그림 18>과 같은 메일이 발송됩니다. 이 메일은 로그인 임시 패스워드와 Identity Domain(ID) 정보를 포함합니다. 이 정보는 Oracle Cloud 로그인을 위한 필수 항목입니다.
+
 
 - <그림 18> Oracle Cloud Trial 생성 완료 메일 전문
 ![](https://taewanmerepo.github.io/oracloudreg/img230.jpg)
@@ -210,6 +228,7 @@ Oracle Cloud Trial이 생성되고 활성화되면 <그림 18>과 같은 메일�
 <그림 18>의 메일에서 계정 정보를 확인한 후, "http://cloud.oracle.com"으로 이동합니다.
 "Sign In" 메뉴를 클릭하고 로그인합니다.
 
+
 - <그림 19>. Oracle Cloud 홈페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img260.jpg)
 
@@ -217,16 +236,19 @@ Oracle Cloud Trial이 생성되고 활성화되면 <그림 18>과 같은 메일�
 한국 사용자가 신청하는 트라이얼 계정의 데이터 센터는 US 서버로 고정되어 있습니다.
 데이터센터 선택 후 My Services 버튼을 클릭합니다.
 
+
 - <그림 20>. Oracle Cloud 데이터 센터 지정: Public Cloud Service - US
 ![](https://taewanmerepo.github.io/oracloudreg/img270.jpg)
 
 Oracle Cloud에 로그인하기 위해서는 Identity Domain을 입력해야 합니다.
 이 정보는 <그림 18>의 확인 메일에서 확인할 수 있습니다.
 
+
 - <그림 21>. Identity Domain 입력
 ![](https://taewanmerepo.github.io/oracloudreg/img280.jpg)
 
 <그림 18>의 최종 확인 메일에 포함된 id/password 정보를 입력합니다.
+
 
 - <그림 22>. 인증정보 입력 - 오라클 계정/임시패스워드
 ![](https://taewanmerepo.github.io/oracloudreg/img290.jpg)
@@ -234,21 +256,25 @@ Oracle Cloud에 로그인하기 위해서는 Identity Domain을 입력해야 합
 시스템이 생성한 임시 패스워드로 로그인하면, 패스워드를 변경을 강제합니다. 계정 패스워드 분실시 사용할 질문을 등록합니다.
 패스워드 설정과 질문 등록이 완료되면 "__제출__"버튼을 클릭합니다.
 
+
 - <그림 23>. 최초 로그인의 비밀번호 관리 페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img300.jpg)
 
 최초 로그인시 대시보드가 사용할 언어와 타임 존을 설정하는 윈도우가 나타납니다.
 언어와 타임 존을 사용자가 선호하는 항목으로 설정합니다.
 
+
 - <그림 24>. 최초 로그인시 Language/Time Zone 설정
 ![](https://taewanmerepo.github.io/oracloudreg/img310.jpg)
 
 언어와 타임존 설정이 완료하면 <그림 25>와 같이 Oracle Cloud 대시보드가 출력됩니다.
 
+
 - <그림 25>. Oracle Cloud 대시보드 - 메뉴
 ![](https://taewanmerepo.github.io/oracloudreg/img320.jpg)
 
 <그림 25> 대시보드 왼쪽 위 메뉴를 클릭하면 현재 사용 가능한 클라우드 메뉴가 출력됩니다.<그림 26 참조>
+
 
 - <그림 26>. Oracle Cloud 접근 가능한 서비스 목록 - 메뉴
 ![](https://taewanmerepo.github.io/oracloudreg/img330.jpg)
