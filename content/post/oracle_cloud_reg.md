@@ -1,6 +1,6 @@
 +++
-description = "오라클 클라우드에는 무료로 오라클 클라우드를 경험할 수 할 수 있는 Free Trial Account를 제공하고 있습니다. 이 계정을 이용하여 Oracle Database Cloud Service(이하 CS), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS를 사용할 수 있습니다. 본 문에서는 Oracle Cloud의 Cloud의 계정을 생성하는 방법에 대하여 살펴보겠습니다."
-title = "오라클 클라우드 트라이얼 신청: $300 Credit"
+description = "Oracle Cloud에는 무료로 Oracle Cloud를 경험할 수 할 수 있는 Free Trial Account를 제공하고 있습니다. 이 계정을 이용하여 Oracle Database Cloud Service(이하 CS), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS를 사용할 수 있습니다. 본 문에서는 Oracle Cloud의 Cloud의 계정을 생성하는 방법에 대하여 살펴보겠습니다."
+title = "Oracle Cloud Trial 신청: $300 Credit"
 categories = ["oracle cloud"]
 thumbnailInPost = "https://taewanmerepo.github.io/oracloudreg/list.jpg"
 thumbnailInList = "https://taewanmerepo.github.io/oracloudreg/img000.jpg"
@@ -10,13 +10,13 @@ tags = ["oracle", "cloud", "oracle cloud"]
 author = "taewan.kim"
 +++
 
-Oracle은 무료로 오라클 클라우드를 체험할 수 있는 오라클 클라우드 트라이얼 프로그램을 운영하고 있습니다.
-2017년 8월 1일부터 트라이얼을 신청하면 "__$300 Credit__"을 제공합니다.
-$300 Credit이란 오라클 클라우드 사용 권한으로, 오라클 클라우드를 $300 Credit로 자유롭게 사용할 수 있습니다.
-오라클 클라우드 서비스를 사용하면 지급한 Credit은 분 단위로 차감됩니다. 차감되는 비용은 서비스별로 차이가 있습니다.
-각 서비스 과금 비용은 오라클 클라우드 홈페이지(http://cloud.oracle.com )에서 확인할 수 있습니다.
-$300 Credit의 유효 기간은 신청일로부터 30일 입니다.
-오라클 클라우드 트라이얼 프로그램에서 다음과 같은 서비스를 체험해 볼 수 있습니다.
+Oracle은 무료로 Oracl Cloud를 체험할 수 있는 Oracle Cloud Trial 프로그램을 운영하고 있습니다.
+2017년 8월 1일부터 Trial을 신청하면 "__$300 Credit__"을 제공합니다.
+$300 Credit이란 Oracle Cloud 사용 권한으로, Oracle Cloud를 $300 Credit으로 자유롭게 사용할 수 있습니다.
+Oracle Cloud 서비스를 사용하면 지급한 Credit은 분 단위로 차감됩니다.
+차감되는 비용은 서비스별로 차이가 있습니다.
+각 서비스 과금 비용은 Oracle Cloud 홈페이지(http://cloud.oracle.com )에서 확인할 수 있습니다. $300 Credit의 유효 기간은 신청일로부터 30일 입니다. Oracle Cloud Trial 프로그램에서 다음과 같은 서비스를 체험해 볼 수 있습니다.
+
 
 - Compute Cloud Service
 - Storage Cloud Service
@@ -36,32 +36,38 @@ $300 Credit의 유효 기간은 신청일로부터 30일 입니다.
 - Ravello Cloud Service
 - SOA Cloud Service
 
-본 문에서는 Oracle Cloud 트라이얼을 신청하고 오라클 클라우드에 로그인하는 것까지 설명합니다.
+본 문에서는 Oracle Cloud Trial을 신청하고 Oracle Cloud에 로그인하는 것까지 설명합니다.
 
 ## Oracle Cloud Trial 등록 준비사항
 
 Oracle Cloud Trial을 신청하기 위해서는 오라클 계정과 핸드폰 번호, 신용카드가 필요합니다.
+
 
 오라클 계정이란 http://otn.oracle.com 의 계정을 의미합니다.
 기존에 오라클 계정이 없으면, Oracle Cloud Trial 신청 중에 오라클 계정을 신규 생성합니다.
 기존에 오라클 계정이 있다면, 그 계정을 사용하시면 됩니다.
 오라클 계정별로 Oracle Cloud Trial을 1회 제공합니다.
 
+
 오라클 계정에 사용되는 E-mail은 회사 메일과 개인 메일 모두 가능합니다.
-예전에는 Oracle Cloud Trial 신청 시 회사 메일을 사용하는 것을 권장했지만,
-현재는 회사 메일과 개인 메일을 동등하게 취급합니다.
-개인 메일을 사용할 경우 naver나 daum 메일을 사용하는 것은 권장합니다.
+예전에는 Oracle Cloud Trial 신청 시 회사 메일을 사용할 것을 권장했지만,
+현재 Oracle Cloud Trial 프로그램은 회사 메일과 개인 메일을 동등하게 취급합니다.
+개인 메일을 사용할 경우 "__Naver__"나 "__Daum__" 메일 사용을 권장합니다.
 Gmail을 사용할 경우 Oracle Cloud Trial 승인이 오래 결리는 현상이 발생하고 있습니다.
-따라서 원활한 진행을 위해서  Gmail이 아닌 Naver 혹은 Daum 메일로 오라클 계정을 생성하는 것을 권장합니다.
+따라서 원활한 진행을 위해서  Gmail이 아닌 "__Naver__" 혹은 "__Daum__" 메일로 오라클 계정을 생성하는 것을 권장합니다.
+
 
 핸드폰 번호는 SMS 인증 용도로 사용됩니다. Oracle Cloud Trial 신청에 핸드폰 번호를 재사용할 수 없습니다.
 Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud Trial을 신청할 수 없습니다.
 
+
 신용카드는 사용자 인증 용도로 1회 사용됩니다. 사용자 인증 용도로 Oracle Cloud Trial 등록 시점에 $1을 가결제 합니다. $1 결제는 실제로 청구되는 금액이 아니며, 사용자 인증 수단으로만 사용됩니다.
+
 
 ## Oracle Cloud Trial 등록 절차
 
-오라클 클라우드의 계정 등록 절차 다음과 같이 구성됩니다.
+Oracle Cloud의 계정 등록 절차 다음과 같이 구성됩니다.
+
 
 1. Oracle Cloud 로그인
 1. Oracle Cloud Trial 신청
@@ -72,17 +78,17 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 
 ### Oracle Cloud 로그인
 
-오라클 클라우드의 홈페이지는 http://cloud.oracle.com 입니다. <그림 1 참조>
+Oracle Cloud의 홈페이지는 http://cloud.oracle.com 입니다. <그림 1 참조>
 <그림 1>에서 오른쪽 위의 국가명을 클릭하여 출력 언어를 변경할 수 있습니다.
 
 
-- <그림 1>. 오라클 클라우드의 홈페이지
+- <그림 1>. Oracle Cloud의 홈페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img010.jpg)
 
 <그림 2>와 같이 "한국어"를 선택하면 한국어로 출력됩니다.
 
 
-- <그림 2>. 오라클 클라우드의 홈페이지 언어 변경
+- <그림 2>. Oracle Cloud의 홈페이지 언어 변경
 ![](https://taewanmerepo.github.io/oracloudreg/img020.jpg)
 
 "__세부 정보 보기 및 지금 등록__" 버튼을 클릭하면 Oracle Cloud Trial 페이지로 이동합니다.
@@ -127,7 +133,7 @@ Oracle Cloud Trial 신청에 사용된 핸드폰 번호로 다른 Oracle Cloud T
 <그림 5>에서 입력한 이메일과 패스워드를 입력하고 로그인 합니다.
 
 
-- <그림 9>. 오라클 클라우드 로그인
+- <그림 9>. Oracle Cloud 로그인
 ![](https://taewanmerepo.github.io/oracloudreg/img090.jpg)
 
 #### 오라클 계정이 있는 경우
@@ -232,8 +238,8 @@ Oracle Cloud Trial이 생성되고 활성화되면 <그림 18>과 같은 메일�
 - <그림 19>. Oracle Cloud 홈페이지
 ![](https://taewanmerepo.github.io/oracloudreg/img260.jpg)
 
-오라클 클라우드에 로그인하기 위해서 <그림 20>과 같이 “Public Cloud Service - US”를 선택합니다.
-한국 사용자가 신청하는 트라이얼 계정의 데이터 센터는 US 서버로 고정되어 있습니다.
+Oracle Cloud에 로그인하기 위해서 <그림 20>과 같이 “Public Cloud Service - US”를 선택합니다.
+한국 사용자가 신청하는 Trial 계정의 데이터 센터는 US 서버로 고정되어 있습니다.
 데이터센터 선택 후 My Services 버튼을 클릭합니다.
 
 
@@ -279,15 +285,15 @@ Oracle Cloud에 로그인하기 위해서는 Identity Domain을 입력해야 합
 - <그림 26>. Oracle Cloud 접근 가능한 서비스 목록 - 메뉴
 ![](https://taewanmerepo.github.io/oracloudreg/img330.jpg)
 
-이제 Oracle Cloud Trial 생성이 완료되었습니다. 오라클 클라우드에서 즐거운 시간 보내시기 바랍니다.
+이제 Oracle Cloud Trial 생성이 완료되었습니다. Oracle Cloud에서 즐거운 시간 보내시기 바랍니다.
 
 ## 요약
 
-Oracle Cloud Trial 프로그램을 등록하고 오라클 클라우드에 로그인하는 전체 과정을 살펴보았습니다.
+Oracle Cloud Trial 프로그램을 등록하고 Oracle Cloud에 로그인하는 전체 과정을 살펴보았습니다.
 Oracle Cloud Trial 등록에 필요한 전체 시간은 약 30분 정도입니다. 회사 메일이나 Naver/Daum 메일로 오라클 계정을 만들고 Oracle Cloud Trial을 신청할 경우 대부분 30분 정도면 처리가 완료됩니다.
 
 Oracle Cloud의 Compute CS(IaaS)의 1 OCPU/hr 비용은 $0.1입니다.
 Oracle Cloud Trial의 $300 credit로 완전한 형태의 멀티 티어 시스템을 구성하고 테스트/검증이 가능합니다.
 
-Oracle Cloud Trial로 오라클 클라우드의 17가지 PaaS 서비스를 사용하실 수 있습니다.
+Oracle Cloud Trial로 Oracle Cloud의 17가지 PaaS 서비스를 사용하실 수 있습니다.
 Oracle Cloud Trial의 $300 credit은 서비스 사용 시 분 단위로 차감됩니다.
