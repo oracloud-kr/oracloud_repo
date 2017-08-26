@@ -12,6 +12,8 @@ author = "taewan.kim"
 
 오라클의 개발자 컨퍼런스인 Oracle Code가 서울에서 진행됩니다.
 
+---
+
 [
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/oraclecodeseoul/img01.jpg)
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/oraclecodeseoul/img02.jpg)
@@ -23,6 +25,8 @@ author = "taewan.kim"
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/oraclecodeseoul/img08.jpg)
 ![](https://oracloud-kr-teamrepo.github.io/2017/08/oraclecodeseoul/img09.jpg)
 ](https://developer.oracle.com/code/seoul)
+
+---
 
 모든 세션은 Youtube로 생중계될 예정입니다.
 
