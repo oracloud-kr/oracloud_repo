@@ -1,21 +1,21 @@
-baseurl = "http://www.oracloud.kr/"
-title = "Oracle Cloud 블로그"
-languageCode = "ko-kr"
+baseurl = "/"
+title = "sev02-Oracle Cloud 블로그"
+languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
 disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
-googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
-pygmentsuseclasses = true
-pygmentsstyle = "monokai"
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
 
 
 [Author]
-    name = "한국오라클."
+    name = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 
 [Params]
-    subtitle = "By Oracle Korea" # Subtitle of your site
+    subtitle = "Oracle Cloud 블로그" # Subtitle of your site
     description = "오라클 클라우드 기술 블로그" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
@@ -35,6 +35,7 @@ pygmentsstyle = "monokai"
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
 
 
 [[menu.main]]
@@ -57,6 +58,10 @@ pygmentsstyle = "monokai"
     url = "/opc-paas/"
     weight = -7
     Identifier = "PaaS 서비스 관련 문서를 정리하는 페이지입니다."
+[[menu.main]]
+    name = "Oracle Cloud 새소식"
+    url = "/opc_news/"
+    weight = -5
 [[menu.main]]
     name = "OPC 용어사전"
     url = "/opc-terminology/"
