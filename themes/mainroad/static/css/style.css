@@ -395,7 +395,7 @@ select {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */ /* By TheKoguryo */
 }
 
 .menu__toggle {
