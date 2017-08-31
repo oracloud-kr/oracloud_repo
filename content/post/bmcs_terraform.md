@@ -26,37 +26,41 @@ https://github.com/oracle/terraform-provider-baremetal/releases/download/v1.0.3/
 
 원하는 위치에 linux.tar.gz을 풀고, Home directory에 다음과 같은 ~/.terraformrc 파일을 생성합니다. path_to_provider_binary 부분에 Terraform Provider를 설치한 디렉토리를 적어주시면 됩니다.
 
-<pre class="prettyprint">
+```
 providers {
 	baremetal = "path_to_provider_binary/terraform-provider-baremetal"
 }
-</pre>
+```
 
 ### BMCS 관련 설정 - API 용 key 생성 및 등록
 
 SDK와 Tool을 사용하기 위해서는 API를 위한 PEM(Privacy Enhanced Mail)형식의 RSA Key pair가 필요합니다. BMCS Instance에 접속하기 위한 Key가 아닌 API 사용을 위한 Key입니다. SDK와 Tool에서 기본적으로 사용하는 디렉토리 위치는 ~/.oraclebmc 입니다.
 
 Private key 생성하는 절차는,
-<pre class="prettyprint">
+
+```
 $ mkdir ~/.oraclebmc
 $ openssl genrsa –out ~/.oraclebmc/bmcs_api_key.pem 2048
 $ chmod go-r ~/.oraclebmc/bmcs_api_key.pem
-</pre>
+```
 
 Public key를 생성하는 절차는 아래와 같습니다.
-<pre class="prettyprint">
+
+```
 $ openssl rsa –pubout –in ~/.oraclebmc/bmcs_api_key.pem –out ~/.oraclebmc/bmcs_api_key_public.pem
-</pre>
+```
 
 화면에 표시된 Public Key를 복사한 후,
-<pre class="prettyprint">
+
+```
 $ cat ~/.oraclebmc/bmcs_api_key_public.pem
-</pre>
+```
 
 Key의 fingerprint를 확인합니다.
-<pre class="prettyprint">
+
+```
 $ openssl rsa –pubout –outform DER –in ~/.oraclebmc/bmcs_api_key.pem | openssl md5 -c
-</pre>
+```
 
 SDK와 API사용 시 사용할 Public Key는 다음과 같은 화면에서 등록하고,
 
@@ -80,13 +84,13 @@ User OCID는 Identity/Users 화면에서 확인 할 수 있습니다.
 
 Baremetal을 사용하기 위한 Credential 정보를 위의  ~/.bash_profile에 환경변수로 설정합니다.
 
-<pre class="prettyprint">
+```
 export TF_VAR_tenancy_ocid=
 export TF_VAR_user_ocid=
 export TF_VAR_fingerprint=
 export TF_VAR_private_key_path=<fully qualified path>
 export TF_VAR_private_key_password=
-</pre>
+```
 
 ## 2. BMCS에서 Terraform을 사용하여 환경 구성 (VCN 생성 및 인스턴스 생성)
 
@@ -96,7 +100,7 @@ export TF_VAR_private_key_password=
 
 VCN 셩성시 사용하는 tf 파일을 살펴보면,
 
-<pre class="prettyprint">
+```
 variable "tenancy_ocid" {}
 variable "user_ocid" {}
 variable "fingerprint" {}
@@ -115,24 +119,25 @@ resource "baremetal_core_virtual_network" "a_TF_managed_VCN" {
   compartment_id = "${var.compartment_ocid}"
   display_name = "a_TF_managed_VCN"
 }
-</pre>
+```
 
 아래의 명령어로 위의 파일을 사용하여 VCN을 생성합니다.
 
-<pre class="prettyprint">
+```
 $terraform apply
-</pre>
+```
 
 아래의 명령어로 사전에 수행과정을 simulation 해 볼 수 있습니다.
-<pre class="prettyprint">
+
+```
 $terraform plan
-</pre>
+```
 
 ### Instance 생성
 
 Instance 생성시 사용하는 tf 파일입니다.
 
-<pre class="prettyprint">
+```
 variable "tenancy_ocid" {}
 variable "user_ocid" {}
 variable "fingerprint" {}
@@ -172,4 +177,4 @@ resource "baremetal_core_instance" "BM_instance2" {
     ssh_authorized_keys = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqetTkzFEESkXr731zsRMKcUlGBvj6UPfPwjg0sIIGJMpVh1moQM1EBxAyWdr01+x1Ff8xxhUwhhV1uGndGJxoFRAJp4U9vPbr3iVPJlTyAlNCQI0ohlnfCR5XqSswVfqAqyGOzJcdaRgV7qhywUXJFky+yVuhclFoiljrRuposn4RQCKxklFxovysrozRYmyIGWR93VIkh8sfb8tarycpqigACLhLtENAzkVT2yJg72ZXNrrOaTjc89BJ/SGh4NO9jkqYRC6xXKRv7XuJfO8T8mUud6+p27LHdxw+PINOUOQmikb7ScjuYVP1gV94/A7cKMrwvZwfi2dT1FHT0Ic+w== rsa-key-20160624"
   }
 }
-</pre>
+```

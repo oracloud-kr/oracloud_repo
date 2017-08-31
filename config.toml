@@ -1,5 +1,5 @@
 baseurl = "/"
-title = "한국오라클 DBU, 클라우드 세일즈 컨설팅팀"
+title = "sev02-Oracle Cloud 블로그"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"

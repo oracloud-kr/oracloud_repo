@@ -11,7 +11,7 @@ preserveTaxonomyNames = true # Case sensitive for Category Name
 
 
 [Author]
-    name = "한국오라클"
+    name = "한국오라클."
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 
