@@ -1,6 +1,6 @@
 +++
 language = ""
-categories = ["compute"]
+categories = ["Compute"]
 author = "taewan.kim"
 tags = ["security", "compute" ]
 description = "오라클 클라우드의 보안 설정 방법에 대하여 정리합니다."

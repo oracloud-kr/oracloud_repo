@@ -1,6 +1,6 @@
 +++
 author = "jisun.kang"
-categories = ["iaas"]
+categories = ["IaaS"]
 date = "2017-04-01T17:15:48+09:00"
 description = "자동화 구축시 사용하는 devops 툴인 terraform에 대해서 소개하는 문서입니다"
 language = "bsh"

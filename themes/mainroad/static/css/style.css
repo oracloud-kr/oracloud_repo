@@ -395,7 +395,7 @@ select {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */ /* By TheKoguryo */
 }
 
 .menu__toggle {
@@ -588,11 +588,6 @@ select {
 /* TheKoguryo */
 .post__content h6 {
     margin: 32px 0 20px 0;
-}
-
-/* TheKoguryo */
-.post__content p {
-    margin: 0 0 0 0;
 }
 
 .post__content blockquote p:last-child {

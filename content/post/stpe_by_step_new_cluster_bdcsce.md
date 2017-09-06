@@ -5,7 +5,7 @@ title = "Oracle BDCSCE: 클러스터 생성 "
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/bdcsceInList.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.jpg"
 tags = ['big data', 'hadoop', 'spark', 'bdcsce']
-categories = ['big data','bdcsce']
+categories = ['Big Data','BDCSCE']
 author = "taewan.kim"
 language = ""
 +++

@@ -7,6 +7,7 @@ disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortn
 googleAnalytics = "UA-96765743-1" # Enable Google Analytics by entering your tracking id .
 pygmentsuseclasses = true
 pygmentsstyle = "monokai"
+preserveTaxonomyNames = true # Case sensitive for Category Name
 
 
 [Author]
