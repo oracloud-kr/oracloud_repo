@@ -18,11 +18,9 @@ Oracle Bare Metal Cloud Services (BMCS)와 Oracle Public Cloud (OPC)가 각각 "
 과거 문서와 신규 문서에서 브랜드명 변경에 따른 혼돈에 주의하시기 바랍니다.
 
 이번에 서비스명은 변경되었지만, 오라클 클라우드의 관련 인터페이스에 변경은 없습니다.
-다만 Chef Knife과 Terraform에는 변경이 있습니다. 오라클 클라우드 프로비저닝에 Chef knife를 사용하시는 분들은 다음 URL을 참조하여 플러그임을 업데이트하시기 바랍니다.
+다만 Chef Knife과 Terraform에는 변경이 있습니다. 오라클 클라우드 프로비저닝에 Chef knife를 사용하시는 분들은 다음 URL을 참조하여 플러그임을 업데이트하시기 바랍니다. 기존에 knife-bmcs가 knife-oci로 변경됩니다.
 
-https://github.com/oracle/knife-bmcs/blob/master/docs/rename.md
-
-기존에 knife-bmcs가 knife-oci로 변경됩니다.
+- https://github.com/oracle/knife-bmcs/blob/master/docs/rename.md
 
 Terraform의 오라클 클라우드 provider도 변경될 예정입니다. 새로운 오라클 클라우드 provider는 다음 레파지토리에서 개발 중입니다.
 
