@@ -1,5 +1,5 @@
 baseurl = "http://www.oracloud.kr/"
-title = "오라클 클라우드 블로그"
+title = "오라클 클라우드 기술 블로그""
 languageCode = "ko-kr"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -16,7 +16,7 @@ preserveTaxonomyNames = true # Case sensitive for Category Name
     avatar = "img/avatar.png"
 
 [Params]
-    subtitle = "한국 오라클 " # Subtitle of your site
+    subtitle = "한국 오라클 - oracloud.kr" # Subtitle of your site
     description = "오라클 클라우드 기술 블로그" # Description of your site
     opengraph = true
     leftsidebar = false # Move sidebar to the left side if true
@@ -44,7 +44,7 @@ preserveTaxonomyNames = true # Case sensitive for Category Name
     weight = -100 # menu의 sorting을 담당
     Identifier = "블로그 메인 페이지 "
 [[menu.main]]
-    name = "오라클 클라우드 블로그 소개"
+    name = "oracloud.kr 소개"
     url = "/oraclooud/"
     weight = -50 # menu의 sorting을 담당
     Identifier = "oracloud.kr을 소개합니다. "
