@@ -10,7 +10,7 @@ thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/09/change_name/po
 title = "Oracle IaaS 브랜드 명 변경"
 +++
 
-2017년 9월 9일을 오라클 클라우드의 IaaS의 브랜드명이 변경되었습니다.
+2017년 9월 9일 오라클 클라우드 IaaS의 브랜드명이 변경되었습니다.
 Oracle Bare Metal Cloud Services (BMCS)와 Oracle Public Cloud (OPC)가 각각 "__Oracle Cloud Infrastructure(OCI)__"와 "__Oracle Cloud Infrastructure Classic(OCI Classic)__"으로 변경되었습니다.
 이번 서비스명 변경이 기존에 배포되고 관리되던 서비스에는 미치는 영향은 없으며, 사용자 인터페이스에도 변경은 없습니다.
 
