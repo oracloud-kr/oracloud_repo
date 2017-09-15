@@ -1,5 +1,5 @@
 +++
-date = "2017-09-11T21:59:47+09:00"
+date = "2017-09-15T21:59:47+09:00"
 description = "Oracle Cloud Infrastructure(BMCS)에 CHEF를 구성하는 방법을 알아 봅니다. 이후, CHEF를 활용하여 Oracle Cloud Infrastructure(BMCS)를 활용하는 방법도 알아보겠습니다."
 title = "Oracle Cloud Infrastructure(BMCS)에서 CHEF 활용하기"
 thumbnailInList = "http://3.bp.blogspot.com/-9xQ9sitBwhI/TwS-a8aqCgI/AAAAAAAAD1s/gcASShTYAJg/s1600/chef-2.png"
