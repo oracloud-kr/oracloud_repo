@@ -7,7 +7,7 @@ language = ""
 tags = ["Data Visualization","Desktop", "Analytics"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/dvcs/intro.JPG"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/dvcs/DV main.JPG"
-title = "쉽게 따라해보는 데이터 시각화 제1회 '실습환경 구성'"
+title = "쉽게 따라해보는 데이터 시각화 제1회 '실습환경 구성.'"
 
 +++
 

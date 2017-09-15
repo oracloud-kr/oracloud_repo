@@ -198,7 +198,7 @@ variable ssh_public_key_file {
 variable.tf 파일 수정이 완료되면 __{PROEJCT_HOME}__/case01/terraform 에서 다음과 같은 명령을 수행합니다.
 
 ```
-$ terraform Plan
+$ terraform plan
 $ terraform apply
 $ terraform show
 ```
@@ -210,7 +210,7 @@ $ terraform show
 __{PROEJCT_HOME}__/case02/terraform 로 이동하고 variable.tf 파일을 case 1와 동일한 방법으로 업데이트 합니다. variable.tf를 수정한 후 다음과 같은 명령을 수행합니다.
 
 ```
-$ terraform Plan
+$ terraform plan
 $ terraform apply
 $ terraform show
 ```
@@ -277,4 +277,4 @@ $ testinfra --connection=ssh --hosts=129.150.76.149 --sudo test.py
 
 ## summary
 
-"Vagrant, Terraform, Ansible을 활용한 클라우드 인프라 관리법"의 데모는 여기까지 입니다. 데모는 youtube 동영상으로 공개할 예정입니다. 데모 실습에 질문이 있으실 경우 댓글을 남겨 주시거나 메뉴의 "오라클 클라우드 챗팅룸(Gitter)"에 질문을 남겨 주시기 바랍니다. 감사합니다. 
+"Vagrant, Terraform, Ansible을 활용한 클라우드 인프라 관리법"의 데모는 여기까지 입니다. 데모는 youtube 동영상으로 공개할 예정입니다. 데모 실습에 질문이 있으실 경우 댓글을 남겨 주시거나 메뉴의 "오라클 클라우드 챗팅룸(Gitter)"에 질문을 남겨 주시기 바랍니다. 감사합니다.
