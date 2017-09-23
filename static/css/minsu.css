@@ -1,0 +1,103 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#code {
+#  padding: 2px 4px;
+#  font-size: 80%;
+#  color: #4a4a4a;
+#  background-color: #f8f8f8;
+#  border-radius: 4px;
+#}
+
+#code{
+#  border:1px solid #cacaca;;
+#}
+
+strong {
+  color: #303030;
+  font-weight:bold;
+}
+
+#TableOfContents {
+    font-size: 13px !important;
+    max-height: 85vh;
+    overflow: auto;
+    padding: 15px !important;
+}
+
+
+#TableOfContents > ul > li > a   {
+  font-weight: bold; padding: 0 18px; margin: 0 2px;
+}
+
+#TableOfContents > ul > li > ul > li > a {
+  font-weight: bold;
+}
+
+#TableOfContents > ul > li > ul > li > ul li {
+  margin-right: 8px;
+}
+
+#TableOfContents > ul > li > ul > li > ul > li > a {
+  margin-right: 8px;
+  text-indent: 20px;
+
+}
+
+#TableOfContents > ul > li > ul > li > ul > li > ul > li > a {
+  display: none;
+}
+
+
+#TableOfContents > ul > li > ul > li > ul > li > ul > li > ul > li  {
+    display: none;
+}
+
+
+#img {
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Borders - (Optional)*/
+  border-left: 15px solid #EEEEEE;
+  border-right: 2px solid #EEEEEE;
+
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc;
+}
+
+
+/* color in dragging text */
+::selection {
+    background:#99CC00;
+    color: #FFF;
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#99CC00;
+    color: #FFF;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#99CC00;
+    color: #FFF;
+    text-shadow: none;
+}
