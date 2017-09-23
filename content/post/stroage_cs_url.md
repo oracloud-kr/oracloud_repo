@@ -1,7 +1,7 @@
 +++
 date = "2017-09-24T21:28:14+09:00"
 description = "오라클 클라우드의 PaaS 서비스는 인스턴스를 생성하는 과정에 Oracle Storage CS의 컨테이너를 등록하는 설정을 포함합니다. 지난 8월에 오라클 클라우드의 Trial 계정이 Credit 체제로 변경되면서 Storage CS의 컨테이너를 등록하는 방식이 변경되었습니다. Storage CS의 컨테이너 등록 정보를 확인하는 방법을 소개합니다. "
-title = "Oracle Storage CS의 컨테이너 설정 방식 형식"
+title = "Oracle PaaS의 Storage CS 컨테이너 설정 형식 변경"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/object_storage_init/list.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/storage_cs/post_logo.png"
 tags = ["Storage CS", "Oracl BDCSCE", "DBCS", "MySQL CS", "스토리지 컨테이너"]
