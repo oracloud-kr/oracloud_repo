@@ -1,0 +1,20 @@
+<!-- image -->
+<blockquote id="img">
+<figure {{ with .Get "class" }}class="{{.}}"{{ end }}>
+    {{ with .Get "link"}}<a href="{{.}}">{{ end }}
+        <img src="{{ .Get "src" }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} style="border:2px solid black"/>
+    {{ if .Get "link"}}</a>{{ end }}
+    {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+    <figcaption>{{ if isset .Params "title" }}
+        <strong>{{ .Get "title" }}</strong>:{{ end }}
+        {{ if or (.Get "caption") (.Get "attr")}}
+        {{ .Get "caption" }}
+        {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
+            {{ .Get "attr" }}
+        {{ if .Get "attrlink"}}</a> {{ end }}
+        {{ end }}
+    </figcaption>
+    {{ end }}
+</figure>
+</blockquote>
+<!-- image -->
