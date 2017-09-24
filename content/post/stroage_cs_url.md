@@ -80,7 +80,7 @@ title="그림 7"
 caption="Oracle Storage CS의 세부 정보에서 REST Endpoint 확인" >}}
 
 
-"```http://<storagedomain>/v1/<schema name>__```"는 Oracle Storage CS의 세부 정보 페이지의 REST Endpoint의 주소입니다.
+"___http://{storagedomain}/v1/{schema name}___"는 Oracle Storage CS의 세부 정보 페이지의 REST Endpoint의 주소입니다.
 
 위 데모에서 REST Endpoint는 다음과 같습니다.
 
