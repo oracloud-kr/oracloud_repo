@@ -3,7 +3,7 @@ title = "오라클 클라우드 기술 블로그"
 languageCode = "ko-kr"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
-disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
+disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
 pygmentsuseclasses = true
 pygmentsstyle = "monokai"
@@ -11,7 +11,7 @@ preserveTaxonomyNames = true # Case sensitive for Category Name
 
 
 [Author]
-    name = "한국오라클.."
+    name = "한국오라클."
     bio = "오라클 클라우드 기술 지원 담당"
     avatar = "img/avatar.png"
 
