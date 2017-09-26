@@ -1,0 +1,71 @@
+baseurl = "http://www.oracloud.kr/"
+title = "오라클 클라우드 기술 블로그"
+languageCode = "ko-kr"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "oracloud-kr" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id .
+pygmentsuseclasses = true
+pygmentsstyle = "monokai"
+preserveTaxonomyNames = true # Case sensitive for Category Name
+
+
+[Author]
+    name = "한국오라클.."
+    bio = "오라클 클라우드 기술 지원 담당"
+    avatar = "img/avatar.png"
+
+[Params]
+    subtitle = "한국 오라클 - oracloud.kr" # Subtitle of your site
+    description = "오라클 클라우드 기술 블로그" # Description of your site
+    opengraph = true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = true
+    post_navigation = true
+    highlight = "github"
+    github = "https://github.com/oracloud-kr-teamblog"
+    slideshare = "https://www.slideshare.net/ssusercda07e"
+    youtube = "https://www.youtube.com/channel/UCboJr3TLlqeDqpBURRdb_lg"
+    email = "oracloud.kr@gmail.com"
+    codehighlight = true
+    codeskin = "sons-of-obsidian"
+
+[Params.widgets]
+    search = true # Enable "Search" widget
+    recent_articles = true # Enable "Recent arcticles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = true # Enable counter for each tag in "Tags" widget (disabled by default)
+
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = -100 # menu의 sorting을 담당
+    Identifier = "블로그 메인 페이지 "
+[[menu.main]]
+    name = "oracloud.kr 소개"
+    url = "/oraclooud/"
+    weight = -50 # menu의 sorting을 담당
+    Identifier = "oracloud.kr을 소개합니다. "
+[[menu.main]]
+    name = "IaaS 서비스"
+    url = "/opc-iaas/"
+    weight = -10 # menu의 sorting을 담당
+    Identifier = "IaaS 서비스 관련 문서를 정리하는 페이지입니다."
+[[menu.main]]
+    name = "PaaS 서비스"
+    url = "/opc-paas/"
+    weight = -7
+    Identifier = "PaaS 서비스 관련 문서를 정리하는 페이지입니다."
+[[menu.main]]
+    name = "OPC 용어사전"
+    url = "/opc-terminology/"
+    weight = -3
+    Identifier = "오라클 클라우드에서 각 서비스에서 사용하는 용어의 정의를 정리합니다."
+[[menu.main]]
+    name = "오라클 클라우드 채팅룸"
+    identifier = "블로그 사용자간의 원할한 소통을 위해 준비한 Gitter 채팅 서비스로 이동합니다."
+    url = "https://gitter.im/oracloud-korea-user-group/Lobby"
+    weight = 1
+    Identifier = "채팅룸으로 이동합니다."
