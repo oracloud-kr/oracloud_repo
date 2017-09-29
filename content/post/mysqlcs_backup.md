@@ -7,10 +7,10 @@ language = "bsh"
 tags = ["database", "data management", "MySQL"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/05/mysqlcs/mysqlcs.jpg"
 thumbnailInPost = ""
-title = "MySQL Cloud Service 인스턴스에 대한 백업과 복구"
+title = "MySQL 인스턴스에 대한 백업과 복구"
 +++
 
-본 문서는 Oracle MySQL GBU(Globlal Businese Unit)의 APAC팀에서 고객 전달용으로 작성한 블로그입니다. 해당 문서는 앞서 포스팅된 ["MySQL Cloud를 시작하고 샘플 스키마 생성하기"](post/mysqlcs/)라는 블로그에 이어서 MySQL Cloud Service에서 생성된 인스턴스에 대하여 어떻게 백업을 하고 복구를 하는지에 대하여 보여주고 있습니다.
+본 문서는 Oracle MySQL APAC 세일즈 컨설팅팀에서 고객 전달용으로 작성한 블로그입니다. 해당 문서는 앞서 포스팅된 ["MySQL Cloud를 시작하고 샘플 스키마 생성하기"](post/mysqlcs/)라는 블로그에 이어서 MySQL Cloud Service에서 생성된 인스턴스에 대하여 어떻게 백업을 하고 복구를 하는지에 대하여 보여주고 있습니다.
 
 ## 선행 작업
 
@@ -25,7 +25,7 @@ title = "MySQL Cloud Service 인스턴스에 대한 백업과 복구"
 
 - [오라클 클라우드 계정](/post/accont/)
 - [윈도우, 리눅스, 맥에서 SSH 보안키 생성](/post/ssh_key/)
-- [MySQL Cloud를 시작하고 샘플 스키마 생성하기](post/mysqlcs/)
+- [MySQL Cloud를 시작하고 샘플 스키마 생성하기](/post/mysqlcs/)
 
 ## 백업과 복구 설정
 
@@ -58,19 +58,19 @@ MySQL 인스턴스의 로컬 스토리지를 확인할려면 Oracle Compute Clou
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/storage1.png)
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/storage2.png)
 
-백업용으로 사용된 로컬 스토리지 용량은 데이터베이스 용량의 2배입니다.예를 들면 데이터베이스 스토리지 용량을 25GB로 설정했을 경우 백업용 스토리지 용량은50GB로 설정됩니다.
+백업용으로 사용된 로컬 스토리지 용량은 데이터베이스 용량의 2배입니다.예를 들면 데이터베이스 스토리지 용량을 25GB로 설정했을 경우 백업용 스토리지 용량은 50GB로 설정됩니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/storage3.png)
 
 ## On-Demand 백업
 
-On-Demand 백업은 사용자가 원할때 백업을 수행할 수 있는 기능으로 백업 페이지에서 “__Backup Now__”를 클릭하시면 됩니다.
+On-Demand 백업은 사용자가 원할때 백업을 수행할 수 있는 기능으로 백업 페이지에서 “__Backup Now__”를 클릭하면 됩니다.
 
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/ondemand1.png)
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/ondemand2.png)
 
-백업이 완료되면 백업 이력에 해당 백업이 추가 되고 우측 메뉴를 통해 이 백업에 대해 __삭제__ 및 __복구__ 를 할 수 있습니다.
+백업이 완료되면 백업 이력에 해당 기록이 추가되고 우측 메뉴를 통해 이 백업본에 대해서 __삭제__ 및 __복구__ 를 실행할 수 있습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/ondemand3.png)
 
@@ -105,7 +105,7 @@ Point in Time복구는 내부적으로 다음과 같은 스텝을 거치게 됩�
 
 
 Point In Time 복구방법은 다음과 같습니다.
-MySQL서비스 콘솔에서 인스턴스 오버뷰화면의 “__Administration__”탭을 클릭하면  백업 화면이 보이게 되는데 메뉴버튼을 클릭하여 “__Restore Service__”를 선택합니다.
+MySQL Cloud Service의 백업화면에서 메뉴를 클릭하여 “__Restore Service__”를 선택합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/restore4.png)
 
@@ -117,18 +117,19 @@ MySQL서비스 콘솔에서 인스턴스 오버뷰화면의 “__Administration_
 복구 작업이 완료되면 복구 이력에서 복구작업의 상태를 확인할 수 있습니다.
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/restore7.png)
 
-Point in Time복구를 실행할려면 복구할 시점이 기존에 실행했던 전체백업과 증분백업 시점의 사이에 있거나 또는 두 증분백업사이의 시점이여야 가능합니다.
+Point in Time복구를 실행할려면 복구할 시점이 기존에 실행했던 __전체백업과 증분백업 시점의 사이__ 에 있거나 또는 __두 증분백업사이의 시점__ 이여야 가능합니다.
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/PIT.png)
 
-mysqlbinlog에 의한 복구방법에 대해서는 메뉴얼을 참조하시기 바랍니다.
+그 이외의 경우는 mysqlbinlog를 이용하여 해결할 수 있습니다.
+구체적인 방법에 대해서는 메뉴얼을 참조하시기 바랍니다.
 
 https://dev.mysql.com/doc/mysql-enterprise-backup/4.0/en/advanced.point.html
 
 ## 백업 디렉토리
 
-MySQL Cloud Service인스턴스에서 백업 툴이 위치한 디렉토리 : /u01/bin/meb/bin
+MySQL Cloud Service인스턴스에서 백업 툴이 위치한 디렉토리 : __/u01/bin/meb/bin__
 
-MySQL Cloud Service인스턴스의 로컬 스토리지에서의 스케줄 백업 저장 위치 :
+MySQL Cloud Service인스턴스의 __로컬 스토리지__ 에서의 스케줄 백업 저장 위치 :
 
 /u01/backup/domain name/Instance name/onDemandFull/*
 
@@ -138,7 +139,7 @@ MySQL Cloud Service인스턴스의 로컬 스토리지에서의 스케줄 백업
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/backupdir.png)
 
-Cloud Storage 에 저장된 백업파일에 대한 정보는 Oracle Storage Cloud Service의 대시보드에서 찾아 볼 수 있습니다.
+Cloud Storage 에 저장된 백업파일에 대한 정보는 __Oracle Storage Cloud Service__ 의 "__Containers__"화면에서 찾아 볼 수 있고 특정 백업파일에 대한 __다운로드__, __삭제__ 및 __복제__ 기능을 활용할 수 있습니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/storage_cloud1.png)
 
@@ -146,7 +147,7 @@ Cloud Storage 에 저장된 백업파일에 대한 정보는 Oracle Storage Clou
 
 ## 수동 백업 방법
 
-Full백업 :
+__Full 백업__ 을 하는 경우를 예를 들어 설명 드리자면 다음과 같습니다.
 
 [oracle@master-mysql-1 backup]$ /u01/bin/meb/bin/mysqlbackup --user=root -p --backup-dir=/u01/backup/ManualBackup backup-and-apply-log
 
@@ -156,7 +157,7 @@ Full백업 :
 
 ![](https://oracloud-kr-teamrepo.github.io/2017/09/mysqlcs_backup/manual2.png)
 
-mysqlbackup을 이용한 백업 방법에 관한 더 상세한 내용은 아래 메뉴얼을 참조하십시오.
+__mysqlbackup__ 의 사용방법에 대해서는 아래 메뉴얼을 참조하십시오.
 
 https://dev.mysql.com/doc/mysql-enterprise-backup/4.0/en/meb-command-reference.html
 
