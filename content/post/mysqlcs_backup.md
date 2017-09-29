@@ -1,6 +1,6 @@
 +++
 author = "huishan.piao"
-categories = ["database cloud","mysql"]
+categories = ["MySQL"]
 date = "2017-09-20T17:17:35+09:00"
 description = "MySQL Cloud Service에서의 백업과 복구하는 방법에 대해서 알아보도록 하겠습니다."
 language = "bsh"

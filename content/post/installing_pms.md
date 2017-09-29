@@ -5,7 +5,7 @@ title = "Oracle PaaS Service Manager 소개 및 설치"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/psm/psm_dbcs_stop.gif"
 tags = ["PSM", "Oracle Cloud"]
-categories = ["PaaS"]
+categories = ["Oracle Cloud"]
 author = "taewan.kim"
 language = "bash"  
 +++

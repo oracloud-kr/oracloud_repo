@@ -1,6 +1,6 @@
 +++
 author = "jisun.kang"
-categories = ["Database Cloud"]
+categories = ["MySQL"]
 date = "2017-05-04T17:17:35+09:00"
 description = "MySQL을 Oracle Cloud에서 사용하는 방법에 대해서 알아보도록 하겠습니다."
 language = "bsh"
