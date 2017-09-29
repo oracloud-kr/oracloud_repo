@@ -1,6 +1,6 @@
 +++
 author = "taewan.kim"
-categories = ["Container"]
+categories = ["Oracle IaaS"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/03/docker_in_oc/image_in_post.jpg"
 title = "오라클 클라우드의 Docker 컨테이너 지원 유형"
 date = "2017-04-19T19:01:16+09:00"

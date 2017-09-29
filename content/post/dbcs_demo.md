@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Oracle PaaS"]
 title = "Oracle Database CS: 인스턴스 생성 및 접속 Demo"
 language = ""
 description = "Oracle Database Cloud Service(이하 Oracle DBCS)는 오라클 클라우드에서 제공하는 데이터베이스 PaaS입니다. Oracle DBCS 인스턴스를 생성하고 접속하는 과정을 설명한 데모입니다."

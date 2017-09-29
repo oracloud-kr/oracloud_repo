@@ -2,7 +2,7 @@
 author = "taewan.kim"
 tags = ["dbcs", "talkit", "webinar"]
 language = ""
-categories = ["Webinar"]
+categories = ["Oracle Cloud Event"]
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/post.jpg"
 title = "TalkIT: 클라우드에서 오라클 데이터베이스"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/talkit_dbcs/list.png"
@@ -62,6 +62,6 @@ date = "2017-03-29T20:44:25+09:00"
 {{< youtube iS7gMTtu1i8 >}}
 
 ***
-  
+
 ## 출처
  - [TalkIT: 오라클 데이터베이스를 클라우드에서 사용하기](https://talkit.tv/Event/1524/)

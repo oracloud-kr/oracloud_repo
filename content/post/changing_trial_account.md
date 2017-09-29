@@ -5,7 +5,7 @@ title = "Oracle Cloud 트라이얼 계정 지원 방식 변경"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/trial_account/inlist.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/trial_account/trial03.jpg"
 tags = ["trial account"]
-categories = ["Account"]
+categories = ["Oracle Cloud"]
 author = "taewan.kim"
 language = "bsh"  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++

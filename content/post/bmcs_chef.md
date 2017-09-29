@@ -5,7 +5,7 @@ title = "Oracle Cloud Infrastructure(BMCS)에서 CHEF 활용하기"
 thumbnailInList = "http://3.bp.blogspot.com/-9xQ9sitBwhI/TwS-a8aqCgI/AAAAAAAAD1s/gcASShTYAJg/s1600/chef-2.png"
 thumbnailInPost = "https://cloudmarketplace.oracle.com/marketplace/content?contentId=4957921&ver=20161125212346"
 tags = ["BMCS", "IaaS", "Chef"]
-categories = ["IaaS", "Chef"]
+categories = ["Oracle IaaS"]
 author = "moonsun.lee"
 language = "rb"  #bsh,c,cc,cpp,cs,csh,cyc,cv,htm,html,java,js,m,mxml,perl,pl,pm,py,rb,sh,xhtml,xml,xsl
 +++
@@ -171,7 +171,7 @@ inspec version: 1.31.1
 [opc@chef-workstation ~]$ cd ~/chef-repo
 [opc@chef-workstation chef-repo]$ mkdir ~/chef-repo/.chef
 
-** Server에서 User와 Group 생성시 만들어진 pem파일을 해당 Repository의 .chef 폴더로 복사해 줍니다. 
+** Server에서 User와 Group 생성시 만들어진 pem파일을 해당 Repository의 .chef 폴더로 복사해 줍니다.
 ** .chef 폴더에서 pem 파일을 참조하게 됩니다.
 
 [opc@chef-workstation chef-repo]$ cd .chef<br />
@@ -243,7 +243,7 @@ Oracle에서는 Oracle 서비스에 관련된, CHEF Plugin과 Cookbook을 Github
 **https://github.com/oracle/knife-oci/releases** (Release Info.)<br />
 **https://github.com/oracle/knife-oci/blob/v2.0.0/docs/rename.md** (Readme.md)
 
-Knife Plugin의 아래 명령어들을 이용하여, 직접 Oracle Cloud Infrastructure에서 실행할 수 있습니다.<br /> 
+Knife Plugin의 아래 명령어들을 이용하여, 직접 Oracle Cloud Infrastructure에서 실행할 수 있습니다.<br />
 (클라우드 서버 생성/삭제, Compartmet/VM Image/VCN/Subnet/Shape/AD 조회등의 작업을 할 수 있습니다.)
 
 - Launch a OCI instance and bootstrap it as a Chef node: **knife oci server create**
@@ -255,7 +255,7 @@ Knife Plugin의 아래 명령어들을 이용하여, 직접 Oracle Cloud Infrast
 - List the subnets in a VCN: **knife oci subnet list**
 - List the shapes that may be used for a particular image type: **knife oci shape list**
 - List the availability domains for your tenancy: **knife oci ad list**
- 
+
 
 ***
 
