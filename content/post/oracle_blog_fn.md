@@ -54,3 +54,7 @@ Fn은 개발과 운영을 지원하는 여러 기능을 포함합니다.
 이 프로젝트의 홈페이지는 [fnproject.io](http://fnproject.io/) 입니다. 모든 개발 작업은 github(http://github.com/fnproject/fn )에서 운영 중입니다.
 
 우리 개발팀은 Fn이 최고의 서버리스 플랫폼으로의 성장에 도움이 되는 귀하의 의견과 참여를 환영합니다.
+
+## Fn 데모
+
+![](http://fnproject.io/images/cli.gif)
