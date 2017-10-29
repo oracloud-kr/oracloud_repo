@@ -1,4 +1,4 @@
-Oracle Cloud+++
++++
 description = "Oracle Cloud에는 무료로 Oracle Cloud를 경험할 수 할 수 있는 Free Trial Account를 제공하고 있습니다. 이 계정을 이용하여 Oracle Database Cloud Service(이하 CS), Java CS, Compute CS, Developer CS, Database Backup CS, Storage CS, Application Container CS, SOA CS를 사용할 수 있습니다. 본 문에서는 Oracle Cloud의 Cloud의 계정을 생성하는 방법에 대하여 살펴보겠습니다."
 title = "Oracle Cloud Trial 신청: Universal Credit"
 categories = ["oracle cloud"]
