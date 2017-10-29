@@ -1,7 +1,7 @@
 +++
 description = "오라클 클라우드의 Compute 서비스는 최근에 업그레이드가 적용되었고, 가상 머신 인스턴스를 UI가 일정부분 변경되었습니다. 변경된 UI상에서 가상머신을 생성하는 방법에 대하여 알아보겠습니다."
 title = "우분투 17.04 가상머신 만들기"
-categories = ["Cloud"]
+categories = ["Oracle IaaS"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/compute_new/thumnail_logo.jpg"
 date = "2017-05-02T11:59:47+09:00"

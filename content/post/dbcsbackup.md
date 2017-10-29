@@ -1,6 +1,6 @@
 +++
 author = "jisun.kang"
-categories = ["Data Management"]
+categories = ["Oracle PaaS"]
 date = "2017-05-10T16:20:58+09:00"
 description = "데이타베이스 클라우드 서비스 환경에서 기본으로 구성되는 백업 방법에 대해서 먼저 소개한 후 기본 구성을 변경하는 방법에 대해서 소개합니다"
 language = "bsh"

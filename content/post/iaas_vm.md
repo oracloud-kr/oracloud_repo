@@ -5,7 +5,7 @@ description = "오라클 클라우드의 IaaS(Oracle Compute Cloud Service)를 �
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/03/iaas_quick/Oracle-IaaS.jpg"
 date = "2017-03-05T22:20:25+09:00"
 language = "bsh"
-categories = ["Oracle Cloud", "IaaS"]
+categories = ["Oracle IaaS"]
 title = "오라클 IaaS를 이용한 VM 인스턴스 생성"
 author = "taewan.kim"
 

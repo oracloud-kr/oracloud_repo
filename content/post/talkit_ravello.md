@@ -1,5 +1,5 @@
 +++
-categories = []
+categories = ["Oracle Cloud"]
 tags = ["ravello", "talkit", "Webinar"]
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/04/ravello/ravello_ui.jpg"
 date = "2017-03-09T12:35:37+09:00"

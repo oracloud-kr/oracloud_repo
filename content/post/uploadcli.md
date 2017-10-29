@@ -1,6 +1,6 @@
 +++
 author = "jaeyeop.lee"
-categories = ["IaaS"]
+categories = ["Oracle IaaS"]
 date = "2017-04-19T10:45:24+09:00"
 description = ""
 language = "bsh"

@@ -14,9 +14,15 @@ Terraform은 클라우드 인프라의 생성, 변경 및 형상 버전을 관�
 
 [^1]: github에서 커뮤니티 프로젝트로 진행할 예정입니다.
 
+<<<<<<< HEAD
 "__Terraform Installer On Oracle Cloud__" 프로젝트의 파일럿 형태로 "__Terraform Jupyter Installer__"를 만들었습니다. 최근에 Machine Learning과 Deep Learning은 업계의 핵심 키워드로 주목받고 있습니다. Machine Learning과 Deep Learning을 경험하기 위해서는 데이터 분석 컴퓨터 환경이 필요합니다. 파이썬을 기반으로 Machine Learning과 Deep Learning 환경을 구성할 경우 jupyter를 사용하는 것이 일반적입니다. 컴퓨터에 파이썬과 Jupyter를 설치하고 10여 종의 ML 및 DL 파이썬 라이브러리를 설치합니다. 사실 이러한 환경 구성 작업은 반복적이고 번잡한 작업이며, 반드시 컴퓨팅 파워가 필요합니다
 
 오라클 클라우드는 트라이얼 계정 사용자에게 월 300불 Credit을 제공합니다. 트라이얼 계정 사용자는 한 달 동안 300불 Credit을 오라클 클라우드에서 자유롭게 사용할 수 있습니다. Oracle Cloud Infrastructure Classic을 기준으로 1 OCPU[^2]로 오라클 리눅스로 VM을 생성할 경우 비용은 시간당 0.1불입니다. 4 OCPU( 메모리: 60GB) 서버를 1달(744시간) 사용 비용은 297불입니다. 트라이얼 사용자의 경우 과금은 300불 Credit에서 분단위로 차감됩니다.
+=======
+"__Terraform Installer On Oracle Cloud__" 프로젝트의 파일럿 형태로 "__[Terraform Jupyter Installer](https://github.com/taewanme/terraform-jupyter-installer)__"를 만들었습니다. 최근에 Machine Learning과 Deep Learning은 업계의 핵심 키워드로 주목받고 있습니다. Machine Learning과 Deep Learning을 경험하기 위해서는 데이터 분석 컴퓨터 환경이 필요합니다. 파이썬을 기반으로 Machine Learning과 Deep Learning 환경을 구성할 경우 jupyter를 사용하는 것이 일반적입니다. 컴퓨터에 파이썬과 Jupyter를 설치하고 10여 종의 ML 및 DL 파이썬 라이브러리를 설치합니다. 사실 이러한 환경 구성 작업은 반복적이고 번잡한 작업이며, 반드시 컴퓨팅 파워가 필요합니다
+
+오라클 클라우드는 트라이얼 계정 사용자에게 월 300불 Credit을 제공합니다. 트라이얼 계정 사용자는 한 달 동안 300불 Credit을 오라클 클라우드에서 자유롭게 사용할 수 있습니다. Oracle Cloud Infrastructure Classic을 기준으로 1 OCPU[^2]로 오라클 리눅스로 VM을 생성할 경우 비용은 시간당 0.1불입니다. 4 OCPU(메모리: 60GB) 서버의 1달(744시간) 사용 비용은 297불입니다. 트라이얼 사용자의 경우 과금은 300불 Credit에서 분단위로 차감됩니다.
+>>>>>>> e62222f0acfa46d43372a791b707c0c870860587
 
 파이썬 기반의 기계학습 및 딥러닝 개발 환경이 필요한 분들을 위해서 오라클 클라우드에 Jupyter 기반의 데이터 분석 환경을 만드는 "__Terraform Jupyter Installer__[^3]" 제공한다면 유용할 것 같습니다. 특히 오라클 클라우드 트라이얼 계정을 사용한다면 추가 비용 없이 완전한 데이터 분석 환경을 확보할 수 있습니다.
 

@@ -5,7 +5,7 @@ title = "Apache Kafka PaaS: Oracle Event Hub CS 소개.."
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinlist.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinpost.jpg"
 tags = ["Event Hub", "Kafka", "Big Data"]
-categories = ["Big Data"]
+categories = ["Oracle PaaS", "Big Data"]
 author = "taewan.kim"
 language = ""
 +++
