@@ -1,5 +1,5 @@
 +++
-date = "2017-07-27T11:59:47+09:00"
+date = "2017-10-27T11:59:47+09:00"
 description = "오라클 클라우드는 Hadoop PaaS 서비스로 Oracle Big Data Cloud Service Compute-Edition을 지난 2017년 03월에 출시하였습니다. Oracle Big Data Cloud Service Compute-Edition은 Hortonworks의 HDP를 기반으로 합니다. Oracle Big Data Cloud Service Compute-Edition 서비스에 대한 주요 특징을 소개합니다."
 title = "Oracle Big Data Cloud Service Compute-Edition"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/07/bdcsce_provisioning/oracloud-big-logo.png"
