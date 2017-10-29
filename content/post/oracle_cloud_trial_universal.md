@@ -16,7 +16,7 @@ Oracle Trial 계정을 신청하면 "__$300 Credit__"을 제공합니다.
 $300 Credit이란 Oracle Cloud 사용 권한으로, Oracle Cloud를 $300 Credit으로 자유롭게 사용할 수 있습니다.
 Oracle Cloud 서비스를 사용하면 지급한 Credit은 분 단위로 차감됩니다.
 차감되는 비용은 서비스별로 차이가 있습니다.
-각 서비스 과금 비용은 Oracle Cloud 홈페이지(http://cloud.oracle.com )에서 확인할 수 있습니다. $300 Credit의 유효 기간은 신청일로부터 30일 입니다. Oracle Cloud Trial 프로그램에서 다음과 같은 서비스를 체험해 볼 수 있습니다. (2017년 10월 29일 기분 목록)
+각 서비스 과금 비용은 Oracle Cloud 홈페이지(http://cloud.oracle.com )에서 확인할 수 있습니다. $300 Credit의 유효 기간은 신청일로부터 30일 입니다. Oracle Cloud Trial 프로그램에서 다음과 같은 서비스를 체험해 볼 수 있습니다. (2017년 10월 29일 기준 목록)
 
 - Compute(Bare Metal)
 - Compute Classic
