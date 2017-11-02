@@ -1,7 +1,7 @@
 +++
 date = "2017-08-29T08:54:32+09:00"
-description = "2017 Oracle Code에서 발표한 'Vagrant, Terraform, Ansible을 활용한 클라우드 인프라 관리법'의 장표와 데모를 소개하는 문서입니다."
-title = "2017 Oracle Code In Seoul: How to control cloud resources 데모"
+description = "2017년 9월 9일 부로 오라클 클라우드 서비스 명이 변경되었습니다. 변경 사항을 공지합니다. "
+title = "Oracle 클라우드 서비스 명 변경: Oracle Cloud Infrastructure"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/oraclecode_ktw/list.jpg"
 thumbnailInPost = ""
 tags = ["Terraform", "Vagrant", "Ansible"]
