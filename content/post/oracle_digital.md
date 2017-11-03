@@ -22,7 +22,7 @@ caption="네이버 메일 포스트: 클라우드로 인한 직업 변화" >}}
 
 IT 전문가나 오라클 지원이 아니라도 누구든지 쉽게 이해할 수 있도록 오라클 디지털 (Oracle Digital) 조직에서 운영하고 있습니다. 오라클 디지털(ODP) 조직은 최근에 신설된 클라우드 전문 조직으로 중소기업을 대상으로 전문 세일즈 컨설팅을 제공하고 있습니다. 영업뿐 아니라 기존에 자신이 몸담고 있던 분야의 전문성과 IT 기술, 정확히는 온프레미스와 클라우드 서비스를 융합할 수 있는 조언자 역할을 하는데요. 화학, 제약, 신소재부터 기업, 연구소, 금융, 의료, 교육에 이르기까지 다양한 산업별 전문가로 구성되어 있습니다.
 
-![Oracle Digitals](https://oracloud-img-repo.github.io/2017/10/digital/digitalnaver.jpg)
+![Oracle Digitals](https://oracloud-img-repo.github.io/2017/10/digital/post.jpg)
 
 __오라클의 서비스를 조금 더 자세히 알아보고 싶다면?__
 
