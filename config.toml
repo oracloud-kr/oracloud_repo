@@ -54,10 +54,10 @@ preserveTaxonomyNames = true # Case sensitive for Category Name
     weight = -10 # menu의 sorting을 담당
     Identifier = "IaaS 서비스 관련 문서를 정리하는 페이지입니다."
 [[menu.main]]
-    name = "PaaS 서비스"
-    url = "/opc-paas/"
+    name = "오라클 기술 세미나"
+    url = "/monthly-oracle-code/"
     weight = -7
-    Identifier = "PaaS 서비스 관련 문서를 정리하는 페이지입니다."
+    Identifier = "월간 오라클 기술 세미나를 기록합니다."
 [[menu.main]]
     name = "OPC 용어사전"
     url = "/opc-terminology/"
