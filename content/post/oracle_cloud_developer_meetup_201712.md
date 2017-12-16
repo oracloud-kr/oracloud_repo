@@ -51,118 +51,115 @@ caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
 ## 세션 1: Macroservice- Istio 트래픽 관리
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/050.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 5"
+caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}
+
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/060.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 6"
+caption="Microservice-Istio 발표자 소개(강인호 부장)" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/070.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 7"
+caption="마이크로서비스 넷플릭스 사례 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/080.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 8"
+caption="Oracle Developer Meetup 첫 번째 세미나 현장" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/090.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 9 "
+caption="SideCar 패턴 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/100.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 10"
+caption="Oracle Developer Meetup 첫 번째 세션 현장 파노라마 뷰" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/120.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 11"
+caption="Microservice의 Istio를 이용한 Service Mesh 요약" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/130.jpg"
-title="그림 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+title="그림 12"
+caption="첫 번째 주제 발표 후 쉬는시간 진행된 자율 토론" >}}
 
 ## 세션 2: 개발자를 위한 JavaOne 2017 업데이트
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/210.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 13"
+caption="두 번째 세션 소개: 양수열 소장님" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/220.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 14"
+caption="JavaOne에서 Java 9에 발표자의 느낌 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/230.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 15"
+caption="Serverless 오픈소스:Fn Project" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/240.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 16"
+caption="2018년 이후 자바 로드맵 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/250.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 17"
+caption="Graal VM 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/260.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 18"
+caption="Java 9의 새로운 기능 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/270.jpg"
-title="그림 4"
-caption="" >}}
+title="그림 19"
+caption="Jigsaw Project: Module이란?" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/280.jpg"
 title="그림 4"
-caption="" >}}
+caption="Jigsaw Project 패키지 구조 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/290.jpg"
 title="그림 4"
-caption="" >}}
+caption="Java 9의 React 모델" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/300.jpg"
 title="그림 4"
-caption="" >}}
+caption="두 번째 시간 활발히 진행된 Q&A" >}}
 
 ## 세션 3: [Hands-On]Kubernetes 실습 및 모니터링
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/320.jpg"
 title="그림 4"
-caption="" >}}
+caption="황주필 부장님의 Hands-On 소개" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/330.jpg"
 title="그림 4"
-caption="" >}}
+caption="Hands-On 실습" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/350.jpg"
 title="그림 4"
-caption="" >}}
+caption="Helm 소개 및 실습" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/360.jpg"
 title="그림 4"
-caption="" >}}
+caption="Prometheus UI" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/370.jpg"
 title="그림 4"
-caption="" >}}
+caption="Grapana Dashborad 실습 화면" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/380.jpg"
 title="그림 4"
-caption="" >}}
+caption="제 2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일정 소개" >}}
 
 ## networking: 피맥
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/410.jpg"
 title="그림 4"
-caption="" >}}
+caption="네트워크 타임: 밋업 종료후 피맥(파자&맥자) 타임" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/420.jpg"
 title="그림 4"
-caption="" >}}
+caption="Oracle Developer Meetup와 함께한 분들을 위한 기념품" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/430.jpg"
 title="그림 4"
-caption="" >}}
-
-{{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/440.jpg"
-title="그림 4"
-caption="" >}}
+caption="Oracle Developer Meetup에서 제작한 스티커" >}}
