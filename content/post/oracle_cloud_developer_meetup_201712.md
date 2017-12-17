@@ -10,7 +10,7 @@ tags = ["oracle", "cloud", "deverlper meetup"]
 author = "taewan.kim"
 +++
 
-한국 오라클에서는 매월 개발자를 대상으로 "__Oracle Developer Meetup__"은 운영하고 있습니다. 2017년 12월 16일 토요일 아셈타워 15층에서 두 번째 "__Oracle Developer Meetup__"이 진행되었습니다. 58명의 개발자가 참석한 가운데 13:00 ~ 17:30 까지 3개의 세션과 네트워키이 진행되었습니다.
+한국 오라클에서는 매월 개발자를 대상으로 "__Oracle Developer Meetup__"은 운영하고 있습니다. 2017년 12월 16일 토요일 아셈타워 15층에서 두 번째 "__Oracle Developer Meetup__"이 진행되었습니다. 58명의 개발자가 참석한 가운데 13:00 ~ 17:30 까지 3개의 세션과 네트워킹이 진행되었습니다.
 
 2017년 12월 두 번째 "__Oracle Developer Meetup__"에서 진행된 세션은 다음과 같습니다.
 
@@ -91,7 +91,7 @@ OnFace의 양수열 CTO님께서 두 번째 세션을 진행해 주셨습니다.
 title="사진 11"
 caption="두 번째 세션 소개: 양수열 소장님" >}}
 
-양수열 님께서 JavaOne에서 Java 9에게 받은 느낌을 "변화"이란 표현으로 요약해 주셨습니다. <사진 12>
+양수열 님께서 JavaOne에서 Java 9에 받은 느낌을 "변화"이란 표현으로 요약해 주셨습니다. <사진 12>
 새로운 플랫폼으로의 적응을 위해서 JCP가 심사숙고 끝에 일부 하위 호환성을 포기하면서까지 변화를 선택한 배경과 의미를 소개했습니다. 오라클과 JCP가 클라우드 플랫폼에 적합한 자바를 만들기 위한 과감한 선택으로 요약할 수 있습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/220.jpg"
@@ -193,7 +193,7 @@ title="사진 26"
 caption="제2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일정 소개" >}}
 
 세미나를 마치고 강인호 부장님께서 세미나 종료 인사 및 다음 달 Oracle Developer Meetup 일정을 정리해 주셨습니다. <사진 26>
-다음달 Oracle Developer Meetup은 2019년 1월 20일에 진행할 계획입니다.
+다음 달 Oracle Developer Meetup은 2019년 1월 20일에 진행할 계획입니다.
 
 ## networking: 피맥
 
