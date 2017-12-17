@@ -68,7 +68,7 @@ caption="Oracle Developer Meetup 첫 번째 세션 현장 파노라마 뷰" >}}
 title="사진 7"
 caption="마이크로서비스 넷플릭스 사례 소개" >}}
 
-대표적인 MSA 사례인 넷플릭스 사례로 마이크로서비스 아키텍처의 개념을 소개하고 있습니다.
+대표적인 MSA인 넷플릭스 사례로 마이크로서비스 아키텍처의 개념을 소개하고 있습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/090.jpg"
 title="사진 9"
