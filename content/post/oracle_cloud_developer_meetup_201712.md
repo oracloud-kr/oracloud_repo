@@ -28,7 +28,7 @@ author = "taewan.kim"
 title="사진 1"
 caption="Oracle Developer Meetup 장소 안내" >}}
 
-아셈타워 1층의 장소 안내 표지판입니다. 아셈타워 1층에는 안내 표지판이 설치되어 있습니다. 또한 참가자의 보안 게이트 통과를 돕기 위해서 안내를 담당해 주시는 분이 자리를 지켜주셨습니다.
+아셈타워 1층에는 세미나 장소 안내 표지판이 설치되어 있습니다. 또한 참가자의 보안 게이트 통과를 돕기 위해서 안내를 담당해 주시는 분이 자리를 지켜주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/020.jpg"
 title="사진 2"
@@ -40,13 +40,13 @@ caption="15층 참석자 등록" >}}
 title="사진 3"
 caption="세미나 참석자를 위한 커피, 물, 간식" >}}
 
-세미나에 참석자들을 위한 커피와 간식거리를 준비했습니다.
+세미나에 참석자들을 위해서 커피와 간식거리를 준비했습니다. <사진 3>
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/040.jpg"
 title="사진 4"
 caption="세미나 시작 10분 전 15층 세미나실 전경" >}}
 
-세미나 시작 10분 전에 50여 분이 참석해 주셨습니다. 세미나 시작 전에 자리가 모자라 보조 좌석을 추가했습니다.
+세미나 시작 10분 전에 이미 50여 분이 참석해 주셨습니다. 세미나 시작 직전에는 자리가 모자라 보조 좌석을 추가했습니다.
 
 ## 세션 1: Microservice- Istio 트래픽 관리
 
@@ -60,9 +60,7 @@ caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}
 title="사진 6"
 caption="Oracle Developer Meetup 첫 번째 세션 현장 파노라마 뷰" >}}
 
-주말임에도 최대 58분이 참석해 주셨습니다. <사진 6>
-
-오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고 Istio의 특징 및 트래픽을 관리하는 방법을 소개하였습니다. 마지막에 Istio 트래픽 분산 데모로 발표를 마무리 했습니다.
+오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고, Istio의 특징 및 트래픽을 관리하는 방법을 소개하였습니다. 마지막에 Istio 트래픽 분산 데모로 발표를 마무리 했습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/070.jpg"
 title="사진 7"
@@ -85,7 +83,7 @@ caption="첫 번째 주제 발표 후 쉬는 시간 진행된 자율 토론" >}}
 ## 세션 2: 개발자를 위한 JavaOne 2017 업데이트
 
 OnFace의 양수열 CTO님께서 두 번째 세션을 진행해 주셨습니다.
-감기몸살로 컨디션이 최악인 상황에서도 2017 자바원 업데이트와 Java9의 변경에 대하여 소개해 주셨습니다.
+감기몸살로 컨디션이 최악인 상황에서도 2017 자바원 업데이트와 Java9의 변경에 대하여 소개하는 세션을 진행해 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/210.jpg"
 title="사진 11"
@@ -99,14 +97,14 @@ title="사진 12"
 caption="JavaOne에서 Java 9에 발표자의 느낌 소개" >}}
 
 JavaOne에서 오라클이 오픈소스로 공개한 서버리스 기술인 Fn Project를 소개하였습니다. <사진 13>
-Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비중 입니다.
+Fn Project는 Docker Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비 중 입니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/230.jpg"
 title="사진 13"
 caption="Serverless 오픈소스:Fn Project" >}}
 
 Java9 다음번 버전은 18.3이며 향후 버전 명명 규칙은 출시 연도와 월을 기준으로 변경됩니다.<사진 14>
-이제 주기적으로 짧은 주기로 자바 버전을 업그레이드하고 관리하는 체제로 자바 로드맵이 변경됩니다.
+주기적으로 짧은 주기로 자바 버전을 업그레이드하고 관리하는 체제로 자바 로드맵이 변경됩니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/240.jpg"
 title="사진 14"
@@ -118,7 +116,7 @@ caption="2018년 이후 자바 로드맵 소개" >}}
 title="사진 15"
 caption="Graal VM 소개" >}}
 
-Java 9의 주여 변경 사항을 정리하였습니다. Jigsaw와 module의 등장으로 발생한 구조적 변경 사항과 React의 개념 적용을 정리하였습니다. <사진 16 ~ 18>
+Java 9의 주요 변경 사항을 정리하였습니다. Jigsaw와 module의 등장으로 발생한 구조적 변경 사항과 React의 개념 적용을 정리하였습니다. <사진 16 ~ 18>
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/260.jpg"
 title="사진 16"
