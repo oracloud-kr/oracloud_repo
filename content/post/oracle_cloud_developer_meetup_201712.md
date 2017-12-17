@@ -12,7 +12,7 @@ author = "taewan.kim"
 
 한국 오라클에서는 매월 개발자를 대상으로 "__Oracle Developer Meetup__"을 운영하고 있습니다. 2017년 12월 16일 토요일 아셈타워 15층에서 두 번째 "__Oracle Developer Meetup__"이 진행되었습니다. 58명의 개발자가 참석한 가운데 오후 1시 부터 5시30분 까지 3개의 세션과 네트워킹이 진행되었습니다.
 
-2017년 12월 두 번째 "__Oracle Developer Meetup__"은 다음과 같은 주제로 진행되었습니다.
+"__제2회 Oracle Developer Meetup__"은 다음과 같은 주제로 진행되었습니다.
 
 |시간|발표자|세션 명|
 |---|---|---|
@@ -20,7 +20,7 @@ author = "taewan.kim"
 |14:00~15:20|양수열 Java Champion(OnFace)|개발자를 위한 JavaOne 2017 업데이트 - New Feature 중심으로|
 |15:00~14:50|황주필 부장(Oracle)|[Hands-On]Kubernetes 실습 및 모니터링|
 
-세미나의 스케치를 후기를 사진 중심으로 정리합니다.
+세미나의 현장 스케치를 사진 중심으로 정리합니다.
 
 ## __Oracle Developer Meetup__ 시작 전 10분 전 모습
 
@@ -28,7 +28,7 @@ author = "taewan.kim"
 title="사진 1"
 caption="Oracle Developer Meetup 장소 안내" >}}
 
-아셈타워 1층의 장소 안내 표지판입니다. 아셈타워에는 보안 게이트가 설치된 관계로 Developer Meetup 참석자를 위한 안내 표지판과 안내를 담당해 주시는 분이 보안 게이트 출입에 도움을 주셨습니다.
+아셈타워 1층의 장소 안내 표지판입니다. 아셈타워 1층에는 안내 표지판이 설치되어 있습니다. 또한 참가자의 보안 게이트 통과를 돕기 위해서 안내를 담당해 주시는 분이 자리를 지켜주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/020.jpg"
 title="사진 2"
@@ -99,7 +99,7 @@ title="사진 12"
 caption="JavaOne에서 Java 9에 발표자의 느낌 소개" >}}
 
 JavaOne에서 오라클이 오픈소스로 공개한 서버리스 기술인 Fn Project를 소개하였습니다. <사진 13>
-Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비중 입니다. 
+Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비중 입니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/230.jpg"
 title="사진 13"
