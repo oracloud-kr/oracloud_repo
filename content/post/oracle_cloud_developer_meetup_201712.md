@@ -1,6 +1,6 @@
 +++
-description = "2017년 12월 제 2회 오라클 클라우드 Developer Meetup 후기입니다. "
-title = "2017년 12월 제 2회 오라클 클라우드 Developer Meetup 현장 스케치"
+description = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 후기입니다. "
+title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 스케치"
 categories = ["Seminar"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-img-repo.github.io/2017/12/meetup/list.jpg"
@@ -186,23 +186,23 @@ Prometheus를 이용한 모니터링을 진행하고 있습니다. <사진 24>
 title="사진 25"
 caption="Grapana Dashboard 실습 화면" >}}
 
-Prometheus로 부터 모니터링 정보를 수집하여 대시보드로 출력하는 Grapana Dashboard를 소개하고 있습니다. <사진 25>
+Prometheus로부터 모니터링 정보를 수집하여 대시보드로 출력하는 Grapana Dashboard를 소개하고 있습니다. <사진 25>
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/380.jpg"
 title="사진 26"
-caption="제 2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일정 소개" >}}
+caption="제2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일정 소개" >}}
 
-세미나를 마치고 강인호 부장님께서 세니마 종료 인사 및 다음 달 밋업 일정을 정리해 주셨습니다. <사진 26>
-다음달 밋업은 2019년 1월 20일에 진행할 계획입니다.
+세미나를 마치고 강인호 부장님께서 세미나 종료 인사 및 다음 달 Oracle Developer Meetup 일정을 정리해 주셨습니다. <사진 26>
+다음달 Oracle Developer Meetup은 2019년 1월 20일에 진행할 계획입니다.
 
 ## networking: 피맥
 
 Oracle Developer Meetup을 마치고 피자와 음료를 곁들인 네트워킹 시간이 진행되었습니다.
-세션 발표자와 함께 질의 응답과 밋업에 참여하신 분들간의 교류 시간을 약 1시간 동안 갖었습니다. <사진 27>
+세션 발표자와 함께 질의 응답과 밋업에 참여하신 분들 간의 교류 시간을 약 1시간 동안 가졌습니다. <사진 27>
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/410.jpg"
 title="사진 27"
-caption="네트워크 타임: 밋업 종료후 피맥(파자&맥자) 타임" >}}
+caption="네트워크 타임: 밋업 종료 후 피맥(파자&맥자) 타임" >}}
 
 주말에 Oracle Developer Meetup에 참여하신 분들을 위해 간단한 기념품도 준비했습니다. <사진 28>
 
@@ -216,15 +216,15 @@ caption="Oracle Developer Meetup와 함께한 분들을 위한 기념품" >}}
 title="사진 29"
 caption="Oracle Developer Meetup에서 제작한 스티커" >}}
 
-제 2회 Oracle Developer Meetup는 3개 세션과 네트워킹을 4시간 동안 진행했습니다.
-다음 Oracle Developer Meetup은 2018월 1월 20일에 진해할 계획입니다.
+제2회 Oracle Developer Meetup는 3개 세션과 네트워킹을 4시간 동안 진행했습니다.
+다음 Oracle Developer Meetup은 2018월 1월 20일에 진행할 계획입니다.
 Oracle Developer Meetup 확정일자는 페이스북 "__오라클 클라우드 사용자 그룹__"에 공지하겠습니다.
-참석해 주신 모든 분들과, 발표자 및 진행에 힘써주신 분들에게 모두 감사드립니다.
+참석해 주신 모든 분과, 발표자 및 진행에 힘써주신 분들에게 감사드립니다.
 
 
 ## 세미나 자료
 
-제 2회 Oracle Developer Meetup의 세미나 자료는 다음과 같습니다.
+제2회 Oracle Developer Meetup의 세미나 자료는 다음과 같습니다.
 
 - 1st Session: Microservice 트래픽 관리를 위한 Istio 알아보기
   - https://www.slideshare.net/InhoKang2/istio-v20171216-v10
