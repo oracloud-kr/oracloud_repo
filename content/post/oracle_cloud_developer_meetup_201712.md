@@ -10,9 +10,9 @@ tags = ["oracle", "cloud", "deverlper meetup"]
 author = "taewan.kim"
 +++
 
-한국 오라클에서는 매월 개발자를 대상으로 "__Oracle Developer Meetup__"은 운영하고 있습니다. 2017년 12월 16일 토요일 아셈타워 15층에서 두 번째 "__Oracle Developer Meetup__"이 진행되었습니다. 58명의 개발자가 참석한 가운데 13:00 ~ 17:30 까지 3개의 세션과 네트워킹이 진행되었습니다.
+한국 오라클에서는 매월 개발자를 대상으로 "__Oracle Developer Meetup__"을 운영하고 있습니다. 2017년 12월 16일 토요일 아셈타워 15층에서 두 번째 "__Oracle Developer Meetup__"이 진행되었습니다. 58명의 개발자가 참석한 가운데 오후 1시 부터 5시30분 까지 3개의 세션과 네트워킹이 진행되었습니다.
 
-2017년 12월 두 번째 "__Oracle Developer Meetup__"에서 진행된 세션은 다음과 같습니다.
+2017년 12월 두 번째 "__Oracle Developer Meetup__"은 다음과 같은 주제로 진행되었습니다.
 
 |시간|발표자|세션 명|
 |---|---|---|
@@ -28,19 +28,19 @@ author = "taewan.kim"
 title="사진 1"
 caption="Oracle Developer Meetup 장소 안내" >}}
 
-아셈타워 1층에 장소 안내 표지판입니다. 아셈타워에는 보안 게이트가 설치된 관계로 Developer Meetup 참석자를 위한 안내 표지판과 안내를 담당해 주시는 분이 보안 게이트 출입에 도움을 주셨습니다.
+아셈타워 1층의 장소 안내 표지판입니다. 아셈타워에는 보안 게이트가 설치된 관계로 Developer Meetup 참석자를 위한 안내 표지판과 안내를 담당해 주시는 분이 보안 게이트 출입에 도움을 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/020.jpg"
 title="사진 2"
 caption="15층 참석자 등록" >}}
 
-"__Oracle Developer Meetup__"은 15층에서 진행됩니다. 12시 30분부터 참석자 등록을 진행했습니다. 참석자의 출입 편의를 위하여, 보안 출입문 앞에 도움을 주시는 분들이 세미나 종료 시까지 자리를 지켜주셨습니다.
+"__Oracle Developer Meetup__"은 아셈타워 15층에서 진행됩니다. 12시 30분부터 참석자 등록을 진행했습니다. 참석자의 출입 편의를 위하여, 보안 출입문 앞에 도움을 주시는 분들이 세미나 종료 시까지 자리를 지켜주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/030.jpg"
 title="사진 3"
 caption="세미나 참석자를 위한 커피, 물, 간식" >}}
 
-세미나에 참석자들을 위한 커피와 간식거리가 준비되어 있었습니다.
+세미나에 참석자들을 위한 커피와 간식거리를 준비했습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/040.jpg"
 title="사진 4"
@@ -50,19 +50,19 @@ caption="세미나 시작 10분 전 15층 세미나실 전경" >}}
 
 ## 세션 1: Microservice- Istio 트래픽 관리
 
-오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고 Istio의 특징 및 트래픽을 관리하는 방법 소개와 Istio 트래픽 분산 데모를 진행하였습니다.  
+강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개하고 첫 번째 세션을 진행해 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/050.jpg"
 title="사진 5"
-caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}
-
-강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개하고 첫 번째 세션을 진행해 주셨습니다.
+caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}  
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/100.jpg"
 title="사진 6"
 caption="Oracle Developer Meetup 첫 번째 세션 현장 파노라마 뷰" >}}
 
 주말임에도 최대 58분이 참석해 주셨습니다. <사진 6>
+
+오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고 Istio의 특징 및 트래픽을 관리하는 방법을 소개하였습니다. 마지막에 Istio 트래픽 분산 데모로 발표를 마무리 했습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/070.jpg"
 title="사진 7"
