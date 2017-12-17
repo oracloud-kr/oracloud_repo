@@ -4,7 +4,7 @@ title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 �
 categories = ["Seminar"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-img-repo.github.io/2017/12/meetup/list.jpg"
-date = "2010-12-16T22:54:32+09:00"
+date = "2017-12-16T22:54:32+09:00"
 language = ""
 tags = ["oracle", "cloud", "deverlper meetup"]
 author = "taewan.kim"
@@ -229,4 +229,4 @@ Oracle Developer Meetup 확정일자는 페이스북 "__오라클 클라우드 �
   - <iframe src="//www.slideshare.net/slideshow/embed_code/key/pKoIqsLKW25P7G" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 - 3rd Session: Hand-on      
-  - https://github.com/namoo4u/meetup_k8s_1216/blob/master/Hands-on-lab.md
+  - https://github.com/namoo4u/meetup_k8s_1216
