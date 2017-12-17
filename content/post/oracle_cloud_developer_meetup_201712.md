@@ -193,7 +193,7 @@ caption="제2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일�
 세미나를 마치고 강인호 부장님께서 세미나 종료 인사 및 다음 달 Oracle Developer Meetup 일정을 정리해 주셨습니다. <사진 26>
 다음 달 Oracle Developer Meetup은 2019년 1월 20일에 진행할 계획입니다.
 
-## networking: 피맥
+## Networking: 피맥
 
 Oracle Developer Meetup을 마치고 피자와 음료를 곁들인 네트워킹 시간이 진행되었습니다.
 세션 발표자와 함께 질의 응답과 밋업에 참여하신 분들 간의 교류 시간을 약 1시간 동안 가졌습니다. <사진 27>
