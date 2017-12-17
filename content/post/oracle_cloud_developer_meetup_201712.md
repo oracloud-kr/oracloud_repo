@@ -50,7 +50,7 @@ caption="세미나 시작 10분 전 15층 세미나실 전경" >}}
 
 ## 세션 1: Microservice- Istio 트래픽 관리
 
-강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개하고 첫 번째 세션을 진행해 주셨습니다.
+강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개 후, 첫 번째 세션을 진행해 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/050.jpg"
 title="사진 5"
@@ -60,7 +60,7 @@ caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}
 title="사진 6"
 caption="Oracle Developer Meetup 첫 번째 세션 현장 파노라마 뷰" >}}
 
-오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고, Istio의 특징 및 트래픽을 관리하는 방법을 소개하였습니다. 마지막에 Istio 트래픽 분산 데모로 발표를 마무리 했습니다.
+첫 번째 세션은 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행되었습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고, Istio의 특징 및 트래픽을 관리하는 방법을 소개하였습니다. 마지막에 Istio 트래픽 분산 데모로 발표를 마무리 했습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/070.jpg"
 title="사진 7"
@@ -89,14 +89,14 @@ OnFace의 양수열 CTO님께서 두 번째 세션을 진행해 주셨습니다.
 title="사진 11"
 caption="두 번째 세션 소개: 양수열 소장님" >}}
 
-양수열 님께서 JavaOne에서 Java 9에 받은 느낌을 "변화"이란 표현으로 요약해 주셨습니다. <사진 12>
+양수열 님께서 JavaOne에서 Java 9에 받은 느낌을 "변화"란 표현으로 요약해 주셨습니다. <사진 12>
 새로운 플랫폼으로의 적응을 위해서 JCP가 심사숙고 끝에 일부 하위 호환성을 포기하면서까지 변화를 선택한 배경과 의미를 소개했습니다. 오라클과 JCP가 클라우드 플랫폼에 적합한 자바를 만들기 위한 과감한 선택으로 요약할 수 있습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/220.jpg"
 title="사진 12"
 caption="JavaOne에서 Java 9에 발표자의 느낌 소개" >}}
 
-JavaOne에서 오라클이 오픈소스로 공개한 서버리스 기술인 Fn Project를 소개하였습니다. <사진 13>
+JavaOne에서 오라클이 오픈소스로 공개한 Serverless 기술인 Fn Project를 소개하였습니다. <사진 13>
 Fn Project는 Docker Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비 중 입니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/230.jpg"
