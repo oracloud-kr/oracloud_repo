@@ -1,6 +1,6 @@
 +++
 description = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 후기입니다. "
-title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 스케치 (수정검토)"
+title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 스케치"
 categories = ["Seminar"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-img-repo.github.io/2017/12/meetup/list.jpg"
@@ -141,7 +141,7 @@ QnA의 질문과 답변 요약은 다음과 같습니다.
   - 답변: 단일 언어가 통일하지는 못 할것. 용도에 맞는 언어를 사용해야 합니다. 플랫폼으로써의 자바와 기업용 애플리케이션으로써의 자바 리드는 계속될 것이다.
 1. Jigsaw가 추가된 이유는?
   - 답변: 하위 호환성의 문제보다도 클라우드에 적응이 더 시급. 클라우드에 대한 포석(오라클 리드)
-1. Jigsaw에 대한 리드헷의 반대 이유는?
+1. Jigsaw에 대한 레드헷의 반대 이유는?
   - 답변: 레드헷은 하위 호환성 중시가 큼. 오라클은 새로운 환경에 대한 적응을 중시. 결국 JCP는 New feature를 결정
 1. OpenJDK와 OracleJDK의 관계는?
   - 답변: 계속 지켜봐 주세요. ^^(오라클 답변)
@@ -191,7 +191,7 @@ title="사진 26"
 caption="제2회 Oracle Developer Meetup 종료 인사 및 다음번 밋업 일정 소개" >}}
 
 세미나를 마치고 강인호 부장님께서 세미나 종료 인사 및 다음 달 Oracle Developer Meetup 일정을 정리해 주셨습니다. <사진 26>
-다음 달 Oracle Developer Meetup은 2019년 1월 20일에 진행할 계획입니다.
+다음 달 Oracle Developer Meetup은 2019년 1월 27일에 진행할 계획입니다.
 
 ## Networking: 피맥
 
@@ -215,7 +215,7 @@ title="사진 29"
 caption="Oracle Developer Meetup에서 제작한 스티커" >}}
 
 제2회 Oracle Developer Meetup는 3개 세션과 네트워킹을 4시간 동안 진행했습니다.
-다음 Oracle Developer Meetup은 2018월 1월 20일에 진행할 계획입니다.
+다음 Oracle Developer Meetup은 2018월 1월 27일에 진행할 계획입니다.
 Oracle Developer Meetup 확정일자는 페이스북 "__오라클 클라우드 사용자 그룹__"에 공지하겠습니다.
 참석해 주신 모든 분과, 발표자 및 진행에 힘써주신 분들에게 감사드립니다.
 
