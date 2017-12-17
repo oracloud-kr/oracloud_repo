@@ -1,6 +1,6 @@
 +++
 description = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 후기입니다. "
-title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 스케치"
+title = "2017년 12월 제2회 오라클 클라우드 Developer Meetup 현장 스케치 (수정검토)"
 categories = ["Seminar"]
 thumbnailInPost = ""
 thumbnailInList = "https://oracloud-img-repo.github.io/2017/12/meetup/list.jpg"
