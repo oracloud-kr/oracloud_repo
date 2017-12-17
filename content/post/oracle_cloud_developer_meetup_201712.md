@@ -14,13 +14,13 @@ author = "taewan.kim"
 
 2017년 12월 두 번째 "__Oracle Developer Meetup__"에서 진행된 세션은 다음과 같습니다.
 
-|시간|발표자|세션명|
+|시간|발표자|세션 명|
 |---|---|---|
-|13:00 ~ 13:50|강인호 부장(Oracle)|Macroservice 트래픽 관리를 위한 Istio 알아보기|
-|14:00 ~ 15:20|양수열 Java Champion(OnFace)|개발자를 위한 JavaOne 2017 업데이트 - New Feature 중심으로|
-|15:00 ~ 14:50|황주필 부장(Oracle)|[Hands-On]Kubernetes 실습 및 모니터링|
+|13:00~13:50|강인호 부장(Oracle)|Microservice 트래픽 관리를 위한 Istio 알아보기|
+|14:00~15:20|양수열 Java Champion(OnFace)|개발자를 위한 JavaOne 2017 업데이트 - New Feature 중심으로|
+|15:00~14:50|황주필 부장(Oracle)|[Hands-On]Kubernetes 실습 및 모니터링|
 
-세마나의 스케치를 후기를 사진 중심으로 정리합니다.
+세미나의 스케치를 후기를 사진 중심으로 정리합니다.
 
 ## __Oracle Developer Meetup__ 시작 전 10분 전 모습
 
@@ -28,13 +28,13 @@ author = "taewan.kim"
 title="사진 1"
 caption="Oracle Developer Meetup 장소 안내" >}}
 
-아셈타워 1층에 장소 안내 표지판 입니다. 아셈타워에는 보안 게이트가 설치 되어 있는 관계로 Developer Meetup 참석자를 위한 안내 표지판과 안내를 담당해 주시는 분이 보안 게이트 출입에 도움을 주시고 있습니다.
+아셈타워 1층에 장소 안내 표지판입니다. 아셈타워에는 보안 게이트가 설치된 관계로 Developer Meetup 참석자를 위한 안내 표지판과 안내를 담당해 주시는 분이 보안 게이트 출입에 도움을 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/020.jpg"
 title="사진 2"
 caption="15층 참석자 등록" >}}
 
-"__Oracle Developer Meetup__"은 15층에서 지행됩니다. 12시 30분 부터 참석자 등록이 진행됩니다. 참석자의 출입 편의를 위하여, 보안 출입문에 세미나 종료시까지 도움을 주시는 분들이 자리를 지켜주셨습니다.
+"__Oracle Developer Meetup__"은 15층에서 진행됩니다. 12시 30분부터 참석자 등록을 진행했습니다. 참석자의 출입 편의를 위하여, 보안 출입문 앞에 도움을 주시는 분들이 세미나 종료 시까지 자리를 지켜주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/030.jpg"
 title="사진 3"
@@ -44,19 +44,19 @@ caption="세미나 참석자를 위한 커피, 물, 간식" >}}
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/040.jpg"
 title="사진 4"
-caption="세미나 시작 10분 전 15층 세미나 룸 전경" >}}
+caption="세미나 시작 10분 전 15층 세미나실 전경" >}}
 
-세니마 시작 10분 전에 50여 분이 참석해 주셨습니다. 세미나 시작전에 자리가 모자라 보조좌석을 추가했습니다.
+세미나 시작 10분 전에 50여 분이 참석해 주셨습니다. 세미나 시작 전에 자리가 모자라 보조 좌석을 추가했습니다.
 
-## 세션 1: Macroservice- Istio 트래픽 관리
+## 세션 1: Microservice- Istio 트래픽 관리
 
-오라클 강인호 부장님께서 첫 번째 세션을 "__Macroservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고 Istio의 특징 및 트래픽을 관리하는 방법 소개하와 Istio 트래픽 분산 데모를 진행하였습니다.  
+오라클 강인호 부장님께서 첫 번째 세션을 "__Microservice 트래픽 관리를 위한 Istio__"을 주제로 진행해 주셨습니다. 마이크로 서비스의 주요 패턴과 서비스 매쉬에 대한 개념을 소개하고 Istio의 특징 및 트래픽을 관리하는 방법 소개와 Istio 트래픽 분산 데모를 진행하였습니다.  
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/050.jpg"
 title="사진 5"
 caption="Oracle Developer Meetup 첫 번째 세션 소개" >}}
 
-강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개하고 첫번째 세션을 진행해 주셨습니다.
+강인호 부장님이 "__Oracle Developer Meetup__"의 취지와 운영 방향에 대하여 소개하고 첫 번째 세션을 진행해 주셨습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/100.jpg"
 title="사진 6"
@@ -78,7 +78,7 @@ SideCar 패턴을 소개하고 있습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/130.jpg"
 title="사진 10"
-caption="첫 번째 주제 발표 후 쉬는시간 진행된 자율 토론" >}}
+caption="첫 번째 주제 발표 후 쉬는 시간 진행된 자율 토론" >}}
 
 쉬는 시간에도 Istio에 대한 활발한 토의가 진행되었습니다. <사진 10>
 
@@ -91,8 +91,8 @@ OnFace의 양수열 CTO님께서 두 번째 세션을 진행해 주셨습니다.
 title="사진 11"
 caption="두 번째 세션 소개: 양수열 소장님" >}}
 
-양수열 님께서 JavaOne에서 Java 9을 느낀 소감을 "절망"이란 표현으로 요약해 주셨습니다. <사진 12>
-새로운 플랫폼으로의 적응을 위해서 JCP가 심사숙고 끝에 일부 하위 호환성을 포기하면서까지 변화를 선택한 배경과 의미를 전달해 주셨습니다. 오라클과 JCP가 클라우드 플랫폼에 적합한 자바를 만들기 위한 과감한 선택이란 취지였습니다.
+양수열 님께서 JavaOne에서 Java 9에게 받은 느낌을 "변화"이란 표현으로 요약해 주셨습니다. <사진 12>
+새로운 플랫폼으로의 적응을 위해서 JCP가 심사숙고 끝에 일부 하위 호환성을 포기하면서까지 변화를 선택한 배경과 의미를 소개했습니다. 오라클과 JCP가 클라우드 플랫폼에 적합한 자바를 만들기 위한 과감한 선택으로 요약할 수 있습니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/220.jpg"
 title="사진 12"
@@ -105,14 +105,14 @@ Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Ser
 title="사진 13"
 caption="Serverless 오픈소스:Fn Project" >}}
 
-Java9 다음번 버전은 18.3이며 향후 버전 명명 규칙은 출시 년도와 월을 기준으로 변경됩니다.<사진 14>
+Java9 다음번 버전은 18.3이며 향후 버전 명명 규칙은 출시 연도와 월을 기준으로 변경됩니다.<사진 14>
 이제 주기적으로 짧은 주기로 자바 버전을 업그레이드하고 관리하는 체제로 자바 로드맵이 변경됩니다.
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/240.jpg"
 title="사진 14"
 caption="2018년 이후 자바 로드맵 소개" >}}
 
-고성능 폴리그랏을 위한 Graal VM를 소개하였습니다. <사진 15>
+고성능 Polyglot을 위한 Graal VM를 소개하였습니다. <사진 15>
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/250.jpg"
 title="사진 15"
@@ -226,7 +226,7 @@ Oracle Developer Meetup 확정일자는 페이스북 "__오라클 클라우드 �
 
 제 2회 Oracle Developer Meetup의 세미나 자료는 다음과 같습니다.
 
-- 1st Session: Macroservice 트래픽 관리를 위한 Istio 알아보기
+- 1st Session: Microservice 트래픽 관리를 위한 Istio 알아보기
   - https://www.slideshare.net/InhoKang2/istio-v20171216-v10
   - <iframe src="//www.slideshare.net/slideshow/embed_code/key/pKoIqsLKW25P7G" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
