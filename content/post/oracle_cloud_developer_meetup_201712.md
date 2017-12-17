@@ -99,7 +99,7 @@ title="사진 12"
 caption="JavaOne에서 Java 9에 발표자의 느낌 소개" >}}
 
 JavaOne에서 오라클이 오픈소스로 공개한 서버리스 기술인 Fn Project를 소개하였습니다. <사진 13>
-Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다.
+Fn Project는 Docker를 기반으로 Serverless를 구현체로 오라클의 Serverless 서비스에 기반이 되는 기술입니다. JavaOne 기간에 오라클은 Fn 프로젝트를 오픈소스 프로젝트로 공개하였습니다. Fn Project는 제3회 Oracle Developer Meetup 주제로 준비중 입니다. 
 
 {{< img src="https://oracloud-img-repo.github.io/2017/12/meetup/230.jpg"
 title="사진 13"
