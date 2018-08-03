@@ -13,7 +13,7 @@ language = ""
 Oracle Developer Cloud Service는 자동화된 CI/CD를 위한 빌드 파이프라인 관리를 제공하는 클라우드 서비스입니다. 
 이 문서에서는 [Oracle Developer Cloud](https://cloud.oracle.com/en_US/developer-service)의 2018년 4월과 5월 릴리즈에서 추가된 새로운 기능들에 대해서 설명하려고 합니다.
 
-## Oracle Developer Cloud - 빌드 파이프라인 정의 및 가시화
+## 빌드 파이프라인 정의 및 가시화
  이 버전의 Developer Cloud Service에서는 구성된 빌드들을 조합하여 일련의 파이프라인을 구성하는 기능이 추가되었습니다. 각 빌드 작업들은 작업의 연관성과 흐름을 가지며 연속적으로 수행되도록 구성될 수 있습니다.
  일련의 빌드 작업의 수행에서 선행 빌드 작업의 성공 여부에 따라 후행 작업의 시작 유무를 조건에 다라 결정 지을 수도 있습니다. 
 
