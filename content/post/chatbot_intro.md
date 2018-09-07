@@ -22,7 +22,7 @@ language = ""
 
 - 오라클 챗봇 테스트 계정? 
 오라클 챗봇을 만들 수 있는 Intelligent Bots를 체험 계정은 아래에서 신청 하실 수 있습니다. 문제가 있으시면 오라클 영업대표님께 문의부탁드립니다. 
-https://cloud.oracle.com/tryit?source=EMMK170607P00126:pm:mz:::RC_WWMK171211P00045:OMag
+https://cloud.oracle.com/home
 
 
 - 오라클 챗봇 장점? 
@@ -62,29 +62,25 @@ Training Data를 넣어서 Intent를 학습시킨 후에, Test를 해보 실 수
 
 ![Screen Shot 2018-08-21 at 5.39.10 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-21%20at%205.39.10%20PM.png)
 
-2. Flow 
-쉽게 디자인 할 수 있게 UI Designer 와 확장성을 고려한 Markup Text editor를 제공 하고 있습니다. 때문에, 원하시는 적합한 때에 두가지를 vice-versa로 사용가능합니다. 
-![Screen Shot 2018-08-22 at 3.23.46 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-22%20at%203.23.46%20PM.png)
 
-
-3. Q&A
+2. Q&A
 수만건이 있는 단답형 FAQ가 있다고 가정합니다. 질문의 양이 많기 때문에 좋은 퀄리티의 학습데이터로 봇을 학습시키는 것이 중요할 텐데, 이 과정에서  많은 공수가 들어갈 일이 될 수 있습니다. 이런 경우에는, FAQ를 봇에게 쏟아 넣으면, 봇이 각각 질문의 중요 말뭉치를 추출해그 중요 말뭉치들을 이용한 유사성 검색으로 빠르고 정확한 엔진을 구성할 수 있습니다. 
 ![Screen Shot 2018-08-22 at 3.23.11 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-22%20at%203.23.11%20PM.png)
 
-4. Channel 
+3. Channel 
 만든 봇을 여러가지 채널과 연결 할 수 있습니다. Public Messenger 뿐만아니라 제공 되는 SDK를 이용해서 간편하게 미리 만들어둔 앱이나 웹에도 추가 할 수 있습니다. 
 
-5. Instant App 
+4. Instant App 
 챗봇은 대화형 인터페이스를 이용합니다. 이 대화형 인터페이스는 간단한 질의 응답이나 업무엔 적합하지만, 한번에 많은 정보를 받아오거나 보여주거나 혹은 텍스트 이외의 정보를 주고받을 때에는 적합하지 않습니다. 그래서 원하는 형태의 form을 간단히 생성해서 봇과의 대화중에 보여줄 수 있습니다. 수많은 ui component가 제공되며, 그 ui component에서 원하시는 시점에 원하는 이벤트를 Ui 화면에서 간단히 생성 시킬수 있습니다. 
 
 원하는 형식을 간단히 생성하는것 이상으로, 더 중요한것은 봇과의 대화와 형식에 넣은 정보간의 오가는 것이 seamless하게 이뤄질 수 있습니다. 유저가 form에 원하는 입력을 모두 마치고, bot과의 대화로 돌아왔을때 form에 주입한 결과를 다시 봇과의 대화에서 받아오는 것. 또한, 그반대의 경우에도 자유롭게 data가 seamless 오고 갈수 있습니다. 
 
 ![Screen Shot 2018-08-22 at 3.24.22 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-22%20at%203.24.22%20PM.png)
 
-6. 상담원 연결 
+5. 상담원 연결 
 봇이 이해못하거나, 민감한 질문이 들어왔을때 뒷단에 상담원이 기다리고 있다가 대화에 들어올 수 있습니다. 봇과 상담원 간의 트랜지션이 seamless하게 이뤄지기 때문에, 사용자 입장에서는 했던 질문을 또 할 필요가 없습니다.
 
-7. Monitoring & Analytics 
+6. Monitoring & Analytics 
 
 챗봇을 만드셨습니다. 하지만, 유저는 챗봇만을 통해서 비지니스와 인터랙트하는 것은 아닐것입니다. 유저는 웹사이트, 앱 등으로도 비지니스와 연결 될 수 있습니다. 그렇다면, 유저가 원하는 것이 무엇인지 정확하게 파악하기위해서는 전 채널을 아우르는 Monitoring 및 Analytics가 있어야합니다. 모든 채널에 대해 분석 및 business impact까지 이어질 수 있는 효과적인 툴을 제공 합니다. 
 
