@@ -10,9 +10,6 @@ author = "sung.hye.jeon"
 language = ""  
 +++
 
-## 챗봇이란 무엇인가. 챗봇 용어 및 개념 완벽 정리 
-
-
 ### - 챗봇이란? 
 챗봇이란 간단히말해, 카톡이나 라인과 같은 메신저로 상대방과 대화할때 상대편에 사람이 아닌 software program이 대화를 하고 있다고 생각하시면 됩니다. 
 ![Screen Shot 2018-08-22 at 2.47.52 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15349031844600/Screen%20Shot%202018-08-22%20at%202.47.52%20PM.png)
