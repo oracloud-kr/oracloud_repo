@@ -1,17 +1,14 @@
 +++
 date = "2018-09-01T21:59:47+09:00"
-description = "챗봇이 무엇인지 설명 하는 글입니다. "
-title = "챗봇이란 무엇인가. 챗봇 용어 및 개념 완벽 정리"
-thumbnailInList = "https://zdnet2.cbsistatic.com/hub/i/r/2017/10/02/f6eb36fb-fc5a-4f2e-be0d-44a32f044aa9/resize/770xauto/f444278b6710d106084778c7be78423d/chatbotlogo.png"
-thumbnailInPost = "https://zdnet2.cbsistatic.com/hub/i/r/2017/10/02/f6eb36fb-fc5a-4f2e-be0d-44a32f044aa9/resize/770xauto/f444278b6710d106084778c7be78423d/chatbotlogo.png"
-tags = ["chatbot", "챗봇", "채터봇", "인공지능", "인공지능봇", "오라클 챗봇", "오라클 chatbot", "oracle chatbot"]
+description = "오라클 챗봇 기능을 둘러보는 글입니다. "
+title = "오라클 챗봇 (Oracle Intelligent Bots) 기능 둘러보기"
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/logo/intro.jpg"
+thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/logo/intrologo.jpg"
+tags = ["chatbot", "OMCe", "Oracle Mobile", "챗봇", "채터봇", "인공지능", "인공지능봇", "오라클 챗봇", "오라클 chatbot", "oracle chatbot"]
 categories = ["Chatbot"]
 author = "sung.hye.jeon"
 language = ""  
 +++
-
-
-## 오라클 챗봇 (Oracle Intelligent Bots) 기능 둘러보기
 
 
 이전 포스트에서는 챗봇이 무엇인지 살펴 보셨습니다. 이 포스트에서는 이 후의 포스트에서는 오라클 챗봇을 직접 만들고 여러 서비스에 연결해서 실생활에 사용 가능한 챗봇을 만들어 보겠습니다. 
