@@ -44,7 +44,7 @@ flow: 대화의 흐름입니다. 대화가 어떻게 흘러갈지는 각 비지�
 
 ### - 오라클 챗봇 테스트 계정? 
 오라클 챗봇을 만들 수 있는 Intelligent Bots를 체험 계정은 아래에서 신청 하실 수 있습니다. 문제가 있으시면 오라클 영업대표님께 문의부탁드립니다. 
-https://cloud.oracle.com/tryit?source=EMMK170607P00126:pm:mz:::RC_WWMK171211P00045:OMag
+https://cloud.oracle.com/home
 
 ### - 오라클 챗봇에 대해 배워보기? 
 개발자 이신가요? 직접 코드를 채워가면서 챗봇에 기능 추가하는 workshop입니다. 
