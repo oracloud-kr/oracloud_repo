@@ -20,7 +20,7 @@ Oracle Application Container Cloud를 활용해서 10분 안에 jsp를 바로 �
 	out.println("Hello Oracle Cloud");
 %>
 </code></pre>
-war 파일로 압축을 합니다.
+위 파일이 들어 있는 test폴더를 hello.war 파일로 압축합니다.
 <pre><code>jar cvf hello.war test
 </code></pre>
 
