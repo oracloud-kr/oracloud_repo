@@ -2,7 +2,7 @@
 +++
 date = "2018-09-02T23:20:25+09:00"
 description = "마이크로 서비스를 위한 기본이 되는 도커(Docker)와 쿠버네티스(Kubernetes)에 대해서 간략하게 설명합니다. Oracle Container Engine for Kubernetes를 위한 연재입니다."
-title = "Oracle Container Engine for Kubernetes #01 : Docker & Kubernetes"
+title = "Oracle Container Engine (OKE) #01 : Docker & Kubernetes"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinlist.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinpost.jpg"
 tags = ["Docker", "Kubernetes", "Microservice", "Container", "Orchestrator", "AppDev", "DevOps"]
@@ -100,7 +100,7 @@ CMD ["/hello"]
 
 처음부터 빈 이미지에서 출발하는 것이 아니라 대부분이 무언가 필요에 의해서 미리 설치된 도커 이미지를 기본으로 자신의 애플리케이션을 설치하기 때문에 [도커 저장소](http://hub.docker.com)에서 검색한 후에 설치하는 것이 좋습니다.또한 개인이 만든 이미지 보다는 공식적으로 배포된 이미지들을 다운로드 받는 것이 좋습니다.
 
-![Alt text](https://monosnap.com/image/bdBo9tEc7Zer5dayUHE5h6SnBmM2v5.png){:width="50%" height="50%"}
+![Alt text](https://monosnap.com/image/bdBo9tEc7Zer5dayUHE5h6SnBmM2v5.png)
 
 <a id="Q02"></a>
 #### Q. 비어있는 이미지를 만드는 방법은?
@@ -152,7 +152,6 @@ Dockerfile과 클라이언트 Docker cli에 의해서 http://hub.docker.com 에 
 - 클라이언트 명령을 통해서 이미지를 수행시키면 호스트에서 해당 이미지가 수행되게 됩니다.
 
 
-
 ## 컨테이너 오케스트레이터 (Container Orchestrator)
 
 단 하나의 머신(노드)에서 운영하는 컨테이너라면 큰 문제가 없습니다. 도커 이미지들을 잘 관리할 수 있고 시스템 리소스도 하나의 머신이기 때문에 관리가 잘 됩니다. 하지만 수십/수백대의 머신(노드)에서 운영하고 있다면 컨테이너의 운영이 매우 힘들 것입니다. 각 유후 리소스들을 찾고 도커 이미지들을 시작하고 네트워크를 설정하는 등 많은 어려움이 있을 것입니다.
@@ -160,7 +159,7 @@ Dockerfile과 클라이언트 Docker cli에 의해서 http://hub.docker.com 에 
 ![Container Orchestrator](https://blog.docker.com/wp-content/uploads/2a78b37d-bbf0-40ee-a282-eb0900f71ba9-2.jpg)
 컨테이너 오케스트레이터(Container Orchestrator)는 이러한 여러 머신(노드)에서 운영하는 많은 컨테이너를 관리하기 위해서 만들어졌습니다. 
 
-하나의 컨테이너만 운영하는 것이 아니라 여러개의 컨테이너를 운영을 할 것이고, 하나의 호스트에서 수행되는 컨테이너라면 문제가 없으나 수십개의 수백개의 호스트를 관리하려면 어려운 점이 많습니다. 어느 호스트에서 유휴 자원이 있는지, 각 호스트들 끼리 네트워크는 어떻게 되는지 관리하기가 힘듧니다.
+하나의 컨테이너만 운영하는 것이 아니라 여러개의 컨테이너를 운영을 할 것이고, 하나의 호스트에서 수행되는 컨테이너라면 문제가 없으나 수십개의 수백개의 호스트를 관리하려면 어려운 점이 많습니다. 어느 호스트에서 유휴 자원이 있는지, 각 호스트들 끼리 네트워크는 어떻게 되는지 관리하기가 힘듭니다.
 
 그래서 Container Orchestrator 가 필요합니다. 아래 그림은 Container Orchestrator중이 하나인 Docker Swarm 에 관한 그림입니다.
 
