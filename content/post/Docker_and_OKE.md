@@ -2,7 +2,7 @@
 +++
 date = "2018-09-02T23:20:25+09:00"
 description = "마이크로 서비스를 위한 기본이 되는 도커(Docker)와 쿠버네티스(Kubernetes)에 대해서 간략하게 설명합니다. Oracle Container Engine for Kubernetes를 위한 연재입니다."
-title = "Oracle Container Engine for Kubernetes #01 : Docker & Kubernetes"
+title = "Oracle Container Engine (OKE) #01 : Docker & Kubernetes"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinlist.jpg"
 thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinpost.jpg"
 tags = ["Docker", "Kubernetes", "Microservice", "Container", "Orchestrator", "AppDev", "DevOps"]
