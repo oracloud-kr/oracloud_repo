@@ -2,13 +2,12 @@
 date = "2018-09-11T17:00:00+09:00"
 description = "Application Container Cloud Service를 활용하여 손쉽게 웹 서비스를 구축하는 방법에 대한 소개입니다."
 title = "Application Container로 10분 안에 웹 서비스 구축하기"
-thumbnailInList = "https://monosnap.com/file/C1zbSeu5fc6l78BLY3qFwSZqmPe8EQ"
-thumbnailInPost = "https://monosnap.com/file/gYEfJYExUmyNuGFvqiX1pDdoBzdd1G"
+thumbnailInList = "https://monosnap.com/image/C1zbSeu5fc6l78BLY3qFwSZqmPe8EQ.png"
+thumbnailInPost = "https://monosnap.com/image/gYEfJYExUmyNuGFvqiX1pDdoBzdd1G.png"
 tags = ["ORACLE", "Oracle Cloud", "Application Container Cloud", "accs", "Cloud Native", "Polyglot", "오라클 클라우드", "Java EE"]
 categories = ["Oracle-Cloud"]
 author = "wonjo.yoo"
 language = ""  
-
 +++
 
 Oracle Application Container Cloud를 활용해서 10분 안에 jsp를 바로 서비스하는 과정을 설명합니다.
