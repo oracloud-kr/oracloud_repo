@@ -78,8 +78,11 @@ Docker(이하: 도커))나 Kubernetes(이하: 쿠버네티스)를 많이 들어�
 
 그럼 다음과 같은 의문점이 생길 수 도 있습니다.
 - [도커 이미지를 만드는 방법은?](#Q01) 
+
 - [비어있는 이미지를 만드는 방법은?](#Q02)
+
 - [도커 이미지는 현재상태를 그대로 저장하는가?](#Q03)
+
 - [도커 저장소는 어디인가?](#Q04)
 
 이런 의문점에 대해서 얘기해 보도록 하겠습니다.
@@ -120,15 +123,15 @@ $ docker run hello-world
 <a name="Q03"></a>
 #### Q. 도커 이미지는 현재상태를 그대로 저장하는가?
 
-도커 이미지는 파일시스템들의 레이어로 만들어져 있다. 
+도커 이미지는 파일시스템들의 레이어로 만들어져 있습니다.
 
-가장 기본 레이어는 boot file system `bootfs`로 일반적인 Linux boot 파일시스템으로 되어있다. 사용자가 이 영역을 사용할 일은 없고 컨테이너가 부팅하고 나면 이 영역은 unmount 된다. 
+가장 기본 레이어는 boot file system `bootfs`로 일반적인 Linux boot 파일시스템으로 되어고, 사용자가 이 영역을 사용할 일은 없고 컨테이너가 부팅하고 나면 이 영역은 unmount 됩니다.
 
-그 다음에 `rootfs`라는 root 파일 시스템을 레이어로 가진다. `union mount`를 사용해서 여러개의 파일 시스템을 마운트 하되 하나의 파일 시스템만 마운트 된 것 처럼 사용을 하게 하여 기본 이미지를 기준으로 여러개의 이미지 레이어를 가진다. 
+그 다음에 `rootfs`라는 root 파일 시스템을 레이어로 가집니다. `union mount`를 사용해서 여러개의 파일 시스템을 마운트 하되 하나의 파일 시스템만 마운트 된 것 처럼 사용을 하게 하여 기본 이미지를 기준으로 여러개의 이미지 레이어를 가집니다. 
 
 ![도커 이미지 레이어](https://1.bp.blogspot.com/-Io2aW5QMzUs/WM1ais914bI/AAAAAAAAAfs/9fPX6O1OHOg3HxR-fkXnqW9cGhpQgxlAwCPcB/s1600/Layer3b.png "소스:http://neokobo.blogspot.com/2017/03/docker-container.html")
 
-그래서 도커에서 모든 이미지를 보면 여러개가 보인다.
+그래서 도커에서 모든 이미지를 보면 여러개가 보입니다.
 
 ![Alt text](https://monosnap.com/image/iNDhFHjIQRsHERwBadTFKO5SuTDz0m.png)
 
@@ -175,7 +178,7 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
 ![](https://zdnet2.cbsistatic.com/hub/i/r/2015/07/21/bb0de0fc-5d9c-47c3-96dd-42ed50858fdb/resize/370xauto/8999227b80cc063f94a76f2b628b0499/kubernetes-logo.png)
 
-인터넷에서도 쿠버네테스(줄여서 K8S : K 과 S 사이에 8자의 문자가 있음)에 대한 정보는 쉽게 찾아볼 수 있다. 그 만큼 컨테이너를 운영하는데 널리 이용되는 오케스트레이터이며 관련자료도 많다고 볼 수 있습니다.
+인터넷에서도 쿠버네테스(줄여서 K8S : K 과 S 사이에 8자의 문자가 있음)에 대한 정보는 쉽게 찾아볼 수 있습니다. 그 만큼 컨테이너를 운영하는데 널리 이용되는 오케스트레이터이며 관련자료도 많다고 볼 수 있습니다.
 
 ### 왜 필요한가?
 
@@ -190,9 +193,9 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 - 로드밸런스는 어떻게 해야 할건지
 
 이를 위해 여러 호스트에서 도커 컨테이너들을 조율할 필요가 있는데, 이를 수행하는 것이 쿠버르네테스입니다. 쿠버네티스는 애플리케이션 컨테이너의 배치, 확장 및 운영을 자동화 하도록 설계된 오픈 소스 플랫폼 입니다. 쿠버네티스를 사용하면 다음과 같은 이점이 있습니다.
-- 애플리케이션을 빠르게 배포할 수 있다
-- 쉽게 확장 가능하다
-- 아주 작은 리소스를 사용한다
+- 애플리케이션을 빠르게 배포
+- 쉽게 확장 가능
+- 아주 작은 리소스를 사용
 
 ### 쿠버네티스 클러스터
 
@@ -212,11 +215,11 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
     
     노드는 Docker 나 rkt 같은 컨테어너를 핸들링 할 수 있는 툴을 가지고 있어야 합니다. 쿠버네티스 클러스터는 최소한 3개의 노드를 관리해야 합니다.
 
-### Kubernetes Deployments
+### 쿠버네티스 배포
 
 배포를 말하기에 앞서 Pod과 Deployement, Service 에 관한 이해가 필요합니다.
 
-- Kubernetes Pods
+- Pods
 
     ![pod](https://d33wubrfki0l68.cloudfront.net/5cb72d407cbe2755e581b6de757e0d81760d5b86/a9df9/docs/tutorials/kubernetes-basics/public/images/module_03_nodes.svg)
 
@@ -233,13 +236,13 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
     - 동일 작업을 수행하는 Pod은 ReplicaSet이라는 컨트롤러에 의해 정해진 룰에 따라 복제됩니다. 이때 복수의 Pod이 여러개의 Node에 걸쳐 실행될 수 있습니다.
       
 
-- Kubernetes Deployment 
+- Deployment 
 
     ![](https://d33wubrfki0l68.cloudfront.net/152c845f25df8e69dd24dd7b0836a289747e258a/4a1d2/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg)
 
     애플리케이션의 배포/삭제, scale out의 역할 담당합니다. Deployment를 생성하면 pod과 ReplicaSets을 함께 생성됩니다.Pod에 containerized 애플리케이션이들이 포함되고, pod이 생성되면서 애플리케이션이 배포됩니다.
 
-- Kubernetes Service
+- Service
 
     ![](https://d33wubrfki0l68.cloudfront.net/cc38b0f3c0fd94e66495e3a4198f2096cdecd3d5/ace10/docs/tutorials/kubernetes-basics/public/images/module_04_services.svg)
 
@@ -256,7 +259,7 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
 애플리케이션 인스턴스가 생성되면 쿠버네티스 Deployment Controller는 계속적으로 이 인스턴스를 모니터링 합니다. 만약 불행하게 인스턴스가 다운되거나 삭제되면 Deployment Controller는 이를 다른것으로 대체합니다. 이렇게 자동으로 머신의 문제를 해결합니다.
 
-#### Deployment Process
+#### 배포 프로세스
 
 ![](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png)
 
@@ -337,6 +340,10 @@ Name of the Pod: kubernetes-bootcamp-5c69669756-jq2n9
 $ curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
 Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-5c69669756-jq2n9 | v=1
 ~~~
+
+이상 도커와 쿠버네티스에 대해서 알아보았습니다.
+
+다음은 오라클에서 지원하는 쿠버네티스 환경과 그 구성법에 대해 알아보겠습니다.
 
 
 
