@@ -13,7 +13,7 @@ language = ""
 Oracle Application Container Cloud를 활용해서 10분 안에 jsp를 바로 서비스하는 과정을 설명합니다.
 
 ***
-## Hello App 준비하기
+## Hello App 준비하기 
 간단히 Hello를 출력하는 index.jsp를 아래와 같이 작성하겠습니다.
 <pre><code><%
 	out.println("Hello Oracle Cloud");
