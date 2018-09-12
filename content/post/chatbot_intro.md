@@ -24,6 +24,7 @@ language = ""
 오라클 챗봇을 만들 수 있는 Intelligent Bots를 체험 계정은 아래에서 신청 하실 수 있습니다. 문제가 있으시면 오라클 영업대표님께 문의부탁드립니다. 
 [Oracle 트라이얼 계정 신청 페이지 바로가기](https://cloud.oracle.com/en_US/tryit)
 
+
 #### - 오라클 챗봇 장점? 
 ![Screen Shot 2018-08-22 at 3.04.49 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-22%20at%203.04.49%20PM.png)
 
@@ -80,7 +81,6 @@ Training Data를 넣어서 Intent를 학습시킨 후에, Test를 해보 실 수
 봇이 이해못하거나, 민감한 질문이 들어왔을때 뒷단에 상담원이 기다리고 있다가 대화에 들어올 수 있습니다. 봇과 상담원 간의 트랜지션이 seamless하게 이뤄지기 때문에, 사용자 입장에서는 했던 질문을 또 할 필요가 없습니다.
 
 ##### 7. Monitoring & Analytics 
-
 챗봇을 만드셨습니다. 하지만, 유저는 챗봇만을 통해서 비지니스와 인터랙트하는 것은 아닐것입니다. 유저는 웹사이트, 앱 등으로도 비지니스와 연결 될 수 있습니다. 그렇다면, 유저가 원하는 것이 무엇인지 정확하게 파악하기위해서는 전 채널을 아우르는 Monitoring 및 Analytics가 있어야합니다. 모든 채널에 대해 분석 및 business impact까지 이어질 수 있는 효과적인 툴을 제공 합니다. 
 
 ![Screen Shot 2018-08-22 at 3.43.47 P](https://oracloud-kr-teamrepo.github.io/2018/chatbot_image_repo/15347473059168/Screen%20Shot%202018-08-22%20at%203.43.47%20PM.png)
