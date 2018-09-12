@@ -1,7 +1,7 @@
 +++
 date = "2018-09-11T17:00:00+09:00"
 description = "Application Container Cloud Service를 활용하여 손쉽게 웹 서비스를 구축하는 방법에 대한 소개입니다."
-title = "Application Container로 10분 안에 웹 서비스 구축하기"
+title = "Application Container로 10분 안에 웹서비스 구축"
 thumbnailInList = "https://monosnap.com/image/C1zbSeu5fc6l78BLY3qFwSZqmPe8EQ.png"
 thumbnailInPost = "https://monosnap.com/image/gYEfJYExUmyNuGFvqiX1pDdoBzdd1G.png"
 tags = ["ORACLE", "Oracle Cloud", "Application Container Cloud", "accs", "Cloud Native", "Polyglot", "오라클 클라우드", "Java EE"]
