@@ -2,8 +2,8 @@
 date = "2018-09-13T17:00:00+09:00"
 description = "Oracle Autonomous Blockchain Cloud Service에 대한 간략한 소개입니다."
 title = "Oracle Autonomous Blockchain Cloud Service 소개"
-thumbnailInList = "https://monosnap.com/image/dqbRvt2Tr7BwDWujgssECpJb3HH6Ur"
-thumbnailInPost = "https://monosnap.com/image/uXXAY4cJhcI9wGtfcL5XfA5PUa5Qlo"
+thumbnailInList = "https://monosnap.com/image/Xmz4G13ymaej6GeJtZ6e4dov6rmO78"
+thumbnailInPost = "https://monosnap.com/image/HVPAUNVfyIyAX4yi55XrzJ9HVFL7ik"
 tags = ["ORACLE", "Oracle Cloud", "Blockchain", "OABCS", "Blockchain platform", "오라클 클라우드", "HyperLedger"]
 categories = ["Oracle-Cloud"]
 author = "jongmin.lim"
