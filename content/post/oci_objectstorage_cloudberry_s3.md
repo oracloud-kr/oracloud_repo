@@ -4,7 +4,7 @@ description = "Cloudberry Explorer에 OCI의 Object Storage를 연동시키는 �
 title = "Cloudberry로 OCI Object Storage 접속하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_small.jpeg"
 thunbnailInPost = "https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry.png" 
-tags: [oracle, oci, iaas, cloud, objectstorage, s3, cloudberry]
+tags = ["oracle", "oci", "iaas", "cloud", "objectstorage", "s3", "cloudberry"]
 categories = ["Tech Tip"]
 author = "jesam.kim"
 language = ""
@@ -33,7 +33,7 @@ OCI의 Web Console로 로그인 합니다.
 
 
 Object Storage 버킷을 생성할 COMPARTMENT를 지정합니다. 
-그리고 “Create Bucket” 버튼을 클릭합니다.
+그리고 **Create Bucket** 버튼을 클릭합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api02.png)
 
@@ -72,13 +72,13 @@ AWS S3 호환 API를 사용하기 위해 사용자의 액세스 키와 비밀 �
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api07.png)
 
 
-Amazon S3 Compatibility API Keys 화면에서 “Generate Secret Key” 버튼을 클릭합니다.
+Amazon S3 Compatibility API Keys 화면에서 **Generate Secret Key** 버튼을 클릭합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api08.png)
 
 
 여기서는 CloudBerry로 키이름을 지정하였습니다. 
-이름 입력 후, “Generate Secret Key” 버튼을 클릭합니다.
+이름 입력 후, **Generate Secret Key** 버튼을 클릭합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api09.png)
 
@@ -112,8 +112,8 @@ Select Cloud Storage 창에서 **S3 Compatible** 를 더블클릭 합니다.
 	- Display name : 원하는 이름을 입력합니다.
 	- Service point : 테넌트이름.compat.objectstorage.리전이름.oraclecloud.com 형식으로 입력합니다.
 			  ex) jaykim000.compat.objectstorage.us-ashburn-1.oraclecloud.com
-	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키의 OCID (앞에서 메모장에 복사하였음)
-	- Secret Key : 키 생성 단계에서 Generate Key 한 값을 지정 (앞에서 메모장에 복사하였음)
+	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키의 OCID (앞에서 복사하였음)
+	- Secret Key : 키 생성 단계에서 Generate Key 한 값을 지정 (앞에서 복사하였음)
 	- Signature version : 여기서 “4”로 지정
 	
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api14.png)
