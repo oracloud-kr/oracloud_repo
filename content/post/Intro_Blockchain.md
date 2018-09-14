@@ -1,16 +1,16 @@
 +++
-date = "2018-09-11T17:00:00+09:00"
-description = "Application Container Cloud Service를 활용하여 손쉽게 웹 서비스를 구축하는 방법에 대한 소개입니다."
-title = "Application Container로 10분 안에 웹서비스 구축"
-thumbnailInList = "https://monosnap.com/image/C1zbSeu5fc6l78BLY3qFwSZqmPe8EQ.png"
-thumbnailInPost = "https://monosnap.com/image/gYEfJYExUmyNuGFvqiX1pDdoBzdd1G.png"
-tags = ["ORACLE", "Oracle Cloud", "Application Container Cloud", "accs", "Cloud Native", "Polyglot", "오라클 클라우드", "Java EE"]
+date = "2018-09-13T17:00:00+09:00"
+description = "Oracle Autonomous Blockchain Cloud Service에 대한 간략한 소개입니다."
+title = "Oracle Autonomous Blockchain Cloud Service 소개"
+thumbnailInList = "https://monosnap.com/image/dqbRvt2Tr7BwDWujgssECpJb3HH6Ur"
+thumbnailInPost = "https://monosnap.com/image/uXXAY4cJhcI9wGtfcL5XfA5PUa5Qlo"
+tags = ["ORACLE", "Oracle Cloud", "Blockchain", "OABCS", "Blockchain platform", "오라클 클라우드", "HyperLedger"]
 categories = ["Oracle-Cloud"]
 author = "jongmin.lim"
 language = ""  
 +++
 
-Oracle Application Container Cloud를 활용해서 10분 안에 jsp를 바로 서비스하는 과정을 설명합니다.
+HyperLedger Fabric 기반의 Oracle Autonomous Blockchain Cloud Service의 간략한 특징, 산업별 사례등에 대한 설명입니다.
 
 ***
 # Oracle Autonomous Blockchain Cloud Service 소개
