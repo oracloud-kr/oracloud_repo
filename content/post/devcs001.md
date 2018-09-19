@@ -1,5 +1,5 @@
 +++
-date = "2018-09-20T13:58:54+09:00"
+date = "2018-09-19T13:58:54+09:00"
 description = "Developer Cloud에서 Docker 이미지 빌드 후 Oracle Registry에 저장하는 방법"
 title = "Developer Cloud를 사용한 Docker Image 빌드 및 OCIR(Oracle Cloud Infrastructure Registry)에 Docker Image Push하기"
 thumbnailInList = "https://monosnap.com/image/q82Be6BlcGZpW46ZDiMOrBo7oOi7Ok.png"
