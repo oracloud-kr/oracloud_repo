@@ -1,6 +1,6 @@
 
 +++
-date = "2018-09-24T02:20:25+09:00"
+date = "2018-09-23T02:20:25+09:00"
 description = "OCI(IaaS)의 워크샵 시리즈 입니다."
 title = "OCI 따라하기 1-4. Private Subnet 설정하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch4/diagram2.png"
