@@ -2,7 +2,7 @@
 +++
 date = "2018-09-18T02:20:25+09:00"
 description = "OCI(IaaS)의 워크샵 시리즈 입니다."
-title = "OCI 따라하기 - Security List 설정하기"
+title = "OCI 따라하기 1-3. Security List 설정하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch3/SL.png"
 thumbnailInPost = ""
 tags = ["OCI", "Oracle Cloud"]
@@ -12,13 +12,22 @@ language = "bash"
 +++
 
 
-## OCI IaaS 따라하기
-1. OCI Network
+<font color=grey>
+### OCI IaaS 따라하기 시리즈
+1. OCI Network<br>
 	* VCN 생성하기
-	* DRG 생성하기
-	* Security List 설정하기
+	* DRG 생성하기</font><font color=red>
+	* Security List 설정하기</font><font color=grey>
+	* Private Subnet 설정하기
+2. OCI Instance
+	- Instance 생성하기
+	- Private Instance 생성하기
+3. Load Balancer
+	- Load Balancer 생성하기
+	- Load Balancer를 사용하여 보안강화하기
+4. Resource 삭제하기</font><br>
 
-———————————
+---
 
 ### Security List 설정하기
 **Security list**는 특정 포트 및 프로토콜을 사용하여 subnet및 인스턴스로의 트래픽을 제어하는 가상 방화벽입니다. 기존의 security list에 다른 규칙을 추가하는 방법을 알아봅니다.<br><br>
@@ -32,20 +41,23 @@ Menu - Networking -> VCN -> 해당 VCN의 상세 정보
 <br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch3/Picture2.png)<br>
 <그림2> Menu -> Network -> Dynamic Routing Gateway 클릭
 
-3. Edit All Rules를 클릭하여, 아래의 Rule을 추가합니다.
-|Source CIDR |0.0.0.0/0 (from IPs on the internet) |
-|Protocol |TCP |
-|Source port |all | 
-|Destination port |80 (for HTTP) |
+3. Edit All Rules를 클릭하여, 아래의 Rule을 추가합니다.<br>
+
+|항목|내용|
+|---|---|
+|Source CIDR|0.0.0.0/0 (from IPs on the internet)|
+|Protocol|TCP|
+|Source port|all|
+|Destination port|80 (for HTTP)|
+</table>
 <br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch3/Picture3.png)<br>
-<그림3> Security List Rule 추가하기<br>
+<그림3> Security List Rule 추가하기<br><br>
 추가할 security rule의 정보를 입력하고 Save security rule list를 클릭합니다.<br>
 Stateless박스 부분은 체크하지 않습니다. Stateful은 소스에 대한 응답을 다시 허용합니다. stateless는 소스에 응답하기 위해 명시적으로 egress규칙을 가져야 합니다.
 <br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch2/Picture4.png)<br>
-<그림4> Security List Rule 추가하기<br>
-
-3. 생성된 Rule을 확인합니다.
-<br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch2/Picture5.png)<br>
+<그림4> Security List Rule 추가하기<br><br>
+4. 생성된 Rule을 확인합니다.
+<br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch3/Picture5.png)<br>
 <그림5> Security List 확인 <br><br>
 
 ### Security List 구성도

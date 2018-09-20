@@ -1,8 +1,8 @@
 
 +++
 date = "2018-09-18T02:20:25+09:00"
-description = "OCI(IaaS)의 워크샵 시리즈 입니다."
-title = "OCI 따라하기 - DRG 생성하기"
+description = "OCI(IaaS)의 워크샵 시리즈 1-2 입니다."
+title = "OCI 따라하기 1-2. DRG 생성하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch2/DRG.png"
 thumbnailInPost = ""
 tags = ["OCI", "Oracle Cloud"]
@@ -11,13 +11,22 @@ author = "esther.ryu"
 language = "bash"  
 +++
 
+<font color=grey>
+### OCI IaaS 따라하기 시리즈
+1. OCI Network<br>
+	* VCN 생성하기</font><font color=red>
+	* DRG 생성하기</font><font color=grey>
+	* Security List 설정하기
+	* Private Subnet 설정하기
+2. OCI Instance
+	- Instance 생성하기
+	- Private Instance 생성하기
+3. Load Balancer
+	- Load Balancer 생성하기
+	- Load Balancer를 사용하여 보안강화하기
+4. Resource 삭제하기</font><br>
 
-## OCI IaaS 따라하기
-1. OCI Network
-	* VCN 생성하기
-	* DRG 생성하기
-
-———————————
+---
 
 ### DRG 생성하기
 VCN 생성하기에서 생성하였던, IGW(Internet Gateway)가 Public Internet과 연결하기 위한 통로라면, **DRG(Dynamic Routing Gateway)**는 **고객의 온 프레미스 환경에서 VCN에 접속하기 위한 통로**입니다. <br>
