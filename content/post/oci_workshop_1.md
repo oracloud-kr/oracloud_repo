@@ -1,8 +1,8 @@
 
 +++
 date = "2018-09-17T02:20:25+09:00"
-description = "OCI(IaaS)의 워크샵 시리즈 입니다."
-title = "OCI 따라하기 - VCN 생성하기"
+description = "OCI(IaaS)의 워크샵 시리즈 1-1 입니다."
+title = "OCI 따라하기 1-1. VCN 생성하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch1/VCN.png"
 thumbnailInPost = ""
 tags = ["OCI", "Oracle Cloud"]
@@ -11,12 +11,22 @@ author = "esther.ryu"
 language = "bash"  
 +++
 
+<font color=grey>
+### OCI IaaS 따라하기 시리즈
+1. OCI Network<br></font><font color=red>
+	* VCN 생성하기</font><font color=grey>
+	* DRG 생성하기
+	* Security List 설정하기
+	* Private Subnet 설정하기
+2. OCI Instance
+	- Instance 생성하기
+	- Private Instance 생성하기
+3. Load Balancer
+	- Load Balancer 생성하기
+	- Load Balancer를 사용하여 보안강화하기
+4. Resource 삭제하기</font><br>
 
-## OCI IaaS 따라하기
-1. OCI Network
-	* VCN설정하기
-
-———————————
+---
 
 ### Oracle Cloud에 로그인하기
 Oracle Cloud를 사용하기 위해서는, 다른 사용자들과 분리된  해당 계정이 사용할 네트워크를 먼저 구성하여야 합니다. Oracle Cloud에서는 이를 **VCN** - Virtual Cloud Network 라고 합니다. 

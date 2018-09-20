@@ -2,7 +2,7 @@
 +++
 date = "2018-09-18T02:20:25+09:00"
 description = "OCI(IaaS)의 워크샵 시리즈 입니다."
-title = "OCI 따라하기 - Security List 설정하기"
+title = "OCI 따라하기 1-3. Security List 설정하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch3/SL.png"
 thumbnailInPost = ""
 tags = ["OCI", "Oracle Cloud"]
@@ -12,11 +12,20 @@ language = "bash"
 +++
 
 
-## OCI IaaS 따라하기
-1. OCI Network
+<font color=grey>
+### OCI IaaS 따라하기 시리즈
+1. OCI Network<br>
 	* VCN 생성하기
-	* DRG 생성하기
-	* Security List 설정하기
+	* DRG 생성하기</font><font color=red>
+	* Security List 설정하기</font><font color=grey>
+	* Private Subnet 설정하기
+2. OCI Instance
+	- Instance 생성하기
+	- Private Instance 생성하기
+3. Load Balancer
+	- Load Balancer 생성하기
+	- Load Balancer를 사용하여 보안강화하기
+4. Resource 삭제하기</font><br>
 
 ---
 
