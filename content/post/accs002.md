@@ -57,7 +57,7 @@ manifest.json 이라는 이름으로 작성하셔야 하며 위와 같은 포맷
 이제 준비는 끝났으니 위 두 파일을 zip으로 압축합니다.
 
 ***
-## Oracle Cloud에 접속하기
+## Oracle Cloud에 Node 파일 배포하고 서비스 생성하기
 Oracle Cloud에 접속한 후 Application Container로 이동합니다.
 Application Container Cloud Service에 접속한 후 Create Application 버튼을 클릭합니다.
 
