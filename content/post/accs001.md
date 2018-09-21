@@ -3,7 +3,7 @@ date = "2018-09-11T17:00:00+09:00"
 description = "Application Container Cloud Service를 활용하여 손쉽게 웹 서비스를 구축하는 방법에 대한 소개입니다."
 title = "Application Container로 10분 안에 웹서비스 구축"
 thumbnailInList = "https://monosnap.com/image/C1zbSeu5fc6l78BLY3qFwSZqmPe8EQ.png"
-thumbnailInPost = "https://monosnap.com/image/gYEfJYExUmyNuGFvqiX1pDdoBzdd1G.png"
+thumbnailInPost = "https://d1ro8r1rbfn3jf.cloudfront.net/ms_198636/rLayDCqyUcW7gNitRajNC3Rg48PhjL/Application%2BContainer%2BCloud%2BService%2BProficiency%2BWebcast%2Bfor%2BJAPAC%2B-%2BFeb%2B5%2B2016%2B-%2BPPT%2B2018-09-11%2B16-41-43.png?Expires=1537599743&Signature=DoEBJbvVbR~r39bOdhn0qcDFRE4cZsrq1mR-TWWRyQJDL2VC7ZSz83xTbe74XGgDL7kUoxekdMqMJjCGNkgrTfS9iS7lLvWaMgR0irjCmV7NW62aHJGoLJwk1oxOpRf9MLymnksnJ7GN3ROSUs4mDblgP1T4EDxqPGzJVeGPEGJeAZbGz~TkqeBrwl2~6nQFR8ABMQZR~sFg0H2jMZR0Y435VWxA78sOCyOuJVAjG3xX4xX~rmpJmQLp6xj4hjZ~6LGXQYZTW9yJhBOKhWB2p-DrgztfkWszFqDi9Qj7lvY9Xzinm~~R9xtfRtbqk0X7dk~RrTOOLDbmrWik6pghZQ__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA"
 tags = ["ORACLE", "Oracle Cloud", "Application Container Cloud", "accs", "Cloud Native", "Polyglot", "오라클 클라우드", "Java EE"]
 categories = ["Oracle-Cloud"]
 author = "wonjo.yoo"
