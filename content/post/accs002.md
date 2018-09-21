@@ -88,7 +88,7 @@ Application Container Cloud Service에 접속한 후 Create Application 버튼�
 빠른 시간안에 OS 뿐만 아니라 node.js의 설치 없이 소스 배포 만으로 바로 운영이 가능한 서비스가 완성되었습니다.
 
 ***
-## 관리기능 - Upgrade
+## 관리기능 - Node runtime update
 생성된 서비스인 samplenode를 보면 'One or more update(s) available'이 나옵니다.
 node를 생성시에 버전을 6로 했기 때문에 최신버전의 node runtime patch가 있다는 것을 알려주고 있습니다.
 
