@@ -19,8 +19,8 @@ language = "bash"
 	- **Security List 설정하기**
 	- [Private Subnet 설정하기](../oci_workshop_4)
 2. OCI Instance
-	- [Instance 생성하기](../oci_workshop_5)<font color=grey>
-	- Private Instance 생성하기
+	- [Instance 생성하기](../oci_workshop_5)
+	- [Private Subnet에 생성하기](../oci_workshop_5)<font color=grey>
 3. Load Balancer
 	- Load Balancer 생성하기
 	- Load Balancer를 사용하여 보안강화하기

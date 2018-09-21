@@ -18,8 +18,8 @@ language = "bash"
 	- [Security List 설정하기](../oci_workshop_3)
 	- [Private Subnet 설정하기](../oci_workshop_4)
 2. OCI Instance
-	- **Instance 생성하기**<font color=grey>
-	- Private Subnet에 생성하기
+	- **Instance 생성하기**
+	- [Private Subnet에 생성하기](../oci_workshop_6)<font color=grey>
 3. Load Balancer
 	- Load Balancer 생성하기
 	- Load Balancer를 사용하여 보안강화하기
@@ -37,7 +37,7 @@ Menu - Compute -> Instances
 
 2. 인스턴스를 생성할 Compartment를 확인하고, Create Instance를 클릭합니다.
 <br>![](https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch5/Picture2.png)<br>
-<그림2> Menu -> Network -> Dynamic Routing Gateway 클릭
+<그림2> Menu -> Compute -> Instance -> Create Instance 클릭
 팝업창에서 필요한 정보를 입력합니다.
 
 |항목|내용|
