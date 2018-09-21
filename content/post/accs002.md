@@ -57,7 +57,7 @@ manifest.json 이라는 이름으로 작성하셔야 하며 위와 같은 포맷
 이제 준비는 끝났으니 위 두 파일을 zip으로 압축합니다.
 
 ***
-## Oracle Cloud에 접속하기
+## Oracle Cloud에 Node 파일 배포하고 서비스 생성하기
 Oracle Cloud에 접속한 후 Application Container로 이동합니다.
 Application Container Cloud Service에 접속한 후 Create Application 버튼을 클릭합니다.
 
@@ -88,7 +88,7 @@ Application Container Cloud Service에 접속한 후 Create Application 버튼�
 빠른 시간안에 OS 뿐만 아니라 node.js의 설치 없이 소스 배포 만으로 바로 운영이 가능한 서비스가 완성되었습니다.
 
 ***
-## 관리기능 - Upgrade
+## 관리기능 - Node runtime update
 생성된 서비스인 samplenode를 보면 'One or more update(s) available'이 나옵니다.
 node를 생성시에 버전을 6로 했기 때문에 최신버전의 node runtime patch가 있다는 것을 알려주고 있습니다.
 
