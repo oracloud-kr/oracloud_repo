@@ -28,7 +28,7 @@ Oracle Cloud의 Trial Account를 생성하는 방법은 [Oracle Cloud Trial 신�
 
 2. OCI Instance
 	- [Instance 생성하기](../oci_workshop_5)
-	- Private Instance 생성하기
+	- [Private Subnet에 생성하기](../oci_workshop_5)
 
 3. Load Balancer
 	- Load Balancer 생성하기
