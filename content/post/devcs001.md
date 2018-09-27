@@ -3,7 +3,7 @@ date = "2018-09-19T13:58:54+09:00"
 description = "Developer Cloud에서 Docker 이미지 빌드 후 Oracle Registry에 저장하는 방법"
 title = "Developer Cloud를 사용한 Docker Image 빌드 및 OCIR(Oracle Cloud Infrastructure Registry)에 Docker Image Push하기"
 thumbnailInList = "https://monosnap.com/image/q82Be6BlcGZpW46ZDiMOrBo7oOi7Ok.png"
-thumbnailInPost = "https://d1ro8r1rbfn3jf.cloudfront.net/ms_202447/fMnkS7eKBZfdTo1GQuD0CLhGxvFvt2/Presentation1%2B2018-09-18%2B17-48-33.png?Expires=1537601499&Signature=OjEEq1UbaJ4uQkdIzX21PMhZDlGxu~Y6toWO1Ry1YZeaBLg1FewARO61y0i-5rPPN-v2xY0C1JcXFg1OYNQcn1dqJfRjVnzYS1bglSK~ZDDxomwjSWPVpShsSmJVqdCkF8ecNKeQX-lw9eK4KZMBebpdJjh-LNLmwP4gyg4TUFvjgOC78KnB~F6zss5ErLh5gieFFzTaf2Sj9EtXwNAWW91zGam2xZua4-m7yhUX6eyTa~1DTxiQzjawPNrDzGD~t9Fy-NNALI-vqvIfucNVETGX9pgjduq463AY0JgaS2CvPoe4h~BzTuoTEdve-ReX-0ssFAONFz8lEf1s4fLG6w__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA"
+thumbnailInPost = "https://monosnap.com/image/uW0UJiWfZhsj6piiD3rMdVXqZYyNTE.png"
 tags = ["ORACLE", "Oracle Cloud", "Developer Cloud", "CI", "CD", "devops", "오라클 클라우드","Docker", "도커", "Registry", "OCIR"]
 categories = ["Oracle-Cloud"]
 author = "mee-nam.lee"
