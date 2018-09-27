@@ -2,8 +2,7 @@
 date = "2018-09-21T16:00:00+09:00"
 description = "Application Container Cloud Service를 활용하여 손쉽게 Node.JS를 배포하는 방법에 대한 소개입니다."
 title = "Application Container로 10분 안에 Node.js 배포하기"
-thumbnailInList = "https://d1ro8r1rbfn3jf.cloudfront.net/ms_202447/YqgG9G8BOy5QS7EPvTsQFl5OsWrpwr/accs_node.png?Expires=1537598563&Signature=RFS2C2xHjpTMkIz-7oq8TgPx3Eznk9LMk1adxS83ey3Y0lXwPriuB25GJ5hcHtAmO7D7B3yKAJq2lGBxtTSc5R3UsZ6U53hPqhAwdJxG1tKhzdtAdxR~QaVpbyPMJ85D~lCPGV6LavIFPjJcykMsEfYgDCeTQiKgTCSoIhrE2nx8jydqIhh6LtuFADzgWC~228GDqQiRMfEOAqT2kygeXiBoOPAXinE3YxZ~0CqFtn1rYdYrI~74uJp8XqerH4XQtkY3BY~9ybUYcQninx6E8pxHYQPy~I2nFy0Kc5V28L9QuWccVmbLHRJsa7ZSoDDOsG8F~N4tpYqDh2jDCEOR-g__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA"
-thumbnailInPost = "https://d1ro8r1rbfn3jf.cloudfront.net/ms_198636/rLayDCqyUcW7gNitRajNC3Rg48PhjL/Application%2BContainer%2BCloud%2BService%2BProficiency%2BWebcast%2Bfor%2BJAPAC%2B-%2BFeb%2B5%2B2016%2B-%2BPPT%2B2018-09-11%2B16-41-43.png?Expires=1537598491&Signature=IclWFCDeUeW74v9auV1wdkXwTtafHm20dRI5XSdTEjfY5psEFLg4GwEzZ9woTfuyLn~ASQMcv1ivK2LjNoIL~I7V56hS6e3mMB84Xk1av42QvMYjXcd9NLdFbT6MnahhWZAVeKEcVbudgMZ1xBXNULGdAVlE043ynYB5LOgt2zLPKuVOvlbp1BLdKALsnp2f2uCCI-1sRVgoGKmWO3UW4H0PoDdilVwHIY941HFmOAYuH18yDVOLXz1ByfXquzlDr23ZO~ccWdlp0jWZq4NnnRcoaMjL0CCotQAotHbpYcXimQ7O68VoNLQV2BHS62iG27Av4usdTwS-qo6Pry-o1Q__&Key-Pair-Id=APKAJHEJJBIZWFB73RSA"
+thumbnailInList = "https://monosnap.com/image/pGvHMqmsiXNR81hvRJNulS6W09PEGA"
 tags = ["ORACLE", "Oracle Cloud", "Application Container Cloud", "accs", "Cloud Native", "Polyglot", "오라클 클라우드", "Node.js"]
 categories = ["Oracle-Cloud"]
 author = "wonjo.yoo"
