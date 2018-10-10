@@ -2,7 +2,7 @@
 date = "2018-10-08T01:09:25+09:00"
 description = "Multiple VNIC를 이용하여 서로 다른 VCN으로 통신하는 방법 입니다."
 title = "Multiple VNIC로 서로 다른 VCN 연결하기: Part 1"
-thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics.png.png" 
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics.png" 
 tags = ["oracle", "oci", "iaas", "cloud", "network", "interconnect", "vcn", "vnic", "terraform", "oracle cloud", "오라클 클라우드"]
 categories = ["Tech Tip"]
 author = "jesam.kim"
