@@ -34,7 +34,7 @@ Oracle Cloud의 Trial Account를 생성하는 방법은 [Oracle Cloud Trial 신�
 	- [Load Balancer 생성하기](../oci_workshop_7)
 
 4. Resource 삭제하기
-	- Resource 삭제하기
+	- [Resource 삭제하기](../oci_workshop_8)
 
 ### 구축 다이어그램
 위의 단계를 수행하시면 아래와 같은 환경을 구축하실 수 있습니다.

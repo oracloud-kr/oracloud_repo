@@ -23,6 +23,7 @@ language = "bash"
 3. Load Balancer
 	- **Load Balancer 생성하기**
 4. Resource 삭제하기
+	- [Resource 삭제하기](../oci_workshop_8)
 
 ---
 
