@@ -20,11 +20,11 @@ language = "bash"
 	- [Private Subnet 설정하기](../oci_workshop_4)
 2. OCI Instance
 	- [Instance 생성하기](../oci_workshop_5)
-	- [Private Subnet에 생성하기](../oci_workshop_5)<font color=grey>
+	- [Private Subnet에 생성하기](../oci_workshop_6)
 3. Load Balancer
-	- Load Balancer 생성하기
-	- Load Balancer를 사용하여 보안강화하기
-4. Resource 삭제하기</font><br>
+	- [Load Balancer 생성하기](../oci_workshop_7)
+4. Resource 삭제하기
+	- [Resource 삭제하기](../oci_workshop_8)
 
 ---
 
@@ -43,7 +43,7 @@ Menu - Networking -> VCN -> 해당 VCN의 상세 정보
 3. Edit All Rules를 클릭하여, 아래의 Rule을 추가합니다.<br>
 
 |항목|내용|
-|---|---|
+|:---:|:---:|
 |Source CIDR|0.0.0.0/0 (from IPs on the internet)|
 |Protocol|TCP|
 |Source port|all|
