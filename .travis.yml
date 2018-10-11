@@ -6,7 +6,7 @@ script:
 - rm config.toml
 - mv config.toml.production config.toml
 - cat config.toml
-- hugo -v
+- hugo -v 
 
 after_success:
 - git clone https://$GIT_USER_ID:$GIT_USER_PW@github.com/$GIT_USER_ID/$TARGET_REPO.git ../blog
