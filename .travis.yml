@@ -1,6 +1,6 @@
 language: go
 
-install: go get -v github.com/spf13/hugo
+install: go get -v github.com/gohugoio/hugo
 
 script:
 - rm config.toml
