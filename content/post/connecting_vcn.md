@@ -10,9 +10,9 @@ language = ""
 adsense = "true"
 +++
 
-Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 연결하는 경우 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
+Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 연결할 경우 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. LPG를 사용하면 프로바이더 VCN이 고객 VCN과 연결되어 공유 리소스에 대한 Private Access를 허용할 수 있는 서비스 프로바이더 모델을 사용할 수 있습니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
 
-이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 다수의 VCN을 연결하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
+이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 여러 VCN을 연겨하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
 
 
 # Use Case
@@ -92,19 +92,21 @@ VCN-1관 VCN-2 모두 해당 Private 서브넷에서 각각 private 인스턴스
 8. BridgeInstance의 기본 VNIC 및 보조 VNIC의 IP 주소를 기록합니다.
 ![](https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics_7.png)
 
-9. VCN-1을 열고, PrivateRouteTable-1을 연 다음, BridgeInstance의 기본 VNIC IP 주소에 route rule을 추가하세요.
+9. BridgeInstance의 기본/보조 VNIC 모두 **Edit VNIC**에 들어가서 **Skip Source/Destination Check** 부분을 체크합니다.
+
+10. VCN-1을 열고, PrivateRouteTable-1을 연 다음, BridgeInstance의 기본 VNIC IP 주소에 route rule을 추가하세요.
 ![](https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics_8.png)
 
-10. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP 주소에 route rule을 추가하세요.
+11. VCN-2를 열고 PrivateRouteTable-2를 연 다음 BridgeInstance의 보조 VNIC IP 주소에 route rule을 추가하세요.
 ![](https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics_9.png)
 
-11. 다음 예제와 같이 VCN-1을 열고 MgmtSecurityList를 열고 ingress rule을 지정하세요. VCN-2 (10.1.0.0/16)와의 상호 통신에 필요한 additional rule이 강조 표시됩니다. VCN-2에 유사한 rule을 복제하세요.
+12. 다음 예제와 같이 VCN-1을 열고 MgmtSecurityList를 열고 ingress rule을 지정하세요. VCN-2 (10.1.0.0/16)와의 상호 통신에 필요한 additional rule이 강조 표시됩니다. VCN-2에 유사한 rule을 복제하세요.
 ![](https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics_10.png)
 
-12. VCN-1에서 다음 예제와 같이 PrivateSecurityList를 열고 ingress 및 egress rule을 지정하세요. VCN-2 에 유사한 rule을 복제하세요.
+13. VCN-1에서 다음 예제와 같이 PrivateSecurityList를 열고 ingress 및 egress rule을 지정하세요. VCN-2 에 유사한 rule을 복제하세요.
 ![](https://oracloud-kr-teamrepo.github.io/2018/10/connectingvcns/connect_vcns_using_vnics_11.png)
 
-13. 콘솔 관련 구성을 모두 완료한 후 [Oracle Linux 인스턴스에 로그인](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/accessing-oracle-linux-instance-using-ssh.html#GUID-D947E2CC-0D4C-43F4-B2A9-A517037D6C11)하여 다음 단계를 수행하세요.
+14. 콘솔 관련 구성을 모두 완료한 후 [Oracle Linux 인스턴스에 로그인](https://docs.oracle.com/en/cloud/iaas/compute-iaas-cloud/stcsg/accessing-oracle-linux-instance-using-ssh.html#GUID-D947E2CC-0D4C-43F4-B2A9-A517037D6C11)하여 다음 단계를 수행하세요.
 
 
 ### Configuring the Bridge Instance
