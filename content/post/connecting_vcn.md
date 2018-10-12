@@ -12,12 +12,12 @@ adsense = "true"
 
 Oracle Cloud Infrastructure에서는 둘 이상의 VCN(Virtual Cloud Network)을 연결할 경우 [LPG(Local Peering Gateway)](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)가 사용됩니다. LPG를 사용하면 프로바이더 VCN이 고객 VCN과 연결되어 공유 리소스에 대한 Private Access를 허용할 수 있는 서비스 프로바이더 모델을 사용할 수 있습니다. 그러나 [VCN 당 10개의 LPG만 연결](https://docs.cloud.oracle.com/iaas/Content/Network/Tasks/localVCNpeering.htm)할 수 있습니다. Oracle Cloud Infrastructure를 사용하는 IT 관리 회사의 예를 살펴보겠습니다. 이들은 하나의 VCN을 중앙 IT 팀이 제어하는 허브 VCN으로 프로비저닝 합니다. 각 클라이언트에 대해 Spoke VCN을 프로비저닝 합니다. 허브 VCN이 10개 이상의 클라이언트 VCN에 연결하여 관리해야 하는 경우 브릿지 인스턴스를 사용하면 제한 문제가 해결될 수 있습니다.
 
-이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 여러 VCN을 연겨하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
+이 포스트에서는 브릿지 인스턴스에서 보조 VNIC를 사용하여 여러 VCN을 연결하는 솔루션에 대해 설명합니다. 동일한 개념을 확장하여 동일한 리전 및 동일한 테넌시에 2개 이상의 VCN을 연결할 수 있습니다.
 
 
 # Use Case
 
-이 포스트에서는 비 중복 서브넷인 10.0.0.0/16 및 10.1.0.0/16 을 사용하여 두 개의 VCN (VCN-1 및 VCN-2)을 연결하는 예를 사용 합니다. 두 개의 VCN에 서브넷이 겹치면 동일한 VCN 내의 겹치는 끝점이 라우팅에 우선하기 때문에 트래픽은 동일한 VCN으로 제한합니다.
+이 포스트에서는 비 중복 서브넷(동일한 AD)인 10.0.0.0/16 및 10.1.0.0/16 을 사용하여 두 개의 VCN (VCN-1 및 VCN-2)을 연결하는 예를 사용 합니다. 두 개의 VCN에 서브넷이 겹치면 동일한 VCN 내의 겹치는 끝점이 라우팅에 우선하기 때문에 트래픽은 동일한 VCN 으로 제한합니다.
 
 # VCN-1 어떻게 VCN-2에 연결될까?
 
