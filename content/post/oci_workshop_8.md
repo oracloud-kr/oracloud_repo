@@ -3,7 +3,7 @@
 date = "2018-10-11T02:20:25+09:00"
 description = "OCI(IaaS)의 워크샵 시리즈 입니다."
 title = "OCI 따라하기 4. Resource 삭제하기"
-thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch8/diagram.png"
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/oci_workshop/ch8/Picture5-1.png"
 thumbnailInPost = ""
 tags = ["OCI", "Oracle Cloud", "VCN", "DRG", "Security List", "Load Balancer"]
 categories = ["Oracle Cloud"]
