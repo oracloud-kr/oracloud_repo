@@ -1,17 +1,27 @@
 
 +++
-date = "2018-09-02T23:20:25+09:00"
+date = "2018-10-15T09:00:00+09:00"
 description = "마이크로 서비스를 위한 기본이 되는 도커(Docker)와 쿠버네티스(Kubernetes)에 대해서 간략하게 설명합니다. Oracle Container Engine for Kubernetes를 위한 연재입니다."
-title = "Oracle Container Engine (OKE) #01 : Docker & Kubernetes"
-thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinlist.jpg"
-thumbnailInPost = "https://oracloud-kr-teamrepo.github.io/2017/08/eventhub/logoinpost.jpg"
+title = "OKE #01 : Docker & Kubernetes"
+thumbnailInList = "https://monosnap.com/image/3Xb8jKt90IUulng3VGibnUlgN6BEwA.png"
+thumbnailInPost = "https://monosnap.com/image/qcTmyALMNakSvz51bEudB5p4oPrDx7.png"
 tags = ["Docker", "Kubernetes", "Microservice", "Container", "Orchestrator", "AppDev", "DevOps"]
 categories = ["Oracle PaaS", "Container", "Docker", "Kubernetes"]
 author = "jonggyou.kim"
 language = ""
 +++
 
-# 마이크로 서비스의 시작, Docker 와 Kubernetes
+## Oracle Container Engine for Kubrnetes 시리즈 목차
+
+1. [Docker & Kubernetes](http://www.oracloud.kr/post/oke-1)
+1. [OKE 구성](http://www.oracloud.kr/post/oke-2)
+1. [OKE Cluster](http://www.oracloud.kr/post/oke-3)
+1. [애플리케이션 배포](http://www.oracloud.kr/post/oke-4)
+1. 예정입니다.
+
+
+
+## 마이크로 서비스의 시작, Docker 와 Kubernetes
 
 Docker(이하: 도커))나 Kubernetes(이하: 쿠버네티스)를 많이 들어봤을 것입니다.
 또한 마이크로 서비스도 처음 듣는 단어가 아닐 것입니다.
@@ -259,7 +269,7 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
 애플리케이션 인스턴스가 생성되면 쿠버네티스 Deployment Controller는 계속적으로 이 인스턴스를 모니터링 합니다. 만약 불행하게 인스턴스가 다운되거나 삭제되면 Deployment Controller는 이를 다른것으로 대체합니다. 이렇게 자동으로 머신의 문제를 해결합니다.
 
-#### 배포 프로세스
+### 배포 프로세스
 
 ![](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/07751442-deployment.png)
 
@@ -305,7 +315,7 @@ kubernetes-bootcamp-5c69669756-jq2n9   1/1       Running   1          50m
 ~~~
 
 
-## View our app
+### 애플리케이션 상태보기
 
 Pod은 쿠버네티스 내에서 수행이 되며 private, isolated network에서 수행이 됩니다. 기본적으로 같은 쿠버네티스 클러스터에서 다른 pod에서 보여지고 서비스되나 다른 네트워크에서는 그렇지 않습니다. 그래서 우리는 `kubectl`을 사용하여 다른 애플리케이션에서 방금 수행한 애플리케이션을 볼 수 있게 해야 합니다. `kubectl`을 사용하여 cluster-wide 한 proxy를 생성할 수 있습니다. 
 
@@ -340,6 +350,9 @@ Name of the Pod: kubernetes-bootcamp-5c69669756-jq2n9
 $ curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/
 Hello Kubernetes bootcamp! | Running on: kubernetes-bootcamp-5c69669756-jq2n9 | v=1
 ~~~
+
+Kubernetes 데쉬보드를 통해서도 현재 상태를 볼 수 있습니다.
+![Alt text](https://monosnap.com/image/oyAP3vyI9mzajNrJBFP47QV7h82k6U.png)
 
 이상 도커와 쿠버네티스에 대해서 알아보았습니다.
 
