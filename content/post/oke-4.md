@@ -1,0 +1,383 @@
++++
+date = "2018-10-15T12:00:00+09:00"
+description = "OKE에 애플리케이션을 배포해 봅니다. Oracle Container Engine for Kubernetes를 위한 연재입니다."
+title = "OKE #04 : 애플리케이션 배포"
+thumbnailInList = "https://monosnap.com/image/3Xb8jKt90IUulng3VGibnUlgN6BEwA.png"
+thumbnailInPost = "https://monosnap.com/image/qcTmyALMNakSvz51bEudB5p4oPrDx7.png"
+tags = ["Docker", "Kubernetes", "Microservice", "Container", "Orchestrator", "AppDev", "DevOps"]
+categories = ["Oracle PaaS", "Container", "Docker", "Kubernetes"]
+author = "jonggyou.kim"
+language = ""
++++
+## Oracle Container Engine for Kubrnetes 시리즈 목차
+
+1. [Docker & Kubernetes](http://www.oracloud.kr/post/oke-1)
+1. [OKE 구성](http://www.oracloud.kr/post/oke-2)
+1. [OKE Cluster](http://www.oracloud.kr/post/oke-3)
+1. [애플리케이션 배포](http://www.oracloud.kr/post/oke-4)
+1. 예정입니다.
+
+## OKE에 간단한 웹 애플리케이션 배포
+
+배포의 근본은 모든 K8 객체를 k8 클러스터에 적용하는 방법입니다. 이 작업을 수행하는 데는 kubectl을 사용하는데 여러 가지 방법이 있습니다.
+
+- run, expose
+- create
+- apply
+
+위의 모든 방법은 다른 목적과 단순성을 가지고 있습니다. 예를 들어 컨테이너가 원하는대로 작동하는지 신속하게 확인하려면 run 및 expose를 사용할 수 있습니다.
+
+자동화된 방법으로 생성하려면 create 를 사용할 수 있습니다.
+
+k8s 객체를 버전 제어하려면 k8s 객체의 데이터 정확도를 결정하는 데 도움이되는 apply를 사용하는 것이 좋습니다.
+
+## Run, Expose 옵션을 사용하여 배포하기
+
+### 목표사항
+- run 옵션으로 Hello World 어플리케이션의 5 개의 인스턴스를 실행합니다.
+- expose 옵션으로 외부 IP 주소를 공개하는 Service 개체를 만듭니다.
+- kubectl 명렬어를 통해 배포 상황을 알아봅니다.
+
+### 배포하기
+
+1. 클러스터에서 Hello World 응용 프로그램을 실행하십시오. 해당 응용 프로그램은 5개의 pod에서 수행이 되게 실행하십시오.
+
+    hello-world 샘플은 hub.docker.com 의 registry에 들어있는 shiftyou/node-web-app 를 사용하도록 하겠습니다.
+
+    ![Alt text](https://monosnap.com/image/0SldOlAPAzj1dBzu7LdKtyIloXeLSa.png)
+
+    ~~~
+    $ kubectl run hello-world --replicas=5 --labels="run=load-balancer-example" --image=shiftyou/node-web-app --port=8080
+
+    deployment.apps/hello-world created
+    ~~~
+
+    앞의 명령은 Deployment 개체와 관련 ReplicaSet 개체를 만듭니다. ReplicaSet에는 5개의 Pod가 있으며 각 Pod는 Hello World 응용 프로그램을 실행합니다.
+
+1. 배포에 대한 정보를 봅니다.
+    ~~~
+    $ kubectl get deployments hello-world
+
+    NAME          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+    hello-world   5         5         5            5           49s
+    ~~~
+    ~~~
+    $ kubectl describe deployments hello-world
+
+    Name:                   hello-world
+    Namespace:              default
+    CreationTimestamp:      Wed, 12 Sep 2018 14:46:12 +0900
+    Labels:                 run=load-balancer-example
+    Annotations:            deployment.kubernetes.io/revision=1
+    Selector:               run=load-balancer-example
+    Replicas:               5 desired | 5 updated | 5 total | 5 available | 0 unavailable
+    StrategyType:           RollingUpdate
+    MinReadySeconds:        0
+    RollingUpdateStrategy:  25% max unavailable, 25% max surge
+    Pod Template:
+    Labels:  run=load-balancer-example
+    Containers:
+    hello-world:
+        Image:        shiftyou/node-web-app
+        Port:         8080/TCP
+        Host Port:    0/TCP
+        Environment:  <none>
+        Mounts:       <none>
+    Volumes:        <none>
+    Conditions:
+    Type           Status  Reason
+    ----           ------  ------
+    Available      True    MinimumReplicasAvailable
+    Progressing    True    NewReplicaSetAvailable
+    OldReplicaSets:  <none>
+    NewReplicaSet:   hello-world-66df475748 (5/5 replicas created)
+    Events:
+    Type    Reason             Age   From                   Message
+    ----    ------             ----  ----                   -------
+    Normal  ScalingReplicaSet  1m    deployment-controller  Scaled up replica set hello-world-66df475748 to 5
+    ~~~
+
+1. ReplicaSet 객체에 대한 정보를 봅니다.
+
+    ~~~
+    $ kubectl get replicasets
+
+    NAME                     DESIRED   CURRENT   READY     AGE
+    hello-world-66df475748   5         5         5         2m
+    ~~~
+
+1. 배포를 제공하는 Service 개체를 만듭니다.
+    ~~~
+    $ kubectl expose deployment hello-world --type=LoadBalancer --name=hello-world-service
+
+    service/hello-world-service exposed
+    ~~~
+
+1. 서비스에 대한 정보를 봅니다.
+    ~~~
+    $ kubectl get services hello-world-service
+
+    NAME                  TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
+    hello-world-service   LoadBalancer   10.96.65.76   <pending>     8080:32112/TCP   12s
+    ~~~
+
+    참고 : 외부 IP 주소가 \<pending>으로 표시되면 1 분 동안 기다렸다가 동일한 명령을 다시 입력하십시오.
+    ~~~
+    $ kubectl get services hello-world-service
+
+    NAME                  TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)          AGE
+    hello-world-service   LoadBalancer   10.96.65.76   129.213.142.149   8080:32112/TCP   37s
+    ~~~
+
+1. 서비스에 대한 자세한 정보를 봅니다.
+    ~~~
+    $ kubectl describe services hello-world-service
+
+    Name:                     hello-world-service
+    Namespace:                default
+    Labels:                   run=load-balancer-example
+    Annotations:              <none>
+    Selector:                 run=load-balancer-example
+    Type:                     LoadBalancer
+    IP:                       10.96.65.76
+    LoadBalancer Ingress:     129.213.142.149
+    Port:                     <unset>  8080/TCP
+    TargetPort:               8080/TCP
+    NodePort:                 <unset>  32112/TCP
+    Endpoints:                10.244.0.14:8080,10.244.1.12:8080,10.244.2.13:8080 + 2 more...
+    Session Affinity:         None
+    External Traffic Policy:  Cluster
+    Events:
+    Type    Reason                Age   From                Message
+    ----    ------                ----  ----                -------
+    Normal  EnsuringLoadBalancer  1m    service-controller  Ensuring load balancer
+    Normal  EnsuredLoadBalancer   36s   service-controller  Ensured load balancer
+    ~~~
+    서비스에 노출 된 외부 IP 주소 (LoadBalancer Ingress)를 적어 두십시오. 이 예에서 외부 IP 주소는 129.213.142.149 입니다. 또한 Port 및 NodePort의 값을 기록하십시오. 이 예에서 Port는 8080 이고 NodePort는 32112 입니다.
+
+1. 이전 출력에서는 서비스에 여러 Endpoints (10.244.0.14:8080,10.244.1.12:8080,10.244.2.13:8080 + 2)이 있음을 알 수 있습니다. 이 주소는 Hello World 응용 프로그램을 실행중인 pod의 내부 주소입니다. 이 주소가 pod 주소인지 확인하려면 다음 명령을 입력하십시오.
+
+    ~~~
+    $ kubectl get pods --output=wide
+
+    NAME                           READY     STATUS    RESTARTS   AGE       IP            NODE
+    hello-world-66df475748-6ghvj   1/1       Running   0          6m        10.244.2.13   129.213.96.143
+    hello-world-66df475748-869q6   1/1       Running   0          6m        10.244.3.7    129.213.157.158
+    hello-world-66df475748-gnlln   1/1       Running   0          6m        10.244.0.14   129.213.88.191
+    hello-world-66df475748-j826q   1/1       Running   0          6m        10.244.4.6    129.213.128.152
+    hello-world-66df475748-zzg6m   1/1       Running   0          6m        10.244.1.12   129.213.62.253
+    ~~~
+
+1. 외부 IP 주소 (LoadBalancer Ingress)를 사용하여 Hello World 응용 프로그램에 액세스하십시오.
+    ~~~
+    $ curl http://<external-ip>:<port>
+    ~~~
+    ~~~
+    $ curl http://129.213.142.149:8080
+
+    Hello world
+    ~~~
+    여기서 \<external-ip>는 서비스의 외부 IP 주소 (LoadBalancer Ingress)이고 \<port>는 서비스 설명의 Port 값입니다.
+
+    성공적인 요청에 대한 응답은 `Hello world`입니다.
+
+
+    축하합니다.! 
+    
+    새로운 helloworld 애플리케이션을 성공적으로 배포했습니다.
+
+### 삭제하기
+1. `Service`를 삭제하려면 다음 명령을 입력하십시오.
+    ~~~
+    $ kubectl delete services hello-world-service
+
+    service "hello-world-service" deleted
+    ~~~
+1. Hello World 응용 프로그램을 실행중인 `Deployment`, `ReplicaSet` 및 `Pod`를 삭제하려면 다음 명령을 입력하십시오.
+    ~~~
+    $ kubectl delete deployment hello-world
+
+    deployment.extensions "hello-world" deleted
+    ~~~
+1. 삭제가 완료되었는지 검사합니다.
+    ~~~
+    $ kubectl get deployment
+    
+    No resources found.
+    ~~~
+    ~~~
+    $ kubectl get services
+    
+    NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+    kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   3h
+    ~~~
+
+
+    축하합니다.! 
+    
+    hello-world 애플리케이션을 성공적으로 삭제했습니다.
+
+
+
+## Create 옵션을 사용하여 배포하기
+
+### 목표사항
+- yaml 파일의 내용을 알아봅니다.
+- create 옵션으로 배포를 합니다.
+- 데시보드로 사항을 알아봅니다.
+
+### yaml 파일 구성
+
+1. create 를 통해 배포하려면 yaml 파일이 필요합니다. 배포할 샘플 응용 프로그램에 대해서 알아보도록 합니다. 브라우저에서 다음을 입력합니다.
+    ~~~
+    https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml
+    ~~~
+
+    그럼 다음과 같은 yaml 파일이 보일 것입니다.
+    ~~~yaml
+    apiVersion: apps/v1beta1
+    kind: Deployment
+    metadata:
+      name: hello-k8s-deployment
+    spec:
+      selector:
+        matchLabels:
+          app: helloworld
+        replicas: 1 # deployment runs 1 pods matching the template
+        template: # create pods using pod definition in this template
+          metadata:
+            labels:
+              app: helloworld
+            spec:
+              containers:
+              - name: helloworld
+                image: karthequian/helloworld:latest
+                ports:
+                - containerPort: 80 #Endpoint is at port 80 in the container
+    ---
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: hello-k8s-service
+    spec:
+      type: NodePort #Exposes the service as a node port
+      ports:
+      - port: 80
+        protocol: TCP
+        targetPort: 80
+      selector:
+        app: helloworld
+    ~~~
+
+    내용을 설명하지면, 
+    - helloworld 라는 애플리케이션의 이름
+    - 디플로이명 : hello-k8s-deployment
+    - 서비스명 : hello-k8s-service
+    - karthequian/helloworld 라는 이름의 docker image를 사용
+    - 컨테이너의 내부 포트는 80 포트
+    - 외부포트는 NodePort 형식으로 80 포트 사용
+    - 1개의 pod 에 배포
+    
+    위의 내용으로 애플리케이션을 쿠버네티스에 배포를 하도록 합니다. 
+
+### 배포하기
+
+1. 터미널 창에서 다음을 입력하여 샘플 helloworld 애플리케이션을 클러스터에 배포하십시오.
+    ~~~sh
+    $ kubectl create -f https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml
+
+    deployment.apps/hello-k8s-deployment created
+    service/hello-k8s-service created
+    ~~~
+    메시지는 배포 hello-k8s-deployment와 서비스 hello-k8s-service가 모두 만들어 졌음을 확인합니다.
+
+
+
+1. 다음의 명령으로 잘 배포되었는지 알 수 있습니다.
+    ~~~
+    $ kubectl get deployments
+    
+    NAME                   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+    hello-k8s-deployment   1         1         1            1           25s
+    ~~~
+    
+    ~~~
+    $ kubectl get services
+    
+    NAME                TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)        AGE
+    hello-k8s-service   NodePort    10.96.95.0   <none>        80:31139/TCP   1m
+    kubernetes          ClusterIP   10.96.0.1    <none>        443/TCP        4h
+    ~~~
+
+1. Kubernetes 대시 보드가 표시된 브라우저로 돌아갑니다. 이제 Overview 페이지에 helloworld 샘플 응용 프로그램이 클러스터의 한 노드에서 한 pod에 hello-k8s-deployment로 배포 된 것으로 표시됩니다.
+
+    ![Alt text](https://monosnap.com/image/TErE4q8p8ULAxfplebGIiD85o3Ph7m.png)
+
+1. http://\<node-address>:\<port-number> 형식으로 helloworld 응용 프로그램에 액세스하려면 url을 어셈블하십시오. 다음과 같이 Kubernetes 대시 보드에서 \<node-address> 및 \<port-number> 값을 얻습니다.
+    - \<node-address>를 찾으려면 창을 클릭하여 helloworld 애플리케이션을 실행하는 창에 대한 정보를 보고 `Node` 열에서 hello-k8s-deployment를 실행하는 노드의 주소를 가져옵니다. 예 : 129.213.96.143.
+
+        ![Alt text](https://monosnap.com/image/tEpOmOmQNQx9IRKf2CE1pMZ4wIBhhc.png)
+
+    - \<port-number>를 찾으려면 `Services`를 클릭하여 hello-k8s-service에 대한 정보를 보고 `Internal endpoints` 열에서 서비스가 실행되는 포트 (포트 80 포함)를 가져옵니다. 예 : 포트 31139.
+
+        ![Alt text](https://monosnap.com/image/8rAxzWoJSFc8eGCwXzIrXhzzQnuSr7.png)
+
+1. 새 브라우저 창을 열고 url을 입력하여 브라우저의 URL 필드에 helloworld 응용 프로그램에 액세스하십시오. 예를 들어 전체 URL은 http://129.213.96.143:31139/ 처럼 보일 수 있습니다.
+
+    브라우저가 페이지를로드하면 페이지에 다음과 같은 메시지가 표시됩니다.
+
+    ![Alt text](https://monosnap.com/image/vUhFKucV5ddBPy0lrQIkKMbrBfrZZY.png)
+
+    페이지 하단의 페이지 뷰 카운터는 페이지가 방문 된 횟수를 표시하고 처음에는 '1'을 표시합니다. 브라우저를 리프레쉬 하면 방문 된 횟수가 증가합니다.
+
+    축하합니다.! 
+    
+    새로운 helloworld 애플리케이션을 성공적으로 배포했습니다.
+
+### 삭제하기
+1. `Service`를 삭제하려면 다음 명령을 입력하십시오.
+    ~~~
+    $ kubectl delete -f https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml
+    
+    deployment.apps "hello-k8s-deployment" deleted
+    service "hello-k8s-service" deleted
+    ~~~
+
+1. 삭제가 완료되었는지 검사합니다.
+    ~~~
+    $ kubectl get deployment
+    
+    No resources found.
+    ~~~
+    ~~~
+    $ kubectl get services
+    
+    NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+    kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   3h
+    ~~~
+
+
+    축하합니다.! 
+    
+    새로운 helloworld 애플리케이션을 성공적으로 삭제했습니다.
+
+
+## Apply 옵션으로 배포하기
+
+이미 배포된 애플리케이션을 다시 배포하면 다음과 같은 오류가 납니다.
+~~~
+ $ kubectl create -f https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml
+
+Error from server (AlreadyExists): error when creating "https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml": deployments.apps "hello-k8s-deployment" already exists
+Error from server (AlreadyExists): error when creating "https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml": services "hello-k8s-service" already exists
+~~~
+
+이를 위해서 delete 후 다시 배포해도 되나, apply를 통해서 배포가 가능합니다.
+~~~
+$ kubectl apply -f https://raw.githubusercontent.com/karthequian/kubernetesHelloworld/master/hello.yaml
+
+deployment.apps/hello-k8s-deployment unchanged
+service/hello-k8s-service unchanged
+~~~
+위 메시지는 아무런 변화도 없이 배포하기 때문에 unchanged 이지만, yaml을 변경시키면 변경된 대로 배포가 됩니다.
+
