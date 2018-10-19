@@ -18,7 +18,7 @@ Oracle Cloud의 Trial Account를 생성하는 방법은 [Oracle Cloud Trial 신�
 
 
 ### OCI IaaS 따라하기 목차 
-* 컨텐츠는 순차적으로 업데이트 됩니다. (각 상세 목차를 클릭하시면 해당 페이지로 연결됩니다.)
+* 각 상세 목차를 클릭하시면 해당 페이지로 연결됩니다.
 
 1. OCI Network 
 	- [VCN 생성하기](../oci_workshop_1)
