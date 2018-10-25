@@ -1,6 +1,6 @@
 +++
 date = "2018-10-01T13:58:54+09:00"
-description = "Developer Cloud의 Build Pipeline 사용하여 여러 빌드 Job들이 연결된 순서화된 빌드 체인 만들기"
+description = "Developer Cloud의 Build Pipeline 사용하여 여러 빌드 Job들이 연결된 일련의 빌드 작업 만들기"
 title = "Developer Cloud의 Build Pipeline 사용하기"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/10/devcs002_intro.png"
 thumbnailInPost = ""
