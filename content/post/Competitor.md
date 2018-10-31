@@ -2,7 +2,7 @@
 date = "2018-10-31T12:00:00+09:00"
 description = "HyperLedger Fabric과 Etheruem 비교에 대한 기고문입니다."
 title = "HyperLedger Fabric과 Ethereum 비교"
-thumbnailInList = "https://monosnap.com/image/Xmz4G13ymaej6GeJtZ6e4dov6rmO78"
+thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/11/Blockchain_Cloud.png"
 tags = ["ORACLE", "Oracle Cloud", "Blockchain", "OABCS", "Blockchain platform", "오라클 클라우드", "HyperLedger"]
 categories = ["Oracle-Cloud"]
 author = "jongmin.lim"
@@ -24,7 +24,7 @@ language = ""
 
 ## HyperLedger와 Ethereum의 주요 차별점
 
-![OABCS_strength](./img/HLFvsEther.PNG)
+![OABCS_strength](https://oracloud-kr-teamrepo.github.io/2018/11/HLFvsEther.PNG)
 
 ### 1. 네트워크 유형
 - 이더리움: 익명성을 가지고 있어 누구나 블록체인 네트워크에 참여할 수 있는 퍼블릭 블록체인 유형
@@ -49,11 +49,11 @@ language = ""
 - 하이퍼레저 패브릭: 엔터프라이즈 블록체인으로 B2B 유형에 적합
 
 ## 퍼블릭 블록체인 대비 기업형 블록체인이 가져야 할 요소
-![OABCS_strength](./img/entb.PNG)
+![OABCS_strength](https://oracloud-kr-teamrepo.github.io/2018/11/entb.PNG)
 그럼 이더리움 대비 하이퍼레저와 같은 엔터프라이즈 블록체인에서는 어떠한 점을 더 신경 써야 할까? 다음 엔터프라이즈 블록체인에 대한 정의에서 그 답을 찾을 수 있을듯하다.
 "엔터프라이즈 블록체인이란 블록체인 네트워크의 확인된 데이터를 기반으로 더 많은 거래 수행, 보안 강화, 비용 절감 등을 통해 가입되어 있는 컨소시엄 구성원 간의 투명성을 제공해야 한다."
 하이퍼레저 이외의 엔터프라이즈 블록체인을 사용한다 하더라도 위에서 말한 요건이 충족되는지 잘 검토해서 사용해야 할 것이다.
 
 ### 요약
 지금까지 이야기한 걸 정리하면 아래와 같이 하이퍼레저와 이더리움에 대한 비교 요약 테이블로 정리될 듯하며 오라클은 관련 하이퍼레저 패브릭을 기반으로 한 블록체인 플랫폼을 이용하고 있다고 정리할 수 있겠다.
-![OABCS_strength](./img/sum.PNG)
+![OABCS_strength](https://oracloud-kr-teamrepo.github.io/2018/11/sum.PNG)
