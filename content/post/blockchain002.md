@@ -185,6 +185,11 @@ ledger가 초기화 되었습니다.
 
 더 자세한 사항은 아래 제품 자료를 참고하세요.
 
+## 관련글
+- 이전글 : [Oracle Autonomous Blockchain Cloud를 이용한 블록체인 네트워크 생성 및 편리한 관리 기능 살펴보기](http://www.oracloud.kr/post/blockchain001/)
+- 다음글 : [Node.js Fabric Client SDK를 사용하여 오라클 블록체인 클라우드에 배포된 Fabcar 체인코드 호출하기](http://www.oracloud.kr/post/blockchain003/)
+
+
 ## 참고 자료
 - [Oracle Blockchian Cloud](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/index.html)
 - [Oracle Blockchian Cloud - 체인코드 배포 및 관리](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/user/deploy-and-manage-chaincodes.html)

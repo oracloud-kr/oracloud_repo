@@ -98,6 +98,8 @@ Ledger는 채널 별로 저장되므로 Channel 하부 메뉴에서 Ledger 기�
 여기까지 Oracle Autonomous Blockchain Cloud Service의 관리 기능에 대해 알아보았습니다. 실제 채널을 구성하고 체인코드를 배포하는 과정에서의 콘솔 기능 사용에 대해서는 다음에 이어지는 기고를 통해 다루도록 하겠습니다.
 
 더 자세한 사항은 아래 제품 자료를 참고하세요.
+## 관련글
+- 다음글 : [오라클 블록체인 클라우드에 Hyperledger Fabric 샘플 체인코드 Fabcar 배포하기](http://www.oracloud.kr/post/blockchain002/)
 
 ## 참고 자료
 - [Oracle Blockchian Cloud](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/index.html)
