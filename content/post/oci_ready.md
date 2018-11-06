@@ -11,7 +11,7 @@ author = "esther.ryu"
 language = "bash"  
 +++
 
-이번주 Oracle OpenWorld에서 제시한 오라클의 확실한 메세지는, Oracle Cloud Infrastructure(OCI)는 모든 종류의 워크로드를 운영할 준비가 되어 있다는 것입니다.
+이번주 Oracle OpenWorld에서 제시한 오라클의 확실한 메세지는, Oracle Cloud Infrastructure(OCI)는 모든 종류의 워크로드에 적합한 클라우드라는 것입니다.
 
 지난 40년간 오라클은 세계 최고의 기업들을 지원하는 IT기술들을 제공해왔습니다. 수 년에 걸쳐서 그러한 기술들이 데이터베이스, 미들웨어, 애플리케이션과 하드웨어 등 다양한 패키지로 제공되어져 왔습니다. 오늘날엔 클라우드를 통해 이러한 기술들이 동일하게 제공되며, 그로 인해 고객은 뛰어난 유연성을 경험하실 수 있게 되었습니다.
 
@@ -25,7 +25,8 @@ language = "bash"
 [Seeking Alpha와의 최근 인터뷰](https://seekingalpha.com/article/4209328-executive-interview-series-oracle)에서 언급했듯이, Oracle Cloud의 제품 전략에는 두 가지 주요 영역이 있습니다.
 
 - **클라우드 애플리케이션** : 오라클은 혁신적이고 폭넓은 SaaS 포트폴리오로 세계 최고의 클라우드 애플리케이션 제공 업체로 빠르게 자리 매김하고 있습니다.
-- **Oracle Cloud Infrastructure** : 하이퍼 스케일 IaaS 시장에서의 오라클의 통합적인 플랫폼으로써 오라클 애플리케이션 포트폴리오 및 자율 데이터베이스를위한 기반 플랫폼입니다.
+- **Oracle Cloud Infrastructure** : 하이퍼 스케일 IaaS 시장에서의 오라클의 통합적인 플랫폼으로써 오라클 애플리케이션 포트폴리오 및 자율 데이터베이스를위한 기반 플랫폼입니다.<br>
+
 Oracle Autonomous Database와 Oracle Application Server의 주요 제품군은 다른 클라우드보다 Oracle Cloud Infrastructure에서 더 뛰어납니다. Oracle Cloud Infrastructure의 네트워킹 아키텍처는 Oracle Database 성능 최적화와 Oracle Database를 기반으로하는 애플리케이션을 지원하도록 설계되었습니다. Oracle Cloud Infrastructure에서 실행되는 컴퓨팅 및 데이터베이스 인스턴스 간에 직접 point-to-point 연결을 사용하여 이를 수행함으로써, 낮은 대기 시간과 뛰어난 애플리케이션 성능을 제공합니다.
 
 [Autonomous Database에 대한 흥미로운 새 소식](https://www.oracle.com/corporate/pressrelease/oow18-autonomous-database-102218.html)을 읽어보십시오.
