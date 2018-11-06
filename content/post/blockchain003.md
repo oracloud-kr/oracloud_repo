@@ -242,6 +242,10 @@ request의 fcn, args를 변경해 가며 다른 메소드들도 수행해 보셔
 이상으로 node.js Fabric SDK를 사용하여 Oracle Blockchain Cloud에 연결하여 체인코들 호출하는 방법에 대해 살펴보았습니다. <br/>
 더 자세한 사항은 아래 제품 자료를 참고하세요.
 
+## 관련글
+- 이전글 : [오라클 블록체인 클라우드에 Hyperledger Fabric 샘플 체인코드 Fabcar 배포하기](http://www.oracloud.kr/post/blockchain002/)
+
+
 ## 참고 자료
 - [Oracle Blockchian Cloud](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/index.html)
 - [Oracle Blockchian Cloud - 애플리케이션 개발](https://docs.oracle.com/en/cloud/paas/blockchain-cloud/devapplicationtasks.html)
