@@ -12,10 +12,10 @@ adsense = "true"
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/11/trackingcost/tracking_cost01.png)
 
-Oracle Cloud Infrastructe를 사용함에 있어 부서별 혹은 Cost Center에 따른 비용 산정은 중요합니다.<br>
-Oracle Cloud Infrastrucre를 사용하면 **My Services Dashboard**를 사용하여 서비스 또는 Compartment 수준에서 비용을 tracking 할 수 있지만, multiple compartment 또는 compartment를 공유하는 프로젝트의 비용 또한 tracking 할 수 있는 유연성도 필요합니다.
+Oracle Cloud Infrastructure를 사용함에 있어 부서별 혹은 Cost Center에 따른 비용 산정은 중요합니다.<br>
+Oracle Cloud Infrastructure를 사용하면 **My Services Dashboard**를 사용하여 서비스 또는 Compartment 수준에서 비용을 tracking 할 수 있지만, multiple compartment 또는 compartment를 공유하는 프로젝트의 비용 또한 tracking 할 수 있는 유연성도 필요합니다.
 
-이를 고려하여 cost tracking tag를 사용하여 사용자, 프로젝트, 부서 또는 청구 목적으로 선택한 기타 메타 데이버별로 태그를 지정할 수 있습니다. **Cost Tracking Tag**는 My Services Dashboard의 온라은 보고서에 표시되는 정의된 태크의 한 유형 입니다. 이 기능은 제어가 손쉬운 스키마 기반 태그 지정 방식을 기반으로 합니다. 다른 클라우드는 자유 형식의 태그를 지원하지만 Oracle Cloud Infrastructure는 정의된(defined) 태그를 제공하여 보다 효과적으로 제어할 수 있습니다. 정의된 태그는 tagging을 제어할 수 있으며, 스팸을 방지하는데 도움이되는 스키마를 지원합니다. 적잘한 사용 및 청구관리를 보장 합니다.
+이를 고려하여 cost tracking tag를 사용하여 사용자, 프로젝트, 부서 또는 청구 목적으로 선택한 기타 메타 데이터 별로 태그를 지정할 수 있습니다. **Cost Tracking Tag**는 My Services Dashboard의 온라인 보고서에 표시되는 정의된 태그의 한 유형 입니다. 이 기능은 제어가 손쉬운 스키마 기반 태그 지정 방식을 기반으로 합니다. 다른 클라우드는 자유 형식의 태그를 지원하지만 Oracle Cloud Infrastructure는 정의된(defined) 태그를 제공하여 보다 효과적으로 제어할 수 있습니다. 정의된 태그는 tagging을 제어할 수 있으며, 스팸을 방지하는데 도움이 되는 스키마를 지원합니다.
 
 
 # Creating Cost Tracking Tags
@@ -28,11 +28,11 @@ Cost Tracking 태그를 생성하는 방법과 Cost를 귀속시킬 수 있는 �
 ![](https://oracloud-kr-teamrepo.github.io/2018/11/trackingcost/tracking_cost02.png)
 
 **Create Namespace Definition**을 클릭하여 새로운 Namespace Definition을 생성합니다.
-그리고 생성한 Namespace Definition(여기서 이름은 CostTracking으로 생성하였음)을 클릭합니다. 
+그리고 생성한 Namespace Definition을 클릭합니다. (여기서는 예로 CostTracking를 생성하였습니다)
 
 **Number of Cost-tracking Tags**를 확인해보세요. 이 값은 태그 네임스페이스의 모든 cost tracking tag definition을 보여줍니다. 최대 10개의 cost tracking definition을 가질수 있습니다.
 
-이제 나만의 cost tracking tag를 설정하는 방법을 살펴보겠습니다. 여기서는 예시로 cost를 4가지 방법으로 추적할 것이므로, 다음의 4가지 definition으로 cost tracking tag를 설정하였습니다.
+이제 나만의 cost tracking tag를 설정하는 방법을 살펴보겠습니다. 여기서는 예시로 cost를 4가지 방법으로 tracking 할 것이므로, 다음의 4가지 definition으로 cost tracking tag를 설정하였습니다.
 
 * **CostCenter**는 비용이 발생되는 내부 부서 입니다.
 * **Project**는 고객을 단일 제품 오퍼링에 함께 그룹화 합니다.
@@ -41,7 +41,7 @@ Cost Tracking 태그를 생성하는 방법과 Cost를 귀속시킬 수 있는 �
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/11/trackingcost/tracking_cost03.png)
 
-위와 같은 Tag Key Definition은 위에서 생성한 CostTracking이라는 Namespace Definition을 클릭하여 **Create Tag Key Definition**을 클릭하여 만들 수 있습니다. Cost-Tracking을 위한 것이라면 생성시에 **COST-TRACKING**에 체크해주어야 합니다.
+위와 같은 Tag Key Definition은 위에서 생성한 CostTracking이라는 Namespace Definition을 클릭하여 **Create Tag Key Definition**을 클릭하여 만들 수 있습니다. Cost-Tracking을 위한 것이라면 생성 시에 **COST-TRACKING**에 체크해주어야 합니다.
 
 이 태그 중 3개는 이미 **Cost-Tracking**을 **Yes**로 설정하여 Oracle의 청구 시스템으로 전송되었음을 나타냅니다.
 **Customer_Job**의 **Cost-Tracking**이 **No**로 설정되었으므로, 이 정의된 태그를 cost-tracking tag로 변환해야 합니다.
