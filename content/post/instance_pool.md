@@ -1,9 +1,9 @@
 +++
 date = "2018-11-12T01:09:25+09:00"
-description = "Enhanced Compute Instance Management on Oracle Cloud Infrastructure"
-title = "Instance Configuration 및 Instance Pool을 이용한 Compute Instance Management"
+description = "Instance Configuration 및 Instance Pool을 이용한 Compute Instance Management"
+title = "템플릿을 이용한 손쉬운 Compute Instance 관리"
 thumbnailInList = "https://oracloud-kr-teamrepo.github.io/2018/11/instance_pool/instance_pool0.jpg" 
-tags = ["oracle", "oci", "iaas", "cloud", "instance", "pool", "management", "compute", "oracle cloud", "오라클 클라우드"]
+tags = ["oracle", "oci", "iaas", "cloud", "instance", "pool", "configuration", "management", "compute", "automation", "자동화", "templete", "oracle cloud", "오라클 클라우드"]
 categories = ["Oracle IaaS"]
 author = "jesam.kim"
 language = ""
