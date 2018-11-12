@@ -30,7 +30,7 @@ Boot 또는 데이터 저장 영역 볼륨이 아직 없는 경우, 인스턴스
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/11/instance_pool/instance_pool2.jpg)
 
-저장된 configuration를 보려면,  **[Compute](https://console.us-ashburn-1.oraclecloud.com/a/compute/instances)**에서 **[Instance COnfiguration](https://console.us-ashburn-1.oraclecloud.com/compute/instance-configs)**을 선택합니다.
+저장된 configuration를 보려면,  **[Compute](https://console.us-ashburn-1.oraclecloud.com/a/compute/instances)**에서 **[Instance Configuration](https://console.us-ashburn-1.oraclecloud.com/compute/instance-configs)**을 선택합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/11/instance_pool/instance_pool3.jpg)
 
