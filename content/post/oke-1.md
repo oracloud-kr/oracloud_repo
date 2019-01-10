@@ -131,7 +131,7 @@ $ docker run hello-world
 
 
 <a name="Q03"></a>
-#### Q. 도커 이미지는 현재상태를 그대로 저장하는가?
+#### Q. 도커 이미지는 현재상태를 그대로 저장하는가? (참조 : https://rampart81.github.io/post/docker_image/)
 
 도커 이미지는 파일시스템들의 레이어로 만들어져 있습니다.
 
@@ -238,7 +238,16 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
     - 특별한 cluster IP address 같은 네트워크 공유
     - 이미지의 버젼과 포트 같은 각 컨테이너에 대한 정보 공유
 
-    Pod은 다음과 같은 특징을 가지고 있습니다.
+    Pod은 다음과 같은 특징을 가지고 있습니다. (참조 : https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-overview/)
+    - Pods는 쿠버네티스의 기본 구성 요소이다. 쿠버네티스 객체 모델 중 만들고 배포할 수 있는 가장 작고 간단한 단위이다. Pods는 클러스터에서의 Running 프로세스를 나타낸다.
+    - Pods는 애플리케이션 컨테이너(또는, 몇몇의 경우, 다중 컨테이너), 저장소 리소스, 특정 네트워크 IP 그리고, 컨테이너가 동작하기 위해 만들어진 옵션들을 캡슐화 한다. 
+    - 파드는 배포의 단위를 말한다. 아마 단일 컨테이너로 구성되어 있거나, 강하게 결합되어 리소스를 공유하는 소수의 컨테이너로 구성되어 있는 쿠버네티스에서의 애플리케이션 단일 인스턴스 를 의미함.
+    - Docker는 쿠버네티스 파드에서 사용되는 가장 대표적인 컨테이너 런타임이지만, 파드는 다른 컨테이너 런타임 역시 지원한다.
+    - 파드는 같은 파드 안에 속한 컨테이너에게 두 가지 공유 리소스를 제공한다.
+    - 각각의 파드는 유일한 IP주소를 할당 받는다.
+    - 파드는 공유 저장소 집합인 볼륨 을 명시할 수 있다. 파드 내부의 모든 컨테이너는 공유 볼륨에 접근할 수 있고, 그 컨테이너끼리 데이터를 공유하는 것을 허용한다. 
+
+    그리고 다음의 특징도 가지고 있습니다. (참조 : https://blog.2dal.com/category/kubernetes/page/3/)
     - 1개의 Pod은 내부에 여러개의 컨테이너를 가질 수 있지만 대부분 1~2개의 컨테이너를 가집니다.
     - 1개의 Pod은 여러개의 물리서버에 나눠지는 것이 아니고 1개의 물리서버(Node) 위에 올라갑니다.
     - Pod 내부의 컨테이너들은 네트워크와 볼륨을 공유하기 때문에 localhost 로 통신할 수 있습니다.
@@ -250,19 +259,13 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
     ![](https://d33wubrfki0l68.cloudfront.net/152c845f25df8e69dd24dd7b0836a289747e258a/4a1d2/docs/tutorials/kubernetes-basics/public/images/module_02_first_app.svg)
 
-    애플리케이션의 배포/삭제, scale out의 역할 담당합니다. Deployment를 생성하면 pod과 ReplicaSets을 함께 생성됩니다.Pod에 containerized 애플리케이션이들이 포함되고, pod이 생성되면서 애플리케이션이 배포됩니다.
+    애플리케이션의 배포/삭제, 스케일 아웃의 역할 담당합니다. pod과 ReplicaSets을 함께 생성되며 Pod에 애플리케이션이들이 포함되고, pod이 생성되면서 애플리케이션이 배포됩니다.
 
 - Service
 
     ![](https://d33wubrfki0l68.cloudfront.net/cc38b0f3c0fd94e66495e3a4198f2096cdecd3d5/ace10/docs/tutorials/kubernetes-basics/public/images/module_04_services.svg)
 
-    Pod의 논리적 집합과 액세스 정책일 정의하는 추상화된 개념입니다. 소프트웨어 서비스(예를들면 mssql)에 대해서 이름이 부여된 추상적인 개념이며 Service Object는 클러스터 내부에서 접근가능한 port와 외부에서 접근가능한 nodePort를 가집니다.이 포트를 통해 요청이 왔을 경우, Service object에 설정된 selector를 이용하여 요청이 전달 된 pod를 찾습니다.다.
-
-    Service object의 selector값에 해당하는 label을 가진 pod그룹을 찾고, LB의 설정에 따라 특정 pod에 요청이 전달 됩니다.같은 cluster내에서 pod이 어떤 노드에 생성되었는지 상관 없이 Service/label 방식으로 pod을 찾을 수 있습니다.
-
-    pod은 생성/삭제가 쉬워 특정 pod으로 접속하기는 어렵습니다. 그래서 Service를 활용하여 접근합니다. Service object는 서비스 디스커버리와 로드밸런싱 기능을 제공합니다.
-
-
+    Pod의 논리와 정책을 정의하는 오브젝트입니다. 외부에서 접근하기 위한 형태의 서비스를 나타냅니다. 서비스는 여러개의 pod을 함께 묶어서 지칭할 수 있습니다.
 
 
 일단 쿠버네티스 클러스터가 구성되어 있으면 컨테이너화 된 애플리케이션을 배포할 수 있습니다. 해야 할 것은 쿠버네티스 배포 환경을 구성하면 됩니다. 오라클은 단순한 클릭만으로 쿠버네티스 배포 환경을 구성해 줍니다. 이는 어떻게 애플리케이션의 인스턴스를 생성하고 업데이트할 것인지가 기록되어 있습니다.
@@ -359,4 +362,5 @@ Kubernetes 데쉬보드를 통해서도 현재 상태를 볼 수 있습니다.
 다음은 오라클에서 지원하는 쿠버네티스 환경과 그 구성법에 대해 알아보겠습니다.
 
 
-
+참고사이트
+- https://kubernetes.io
