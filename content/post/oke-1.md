@@ -11,6 +11,12 @@ author = "jonggyou.kim"
 language = ""
 +++
 
+
+>본 글에서 아래 Pod 의 특징 5가지 리스트의 내용은 [asbubam's blog](https://blog.2dal.com/category/kubernetes/page/3/)
+에서 참조한 것이며 레퍼런스를 표기 하지 않은 잘못을 인지하고 수정하였습니다.
+><br>레퍼런스 출처 명기를 간과한 점에 대해서 깊이 사과의 말씀을 드립니다.
+
+
 ## Oracle Container Engine for Kubrnetes 시리즈 목차
 
 1. [Docker & Kubernetes](http://www.oracloud.kr/post/oke-1)
