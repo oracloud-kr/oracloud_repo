@@ -242,7 +242,8 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
 
 
-    Pod은 다음과 같은 특징을 가지고 있습니다. (참조 : https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-overview/)
+    Pod은 다음과 같은 특징을 가지고 있습니다. 
+    (참조 : https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-overview/)
 
     - Pods는 쿠버네티스의 기본 구성 요소이다. 쿠버네티스 객체 모델 중 만들고 배포할 수 있는 가장 작고 간단한 단위이다. Pods는 클러스터에서의 Running 프로세스를 나타낸다.
     - Pods는 애플리케이션 컨테이너(또는, 몇몇의 경우, 다중 컨테이너), 저장소 리소스, 특정 네트워크 IP 그리고, 컨테이너가 동작하기 위해 만들어진 옵션들을 캡슐화 한다. 
@@ -254,7 +255,8 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
 
 
 
-    그리고 다음의 특징도 가지고 있습니다. (참조 : https://blog.2dal.com/category/kubernetes/page/3/)
+    그리고 다음의 특징도 가지고 있습니다. 
+    (참조 : https://blog.2dal.com/category/kubernetes/page/3/)
 
     - 1개의 Pod은 내부에 여러개의 컨테이너를 가질 수 있지만 대부분 1~2개의 컨테이너를 가집니다.
     - 1개의 Pod은 여러개의 물리서버에 나눠지는 것이 아니고 1개의 물리서버(Node) 위에 올라갑니다.
