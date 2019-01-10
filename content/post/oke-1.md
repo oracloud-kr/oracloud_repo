@@ -87,6 +87,7 @@ Docker(이하: 도커))나 Kubernetes(이하: 쿠버네티스)를 많이 들어�
 도커 이미지는 애플리케이션이 수행하는 배포단위입니다. 개인이 자신의 호스트에 도커 이미지를 만들어 수행할 수도 있고, 도커 저장소에 저장되어있는 도커 이미지를 다운로드 받아 수행할 수도 있습니다. 또한 도커 저장소에 저장되어 있는 이미지에 자신의 애플리케이션을 더 추가하여 수행할 수도 있습니다. 이 추가한 이미지를 다시 도커 저장소에 저장할 수도 있습니다.
 
 그럼 다음과 같은 의문점이 생길 수 도 있습니다.
+
 - [도커 이미지를 만드는 방법은?](#Q01) 
 
 - [비어있는 이미지를 만드는 방법은?](#Q02)
@@ -131,7 +132,7 @@ $ docker run hello-world
 
 
 <a name="Q03"></a>
-#### Q. 도커 이미지는 현재상태를 그대로 저장하는가? (참조 : https://rampart81.github.io/post/docker_image/)
+#### Q. 도커 이미지는 현재상태를 그대로 저장하는가? 
 
 도커 이미지는 파일시스템들의 레이어로 만들어져 있습니다.
 
@@ -142,6 +143,7 @@ $ docker run hello-world
 ![도커 이미지 레이어](https://1.bp.blogspot.com/-Io2aW5QMzUs/WM1ais914bI/AAAAAAAAAfs/9fPX6O1OHOg3HxR-fkXnqW9cGhpQgxlAwCPcB/s1600/Layer3b.png "소스:http://neokobo.blogspot.com/2017/03/docker-container.html")
 
 그래서 도커에서 모든 이미지를 보면 여러개가 보입니다.
+(참조 : https://rampart81.github.io/post/docker_image/)
 
 ![Alt text](https://monosnap.com/image/iNDhFHjIQRsHERwBadTFKO5SuTDz0m.png)
 
@@ -238,7 +240,10 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
     - 특별한 cluster IP address 같은 네트워크 공유
     - 이미지의 버젼과 포트 같은 각 컨테이너에 대한 정보 공유
 
+
+
     Pod은 다음과 같은 특징을 가지고 있습니다. (참조 : https://kubernetes.io/ko/docs/concepts/workloads/pods/pod-overview/)
+
     - Pods는 쿠버네티스의 기본 구성 요소이다. 쿠버네티스 객체 모델 중 만들고 배포할 수 있는 가장 작고 간단한 단위이다. Pods는 클러스터에서의 Running 프로세스를 나타낸다.
     - Pods는 애플리케이션 컨테이너(또는, 몇몇의 경우, 다중 컨테이너), 저장소 리소스, 특정 네트워크 IP 그리고, 컨테이너가 동작하기 위해 만들어진 옵션들을 캡슐화 한다. 
     - 파드는 배포의 단위를 말한다. 아마 단일 컨테이너로 구성되어 있거나, 강하게 결합되어 리소스를 공유하는 소수의 컨테이너로 구성되어 있는 쿠버네티스에서의 애플리케이션 단일 인스턴스 를 의미함.
@@ -247,7 +252,10 @@ Container Orchestrator는 Docker Swarm 뿐만 아니라 Apache Mesos 그리고 K
     - 각각의 파드는 유일한 IP주소를 할당 받는다.
     - 파드는 공유 저장소 집합인 볼륨 을 명시할 수 있다. 파드 내부의 모든 컨테이너는 공유 볼륨에 접근할 수 있고, 그 컨테이너끼리 데이터를 공유하는 것을 허용한다. 
 
+
+
     그리고 다음의 특징도 가지고 있습니다. (참조 : https://blog.2dal.com/category/kubernetes/page/3/)
+
     - 1개의 Pod은 내부에 여러개의 컨테이너를 가질 수 있지만 대부분 1~2개의 컨테이너를 가집니다.
     - 1개의 Pod은 여러개의 물리서버에 나눠지는 것이 아니고 1개의 물리서버(Node) 위에 올라갑니다.
     - Pod 내부의 컨테이너들은 네트워크와 볼륨을 공유하기 때문에 localhost 로 통신할 수 있습니다.
