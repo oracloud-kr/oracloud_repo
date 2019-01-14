@@ -67,12 +67,14 @@ AWS S3 호환 API를 사용하기 위해 사용자의 액세스 키와 비밀 �
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api06.png)
 
 
-왼쪽 Resources 에서 Amazon S3 Compatibility API Keys 를 선택합니다.
+왼쪽 Resources 에서 Amazon S3 Compatibility API Keys 를 선택합니다.<br>
+(Amazon S3 Compatibility API Keys는 Customer Secret Keys로 이름이 변경되었습니다.)
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api07.png)
 
 
-Amazon S3 Compatibility API Keys 화면에서 **Generate Secret Key** 버튼을 클릭합니다.
+Amazon S3 Compatibility API Keys 화면에서 **Generate Secret Key** 버튼을 클릭합니다.<br>
+(Amazon S3 Compatibility API Keys는 Customer Secret Keys로 이름이 변경되었습니다.)
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api08.png)
 
@@ -84,7 +86,7 @@ Amazon S3 Compatibility API Keys 화면에서 **Generate Secret Key** 버튼을 
 
 
 위와 같이 생성된 Secret Key를 메모장에 Copy & Paste 합니다.
-그리고 Access Key에 대한 OCID도 메모장에 Copy & Paste 합니다.
+그리고 Access Key도 메모장에 Copy & Paste 합니다.
 
 ![](https://oracloud-kr-teamrepo.github.io/2018/09/cloudberry/cloudberry_s3api10.png)
 
@@ -112,7 +114,7 @@ Select Cloud Storage 창에서 **S3 Compatible** 를 더블클릭 합니다.
 	- Display name : 원하는 이름을 입력합니다.
 	- Service point : 테넌트이름.compat.objectstorage.리전이름.oraclecloud.com 형식으로 입력합니다.
 			  ex) jaykim000.compat.objectstorage.us-ashburn-1.oraclecloud.com
-	- Access Key : OCI 콘솔의 Amazon S3 Compatibility API Keys에서 만든 키의 OCID (앞에서 복사하였음)
+	- Access Key : OCI 콘솔 User -> Customer Secret Keys의 Access Key (앞에서 메모장에 복사하였음)
 	- Secret Key : 키 생성 단계에서 Generate Key 한 값을 지정 (앞에서 복사하였음)
 	- Signature version : 여기서 “4”로 지정
 	
