@@ -10,9 +10,9 @@ author = "mee-nam.lee"
 language = ""  
 
 +++
-오라클 챗봇인 Digital Assistant에서는 커스텀 비즈니스 코드를 작성을 지원하기 위해 Custom Component라는 기능을 제공하고 있습니다. Custom Component는 오라클 모바일 클라우드에서 서비스되도록 작성되거나 Stand Alone으로 동작되도록 작성될 수도 있고, Oracle Digital Assistant가 제공하는 Custom Component를 위한 임베디드 컨테이너에서 구동되도록 작성될 수도 있습니다.
+오라클 챗봇인 **Digital Assistant**에서는 커스텀 비즈니스 코드를 작성을 지원하기 위해 **Custom Component**라는 기능을 제공하고 있습니다. Custom Component는 오라클 **모바일 클라우드**에서 서비스되도록 작성되거나 **Stand Alone**으로 동작되도록 작성될 수도 있고, Oracle Digital Assistant가 제공하는 Custom Component를 위한 **임베디드 컨테이너**에서 구동되도록 작성될 수도 있습니다.
 
-이 문서에서는 Oracle Data Warehouse와 연계하는 방법을 Stand Alone Custom Component를 구현을 통해서 설명할 예정입니다.
+이 문서에서는 **Oracle Autonomous Data Warehouse**와 연계하는 방법을 Stand Alone Custom Component를 구현을 통해서 설명할 예정입니다.
 
 ## 아키텍쳐
 연계 아키텍쳐는 다음과 같습니다. Stand Alone Custom Component의 구동 환경은 Oracle Compute Cloud를 사용하였습니다.
@@ -22,8 +22,8 @@ language = ""
 ## 사전 준비 사항 
 아래 서비스가 미리 생성되어 있어야 합니다. 
 
- * Oracle Digital Assistant 
- * Oracle Data Warehouse 
+ * Oracle Digital Assistant (ODA)
+ * Oracle Autonomous Data Warehouse (ADW)
  * Oracle Compute Cloud
 
 ## Oracle Compute Cloud에 필요한 Software 설치하기 
@@ -46,6 +46,8 @@ Security List 설정의 자세한 방법은 아래를 참고 하세요.
 
 ![Alt text](https://oracloud-kr-teamrepo.github.io/2019/ODA_ADW/08.security_list.png)
 
+> OS 자체의 firewall 서비스를 사용할 경우 해당 포트를 firewall에서도 open 시켜줘야 합니다.
+
 생성된 Compute의 Public IP를 확인하고 SSH로 접속합니다.
 
 ### Node.js 설치하기 
@@ -61,11 +63,11 @@ Node.js 설치 방법 및 바이너리 다운로드는 다음을 참고합니다
 - [Oracle Instant Client 다운로드](https://www.oracle.com/technetwork/database/database-technologies/instant-client/downloads/index.html)
 - [Oracle Instant Client 설치 참고](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connecting-nodejs.html#GUID-AB1E323A-65B9-47C4-840B-EC3453F3AD53)
 
-아래 파일을 다운 받습니다.
+위 다운로드 사이트에서 아래 파일을 다운 받습니다.
 
 ![Alt text](https://oracloud-kr-teamrepo.github.io/2019/ODA_ADW/01.oracle_instant_client_download.png)
 
-Compute Cloud로 upload 합니다.
+Compute Cloud로 upload 합니다. (SCP나 SFTP 이용)
 ```
 > scp -i privatekey instantclient-basic-linux.x64-18.3.0.0.0dbru.zip opc@{Compute Public IP}:/home/opc/.
 ```
@@ -78,13 +80,14 @@ unzip instantclient-basic-linux.x64-18.3.0.0.0dbru.zip
 .bash_profile에 다음을 추가해 줍니다.
 ```
 export LD_LIBRARY_PATH=/home/opc/instantclient_18_3:$LD_LIBRARY_PATH 
+export TNS_ADMIN=/home/opc/instantclient_18_3/network/admin
 ```
 
 Instant Client에서 ADW 연결을 위해서는 ADW Client Wallet을 다운 받아야 합니다. ADW 콘솔에 접속하여 Client Wallet을 다운 받습니다.
 
 ![Alt text](https://oracloud-kr-teamrepo.github.io/2019/ODA_ADW/03.download_client_wallet.png)
 
-[다운로드 ADW Client Credential (Wallet) 참고](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1)
+- [다운로드 ADW Client Credential (Wallet) 참고](https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/connect-download-wallet.html#GUID-B06202D2-0597-41AA-9481-3B174F75D4B1)
 
 다운 받은 Wallet의 내용은 다음과 같습니다.
 
@@ -104,7 +107,7 @@ tnsnames.ora 파일을 열어서 접속할 서비스명을 확인합니다. {DB�
 ADW에 연결하기 위한 Custom Component 작성을 위한 준비가 완료 되었습니다.
 소스를 Git에서 다운 받기 위해 Git Client가 필요합니다. 다음을 실행하여 git을 설치합니다.
 ```
-sudo yum install git
+> sudo yum install git
 ```
 
 이제 Sample로 작성된 ADW 연결용 Custom Component를 다운 받습니다.
@@ -116,15 +119,17 @@ sudo yum install git
 ```
 
 샘플 소스 코드에서 ADW 연결을 위한 정보를 수정해 줍니다.
-chatbot_adw/bot-start/components/dbconfig.js을 열어서 **user**, **password**, **connectString** 부분을 수정합니다.
-tns_name은 tnsnames.ora에서 참고하면 됩니다.
+**chatbot_adw/bot-start/components/dbconfig.js** 파일을 열어서 **user**, **password**, **connectString** 부분을 수정합니다.
+tns_name은 **tnsnames.ora**에서 참고하면 됩니다.
 ```
 module.exports = {
     user          : process.env.NODE_ORACLEDB_USER || "your_username",
     password      : process.env.NODE_ORACLEDB_PASSWORD || "your_userpassword",
     connectString : process.env.NODE_ORACLEDB_CONNECTIONSTRING || "your_tns_name",
+
  ... 생략
-  };
+
+};
 ```  
 
 다음 명령어를 수행하여 컴포넌트를 구동해 봅니다.
@@ -135,14 +140,6 @@ module.exports = {
 
 > 백그라운드로 구동하려면 다음과 깉이 실행합니다.
 > nohup node index.js > nohup.out  2>&1 & 
-
-Oracle 챗봇 컴포넌트 작성을 위한 자세한 SDK 가이드는 다음을 참고하세요
-
-[Oracle Bots Node.js SDK](https://github.com/oracle/bots-node-sdk/)
-
-Node.js용 Oracle DB Driver 상세와 샘플코드는 아래를 참고하세요.
-
-[node-oracledb](https://github.com/oracle/node-oracledb)
 
 ![Alt text](https://oracloud-kr-teamrepo.github.io/2019/ODA_ADW/07.component_start.png)
 
@@ -184,8 +181,16 @@ Bot Flow에서 등록한 Custom Component는 다음과 같이 호출합니다.
 
 ## 참고 자료 
 - [Autonomous Data Warehouse Toturial](https://www.oracle.com/webfolder/technetwork/tutorials/obe/cloud/adwc/OBE_Loading%20Your%20Data/loading_your_data.html)
-- [Oracle Digital Assistant Node.js SDK](https://github.com/oracle/bots-node-sdk)
+
+Oracle 챗봇 컴포넌트 작성을 위한 자세한 SDK 가이드는 다음을 참고하세요
+
+- [Oracle Bots Node.js SDK](https://github.com/oracle/bots-node-sdk/)
+
+Node.js용 Oracle DB Driver 상세와 샘플코드는 아래를 참고하세요.
+
 - [Node.js Oracle Driver](https://github.com/oracle/node-oracledb)
+
+
 
 
 
